@@ -1,0 +1,56 @@
+!1 Late Modeling Box
+!img-l http://files/images/LateModelingBox.png
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                             |
+|start                |${IMPERATIVE_CREATION_FIXTURE}       |
+|createActivity       |A    |                               |
+|createActivity       |B    |                               |
+|createLateModelingBox|Box  |                               |
+|link                 |Start|A             |                |
+|link                 |A    |Box           |                |
+|link                 |Box  |B             |                |
+|link                 |B    |End           |                |
+|addToLateModelingBox |Box  |Boxa,Boxb,Boxc|                |
+
+
+!3 Execute the process straight forward, select the first sequence
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                                    |
+|start                       |${IMPERATIVE_EXECUTION_FIXTURE}       |
+|checkState                  |Start|Completed                       |
+|checkState                  |A    |Activated                       |
+|launch                      |A    |                                |
+|checkState                  |A    |Launched                        |
+|checkActiveLateModelingBoxes|     |Box not activated yet           |
+|complete                    |A    |                                |
+|checkState                  |A    |Completed                       |
+|checkSuccessorCount         |A    |1                               |
+|checkState                  |Box  |Activated                       |
+|checkActiveActivities       |Box     |The box is the only active node |
+|checkActiveLateModelingBoxes|Box                                   |
+|selectActivitiesFromBox     |Box  |Boxa,Boxc                      ||
+|checkActiveActivities       |Boxa                                  |
+|checkActiveLateModelingBoxes|                                      |
+|checkState                  |Box  |Launched                        |
+|launch                      |Boxa |                                |
+|checkState                  |Box  |launched                        |
+|checkActiveLateModelingBoxes|                                      |
+|complete                    |Boxa |                                |
+|checkState                  |Boxa |Completed                       |
+|checkActiveActivities       |Boxc                                  |
+|launch                      |Boxc |                                |
+|complete                    |Boxc |                                |
+|checkActiveLateModelingBoxes|                                      |
+|checkActiveActivities       |B                                     |
+|launch                      |B    |                                |
+|complete                    |B    |                                |
+|checkState                  |End  |Completed                       |
+|checkActiveLateModelingBoxes|                                      |
+|checkActiveActivities       |                                      |

@@ -1,0 +1,34 @@
+!1 Negation Response Constraint
+
+
+|${DECLARATIVE_CREATION_FIXTURE}                                 |
+|start                           |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                  |A         |                    |
+|createActivity                  |B         |                    |
+|createActivity                  |C         |                    |
+|createNegationResponseConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|getExecutableTasks|A,C                             |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+
+

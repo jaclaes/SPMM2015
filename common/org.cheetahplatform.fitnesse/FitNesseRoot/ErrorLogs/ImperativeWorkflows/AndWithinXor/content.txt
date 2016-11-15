@@ -1,0 +1,9 @@
+!3 !-fit-!
+|'''Date: '''|!-2:46:20 PM (MEZ) on Montag, März 23, 2009-!|
+|'''Test Page: '''|.ImperativeWorkflows.AndWithinXor|
+|'''Command: '''|!-java -cp classes;fitnesse.jar;../org.cheetahplatform.test/bin;../org.cheetahplatform.service/bin;../org.cheetahplatform.core/bin;customLibs/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;customLibs/org.eclipse.core.runtime_3.4.0.v20080512.jar;customLibs/org.eclipse.osgi_3.4.0.v20080605-1900.jar fit.FitServer t61-en-def 8080 28-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.531 seconds-!|
+----'''Standard Output:'''
+{{{Warning: OSGI infrastructure is not running - providing default services.
+}}}

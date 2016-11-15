@@ -1,0 +1,54 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!img-l http://files/images/Simple_Looping.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createLoopStart|Loopstart    |                |
+|createActivity |A            |                |
+|createLoopEnd  |Loopend      |                |
+|link           |Start        |Loopstart   |   |
+|link           |Loopstart    |A           |   |
+|link           |A            |Loopend     |   |
+|link           |Loopend      |Loopstart   |   |
+|link           |Loopend      |End         |   |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start            |Completed    |
+|checkState|Loopstart        |Activated    |
+|checkState|A                |Activated    |
+|launch    |A                |             |
+|checkState|Loopstart        |Launched     |
+|checkState|A                |Launched     |
+|complete  |A                |             |
+|checkState|Loopstart        |Completed    |
+|checkState|A                |Completed    |
+|checkState|Loopend          |Completed    |
+|checkState|Loopstart[1]     |Activated    |
+|checkState|A[1]             |Activated    |
+|launch    |A[1]             |             |
+|checkState|Loopend[0]       |Completed    |
+|checkState|Loopstart[1]     |Launched     |
+|checkState|A[1]             |Launched     |
+|complete  |A[1]             |             |
+|checkState|Loopend          |Completed    |
+|checkState|Loopstart[1]     |Completed    |
+|checkState|A[1]             |Completed    |
+|checkState|Loopend[1]       |Completed    |
+|checkState|Loopstart[2]     |Activated    |
+|checkState|A[2]             |Activated    |
+|skip|A[2]||
+|checkState|Loopend          |Completed    |
+|checkState|Loopstart[1]     |Completed    |
+|checkState|A[1]             |Completed    |
+|checkState|Loopend[1]       |Completed    |
+|checkState|Loopstart[2]     |Skipped|
+|checkState|A[2]             |Skipped|
+|checkState|End|Completed|
+

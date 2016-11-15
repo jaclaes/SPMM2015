@@ -1,0 +1,57 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Simple Xor
+
+
+!img-l http://files/images/Xor_for_Optional_Activity.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|Xorsplit    |                 |
+|createActivity|A           |                 |
+|createXorJoin |Xorjoin     |                 |
+|link          |Start       |Xorsplit    |    |
+|link          |Xorsplit    |A           |    |
+|link          |A           |Xorjoin     |    |
+|link          |Xorsplit    |Xorjoin     |    |
+|link          |Xorjoin     |End         |    |
+
+Execute A
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start          |Completed      |
+|checkState|Xorsplit       |Activated      |
+|checkState|A              |Activated      |
+|checkState|Xorjoin        |Activated      |
+|checkState|End            |Activated      |
+|launch    |A              |               |
+|checkState|Xorsplit       |Launched       |
+|checkState|A              |Launched       |
+|complete  |A              |               |
+|checkState|Xorsplit       |Completed      |
+|checkState|A              |Completed      |
+|checkState|Xorjoin        |Completed      |
+|checkState|End            |Completed      |
+
+
+
+Skip A
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState           |Start          |Completed      |
+|checkState           |Xorsplit       |Activated      |
+|checkState           |A              |Activated      |
+|checkState           |Xorjoin        |Activated      |
+|checkState           |End            |Activated      |
+|checkActiveActivities|A,End                          |
+|skip                 |A              |               |
+|checkState           |Xorsplit       |Completed      |
+|checkState           |A              |Skipped        |
+|checkState           |Xorjoin        |Completed      |
+|checkState           |End            |Completed      |

@@ -1,0 +1,164 @@
+Create a game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                  |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode         |create?|
+|My first configuration|21             |3              |720        |BUSINESS_VALUE_CONSTRAINT|true   |
+
+
+---- Create locations - the first one is the starting location
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name      |create?|
+|Brixlegg  |true   |
+|Kirchbichl|true   |
+|Innsbruck |true   |
+
+
+---- Create activities - '''all activities will be 100% available in this test'''
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateActivityConfigTest-!|
+|name          |businessValue|cost|bookingDeadline|certainty|availability|durationMin|durationMax|create?|
+|Biking        |1000         |5   |1              |0.9      |1           |180        |180        |true   |
+|Climbing      |130          |10  |3              |1.0      |1           |550        |550        |true   |
+|Swimming      |1000         |90  |2              |0.4      |1           |20         |20         |true   |
+|Running       |100          |11  |-1             |0.95     |1           |25         |25         |true   |
+|Hiking        |240          |120 |7              |0.6      |1           |90         |90         |true   |
+|Fooling around|50           |11  |-1             |0.2      |1           |35         |35         |true   |
+|Shopping      |30           |500 |-1             |0.8      |1           |120        |300        |true   |
+|Party         |100          |5   |-1             |0.9      |1           |1          |1          |true   |
+
+
+---- Create accommodations
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateAccommodationConfigTest-!|
+|name        |businessValue|cost|bookingDeadline|certainty|availability|create?|
+|Hilton-Hotel|150          |200 |7              |1.0      |1.0         |true   |
+|Slums       |5            |0   |-1             |0.2      |0.1         |true   |
+|Campingplatz|20           |40  |2              |0.4      |0.3         |true   |
+|wrong_avail |30           |40  |1              |0.6      |-0.2        |false  |
+|wrong_cost  |30           |-40 |-1             |0.6      |0.2         |false  |
+|Zugi-Wohnung|50           |0   |1              |0.9      |0.6         |true   |
+
+
+---- Create routes
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateRouteConfigTest-!|
+|name        |businessValue|cost|certainty|availability|minDuration|maxDuration|locationNameA|locationNameB|bookingDeadline|create?|
+|Bundesstraße|1            |20  |0.8      |1.0         |25         |60         |Brixlegg     |Kirchbichl   |-1             |true   |
+|Autobahn    |5            |50  |0.7      |1.0         |20         |30         |Kirchbichl   |Kirchbichl   |3              |false  |
+|Autobahn    |5            |50  |0.5      |1.0         |20         |30         |Kirchbichl   |Brixlegg     |3              |true   |
+|Radweg      |10           |5   |0.4      |1.0         |120        |180        |Brixlegg     |Innsbruck    |-1             |true   |
+
+
+
+
+---- Link actions - actions must be linked to their locations unless they are used in events. Please note that routes must be added to both endpoints of the route.
+
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName    |locationName|linkAction?|countActions?|
+|Biking        |Kirchbichl  |           |1            |
+|Climbing      |Brixlegg    |           |1            |
+|Swimming      |Kirchbichl  |           |2            |
+|Running       |Brixlegg    |           |2            |
+|Hiking        |Brixlegg    |           |3            |
+|Fooling around|Brixlegg    |           |4            |
+|Shopping      |Innsbruck   |           |1            |
+|Hilton-Hotel  |Brixlegg    |           |5            |
+|Slums         |Brixlegg    |           |6            |
+|Campingplatz  |Kirchbichl  |           |3            |
+|Zugi-Wohnung  |Innsbruck   |           |2            |
+|Bundesstraße  |Brixlegg    |           |7            |
+|Autobahn      |Kirchbichl  |           |4            |
+|Radweg        |Brixlegg    |           |8            |
+|Bundesstraße  |Kirchbichl  |           |5            |
+|Autobahn      |Brixlegg    |           |9            |
+|Radweg        |Innsbruck   |           |3            |
+
+
+---- Create change action events
+
+|${ALASKA_CORE_PACKAGE}.!-CreateEventsTest-!                                                        |
+|name          |actionName|probability|newCost|newBusinessValue|newCertainty|newAvailability|create?|
+|Rockfall      |Hiking    |1.0        |0      |0               |1.0         |0              |true   |
+|Great Rockfall|Climbing  |1.0        |10     |30              |1.0         |1.0            |true   |
+
+Create new action events
+|${ALASKA_CORE_PACKAGE}.!-NewActionConfigEventTest-!              |
+|name                 |actionName|probability|locationName|create?|
+|Flatwarming party :-)|Party     |1.0        |Brixlegg    |true   |
+
+---- Create constraints
+
+|${ALASKA_CORE_PACKAGE}.!-MaxConstraintsTest-!|
+|actionName       |max   |createConstraint?   |
+|Biking           |6     |true                |
+|Climbing         |1     |true                |
+|Swimming         |1     |true                |
+|Running          |1     |true                |
+|Hiking           |2     |true                |
+|Fooling around   |2     |true                |
+|Shopping         |4     |true                |
+
+|${ALASKA_CORE_PACKAGE}.!-MutualExclusionTest-!|
+|actionName1  |actionName2  |createConstraint? |
+|Shopping     |Hiking       |true              |
+
+|${ALASKA_CORE_PACKAGE}.!-PrerequisiteConstraintTest-!|
+|prerequisite       |action     |createConstraint?    |
+|Fooling around     |Hiking     |true                 |
+|Climbing           |Running    |true                 |
+
+|${ALASKA_CORE_PACKAGE}.!-MinConstraintTest-!|
+|actionName      |min   |createConstraint?   |
+|Hilton-Hotel    |1     |true                |
+
+|${ALASKA_CORE_PACKAGE}.!-CreateBudgetConstraintTest-!|
+|budget               |createConstraint?              |
+|1000                 |true                           |
+
+
+---- Create a game from the previous created game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName  |create?|getStartLocation?|
+|cooles Spiel|true   |Brixlegg         |
+
+
+---- Pre-initial Planning Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName    |startTime|executeAction?|checkExpenses?|getMinutesOfDay?|                       |
+|Schedule        |Fooling around|0,0      |true          |0             |0               |                       |
+|Book            |Hiking        |0,36     |true          |120           |0               |                       |
+|Book            |Running       |1,0      |false         |120           |0               |Running is not bookable|
+|Book            |Climbing      |0,126    |true          |130           |0               |                       |
+
+
+---- Start the game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|
+|true      |
+|false     |
+|false     |
+
+
+---- Game-Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName    |startTime|executeAction?|checkExpenses?|getDuration?|getMinutesOfDay?|getDay?|getBusinessValue?|getLocation?|allowsCompletion?|                                     |
+|Execute         |Biking        |0,0      |false         |130           |0           |0               |0      |                 |            |false            |Biking can only be done in Kirchbichl|
+|Execute         |Fooling around|0,0      |true          |141           |35          |35              |0      |                 |            |false            |                                     |
+|Execute         |Party         |0,35     |true          |146           |1           |36              |0      |                 |            |false            |                                     |
+|Execute         |Hiking        |0,36     |false         |146           |0           |36              |0      |                 |            |false            |Rockfall Event - Av. = 0             |
+|Cancel          |Hiking        |0,36     |true          |26            |0           |36              |0      |                 |            |false            |                                     |
+|Execute         |Swimming      |0,126    |false         |26            |0           |36              |0      |0                |            |false            |                                     |
+|Execute         |Climbing      |0,126    |true          |26            |550         |676             |0      |30               |            |false            |                                     |
+|Execute         |Hiking        |0,676    |false         |26            |0           |676             |0      |0                |            |false            |                                     |
+|Execute         |Running       |0,676    |true          |37            |25          |701             |0      |                 |            |false            |                                     |
+|Execute         |Campingplatz  |0,720    |false         |37            |0           |701             |0      |0                |            |false            |                                     |
+|Execute         |Hilton-Hotel  |0,720    |true          |237           |0           |0               |1      |150              |            |true             |                                     |
+|Execute         |Biking        |1,0      |false         |237           |0           |0               |1      |0                |            |true             |                                     |
+|Execute         |Fooling around|1,0      |true          |248           |35          |35              |1      |                 |            |true             |                                     |
+|Execute         |Fooling around|1,35     |false         |248           |0           |35              |1      |0                |            |true             |                                     |
+|Execute         |Hiking        |1,35     |false         |248           |0           |35              |1      |0                |            |true             |                                     |
+|Execute         |Shopping      |1,35     |false         |248           |0           |35              |1      |0                |            |true             |                                     |

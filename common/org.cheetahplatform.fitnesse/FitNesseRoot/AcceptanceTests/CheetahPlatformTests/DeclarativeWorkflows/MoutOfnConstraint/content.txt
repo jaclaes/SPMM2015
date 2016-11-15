@@ -1,0 +1,37 @@
+!1 M out of N Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                        |
+|start                  |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity         |A             |                |
+|createActivity         |B             |                |
+|createActivity         |C             |                |
+|createActivity         |D             |                |
+|createMOutOfNConstraint|A,B,C,D       |3       |       |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C,D                         |
+|canTerminate      |false                           |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C,D                         |
+
+

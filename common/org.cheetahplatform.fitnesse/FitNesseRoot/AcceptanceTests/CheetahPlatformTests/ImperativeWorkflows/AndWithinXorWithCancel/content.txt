@@ -1,0 +1,79 @@
+!1 Loop within Xor
+
+!img-l http://files/images/Canceled_And_Within_Xor.png
+
+
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|xorsplit    |                 |
+|createAndSplit|andsplit    |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createActivity|C           |                 |
+|createXorJoin |xorjoin     |                 |
+|createAndJoin |andjoin     |                 |
+|link          |Start       |xorsplit    |    |
+|link          |xorsplit    |A           |    |
+|link          |xorsplit    |andsplit    |    |
+|link          |andsplit    |B           |    |
+|link          |andsplit    |C           |    |
+|link          |B           |andjoin     |    |
+|link          |C           |andjoin     |    |
+|link          |andjoin     |xorjoin     |    |
+|link          |A           |xorjoin     |    |
+|link          |xorjoin     |End         |    |
+
+
+!3 All Actions should be activated after instantiating the workflow
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start          |Completed      |
+|checkState|xorsplit       |Activated      |
+|checkState|A              |Activated      |
+|checkState|B              |Activated      |
+|checkState|C              |Activated      |
+|checkState|andsplit       |Activated      |
+
+!3 Start Action C and cancel execution. Afterwards take the upper branch by executing action A
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |C              |               |
+|checkState|A              |Skipped|
+|checkState|xorsplit       |Launched       |
+|checkState|andsplit       |Launched       |
+|checkState|B              |Activated      |
+|checkState|C              |Launched       |
+|cancel    |C              |               |
+|checkState|Start          |Completed      |
+|checkState|xorsplit       |Activated      |
+|checkState|A              |Activated      |
+|checkState|B              |Activated      |
+|checkState|C              |Activated      |
+|checkState|andsplit       |Activated      |
+|launch|A||
+|checkState|Start          |Completed      |
+|checkState|xorsplit       |launched|
+|checkState|A              |launched|
+|checkState|B              |Skipped|
+|checkState|C              |Skipped|
+|checkState|andsplit       |Skipped|
+|complete |A||
+|checkState|Start          |Completed      |
+|checkState|xorsplit       |Completed|
+|checkState|A              |Completed|
+|checkState|B              |Skipped|
+|checkState|C              |Skipped|
+|checkState|andsplit       |Skipped|
+|checkState|andjoin|Skipped|
+|checkState|xorjoin     |Completed|

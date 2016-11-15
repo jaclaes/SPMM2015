@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.cheetahplatform.core.common.modeling.INode"
+		abstract="true" table="nodes" lazy="false">
+		<id name="databaseId" type="long" column="id">
+			<generator class="native" />
+		</id>
+		<discriminator column="type" type="string" />
+		<subclass
+			name="org.cheetahplatform.core.imperative.modeling.IImperativeNode"
+			abstract="true" lazy="false">
+			<subclass name="org.cheetahplatform.core.imperative.modeling.AbstractNode"
+				abstract="true">
+
+				<property name="name" type="text" access="field" column="name" />
+				<list name="successors" cascade="all" access="field" table="successors"
+					lazy="false">
+					<key column="fk_successors" />
+					<index column="successorIndex" />
+					<many-to-many
+						class="org.cheetahplatform.core.imperative.modeling.IImperativeNode" />
+				</list>
+
+				<list name="predecessors" cascade="all" access="field" table="predecessors"
+					lazy="false">
+					<key column="fk_predecessors" />
+					<index column="predecessorIndex" />
+					<many-to-many
+						class="org.cheetahplatform.core.imperative.modeling.IImperativeNode" />
+				</list>
+
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.routing.AndJoin"
+					discriminator-value="AND_JOIN" />
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.routing.AndSplit"
+					discriminator-value="AND_SPLIT" />
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.routing.XorSplit"
+					discriminator-value="XOR_SPLIT" />
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.routing.XorJoin"
+					discriminator-value="XOR_JOIN" />
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.routing.LoopStart"
+					discriminator-value="LOOP_START" />
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.routing.LoopEnd"
+					discriminator-value="LOOP_END" />
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.ImperativeActivity"
+					discriminator-value="IMPERATIVE_ACTIVITY" lazy="false">
+					<property name="expectedDuration" type="hibernate.DurationUserType"
+						access="field">
+						<column name="durationTime" />
+						<column name="durationInclusive" />
+					</property>
+					<subclass name="org.cheetahplatform.core.imperative.modeling.StartNode"
+						discriminator-value="START" lazy="false" />
+					<subclass name="org.cheetahplatform.core.imperative.modeling.EndNode"
+						discriminator-value="END" lazy="false" />
+				</subclass>
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.LateBindingBox"
+					discriminator-value="LATE_BINDING_BOX">
+
+					<list name="sequences" cascade="all" access="field" table="sequences"
+						lazy="false">
+						<key column="sequences" />
+						<index column="sequenceindex" />
+						<one-to-many
+							class="org.cheetahplatform.core.imperative.modeling.ImperativeProcessSchema" />
+					</list>
+				</subclass>
+				<subclass
+					name="org.cheetahplatform.core.imperative.modeling.LateModelingBox"
+					discriminator-value="LATE_MODELING_BOX">
+
+					<list name="availableActivities" cascade="all" access="field"
+						lazy="false" table="availableActivities">
+						<key column="availableActivities" />
+						<index column="availableActivitiesIndex" />
+						<one-to-many
+							class="org.cheetahplatform.core.imperative.modeling.ImperativeActivity" />
+					</list>
+				</subclass>
+			</subclass>
+		</subclass>
+
+		<!-- Subtypes of IDeclarativeNode -->
+		<subclass
+			name="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity"
+			discriminator-value="DECLARATIVE_ACTIVITY">
+			<property name="name" type="text" access="field" column="name" />
+			<property name="expectedDuration" type="hibernate.DurationUserType"
+				access="field">
+				<column name="durationTime" />
+				<column name="durationInclusive" />
+			</property>
+		</subclass>
+		<subclass name="org.cheetahplatform.core.declarative.modeling.Milestone"
+			discriminator-value="MILESTONE">
+			<property name="durationSinceStart" type="hibernate.DurationUserType"
+				access="field">
+				<column name="durationTime" />
+				<column name="durationInclusive" />
+			</property>
+			<set name="activities" access="field" table="activites_of_milestone"
+				cascade="all,delete-orphan">
+				<key column="fk_milestone" />
+				<many-to-many
+					class="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity" />
+			</set>
+		</subclass>
+	</class>
+</hibernate-mapping> 

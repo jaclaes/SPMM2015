@@ -1,0 +1,32 @@
+!1 Multi Response Constraint
+(e.g., after executing A, one of B,C or D has to be executed before the process instance can be terminated)
+
+|${DECLARATIVE_CREATION_FIXTURE}                              |
+|start                        |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity               |A         |                    |
+|createActivity               |B         |                    |
+|createActivity               |C         |                    |
+|createMultiResponseConstraint|A         |B,C        |        |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |B               |               |
+|getExecutableTasks|A,B,C                           |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+
+
+
+

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.cheetahplatform.configuration" name="configuration" schema="schema/configuration.exsd"/>
+   <extension-point id="org.cheetahplatform.replaydemo" name="Replay Demo" schema="schema/org.cheetahplatform.replaydemo.exsd"/>
+   <extension-point id="org.cheetahplatform.editor" name="editor" schema="schema/org.cheetahplatform.editor.exsd"/>
+   <extension-point id="org.cheetahplatform.experiment" name="Experimental Configuration" schema="schema/org.cheetahplatform.experiment.exsd"/>
+   <extension-point id="org.cheetahplatform.menu" name="Menu" schema="schema/org.cheetahplatform.menu.exsd"/>
+   <extension-point id="org.cheetahplatform.activity.provider" name="Experiment Workflow Activity Provider" schema="schema/org.cheetahplatform.activity.provider.exsd"/>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.cheetahplatform.modeler.bpmn.BPMNEditor"
+            default="false"
+            id="org.cheetahplatform.modeler.BPMNEditor"
+            name="BPMN Editor">
+      </editor>
+      <editor
+            class="org.cheetahplatform.modeler.decserflow.DecSerFlowEditor"
+            default="false"
+            id="org.cheetahplatform.modeler.DecSerFlowEditor"
+            name="DecSerFlow Editor">
+      </editor>
+      <editor
+            class="org.cheetahplatform.tdm.modeler.test.TDMTestEditor"
+            default="false"
+            icon="img/tdm/test_passed.gif"
+            id="org.cheetahplatform.tdm.TDMTestEditor"
+            name="TDM Test Editor">
+      </editor>
+      <editor
+            class="org.cheetahplatform.literatemodeling.LiterateModelingEditor"
+            default="false"
+            id="org.cheetahplatform.literatemodeling.literatemodelingeditor"
+            name="Liteate Modeling">
+      </editor>
+   </extension>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="org.cheetahplatform.modeler.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.cheetahplatform.modeler.Perspective"
+            id="org.cheetahplatform.modeler.perspective"
+            name="Perspective">
+      </perspective>
+      <perspective
+            class="org.cheetahplatform.tdm.TDMPerspective"
+            fixed="false"
+            id="org.cheetahplatform.tdm.perspective"
+            name="TDM Perspective">
+      </perspective>
+      <perspective
+            class="org.cheetahplatform.modeler.understandability.UnderstandabilityPerspective"
+            fixed="false"
+            id="org.cheetahplatform.modeler.understandability.UnderstandabilityPerspective"
+            name="Understandability Perspective">
+      </perspective>
+      <perspective
+            class="org.cheetahplatform.modeler.PpmDashboardPerspective"
+            id="org.cheetahplatform.modeler.perspective.ppmdashboard"
+            name="PPM Dashboard">
+      </perspective>
+      <perspective
+            class="org.cheetahplatform.modeler.hierarchical.HierarchicalPerspective"
+            fixed="false"
+            id="org.cheetahplatform.modeler.hierarchical.HierarchicalPerspective"
+            name="Hierarchical BPMN Task Perspective">
+      </perspective>
+      <perspective
+            class="org.cheetahplatform.modeler.hierarchical.HierarchicalPerspectiveWithoutOutline"
+            fixed="false"
+            id="org.cheetahplatform.modeler.hierarchical.HierarchicalPerspectiveWithoutOutline"
+            name="Hierarchical BPMN Task Perspective without Outline">
+      </perspective>
+      <perspective
+            class="org.cheetahplatform.literatemodeling.LiterateModelingPerspective"
+            id="org.cheetahplatform.literatemodeling.literatemodelingperspective"
+            name="Literate Modeling Perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="Modeler"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.cheetahplatform.modeler.application"
+            name="Cheetah Modeler Administration">
+         <property
+               name="appName"
+               value="Cheetah Modeler Administration">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.tdm.explorer.TDMProjectExplorerView"
+            icon="img/tdm/tdm_explorer.gif"
+            id="org.cheetahplatform.tdd.views.TddProjectExplorer"
+            name="TDM Project Explorer"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.tdm.modeler.declarative.TDMDeclarativeModelerView"
+            icon="img/tdm/process_passed.gif"
+            id="org.cheetahplatform.tdm.DeclarativeModeler"
+            name="Declarative Modeler"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.understandability.UnderstandabilityView"
+            id="org.cheetahplatform.modeler.understandability.UnderstandabilityView"
+            name="Understandability View"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="true"
+            class="org.cheetahplatform.modeler.understandability.ImageView"
+            id="org.cheetahplatform.modeler.understandability.ImageView"
+            name="Image View"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="true"
+            class="org.cheetahplatform.modeler.progress.ProgressView"
+            id="org.cheetahplatform.modeler.ProgressView"
+            name="Progress"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.tdm.problemview.ProblemView"
+            icon="img/tdm/problems_view.gif"
+            id="org.cheetahplatform.tdm.ProblemView"
+            name="Problems"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.graph.dialog.StepsView"
+            icon="img/16-columns.png"
+            id="org.cheetahplatform.view.stepsview"
+            name="Modeling Steps"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.graph.dialog.ModelingTranscriptsView"
+            icon="img/modelingTranscripts16x16.png"
+            id="org.cheetahplatform.view.modelingtranscriptview"
+            name="Modeling Transcripts"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.graph.dialog.ReplayView"
+            icon="img/16-arrow-next.png"
+            id="org.cheetahplatform.view.replayview"
+            name="Replay Control"
+            restorable="true">
+      </view>
+      <view
+            class="org.cheetahplatform.modeler.dialog.ModelingPhaseDiagramView"
+            icon="img/modelingPhaseDiagramm16x16.png"
+            id="org.cheetahplatform.view.modelingphasediagram"
+            name="Modeling Phase Diagram"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.dialog.PpmMetricsView"
+            icon="img/metrics_16x16.png"
+            id="org.cheetahplatform.modeler.view.ppmmetrics"
+            name="PPM Metrics"
+            restorable="true">
+      </view>
+      <view
+            class="org.cheetahplatform.modeler.hierarchical.HierarchicalOutlineView"
+            id="org.cheetahplatform.modeler.hierarchical.HierarchicalOutlineView"
+            name="Process Structure"
+            restorable="true">
+      </view>
+      <view
+            class="org.cheetahplatform.modeler.hierarchical.HierarchicalView"
+            id="org.cheetahplatform.modeler.hierarchical.HierarchicalView"
+            name="Hierarchical BPMN view"
+            restorable="true">
+      </view>
+      <view
+            class="org.cheetahplatform.modeler.hierarchical.HierarchicalComboView"
+            id="org.cheetahplatform.modeler.hierarchical.HierarchicalComboView"
+            name="Hierarchical Combo View"
+            restorable="true">
+      </view>
+      <category
+            id="org.cheetahplatform.modeler"
+            name="Sample Category">
+      </category>
+      <view
+            class="org.cheetahplatform.literatemodeling.views.AssociationsView"
+            icon="img/literatemodeling/assoc_view_icon.gif"
+            id="org.cheetahplatform.literatemodeling.views.AssociationsView"
+            name="Associations View ">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.dialog.PpmNotesView"
+            icon="img/ppm_comment_16x16.gif"
+            id="org.cheetahplatform.modeler.ppmnotes"
+            name="PPM Notes"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="org.cheetahplatform.modeler.graph.dialog.PpmIterationsView"
+            id="org.cheetahplatform.view.ppmiterationsview"
+            name="PPM Iterations"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.cheetahplatform.configuration">
+      <configuration
+            priority="0">
+         <configurator
+               class="org.cheetahplatform.modeler.experiment.Configurator">
+         </configurator>
+      </configuration>
+   </extension>
+   <extension
+         point="org.cheetahplatform.experiment">
+      <experiment
+            class="org.cheetahplatform.modeler.experiment.Experiment">
+      </experiment>
+   </extension>
+   <extension
+         point="org.cheetahplatform.activity.provider">
+      <activityFactory
+            class="org.cheetahplatform.modeler.experiment.ActivityFactory">
+         <activityType
+               type="ExpEditor.SurveyActivity">
+         </activityType>
+         <activityType
+               subtype="BPMN Tutorial"
+               type="ExpEditor.TutorialActivity">
+         </activityType>
+         <activityType
+               subtype="Layout Tutorial"
+               type="ExpEditor.TutorialActivity">
+         </activityType>
+         <activityType
+               type="ExpEditor.BPMNModelingActivity">
+         </activityType>
+         <activityType
+               type="ExpEditor.DecSerFlowModelingActivity">
+         </activityType>
+         <activityType
+               type="ExpEditor.FeedbackActivity">
+         </activityType>
+         <activityType
+               type="ExpEditor.MessageActivity">
+         </activityType>
+         <activityType
+               type="ExpEditor.ComprehensionActivity">
+         </activityType>
+      </activityFactory>
+   </extension>
+</plugin>

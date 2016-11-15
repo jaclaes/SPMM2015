@@ -1,0 +1,17 @@
+<plugin name='export' version='0.2' grailsVersion='1.1 &gt; *'>
+  <author>Andreas Schmitt</author>
+  <authorEmail>andreas.schmitt.mi@gmail.com</authorEmail>
+  <title>Export functionality</title>
+  <description>This plugin offers export functionality supporting different formats e.g. CSV, Excel, Open Document Spreadsheet, PDF and XML 
+and can be extended to add additional formats. 
+</description>
+  <documentation>http://grails.org/Export+Plugin</documentation>
+  <resources>
+    <resource>ExportTagLib</resource>
+    <resource>ExportService</resource>
+    <resource>UrlMappings</resource>
+    <resource>ExportConfig</resource>
+    <resource>DataSource</resource>
+  </resources>
+  <dependencies />
+</plugin>

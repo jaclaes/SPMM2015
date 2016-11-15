@@ -1,0 +1,78 @@
+%Koma-Script book mit Bindekorrektur
+%DIV - wirkt sich auf die Satzspiegelmaße aus
+%cleardoubleempty - zeigt keine Kopf- und Fußzeile bei leeren Seiten an (nur Seitenanzahl: cleardoubleplain)
+%headsepline - Linie unter der Kopfzeile
+%chapterprefix - schreibt Chapter II und dann Titel, anstatt nur Titel
+%liststotoc - Inhaltsverzeichnis nimmt auch Tabellen- und Bildverzeichnis auf
+%bibtotoc - ähnlich, nur mit Literaturverzeichnis
+%openbib - cooleres Literaturverzeichnislayout
+%draft oder final - zeigt die Graphiken nicht an und markiert overfull boxes
+\documentclass[paper=a4,fontsize=11pt,twoside,BCOR8.25mm, DIV9,
+cleardoublepage=empty, headsepline, chapterprefix]{scrbook}
+
+%Regelt den Zeilenabstand
+\usepackage{setspace}
+\onehalfspacing
+
+%Hurenkinder und Schusterjungen vermeiden
+\clubpenalty = 10000
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+\setlength{\headheight}{1.15\baselineskip}
+
+\usepackage[latin1]{inputenc} %für die Umlaute und das ß
+\usepackage{scrpage2} %Kopf und Fußzeilen - können definiert werden
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array} %Tabellen
+\pagestyle{scrheadings}
+\setheadtopline{1pt}
+
+\usepackage{fancybox} %Für Boxenumrahmungen
+ 
+%commands
+\newcommand{\bfitem}[1]{\item \textbf{#1}}
+\newcommand{\para}[1]{\vskip 15pt \textbf{#1}\hskip 15pt}
+
+\newcommand{\msQuote}[2]{
+\begin{quote}
+    \noindent\itshape\small
+    ``#1" \\\- \hspace{\fill}#2
+\end{quote}}
+  
+\setlength{\parskip}{5pt} %Abstand zwischen Paragraphen
+
+
+\usepackage{amssymb} %Für Mathe-Symbole
+\usepackage{amsmath}
+\usepackage{rotating}
+
+%-------------------------------------------
+
+\begin{document}
+\include{titlepage}
+\include{acknowledgement}
+\include{abstract}
+\include{authorship}
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+\tableofcontents
+\cleardoublepage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\input{introduction}
+\input{evaluation}
+\input{requirements}
+\input{osgi}
+\input{applications}
+\input{summary}
+
+\listoffigures
+\listoftables
+
+\bibliographystyle{alpha}
+\bibliography{literature}
+
+\end{document}

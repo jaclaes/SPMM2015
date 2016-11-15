@@ -1,0 +1,20 @@
+!1 Delete Node Command
+
+|${BPMN_COMMAND_FIXTURE}                |
+|start          |${BPMN_COMMAND_FIXTURE}|
+|createActivity |A   |1   |100,50    |  |
+|createActivity |B   |2   |800,500   |  |
+|createActivity |C   |3   |500,60    |  |
+|containsElement|1   |true              |
+|containsElement|2   |true              |
+|containsElement|3   |true              |
+|deleteNode     |1   |                  |
+|containsElement|1   |false             |
+|containsElement|2   |true              |
+|containsElement|3   |true              |
+|deleteNode     |3   |                  |
+|containsElement|1   |false             |
+|containsElement|2   |true              |
+|containsElement|3   |false             |
+
+

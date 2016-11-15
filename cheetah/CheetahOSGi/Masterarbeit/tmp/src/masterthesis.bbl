@@ -1,0 +1,173 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{JWMJ05}
+
+\bibitem[ari]{aris_dashboard}
+{ARIS Performance Dashboard}.
+\newblock http://www.aris.de/de/ARIS/ARIS{\_}
+  Platform/ARIS{\_}Performance{\_}Dashboard/80073.html.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[Bre10]{scrumtool}
+Mathias Breuß.
+\newblock {Toolunterstützung für Scrum}.
+\newblock Master's thesis, University of Innsbruck, 2010.
+
+\bibitem[Cam08]{eclipse_riena}
+Christian Campo.
+\newblock {Eclipse-Riena-Projekt - Verteilte Client/Serveranwendungen auf Basis
+  von Eclipse/Equinox}.
+\newblock {\em Eclipse Magazin}, 16:47--52, 2008.
+
+\bibitem[CW08]{mashup_definition}
+John Crupi and Chris Warner.
+\newblock {Enterprise Mashups Part I: Bringing SOA to the People}.
+\newblock {\em SOA Magazine}, 2008.
+
+\bibitem[ecl]{eclipse_rcp}
+{Eclipse RCP}.
+\newblock http://wiki.eclipse.org/index.php/Rich{\_}Client{\_}Platform.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[Erl07]{soa}
+Thomas Erl.
+\newblock {\em {SOA Principles of Service Design (The Prentice Hall
+  Service-Oriented Computing Series from Thomas Erl)}}.
+\newblock Prentice Hall PTR, Upper Saddle River, NJ, USA, 2007.
+
+\bibitem[ezw]{ezweb}
+{EzWeb}.
+\newblock http://ezweb.tid.es.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[fas]{fast}
+{FASt - Fast and Advanced Storyboard Tools}.
+\newblock http://fast.morfeo-project.eu.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[FD10]{marcoflow}
+Stefano Tranquillini Fabio Casati Chang Heng Li~Yan Florian~Daniel,
+  Stefano~Soi.
+\newblock {From People to Services to UI: Distributed Orchestration of User
+  Interfaces}.
+\newblock BPM'10 - to be published, 2010.
+
+\bibitem[Few06]{stephen_few}
+Stephen Few.
+\newblock {\em {Information Dashboard Design : The Effective Visual
+  Communication of Data}}.
+\newblock {O'Reilly Media, Inc.}, 2006.
+
+\bibitem[GHJV95]{GammaHelmEtAl95}
+Erich Gamma, Richard Helm, Ralph~E. Johnson, and John Vlissides.
+\newblock {\em {Design Patterns: Elements of Reusable Object-Oriented
+  Software}}.
+\newblock Addison-Wesley, Reading, MA, 1995.
+
+\bibitem[goo]{google_maps}
+{Google Maps}.
+\newblock http://maps.google.at.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[HF08]{types_of_mashups}
+Volker Hoyer and Marco Fischer.
+\newblock {Market Overview of Enterprise Mashup Tools}.
+\newblock In {\em ICSOC '08: Proceedings of the 6th International Conference on
+  Service-Oriented Computing}, pages 708--721, Berlin, Heidelberg, 2008.
+  Springer-Verlag.
+
+\bibitem[HH00]{Heinrich2000}
+Lutz~J. Heinrich and Irene Häntschel.
+\newblock {\em {Evaluation und Evaluationsforschung in der
+  Wirtschaftsinformatik}}.
+\newblock Oldenbourg, 2000.
+
+\bibitem[HW03]{Hohpe2003}
+Gregor Hohpe and Bobby Woolf.
+\newblock {\em {Enterprise Integration Patterns: Designing, Building, and
+  Deploying Messaging Solutions}}.
+\newblock Addison-Wesley Professional, 2003.
+
+\bibitem[ibm]{ibm_mashup_center}
+{IBM Mashup Center}.
+\newblock http://www.ibm.com/software/info/mashup-center/.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[jme]{jme_foundation_profile}
+{Java ME Foundation Profile}.
+\newblock http://java.sun.com/products/found\-ation/.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[Jos07]{nicolai}
+Nicolai~M. Josuttis.
+\newblock {\em {SOA in Practice: The Art of Distributed System Design}}.
+\newblock O'Reilly, 2007.
+
+\bibitem[JWMJ05]{flexible_software}
+Bruce Johnson, Walter~W. Woolfolk, Robert Miller, and Cindy Johnson.
+\newblock {\em {Flexible Software Design: Systems Development for Changing
+  Requirements}}.
+\newblock Auerbach Publications, 2005.
+
+\bibitem[mic]{microsoft_popfly}
+{Microsoft Popfly}.
+\newblock http://www.popfly.com.
+\newblock Last visited: 20.08.2009.
+
+\bibitem[osg]{osgi-alliance}
+{OSGi Alliance}.
+\newblock http://www.osgi.org.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[por]{portlets}
+{JSR-000168 Portlet Specification}.
+\newblock http://jcp.org/aboutJava/comm\-unityprocess/final/jsr168/.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[rie]{riena}
+{Riena}.
+\newblock http://www.eclipse.org/riena/.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[Sch04]{KS04}
+Ken Schwaber.
+\newblock {\em {Agile Project Management with Scrum}}.
+\newblock Prentice Hall, 2004.
+
+\bibitem[SLH{\etalchar{+}}08]{fast_paper}
+Javier Soriano, David Lizcano, Juan~J. Hierro, Marcos Reyes, Christoph Schroth,
+  and Till Janner.
+\newblock {Enhancing User-Service Interaction through a Global User-Centric
+  Approach to SOA}.
+\newblock In {\em ICNS '08: Proceedings of the Fourth International Conference
+  on Networking and Services}, pages 194--203. IEEE Computer Society, 2008.
+
+\bibitem[swo]{swordfish}
+{Swordfish}.
+\newblock http://www.eclipse.org/swordfish/.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[SZT{\etalchar{+}}09]{schuster2009}
+Nelly Schuster, Christian Zirpins, Stefan Tai, Steve Battle, and Nils Heuer.
+\newblock {A Service-Oriented Approach to Document-Centric Situational
+  Collaboration Processes}.
+\newblock In {\em 18th IEEE International Workshops on Enabling Technologies:
+  Infrastructures for Collaborative Enterprises, WETICE 2009, Groningen, The
+  Netherlands, 29 June - 1 July 2009, Proceedings}, pages 221--226. IEEE
+  Computer Society, 2009.
+
+\bibitem[web]{websphere_dashboard}
+{WebSphere Dashboard Framework}.
+\newblock http://www-01.ibm.com/software/genservers/portal/dashboardframework/.
+\newblock Last visited: 09.06.2010.
+
+\bibitem[Wol09]{swordfish_whitepaper}
+Oliver Wolf.
+\newblock {Eclipse Swordfish - an Open Source SOA Runtime Framework for the
+  Enterprise}, 2009.
+
+\bibitem[yah]{yahoo_pipes}
+{Yahoo Pipes}.
+\newblock http://pipes.yahoo.com.
+\newblock Last visited: 09.06.2010.
+
+\end{thebibliography}

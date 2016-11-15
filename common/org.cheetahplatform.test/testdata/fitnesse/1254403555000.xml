@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="Experiment 1.0">
+		<ProcessInstance id="640_99">
+				<Data>
+					<Attribute name="type">BPMN</Attribute>
+					<Attribute name="timestamp">1254403555640</Attribute>
+					<Attribute name="host">192.168.66.99 (laptop-jp)</Attribute>
+				</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">0</Attribute>
+					<Attribute name="descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="name">Start Event</Attribute>
+					<Attribute name="x">154</Attribute>
+					<Attribute name="y">171</Attribute>
+				</Data>
+				<WorkflowModelElement>Start Event</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">1</Attribute>
+					<Attribute name="descriptor">BPMN.END_EVENT</Attribute>
+					<Attribute name="name">End Event</Attribute>
+					<Attribute name="x">711</Attribute>
+					<Attribute name="y">235</Attribute>
+				</Data>
+				<WorkflowModelElement>End Event</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">2</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">242</Attribute>
+					<Attribute name="y">191</Attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">3</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">0</Attribute>
+					<Attribute name="source_node_name">Start Event</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="target_node_id">2</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Incoming Sequence Flow to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:26:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">4</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">416</Attribute>
+					<Attribute name="y">211</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">5</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">2</Attribute>
+					<Attribute name="source_node_name">A</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">4</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:26:30+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">6</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">B</Attribute>
+					<Attribute name="x">581</Attribute>
+					<Attribute name="y">97</Attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:33+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">7</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">V</Attribute>
+					<Attribute name="x">545</Attribute>
+					<Attribute name="y">275</Attribute>
+				</Data>
+				<WorkflowModelElement>V</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:37+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">7</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="new_name">C</Attribute>
+				</Data>
+				<WorkflowModelElement>V</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2009-10-01T15:26:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">4</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">6</Attribute>
+					<Attribute name="target_node_name">B</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Incoming Sequence Flow to Activity &apos;B&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:26:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">9</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">4</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">7</Attribute>
+					<Attribute name="target_node_name">C</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Incoming Sequence Flow to Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:26:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">7</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-63</Attribute>
+					<Attribute name="y">53</Attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">10</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">650</Attribute>
+					<Attribute name="y">262</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">1</Attribute>
+					<Attribute name="descriptor">BPMN.END_EVENT</Attribute>
+					<Attribute name="name">End Event</Attribute>
+					<Attribute name="x">120</Attribute>
+					<Attribute name="y">29</Attribute>
+				</Data>
+				<WorkflowModelElement>End Event</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">10</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">52</Attribute>
+					<Attribute name="y">6</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">11</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">6</Attribute>
+					<Attribute name="source_node_name">B</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">10</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;B&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:26:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">12</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">7</Attribute>
+					<Attribute name="source_node_name">C</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">10</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:26:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">13</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">701</Attribute>
+					<Attribute name="y">269</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">12</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">7</Attribute>
+					<Attribute name="source_node_name">C</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">13</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>RECONNECT_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:10+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">11</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">6</Attribute>
+					<Attribute name="source_node_name">B</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">13</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;B&apos;</WorkflowModelElement>
+				<EventType>RECONNECT_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">13</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">26</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">15</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">717</Attribute>
+					<Attribute name="y">382</Attribute>
+				</Data>
+				<WorkflowModelElement>D</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:27+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">16</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">13</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">15</Attribute>
+					<Attribute name="target_node_name">D</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Incoming Sequence Flow to Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:30+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">18</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">483</Attribute>
+					<Attribute name="y">450</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">19</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">E</Attribute>
+					<Attribute name="x">541</Attribute>
+					<Attribute name="y">442</Attribute>
+				</Data>
+				<WorkflowModelElement>E</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">20</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">F</Attribute>
+					<Attribute name="x">533</Attribute>
+					<Attribute name="y">522</Attribute>
+				</Data>
+				<WorkflowModelElement>F</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">21</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">722</Attribute>
+					<Attribute name="y">506</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2009-10-01T15:27:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">22</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">15</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">18</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:52+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">23</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">18</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">19</Attribute>
+					<Attribute name="target_node_name">E</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Incoming Sequence Flow to Activity &apos;E&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">24</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">18</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">20</Attribute>
+					<Attribute name="target_node_name">F</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Incoming Sequence Flow to Activity &apos;F&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">25</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">19</Attribute>
+					<Attribute name="source_node_name">E</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">21</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;E&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:55+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">26</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">20</Attribute>
+					<Attribute name="source_node_name">F</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">21</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Outgoing Sequence Flow  from Activity &apos;F&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">28</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">21</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">1</Attribute>
+					<Attribute name="target_node_name">End Event</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.END_EVENT</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2009-10-01T15:27:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">0</Attribute>
+					<Attribute name="descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="name">Start Event</Attribute>
+					<Attribute name="x">-113</Attribute>
+					<Attribute name="y">54</Attribute>
+				</Data>
+				<WorkflowModelElement>Start Event</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:05+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">2</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-124</Attribute>
+					<Attribute name="y">37</Attribute>
+				</Data>
+				<WorkflowModelElement>A</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">4</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">-146</Attribute>
+					<Attribute name="y">23</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:07+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">4</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">10</Attribute>
+					<Attribute name="y">-3</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">6</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">B</Attribute>
+					<Attribute name="x">-184</Attribute>
+					<Attribute name="y">12</Attribute>
+				</Data>
+				<WorkflowModelElement>B</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">7</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-113</Attribute>
+					<Attribute name="y">-16</Attribute>
+				</Data>
+				<WorkflowModelElement>C</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">13</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">-224</Attribute>
+					<Attribute name="y">-77</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2009-10-01T15:28:13+0200</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

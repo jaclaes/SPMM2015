@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Experiment Editor
+Bundle-SymbolicName: org.cheetahplatform.experiment.editor; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.cheetahplatform.experiment.editor.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.cheetahplatform.modeler;bundle-version="1.0.0",
+ org.cheetahplatform.common;bundle-version="1.0.0",
+ org.eclipse.gef;bundle-version="3.5.0",
+ com.thoughtworks.xstream;bundle-version="1.0.0",
+ org.eclipse.ui.views;bundle-version="3.4.1",
+ org.eclipse.ui.views.log;bundle-version="1.0.100",
+ org.cheetahplatform.modeler.changepattern;bundle-version="1.0.0",
+ org.cheetahplatform.core;bundle-version="1.0.0",
+ org.eclipse.ui.forms;bundle-version="3.4.1",
+ org.cheetahplatform.survey;bundle-version="1.0.0",
+ org.eclipse.core.resources;bundle-version="3.5.1",
+ org.eclipse.core.filesystem;bundle-version="1.2.0",
+ alaska.config;bundle-version="1.0.0",
+ org.eclipse.core.expressions;bundle-version="3.4.100"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.cheetahplatform.experiment.editor,
+ org.cheetahplatform.experiment.editor.desc,
+ org.cheetahplatform.experiment.editor.prop,
+ org.cheetahplatform.experiment.editor.ui,
+ org.cheetahplatform.experiment.editor.xml

@@ -1,0 +1,41 @@
+!1 Three Parallel Activities, Third One Longer Lasting
+
+!img-l http://files/images/parallel_3.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                  |
+|start        |${TDD_FIXTURE}    |
+|addActivity  |A    |8:00 |12:00||
+|addActivity  |B    |8:00 |10:00||
+|addActivity  |C    |10:00|13:00||
+|layout       |                  |
+|maxParallel|2|
+|parallelCount|7:59 |0          |
+|parallelCount|8:00 |2           |
+|parallelCount|10:59|2           |
+|parallelCount|11:00|2           |
+|parallelCount|11:59|2           |
+|parallelCount|12:59|1           |
+|parallelCount|13:00|0          |
+|x            |A    |0           |
+|y            |A    |1h          |
+|width        |A    |1           |
+|height       |A    |4h          |
+|x            |B    |1           |
+|y            |B    |1h          |
+|width        |B    |1           |
+|height       |B    |2h          |
+|x            |C    |1           |
+|y            |C    |3h          |
+|width        |C    |1           |
+|height       |C    |3h          |

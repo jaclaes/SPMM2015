@@ -1,0 +1,1138 @@
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="Simple Journey to Alaska" type="Agile">
+		<ProcessInstance id="Chuck Norris">
+				<Data >
+				<Attribute name="GameConfigName">Simple Journey to Alaska</Attribute>
+	 <Attribute name="Player">Chuck Norris</Attribute>
+	</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="org.alaskasimulator.IActionConfigFilterService#0">&lt;object-array&gt;
+  &lt;string&gt;actions&lt;/string&gt;
+  &lt;set/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.IActionConfigFilterService#1">&lt;object-array&gt;
+  &lt;string&gt;rules&lt;/string&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#0">&lt;object-array&gt;
+  &lt;string&gt;Fairbanks&lt;/string&gt;
+  &lt;list/&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#1">&lt;object-array&gt;
+  &lt;string&gt;Anchorage&lt;/string&gt;
+  &lt;list/&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#2">&lt;object-array&gt;
+  &lt;string&gt;Juneau&lt;/string&gt;
+  &lt;list/&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>START_PLANNING</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[0d,150min]</Attribute>
+					<Attribute name="ID">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Visitor Centre</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,150min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;0&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="Time">[0d,285min]</Attribute>
+					<Attribute name="ID">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Visitor Centre</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,285min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;0&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="BOX_END_TIME">[0d,675min]</Attribute>
+					<Attribute name="Time">[0d,150min]</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>CHANGE_AGILE_BOX_END_TIME</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;0&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="Time">[0d,495min]</Attribute>
+					<Attribute name="ID">3</Attribute>
+				</Data>
+				<WorkflowModelElement>Flightseeing</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,495min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[0d,30min]</Attribute>
+					<Attribute name="ID">4</Attribute>
+				</Data>
+				<WorkflowModelElement>Short Hike</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,30min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[0d,150min]</Attribute>
+					<Attribute name="ID">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Visitor Centre</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[0d,150min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[0d,285min]</Attribute>
+					<Attribute name="ID">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Visitor Centre</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[0d,285min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,180min]</Attribute>
+					<Attribute name="ID">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Alaskan Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,180min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,375min]</Attribute>
+					<Attribute name="ID">6</Attribute>
+				</Data>
+				<WorkflowModelElement>Alaskan Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,375min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[0d,750min]</Attribute>
+					<Attribute name="ID">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Anchorage Motel</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[0d,750min]</Attribute>
+					<Attribute name="ID">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Anchorage Motel</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[0d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[0d,750min]</Attribute>
+					<Attribute name="ID">8</Attribute>
+				</Data>
+				<WorkflowModelElement>Hotel in Juneau</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,45min]</Attribute>
+					<Attribute name="ID">9</Attribute>
+				</Data>
+				<WorkflowModelElement>Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,45min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>START_JOURNEY</EventType>
+				<Timestamp>[0d,0min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Event#1">New road to fairbanks</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#0">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#1">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#0">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;30&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;45&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#2">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#3">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#4">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#5">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#6">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#1">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;30&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;45&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>EVENT_OCCURED</EventType>
+				<Timestamp>[0d,0min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[0d,30min]</Attribute>
+					<Attribute name="ID">4</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#0">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#3">&lt;object-array&gt;
+  &lt;string&gt;Juneau&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.4079594500057712&lt;/double&gt;
+    &lt;double&gt;0.2946347199379235&lt;/double&gt;
+    &lt;double&gt;0.26213335371119184&lt;/double&gt;
+    &lt;double&gt;0.19340962808880502&lt;/double&gt;
+    &lt;double&gt;0.1850681194493663&lt;/double&gt;
+    &lt;double&gt;0.1771728968542291&lt;/double&gt;
+    &lt;double&gt;0.07619930146515291&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+    &lt;double&gt;0.009621013814455126&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#1">&lt;object-array&gt;
+  &lt;string&gt;Short Hike&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;double&gt;0.5710017892503965&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Short Hike</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[0d,30min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[0d,495min]</Attribute>
+					<Attribute name="ID">3</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#7">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#8">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#2">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;495&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#9">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#10">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#11">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#12">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#13">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#3">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;495&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#2">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#3">&lt;object-array&gt;
+  &lt;string&gt;Flightseeing&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;double&gt;0.7743399497872973&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Flightseeing</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[0d,495min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[0d,750min]</Attribute>
+					<Attribute name="ID">8</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#14">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#15">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#16">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#17">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#18">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#19">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#20">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#4">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;750&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;0&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#4">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#4">&lt;object-array&gt;
+  &lt;string&gt;Juneau&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.10312380096677487&lt;/double&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#5">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;double&gt;0.28726695423954296&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Hotel in Juneau</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[0d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,45min]</Attribute>
+					<Attribute name="ID">9</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#21">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#22">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#5">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;45&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;37&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#23">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#24">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#25">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#26">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#27">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#6">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;45&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;33&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#6">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#7">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;double&gt;0.0&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Highway</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,45min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,180min]</Attribute>
+					<Attribute name="ID">5</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#28">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#29">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#7">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;180&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#30">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#31">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#32">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#33">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#34">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#8">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;180&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#8">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#5">&lt;object-array&gt;
+  &lt;string&gt;Anchorage&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.5232134302519712&lt;/double&gt;
+    &lt;double&gt;0.33411434829493&lt;/double&gt;
+    &lt;double&gt;0.2761876761764988&lt;/double&gt;
+    &lt;double&gt;0.23486037422174627&lt;/double&gt;
+    &lt;double&gt;0.11864278529428629&lt;/double&gt;
+    &lt;double&gt;0.026015815150429222&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+    &lt;double&gt;0.008979353792423983&lt;/double&gt;
+    &lt;double&gt;0.02790973118995632&lt;/double&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#9">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;double&gt;1.0&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Alaskan Highway</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,180min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Event#1">Road closure</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#9">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;375&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#10">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;375&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#35">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;null/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#10">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;null/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#36">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;null/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#11">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;null/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#37">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;null/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#12">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;null/&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>EVENT_OCCURED</EventType>
+				<Timestamp>[1d,300min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,375min]</Attribute>
+					<Attribute name="ID">6</Attribute>
+				</Data>
+				<WorkflowModelElement>Alaskan Highway</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,375min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Event#1">White-water Rafting offered now</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>EVENT_OCCURED</EventType>
+				<Timestamp>[1d,495min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,525min]</Attribute>
+					<Attribute name="ID">10</Attribute>
+				</Data>
+				<WorkflowModelElement>White-water Rafting</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,525min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;3&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="Time">[1d,585min]</Attribute>
+					<Attribute name="ID">10</Attribute>
+				</Data>
+				<WorkflowModelElement>White-water Rafting</WorkflowModelElement>
+				<EventType>PLANITEM_MOVE</EventType>
+				<Timestamp>[1d,585min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,525min]</Attribute>
+					<Attribute name="ID">11</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,525min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,540min]</Attribute>
+					<Attribute name="ID">12</Attribute>
+				</Data>
+				<WorkflowModelElement>Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,540min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,525min]</Attribute>
+					<Attribute name="ID">11</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[1d,525min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,540min]</Attribute>
+					<Attribute name="ID">12</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#38">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#39">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;false&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#40">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#41">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;false&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#42">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;false&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#43">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;false&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#44">&lt;object-array&gt;
+  &lt;string&gt;Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;false&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Highway</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[1d,540min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[2d,330min]</Attribute>
+					<Attribute name="ID">10</Attribute>
+				</Data>
+				<WorkflowModelElement>White-water Rafting</WorkflowModelElement>
+				<EventType>PLANITEM_MOVE</EventType>
+				<Timestamp>[2d,330min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,525min]</Attribute>
+					<Attribute name="ID">13</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,525min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,660min]</Attribute>
+					<Attribute name="ID">13</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>PLANITEM_MOVE</EventType>
+				<Timestamp>[1d,660min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,510min]</Attribute>
+					<Attribute name="ID">14</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#11">&lt;object-array&gt;
+  &lt;string&gt;Alaskan Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;510&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Alaskan Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,510min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[1d,750min]</Attribute>
+					<Attribute name="ID">15</Attribute>
+				</Data>
+				<WorkflowModelElement>Anchorage Motel</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,750min]</Attribute>
+					<Attribute name="ID">15</Attribute>
+				</Data>
+				<WorkflowModelElement>Anchorage Motel</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[1d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;4&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="Time">[1d,750min]</Attribute>
+					<Attribute name="ID">16</Attribute>
+				</Data>
+				<WorkflowModelElement>Hotel in Juneau</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[1d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,510min]</Attribute>
+					<Attribute name="ID">14</Attribute>
+				</Data>
+				<WorkflowModelElement>Alaskan Highway</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,510min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,660min]</Attribute>
+					<Attribute name="ID">13</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#45">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#46">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#12">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;660&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;15&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#47">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#48">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#49">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#50">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#51">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#13">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;660&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;15&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#13">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#14">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;double&gt;1.0&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,660min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[1d,750min]</Attribute>
+					<Attribute name="ID">16</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#52">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#53">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#54">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#55">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#56">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#14">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;750&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;0&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#6">&lt;object-array&gt;
+  &lt;string&gt;Juneau&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#15">&lt;object-array&gt;
+  &lt;string&gt;Hotel in Juneau&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;double&gt;0.614397644493479&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Hotel in Juneau</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[2d,330min]</Attribute>
+					<Attribute name="ID">10</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#57">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#58">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#15">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;330&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#59">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#60">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#61">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#62">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#63">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#16">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;330&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;120&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#16">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#17">&lt;object-array&gt;
+  &lt;string&gt;White-water Rafting&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;double&gt;1.0&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>White-water Rafting</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[2d,330min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[2d,525min]</Attribute>
+					<Attribute name="ID">17</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#64">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#65">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#66">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#67">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#17">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;525&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;15&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[2d,525min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[2d,555min]</Attribute>
+					<Attribute name="ID">18</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[2d,555min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[2d,525min]</Attribute>
+					<Attribute name="ID">17</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[2d,525min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[2d,555min]</Attribute>
+					<Attribute name="ID">18</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#18">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;555&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;15&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#19">&lt;object-array&gt;
+  &lt;string&gt;Super Fast Highway&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;555&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;15&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Super Fast Highway</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[2d,555min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[2d,750min]</Attribute>
+					<Attribute name="ID">19</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#68">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#69">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#70">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#71">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#72">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Sleep in Car</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[2d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Time">[2d,750min]</Attribute>
+					<Attribute name="ID">19</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#20">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;750&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;0&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#18">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#7">&lt;object-array&gt;
+  &lt;string&gt;Juneau&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.0&lt;/double&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#19">&lt;object-array&gt;
+  &lt;string&gt;Sleep in Car&lt;/string&gt;
+  &lt;int&gt;3&lt;/int&gt;
+  &lt;double&gt;1.0&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Sleep in Car</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[2d,750min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>FINISH_JOURNEY</EventType>
+				<Timestamp>[3d,0min]</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

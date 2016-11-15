@@ -1,0 +1,73 @@
+!1 Nested Xor Fragments
+
+!img-l http://files/images/Nested_Xor.png
+
+
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                 |
+|start           |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit  |split1  |                     |
+|createXorSplit  |split2  |                     |
+|createXorSplit  |split3  |                     |
+|createActivity  |A       |                     |
+|createActivity  |B       |                     |
+|createActivity  |C       |                     |
+|createActivity  |D       |                     |
+|createXorJoin   |join1   |                     |
+|createXorJoin   |join2   |                     |
+|createXorJoin   |join3   |                     |
+|link            |Start   |split1  |            |
+|link            |split1  |A       |            |
+|link            |split1  |split2  |            |
+|link            |split2  |B       |            |
+|link            |split2  |split3  |            |
+|link            |split3  |C       |            |
+|link            |split3  |D       |            |
+|link            |C       |join3   |            |
+|link            |D       |join3   |            |
+|link            |join3   |join2   |            |
+|link            |B       |join2   |            |
+|link            |join2   |join1   |            |
+|link            |A       |join1   |            |
+|link            |join1   |End     |            |
+
+
+|${IMPERATIVE_SESE_FIXTURE}                 |
+|start    |${IMPERATIVE_SESE_FIXTURE}       |
+|children |component   |1                   |
+|type     |component   |!-ProcessFragment-! |
+|store    |component[0]|xor1               ||
+|type     |xor1        |!-XorFragment-!     |
+|children |xor1        |2                   |
+|startNode|xor1        |split1              |
+|endNode  |xor1        |join1               |
+|store    |xor1[0]     |a                  ||
+|store    |xor1[1]     |xor2               ||
+|type     |a           |!-Polygon -!        |
+|name     |a[0]        |A                   |
+|type     |xor2        |!-XorFragment-!     |
+|startNode|xor2        |split2              |
+|endNode  |xor2        |join2               |
+|children |xor2        |2                   |
+|store    |xor2[0]     |b                  ||
+|store    |xor2[1]     |xor3               ||
+|type     |b           |!-Polygon -!        |
+|name     |b[0]        |B                   |
+|type     |xor3        |!-XorFragment-!     |
+|startNode|xor3        |split3              |
+|endNode  |xor3        |join3               |
+|children |xor3        |2                   |
+|store    |xor3[0]     |c                  ||
+|store    |xor3[1]     |d                  ||
+|type     |c           |!-Polygon -!        |
+|name     |c[0]        |C                   |
+|type     |d           |!-Polygon -!        |
+|name     |d[0]        |D                   |
+

@@ -1,0 +1,20 @@
+!1 Delete Edge Command
+
+|${BPMN_COMMAND_FIXTURE}                |
+|start          |${BPMN_COMMAND_FIXTURE}|
+|createActivity |A     |1 |100,50  |    |
+|createActivity |B     |2 |10,60   |    |
+|createActivity |C     |4 |100,600 |    |
+|createEdge     |A->B  |3 |1       |2 | |
+|createEdge     |A->C  |5 |1       |4 | |
+|containsElement|5     |true            |
+|containsElement|3     |true            |
+|deleteEdge     |3     |                |
+|containsElement|5     |true            |
+|containsElement|3     |false           |
+|deleteEdge     |5     |                |
+|containsElement|5     |false           |
+|containsElement|3     |false           |
+
+
+

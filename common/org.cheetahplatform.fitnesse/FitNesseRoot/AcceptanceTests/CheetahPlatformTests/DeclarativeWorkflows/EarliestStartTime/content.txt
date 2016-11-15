@@ -1,0 +1,21 @@
+!1 Earliest Start Time
+
+|${DECLARATIVE_CREATION_FIXTURE}                                   |
+|start                             |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                    |A        |                     |
+|createActivity                    |B        |                     |
+|createEarlierstStartTimeConstraint|A        |5:45        |       |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|B                               |
+|setTime           |2:7             |             |
+|getExecutableTasks|B                               |
+|setTime           |5:44             |             |
+|getExecutableTasks|B                               |
+|setTime           |5:45             |             |
+|getExecutableTasks|A,B                             |
+|setTime           |5:46             |             |
+|getExecutableTasks|A,B                             |
+

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Demoreplayer
+Bundle-SymbolicName: org.cheetahplatform.demoreplayer;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.cheetahplatform.demoreplayer.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.draw2d;bundle-version="3.5.1",
+ org.cheetahplatform.modeler;bundle-version="1.0.0",
+ org.cheetahplatform.modeler.admin.basic;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: library.jar

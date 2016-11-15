@@ -1,0 +1,45 @@
+!1 Max Select Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                          |
+|start                    |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity           |A         |                    |
+|createActivity           |B         |                    |
+|createActivity           |C         |                    |
+|createMaxSelectConstraint|A         |2         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|B,C                             |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|B,C                             |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|B,C                             |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|B,C                             |
+
+
+

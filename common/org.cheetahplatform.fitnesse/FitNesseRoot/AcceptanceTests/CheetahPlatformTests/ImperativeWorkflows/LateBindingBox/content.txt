@@ -1,0 +1,63 @@
+!1 Late Binding Box
+!img-l http://files/images/LateBindingBox.png
+
+
+
+
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                        |
+|start               |${IMPERATIVE_CREATION_FIXTURE}   |
+|createActivity      |A    |                           |
+|createActivity      |B    |                           |
+|createLateBindingBox|Box  |                           |
+|link                |Start|A          |               |
+|link                |A    |Box        |               |
+|link                |Box  |B          |               |
+|link                |B    |End        |               |
+|addToLateBindingBox|Box  |Box1a,Box1b|               |
+|addToLateBindingBox|Box  |Box2a,Box2b|               |
+
+|${IMPERATIVE_SESE_FIXTURE}                                      |
+|start   |${IMPERATIVE_SESE_FIXTURE}                             |
+|children|component   |1                                         |
+|type    |component   |!-ProcessFragment-!                       |
+|store   |component[0]|polygon                                 | |
+|children|polygon     |3                                         |
+|store   |polygon[0]  |a                                       | |
+|type    |a           |!-SingleEntrySingleExitNode-!             |
+|store   |polygon[1]  |box1                                    | |
+|type    |box1        |!-SingleEntrySingleExitLateBindingBox -!  |
+|children|box1        |2                                         |
+|store   |box1[0]     |sequence1                               | |
+|children|sequence1   |1                                         |
+|type    |sequence1   |!-ProcessFragment-!                       |
+|store   |box1[1]     |sequence2                               |||
+|type    |sequence1[0]|Polygon                                   |
+|children|sequence1[0]|2                                         |
+|store   |sequence1[0]|polygon1                                | |
+|store   |polygon1[0] |box1a                                   | |
+|type    |box1a       |!-SingleEntrySingleExitNode-!             |
+|name    |box1a       |Box1a                                     |
+|store   |polygon1[1] |box1b                                   | |
+|type    |box1b       |!-SingleEntrySingleExitNode-!             |
+|name    |box1b       |Box1b                                     |
+|children|sequence2   |1                                         |
+|type    |sequence2   |!-ProcessFragment-!                       |
+|store   |polygon[2]  |box2                                    |||
+|type    |box2        |!-SingleEntrySingleExitNode-!             |
+|type    |sequence2[0]|Polygon                                   |
+|children|sequence2[0]|2                                         |
+|store   |sequence2[0]|polygon2                                | |
+|store   |polygon2[0] |box2a                                   | |
+|type    |box2a       |!-SingleEntrySingleExitNode-!             |
+|name    |box2a       |Box2a                                     |
+|store   |polygon2[1] |box2b                                   | |
+|type    |box2b       |!-SingleEntrySingleExitNode-!             |
+|name    |box2b       |Box2b                                     |

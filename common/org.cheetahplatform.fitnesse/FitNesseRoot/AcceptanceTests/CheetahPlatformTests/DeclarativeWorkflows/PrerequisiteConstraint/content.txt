@@ -1,0 +1,23 @@
+!1 Prerequisite Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                             |
+|start                       |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity              |A         |                    |
+|createActivity              |B         |                    |
+|createActivity              |C         |                    |
+|createPrerequisiteConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,C                             |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|A,C                             |
+|launch            |A               |               |
+|complete          |A               |               |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|A,B,C                           |
+

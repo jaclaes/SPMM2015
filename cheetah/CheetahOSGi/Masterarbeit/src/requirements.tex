@@ -1,0 +1,80 @@
+\chapter{Requirements}
+\label{chapter:requirements}
+
+This section analyzes the strengths and weaknesses of the mashup composer tools which could be
+identified during the evaluation process and hence formulates the requirements for a software
+product which eliminates the weaknesses and provides means for realizing the introduced scenario
+(see Section \ref{sec:scenario}).
+
+\begin{itemize}
+  \item \textbf{Requirement 1: Simple User Interface}\newline The user interface that is provided by
+  the evaluated tools can be mostly handled with the mouse and supports convenient drag and drop
+  functionality. Hence, it does not need an extensive documentation and simple mashups can be designed
+  very quickly by end-users.\newline Since user interfaces are one of the strengths of the mashup
+  composers, they should be adopted and extended with the missing functionality, like grouping of
+  blocks (cf. Requirement 5).
+  \item \textbf{Requirement 2: Data Access and Processing}\newline As mashups and applications
+  respectively most likely require data from local databases or from the web it is necessary to
+  enable the access of a wide variety of data sources (from simple comma separated files
+  over databases, over web services to live status information from an airplane).\newline In order
+  to process the data which is received by the data access blocks it is necessary that each block can
+  send data to and receive data from every other block. This enables the implementation of data
+  conversion, aggregation and filtering components (cf. Requirement 3: Extensibility), which prepare
+  the data for further receiving blocks and therewith reduce data incompatibilities between
+  different building blocks.
+  \item \textbf{Requirement 3: Extensibility}\newline The inspected mashup composers provide useful
+  pre-built building blocks, but they are still not sufficient to cover every scenario, mashup or
+  application respectively. Hence, the catalog of building blocks has to be extensible to provide
+  displays for every kind of data and data access or processing functions for unfamiliar data
+  formats.\newline Although creating a block requires programming skills, the process of
+  implementing custom blocks should be as easy as possible and supported very well.
+  \item \textbf{Requirement 4: Running multiple Instances of a Block}\newline This requirement
+  is necessary to, for example, monitor multiple airplanes in parallel (see Section
+  \ref{sec:scenario}), where the same building block is required multiple times. As IBM Mashup
+  Center handles this problem quite well, this functionality should be adopted within the
+  implementation of the solution.
+  \item \textbf{Requirement 5: Grouping of Blocks}\newline This is one of the requirements which is
+  not fulfilled to its full extend by any of the inspected tools, but constitutes a major requirement
+  to fulfill the air ambulance scenario (e.g., when multiple flights have to be monitored at
+  the same time).\newline Grouping of blocks should be enabled either in the form of multiple
+  groups of components on a single user interface or in the form of multiple user interfaces, which are
+  easily switchable.\newline This leads to a better solution for the air ambulance scenario.
+  Having the grouping functionality, every block which displays information about the flight --
+  like a map with the current position of the airplane or a table which provides information about
+  crew and passengers -- can be arranged within a single group. In this way the information is
+  encapsulated and the different flights can be distinguished more easily.
+  \item \textbf{Requirement 6: Reusability of Groups}\newline The possibility of reusing groups is
+  the next major requirement to realize the air ambulance scenario and to alleviate the process of
+  developing more complex applications. Let us take the airplane monitor application which is
+  responsible for displaying real-time information about multiple airplanes in parallel. The
+  monitor of a single airplane consists of multiple different blocks and thus forms a group.
+  Without the ability to reuse a group the blocks would have to be rearranged for each
+  airplane.\newline Hence, applications which fulfill this requirement enable the saving of groups
+  and thus also the arrangement of whole groups on the working area. As a consequence, groups can be
+  handled like single building blocks and can be added to and removed from the mashup or application
+  respectively by using simple drag and drop mechanisms.
+  \item \textbf{Requirement 7: Hot Deployment and Life-cycle Management}\newline None of the
+  evaluated tools support hot deployment and life-cycle management and hence are not applicable for the
+  discussed scenario (see Section \ref{sec:scenario}).\newline The problem is, that once a mashup is
+  designed, executed and used it cannot be adapted to user or role specific needs. Therefore, a
+  framework is needed which supports the starting and stopping of components and groups at runtime
+  as well as the installation of absolutely new components within the framework. The different
+  states of a component, like installed, started and stopped must be handled by a life-cycle
+  management system, which furthermore enables the hot deployment of components.
+  \item \textbf{Requirement 8: Event Management}\newline As soon as a mashup becomes more complex
+  and a considerable amount of data is involved, effective event handling needs to be in place.
+  Imagine a data source block which has to send the whole data to each of the various interested
+  data display blocks as soon as only a single data entry is updated.\newline A better solution for
+  realizing this scenario would be to send an event as soon as the data is updated and if a display
+  block is interested in the new data, it can poll the data from the data source block.
+  Furthermore, the event management system can be extensively used to provide interested blocks
+  with information about all kinds of events, like, for example, technical problems of an airplane.
+  Therefore, it should be possible to declare blocks as event publishers as well as event handlers
+  or listeners respectively.\newline As a consequence, each block has to provide human readable
+  information about which events it can send to enable the receiver to react correctly.
+  \item \textbf{Requirement 9: Logging}\newline As long as the programmers of software
+  products cannot guarantee that their implementation is error-free, the integration of a logging mechanism is
+  very helpful to get information about the errors that happened. This functionality should be
+  integrated into every pre-built block as well as in the custom-built ones.\newline Furthermore, the
+  logging mechanism can be used to conduct data and process mining methods.
+\end{itemize}

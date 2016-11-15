@@ -1,0 +1,505 @@
+AbstractTreatmentWizardPage_Tutorial=Tutorial
+AbstractTreatmentWizardPage_Answer_Below=Please answer the questions below.
+AbstractTreatmentWizardPage_Error_popup_message=This is your fourth incorrect answer in this tutorial.\n\n\
+                                                Don't panic, this is not a problem. The questions are indeed formed in such a way that you may be \n\
+                                                tempted to select the wrong answers. It is then explained in the feedback why your answer was wrong \n\
+                                                and as such additional information is provided about certain nuances. This way of working on the one \n\
+                                                hand offers us the possibility to focus on especially these details of which you may not be thinking \n\
+                                                and on the other hand you are not overloaded with explanations for the questions you answered correctly.\n\n\
+                                                So don't worry when you answer a lot of questions incorrectly\! This is more or less our goal ;-)
+AbstractTreatmentWizardPage_Error_popup_title=Information
+AbstractTreatmentWizardPage_strong_disagree=strongly disagree
+AbstractTreatmentWizardPage_disagree=disagree
+AbstractTreatmentWizardPage_neutral=neutral
+AbstractTreatmentWizardPage_agree=agree
+AbstractTreatmentWizardPage_strong_agree=strongly agree
+
+FieldDependency1WizardPage_field_dependent=field dependent
+FieldDependency1WizardPage_Field_dependent_field_independent=One can be relatively field dependent or relatively field independent.
+FieldDependency1WizardPage_Field_dependent_is=People that are field dependent require context to understand material. They find it hard to \n\
+                                              abstract from details and they prefer specific examples while learning. For example, students \n\
+                                              that are field-dependent remember best when they study concrete cases. They may also like \n\
+                                              to memorize material \'by heart\', because this does not require to understand the (potentially \n\
+                                              missing) contextual information.
+FieldDependency1WizardPage_field_independent=field independent
+FieldDependency1WizardPage_Field_independent_is=People that are field independent do not rely so much on context to understand things. They \n\
+                                                tend to abstract from details very often and do not need specific examples to learn new \n\
+                                                material. For example, students that are field-independent can work on different parts of a \n\
+                                                syllabus in parallel, they frequently skip parts, which they may return to at a later time. They \n\
+                                                do not suffer from unstructured course materials.
+FieldDependency1WizardPage_source=\n(Source: Witkin, H., & Moore, C. (1977). Field-dependent and field-independent cognitive styles and their educational implications. Review of educational \n\
+                                  research, 47(1), 1-64.)
+
+FieldDependency2WizardPage_Agree=To what extent do you agree with this assessment of you?
+FieldDependency2WizardPage_Correct=Correct\! You are considered {0}.
+FieldDependency2WizardPage_Field_dependent_score=Field-dependent learners score 100% and field-independent learners score 0% in our measurement scale.
+FieldDependency2WizardPage_Incorrect=Not correct\! Please reconsider\!
+FieldDependency2WizardPage_Relatively_field_dependent=Relatively field-dependent
+FieldDependency2WizardPage_Relatively_field_independent=Relatively field-independent
+FieldDependency2WizardPage_source=\n(Source: Ekstrom, R., French, J., Harman, H., & Dermen, D. (1976). Manual for Kit of factor-referenced cognitive tests.\n\
+                                  Ekstrom, R., & Harman, H. (1976). Kit of factor-referenced cognitive tests.)
+FieldDependency2WizardPage_Your_score_was=Your score was {0}%
+FieldDependency2WizardPage_Your_score_was_which_is=Your score was {0}%. Where would you position yourself in the above chart: would you consider yourself:
+
+FieldDependency3WizardPage_Field_dependent_guideline1=Because you may have a short attention span, take frequent small breaks and work on \n\
+                                                      smaller parts at once.
+FieldDependency3WizardPage_Field_dependent_guideline2=Because you prefer contextual information, model in the provided order and try to keep all \n\
+                                                      parts of your model connected somehow.
+FieldDependency3WizardPage_Field_dependent_thus=Based on your field dependency score, we would recommend you to follow next guidelines while \n\
+                                                modeling in {0} (as explained earlier).
+FieldDependency3WizardPage_Field_in_dependent_thus_AO=an aspect-oriented manner
+FieldDependency3WizardPage_Field_in_dependent_thus_C=a combined manner
+FieldDependency3WizardPage_Field_in_dependent_thus_FO=a flow-oriented manner
+FieldDependency3WizardPage_Field_independent_thus=Based on your field-dependency score, we would recommend you to follow next guidelines while \n\
+                                                  modeling in {0} (as explained earlier).
+FieldDependency3WizardPage_Field_independent_guideline1=Don\'t be afraid to create the model in one take (working very focused and with few mental \n\
+                                                        breaks).
+FieldDependency3WizardPage_Field_independent_guideline2=Don\'t be afraid to temporarily skip parts.
+FieldDependency3WizardPage_Field_independent_guideline3=Don\'t be afraid to be working all over the model, in big parts or on different parts in parallel.
+FieldDependency3WizardPage_source1=\n(Source: Claes, J., Vanderfeesten, I., Gailly, F., Grefen, P., & Poels, G. (Submitted). The Structured Process Modeling Theory (SPMT) A cognitive view on why \n\
+                                   and how modelers benefit from structuring the process of process modeling. Information Systems Frontiers.)\n
+FieldDependency3WizardPage_source2=\n(Source: Witkin, H., & Moore, C. (1977). Field-dependent and field-independent cognitive styles and their educational implications. Review of educational \n\
+                                   research, 47(1), 1-64.\n\
+                                   Wooldridge, B., & Haimes-Bartolf, M. (2006). The field dependence/field independence learning styles: Implications for adult student diversity, outcomes \n\
+                                   assessment and accountability. In R. R. Sims & S. J. Sims (Eds.), Learning styles and learning: A Key to Meeting the Accountability Demands in Education (pp. \n\
+                                   237-257). New York: Nova Science Publishers, Inc.)
+
+FieldDependency4WizardPage_Reflect=Based on what you learned about field dependency, what do you want to pay attention to when \n\
+                                   modeling in the future?
+                                   
+IntroductionWizardPage_Intro1=You are now starting a process modeling tutorial. In this tutorial you will learn different things:
+IntroductionWizardPage_Intro2=When a task becomes complex, a structured approach can help you to deal with this \n\
+                              complexity.
+IntroductionWizardPage_Intro2b=structured approach
+IntroductionWizardPage_Intro3=Not every structured approach warrants the same results and the impact of the approach depends \n\
+                              on different personal factors.
+IntroductionWizardPage_Intro3b=personal factors
+IntroductionWizardPage_Intro4=You will be informed about three such factors, which we deemed relevant for process \n\
+                              modeling and for which we will present you information about your own psychological \n\
+                              preferences.
+IntroductionWizardPage_Intro4b=own psychological \npreferences
+IntroductionWizardPage_Intro5=Based on your individual cognitive capabilities and psychological preferences this tutorial will \n\
+                              help you to learn a process modeling approach that fits best with who you are.
+IntroductionWizardPage_Intro5b=approach that fits best with who you are
+IntroductionWizardPage_Intro6=In summary, at the end of this tutorial you will have learned about your own cognitive \n\
+                              capabilities and psychological preferences, and you will have been introduced to several specific \n\
+                              guidelines for process modeling that are matched with your own personality.
+
+LearningStyle1WizardPage_global_learning_style=global learning style
+LearningStyle1WizardPage_Global_learning_style_is=People with a global learning style learn in bits and pieces. They learn in intuitive leaps and \n\
+                                                  they do not feel they understand the presented material until they suddenly \'get it\'. For \n\
+                                                  example, students with a global learning style may study various seemingly unrelated \n\
+                                                  fragments of the syllabus and feel lost for days or weeks. Once they succeed in \'connecting \n\
+                                                  the dots\', they typically have a deeper and more divergent understanding.
+LearningStyle1WizardPage_sequential_global_learning_style=One can have a relatively sequential or a relatively global learning style.
+LearningStyle1WizardPage_sequential_learning_style=sequential learning style
+LearningStyle1WizardPage_Sequential_learning_style_is=People with a sequential learning style take in new material in the logical order it is \n\
+                                                      presented to them. For example, students with a sequential learning style may study a \n\
+                                                      syllabus chapter by chapter. They only proceed to the next chapter when they feel they \n\
+                                                      sufficiently master the current chapter.
+LearningStyle1WizardPage_source=\n(Source: Felder, R., & Silverman, L. (1988). Learning and teaching styles in engineering education. Engineering education, 78(June), 674-681.)
+
+LearningStyle2WizardPage_Agree=To what extent do you agree with this assessment of you?
+LearningStyle2WizardPage_Correct=Correct\! You are considered {0}.
+LearningStyle2WizardPage_In_between=In between
+LearningStyle2WizardPage_Incorrect=Not correct\! Please reconsider\!
+LearningStyle2WizardPage_Learning_style_score=Sequential learners score +11 and global learners score -11 in our measurement scale.
+LearningStyle2WizardPage_Relatively_global=Relatively global
+LearningStyle2WizardPage_Relatively_sequential=Relatively sequential
+LearningStyle2WizardPage_source=\n(Source: Neuberg, S., & Newsom, J. (1993). Personal need for structure: Individual differences in the desire for simpler structure. Journal of Personality and \n\
+                                Social Psychology, 65(1), 113-131.)
+LearningStyle2WizardPage_Your_score_was=Your score was {0}
+LearningStyle2WizardPage_Your_score_was_which_is=Your score was {0}. Where would you position yourself in the above chart: would you consider yourself:
+
+LearningStyle3WizardPage_Aspect_oriented=Aspect-oriented process modeling
+LearningStyle3WizardPage_Aspect_oriented_is=Aspect-oriented process modeling means that you focus consecutively on different aspects of the \n\
+                                            process model. Which these aspects are can vary. For example you may first focus on content and \n\
+                                            create all events, activities and gateways. Next, you may determine the order of nodes by \n\
+                                            connecting them with edges. Finally, you may iterate over the partial model a third time and work \n\
+                                            on the lay-out.\n\
+                                            It can be compared with writing a large text by first outlining the table of contents, then filling in \n\
+                                            the text between all headings, and afterwards working on formatting the whole text.
+LearningStyle3WizardPage_Combined=combined
+LearningStyle3WizardPage_Combined_is=They can also be combined. For example, you start creating the model in the order of the \n\
+                                     control flow. After some bigger chunk of the model is created, you take some time to lay-out \n\
+                                     the model so far, before you continue with the next chunk.
+
+LearningStyle3WizardPage_Flow_aspect_oriented=Based on learning style it can be advised to model rather flow oriented or rather aspect oriented.
+LearningStyle3WizardPage_Flow_oriented=Flow-oriented process modeling
+LearningStyle3WizardPage_Flow_oriented_is=Flow-oriented process modeling means that you try to construct a process model in small \n\
+                                          parts. You create, lay-out and format the parts from start towards the end. You work part by \n\
+                                          part and only when the current part is considered completely finished (content, activity \n\
+                                          labels, lay-out, edge routing, etcetera), you proceed to the next part. You hardly turn back \n\
+                                          to \'already completed\' parts afterwards. \n\
+                                          It can be compared with writing a large text chapter by chapter considering content, lay-out, \n\
+                                          formatting, figures, etcetera from the start.
+LearningStyle3WizardPage_Reflection_question=Do you think you applied one of the above styles the last time you created a process model? \n\
+                                             Which style?                                          
+LearningStyle3WizardPage_source=\n(Source: Claes, J., Vanderfeesten, I., Pinggera, J., Reijers, H. A., Weber, B., & Poels, G. (2015). A visual analysis of the process of process modeling. \n\
+                                Information Systems and e-Business Management, 13(1), 147-190.)
+LearningStyle3WizardPage_Style_aspect_oriented=Clearly aspect oriented
+LearningStyle3WizardPage_Style_combined=Clearly combined
+LearningStyle3WizardPage_Style_dont_know=I really don't remember
+LearningStyle3WizardPage_Style_flow_oriented=Clearly flow oriented
+LearningStyle3WizardPage_Style_none_of_the_above=None of the above (at least not consistently)
+LearningStyle3WizardPage_Style_somewhat_aspect_oriented=Rather aspect oriented
+LearningStyle3WizardPage_Style_somewhat_flow_oriented=Rather flow oriented
+
+LearningStyle4WizardPage_Aspect_oriented=Aspect-oriented process modeling
+LearningStyle4WizardPage_Assess_screenshots=Below are three screenshots of a single model being constructed, taken at consecutive times \n\
+                                            during modeling. Which of the aforementioned styles is being applied in this modeling session?
+LearningStyle4WizardPage_Combined=Combination of flow-oriented and aspect-oriented process modeling
+LearningStyle4WizardPage_Correct=Correct\! The above example illustrates {0}.
+LearningStyle4WizardPage_Flow_oriented=Flow-oriented process modeling
+LearningStyle4WizardPage_FO_AO=Incorrect\! The picture shows that all parts were being completed immediately. That is \n\ 
+                               typically not the case for aspect-oriented process modeling where first one aspect is \n\
+                               completely finished (e.g., adding all nodes) and at that moment the other aspects were \n\
+                               thus not yet considered (e.g., lay-outing the nodes).
+LearningStyle4WizardPage_FO_C=Incorrect\! The picture shows that all parts were being completed immediately. That is \n\ 
+                              typically not the case for combined process modeling where finishing the parts is somewhat \n\
+                              postponed. \n\
+                              Note that this picture actually does possibly represent combined process modeling if you \n\
+                              assume that the random times at which the screenshots were taken by coincidence were these \n\
+                              moments where all aspect of some bigger chunks were finished...
+LearningStyle4WizardPage_AO_FO=Incorrect\! The picture shows that first nodes were created, then arrows were drawn and \n\
+                               afterwards the model was finished. That is typically not the case for flow-oriented process \n\
+                               modeling where one models in small parts that are immediately finished as completely as possible.
+LearningStyle4WizardPage_AO_C=Incorrect\! The picture shows that first nodes were created, then arrows were drawn and \n\
+                              afterwards the model was finished. That is typically not the case for combined process \n\
+                              modeling where finishing the parts is not delayed so long..
+LearningStyle4WizardPage_C_FO=Incorrect\! The picture shows on the second screenshot that one has finished some bigger chunk \n\
+                              in the mean while (the part before the gateway was finished before continuing working further in \n\
+                              the model). That is typically not the case for flow-oriented process modeling where one models \n\
+                              in small parts that are immediately finished as completely as possible.
+LearningStyle4WizardPage_C_AO=Incorrect\! The picture shows that in the beginning no arrows were drawn, but after a while some \n\
+                              nodes were already connected with arrows even if not all nodes were present yet. That is typically \n\
+                              not the case for aspect-oriented process modeling where first all nodes would have been created (=content \n\
+                              aspect) before they would have been connected with arrows (=order aspect).
+
+LearningStyle5WizardPage_Aspect_oriented=Aspect oriented: aspect by aspect
+LearningStyle5WizardPage_Below_is=Below is a more graphical summary of the three identified modeling styles.
+LearningStyle5WizardPage_Combined=Combined
+LearningStyle5WizardPage_Flow_oriented=Flow oriented: part by part
+
+LearningStyle6WizardPage_Aspect_oriented=aspect-oriented
+LearningStyle6WizardPage_Aspect_oriented_guideline1=This way of working fits you best because you are considered a relatively global learner.
+LearningStyle6WizardPage_Aspect_oriented_guideline2=Global learners make intuitive leaps and are better in divergent thinking.
+LearningStyle6WizardPage_Aspect_oriented_guideline3=Global learners sometimes prefer to jump directly to more complex parts.
+LearningStyle6WizardPage_Aspect_oriented_guideline4=Therefore, global learners may benefit from considering one aspect at a time, while focusing \n\
+                                                    on the whole model at once for each aspect.
+LearningStyle6WizardPage_Aspect_oriented_guideline5=The aspect-oriented modeling style accords to these principles.
+LearningStyle6WizardPage_Aspect_oriented_thus=Based on your personal learning style, we would recommend you to create models in an \n\
+                                              aspect-oriented fashion.
+LearningStyle6WizardPage_Combined=combined
+LearningStyle6WizardPage_Combined_guideline1=This way of working fits you best because you are considered in between a sequential and global \n\
+                                             learner.
+LearningStyle6WizardPage_Combined_guideline2=Sequential learners benefit from having a steady modeling pace and absorb information in \n\
+                                             small connected chunks, step-by-step.
+LearningStyle6WizardPage_Combined_guideline3=Global learners make intuitive leaps and sometimes prefer to directly jump to more complex \n\
+                                             parts, mostly focusing on only one aspect of the solution.
+LearningStyle6WizardPage_Combined_guideline4=The combined modeling style accords to these principles.
+LearningStyle6WizardPage_Combined_thus=Based on your personal learning style, we would recommend you to create models in a \n\
+                                       combined fashion.
+LearningStyle6WizardPage_Flow_oriented=flow-oriented
+LearningStyle6WizardPage_Flow_oriented_guideline1=This way of working fits you best because you are considered a relatively sequential learner.
+LearningStyle6WizardPage_Flow_oriented_guideline2=Sequential learners like to progress in a steady modeling pace.
+LearningStyle6WizardPage_Flow_oriented_guideline3=Sequential learners absorb information in small connected chunks.
+LearningStyle6WizardPage_Flow_oriented_guideline4=Sequential learners progress logically, step-by-step, in consecutive blocks.
+LearningStyle6WizardPage_Flow_oriented_guideline5=The flow-oriented modeling style accords to these principles.
+LearningStyle6WizardPage_Flow_oriented_thus=Based on your personal learning style, we would recommend you to create models in a \n\
+                                            flow-oriented fashion.
+LearningStyle6WizardPage_In_between=in between
+LearningStyle6WizardPage_Relatively_global=relatively global learner
+LearningStyle6WizardPage_Relatively_sequential=relatively sequential learner
+LearningStyle6WizardPage_source1=\n(Source: Claes, J., Vanderfeesten, I., Gailly, F., Grefen, P., & Poels, G. (Submitted). The Structured Process Modeling Theory (SPMT) A cognitive view on why \n\
+                                 and how modelers benefit from structuring the process of process modeling. Information Systems Frontiers.)\n
+LearningStyle6WizardPage_source2=\n(Source: Felder, R., & Silverman, L. (1988). Learning and teaching styles in engineering education. Engineering education, 78(June), 674-681.\n\
+                                 Pask, G. (1988). Learning strategies, teaching strategies, and conceptual or learning style. Learning strategies and learning styles.\n\
+                                 Pask, G. (1976). Styles and Strategies of Learning. British Journal of Educational Psychology, 46(2), 128-148.)
+
+LearningStyle7WizardPage_AO_screencast=Now play the video to familiarize yourself with the aspect-oriented modeling style.
+LearningStyle7WizardPage_C_screencast=Now play the video to familiarize yourself with the combined modeling style.
+LearningStyle7WizardPage_FO_screencast=Now play the video to familiarize yourself with the flow-oriented modeling style.
+LearningStyle7WizardPage_AO_video_not_available=If you can't play the video, please go to http://www.janclaes.info/screencasts/ao1.htm
+LearningStyle7WizardPage_C_video_not_available=If you can't play the video, please go to http://www.janclaes.info/screencasts/c.htm
+LearningStyle7WizardPage_FO_video_not_available=If you can't play the video, please go to http://www.janclaes.info/screencasts/fo.htm
+
+
+LearningStyle8WizardPage_Reflect=Based on what you learned, which attention points are you going to focus on? It may help to \n\
+                                 reflect on how you think you usually work when you write a text, produce program code or \n\
+                                 construct a model and to write down what you do well and what you want to change.
+
+NeedForStructure1WizardPage_high_desire=high desire for structure
+NeedForStructure1WizardPage_High_desire_thus=People that have a high desire for structure tend to add structure wherever they can. They \n\
+                                             create and use lists, calendars, reminders, labels, etcetera. Students with a high desire for \n\
+                                             structure spend a lot of effort in structuring their learning material. They may underline or \n\
+                                             highlight the important parts of text, they classify notes or may mark chapters in a book, they \n\
+                                             make detailed summaries. Usually they have a fixed approach for this, which they apply \n\
+                                             consistently on each different course. They meticulously plan their study activities and keep \n\
+                                             evaluating their progress.
+NeedForStructure1WizardPage_High_low_desire=One can have a relatively high or a relatively low desire for structure.
+NeedForStructure1WizardPage_low_desire=low desire for structure 
+NeedForStructure1WizardPage_Low_desire_thus=People that have a low desire for structure do not naturally feel an urge to impose structure \n\
+                                            on chaotic material. Therefore, they may want to approach course material in the way it is \n\
+                                            presented. Nevertheless, inspired by study approaches they learned, some students with a \n\
+                                            low desire for structure may also try to develop structured systems; but usually they fail in \n\
+                                            using them consistently. They don\'t enjoy these structuring activities and often they have the \n\
+                                            impression that it rather slows them down. 
+NeedForStructure1WizardPage_source=\n(Source: Neuberg, S., & Newsom, J. (1993). Personal need for structure: Individual differences in the desire for simpler structure. Journal of Personality and \n\
+                                   Social Psychology, 65(1), 113-131.)
+
+NeedForStructure2WizardPage_Agree=To what extent do you agree with this assessment of you?
+NeedForStructure2WizardPage_Correct=Correct\! You are considered {0}.
+NeedForStructure2WizardPage_Incorrect=Not correct\! Please reconsider\!
+NeedForStructure2WizardPage_Relatively_high_desire=Relatively high desire for structure
+NeedForStructure2WizardPage_Relatively_low_desire=Relatively low desire for structure
+NeedForStructure2WizardPage_Desire_score=People with a high desire for structure score 7 and people with a low desire for structure score 1 \n\
+                                         in our measurement scale.
+NeedForStructure2WizardPage_source=\n(Source: Neuberg, S., & Newsom, J. (1993). Personal need for structure: Individual differences in the desire for simpler structure. Journal of Personality and \n\
+                                   Social Psychology, 65(1), 113-131.)
+NeedForStructure2WizardPage_Your_score_was=Your score was {0}
+NeedForStructure2WizardPage_Your_score_was_which_is=Your score was {0}. Where would you position yourself in the above chart: would you consider yourself:
+
+NeedForStructure3WizardPage_High_desire_thus=Based on your desire for structure score, you should be aware of next consequences.\n
+NeedForStructure3WizardPage_High_desire_guideline1=Because you have a relatively high desire for structure you may benefit not so much from \n\
+                                                   support to help you structure your modeling approach.
+NeedForStructure3WizardPage_High_desire_guideline2=This means you may feel that the provided guidelines are not new to you as you would apply \n\
+                                                   them anyway.
+NeedForStructure3WizardPage_High_desire_guideline3=At the same time, it also implies that you may like us to support you to structure your modeling \n\
+                                                   approach.
+NeedForStructure3WizardPage_High_desire_guideline4=This means you may enjoy trying these guidelines and using them to perfect your own \n\
+                                                   structuring style.
+NeedForStructure3WizardPage_Low_desire_thus=Based on your desire for structure score, you should be aware of next consequences.\n
+NeedForStructure3WizardPage_Low_desire_guideline1=Because you have a relatively low desire for structure you may benefit a lot from support to help \n\
+                                                  you structure your modeling approach.
+NeedForStructure3WizardPage_Low_desire_guideline2=This means you may improve much when applying the guidelines, even if they do not feel \n\
+                                                  natural to you.
+NeedForStructure3WizardPage_Low_desire_guideline3=At the same time, it also implies that you may not like us to support you to structure your \n\
+                                                  modeling approach.
+NeedForStructure3WizardPage_Low_desire_guideline4=This means you may not enjoy trying these guidelines and using them to perfect your own \n\
+                                                  structuring style.
+NeedForStructure3WizardPage_Low_desire_guideline5=Nevertheless, we would like to ask you to make an effort to try to follow the directions of \n\
+                                                  this tutorial as precise as possible.
+
+NeedForStructure4WizardPage_Reflect=Based on what you learned about desire for structure, what do you want to pay attention to \n\
+                                    when modeling in the future?
+
+                                    
+Quiz1WizardPage_Introduction=You now know something about learning style. Some details were not really discussed though. But \n\
+                             maybe you have guessed them by now. Did you learn enough to answer the next questions right?\n\
+                             You can keep trying until you find the correct answer, but all your attempts will be logged.\n\
+                             Attention: don't think too much of how you would assess yourself, but try to answer based on what \n\
+                             you have learned in this tutorial!
+Quiz1WizardPage_Question1=Which of these statements is correct?
+Quiz1WizardPage_Question1_answer1=Most persons tend to work automatically in a way that allows them to maximize their potential.
+Quiz1WizardPage_Question1_answer2=In any situation every person performs better if (s)he works in a more structured way.
+Quiz1WizardPage_Question1_answer3=Only in complex cases every person performs better if (s)he works in a more structured way.
+Quiz1WizardPage_Question1_answer4=The more structured someone works, the better results can be expected in certain cases.
+Quiz1WizardPage_Question1_feedback1=\ \ \ \ \ > INCORRECT. On the contrary\! A lot of people do not work in a way that guarantees the best results.
+Quiz1WizardPage_Question1_feedback2=\ \ \ \ \ > INCORRECT. Working more structured only improves results in certain cases.
+Quiz1WizardPage_Question1_feedback3=\ \ \ \ \ > CORRECT! When cases are rather simple the way of working doesn\'t matter that much.
+Quiz1WizardPage_Question1_feedback4=\ \ \ \ \ > INCORRECT. It is not about how much structuredness, but rather about which way of structuring.
+
+Quiz2WizardPage_Question2_B=You are considered to be in between sequential and global learners. Which of these statements is correct?
+Quiz2WizardPage_Question2_B_answer1=In between learners can be recognized by the way they usually combine flow-oriented and \n\
+                                    aspect-oriented approaches.
+Quiz2WizardPage_Question2_B_answer2=In between learners fortunately always combine the benefits of both sequential and global learners.
+Quiz2WizardPage_Question2_B_answer3=In between learners unfortunately always combine the drawbacks of both sequential and global learners.
+Quiz2WizardPage_Question2_B_answer4=In between learners should tackle some problems just as sequential learners, others as global learners \n\
+                                    and for some problems they combine approaches from sequential and global learners.
+Quiz2WizardPage_Question2_B_feedback1=\ \ \ \ \ > INCORRECT. Remember that not everyone applies a style that fits them most.\n\n
+Quiz2WizardPage_Question2_B_feedback2=\ \ \ \ \ > INCORRECT. You are considered in between because it was not conclusive if you are sequential or global \n\
+                                      \ \ \ \ \ learner. You may or may not combine benefits of both other types of learners.\n
+Quiz2WizardPage_Question2_B_feedback3=\ \ \ \ \ > INCORRECT. You are considered in between because it was not conclusive if you are sequential or global \n\
+                                      \ \ \ \ \ learner. You may or may not combine drawbacks of both other types of learners.\n
+Quiz2WizardPage_Question2_B_feedback4=\ \ \ \ \ > CORRECT! It is probably helpful to work in a structured manner, but how you structure your way \n\
+                                      \ \ \ \ \ of modeling is up to you. You can work flow-oriented, aspect-oriented, switch between both of \n\
+                                      \ \ \ \ \ them and/or try to combine both ways of working.
+Quiz2WizardPage_Question2_G=You are considered to be a relatively global learner. Which of these statements is correct?
+Quiz2WizardPage_Question2_G_answer1=Global learners can be recognized by the way they usually carry out tasks in an aspect-oriented way.
+Quiz2WizardPage_Question2_G_answer2=Global learners are faster than sequential learners because global learners have a deeper understanding.
+Quiz2WizardPage_Question2_G_answer3=Global learners mostly like to first tackle the most difficult parts of a problem.
+Quiz2WizardPage_Question2_G_answer4=Global learners sometimes work on very different parts of a problem in parallel, but mostly somehow \n\
+                                    they still feel these parts are connected.
+Quiz2WizardPage_Question2_G_feedback1=\ \ \ \ \ > INCORRECT. Remember that not everyone applies a style that fits them most.\n
+Quiz2WizardPage_Question2_G_feedback2=\ \ \ \ \ > INCORRECT. Global learners do often end up understanding more, but sequential learners tend to be faster.\n
+Quiz2WizardPage_Question2_G_feedback3=\ \ \ \ \ > INCORRECT. Global learners have no difficulty to do so, but it is not per se their preferred approach.\n
+Quiz2WizardPage_Question2_G_feedback4=\ \ \ \ \ > CORRECT! The main thing is that they tend to work in parallel and although they may take big \n\
+                                      \ \ \ \ \ leaps between parts to them the parts unconsciously still feel connected.
+Quiz2WizardPage_Question2_S=You are considered to be a relatively sequential learner. Which of these statements is correct?
+Quiz2WizardPage_Question2_S_answer1=Sequential learners can be recognized by the way they usually carry out tasks sequentially.
+Quiz2WizardPage_Question2_S_answer2=Sequential learners are slower than global learners because global learners have a deeper understanding.
+Quiz2WizardPage_Question2_S_answer3=Sequential learners seem to love to tackle problems in the order they are presented to them, \n\
+                                    but this does not mean they usually have a steady progression tempo.
+Quiz2WizardPage_Question2_S_answer4=Sequential learners like to gradually shift attention from one part of the problem to another \n\
+                                    according to a for them meaningful series of small steps.
+Quiz2WizardPage_Question2_S_feedback1=\ \ \ \ \ > INCORRECT. Remember that not everyone applies a style that fits them most.\n
+Quiz2WizardPage_Question2_S_feedback2=\ \ \ \ \ > INCORRECT. Global learners do often end up understanding more, but sequential learners tend to be faster.\n
+Quiz2WizardPage_Question2_S_feedback3=\ \ \ \ \ > INCORRECT. Sequential learners usually do progress in a steady pace.\n
+Quiz2WizardPage_Question2_S_feedback4=\ \ \ \ \ > CORRECT! The order of steps they consider meaningful does not necessarily make sense to \n\
+                                      \ \ \ \ \ everybody though.
+                                      
+Quiz3WizardPage_Question3_B=You are advised to work in a combined way. Which of these statements is correct?
+Quiz3WizardPage_Question3_B_answer1=Combined modeling can be seen as aspect-oriented modeling, but each aspect can be returned \n\
+                                    to at different times, each time handling the aspect for one big chunk of the model.
+Quiz3WizardPage_Question3_B_answer2=Combined modeling can be seen as flow-oriented modeling, but with far bigger chunks that are \n\
+                                    worked on and finished consecutively.
+Quiz3WizardPage_Question3_B_answer3=Combined modeling is less structured than flow-oriented or aspect-oriented modeling, but it has \n\
+                                    other advantages for modelers that are considered in between sequential and global learners.
+Quiz3WizardPage_Question3_B_answer4=Combined modeling is the best technique for modelers that are considered in between \n\
+                                    sequential and global learners.
+Quiz3WizardPage_Question3_B_feedback1=\ \ \ \ \ > CORRECT\! For example, one can work on lay-out at different times and each time the lay-out \n\
+                                      \ \ \ \ \ of a considerable chunk of the model is being handled.\n
+Quiz3WizardPage_Question3_B_feedback2=\ \ \ \ \ > INCORRECT. It is not necessary to finish up the bigger chunks completely before continuing to \n\
+                                      \ \ \ \ \ other chunks. It is for example allowed to postpone working on lay-out of a certain chunk until it \n\
+                                      \ \ \ \ \ feels suitable to work on it.
+Quiz3WizardPage_Question3_B_feedback3=\ \ \ \ \ > INCORRECT. It is not per se less structured, it is just structured otherwise. Also, each approach \n\
+                                      \ \ \ \ \ can be applied meticulously or only approximately, which says more about its structuredness.\n
+Quiz3WizardPage_Question3_B_feedback4=\ \ \ \ \ > INCORRECT. In general this may be true, but it cannot be ruled out that for some in between \n\
+                                      \ \ \ \ \ learners pure flow-oriented or pure aspect-oriented modeling will suit better.\n
+Quiz3WizardPage_Question3_G=You are advised to work in an aspect-oriented way. Which of these statements is correct?
+Quiz3WizardPage_Question3_G_answer1=Aspect-oriented modeling implies that it is allowed to work in each aspect on the model \n\
+                                    elements in any order.
+Quiz3WizardPage_Question3_G_answer2=Aspect-oriented modeling implies that you should first create the nodes of the model, then \n\
+                                    connect them with edges and only afterwards work on lay-out and formatting.
+Quiz3WizardPage_Question3_G_answer3=Aspect-oriented modeling implies that you don\'t create activities anymore once you started \n\
+                                    lay-outing the model.
+Quiz3WizardPage_Question3_G_answer4=Aspect-oriented modeling implies that it is not allowed to immediately put elements at the correct \n\
+                                    position in the model.
+Quiz3WizardPage_Question3_G_feedback1=\ \ \ \ \ > CORRECT\! To most people it makes sense to rather work in the order of the activities in the \n\
+                                      \ \ \ \ \ process, but it is certainly allowed to deviate from this order if that makes sense to you.\n
+Quiz3WizardPage_Question3_G_feedback2=\ \ \ \ \ > INCORRECT. You should focus on different aspects, one at a time. But they can be other aspects \n\
+                                      \ \ \ \ \ than in the example or in another order. After creating activities one can for example first be \n\
+                                      \ \ \ \ \ concerned about optimizing the labels of the activities before connecting them with edges.
+Quiz3WizardPage_Question3_G_feedback3=\ \ \ \ \ > INCORRECT. The main thing is to mainly focus on one aspect at a time while for each aspect \n\
+                                      \ \ \ \ \ considering the model rather globally. Of course it is still allowed to correct mistakes at any time.\n
+Quiz3WizardPage_Question3_G_feedback4=\ \ \ \ \ > INCORRECT. You should not aim to try to perfect every aspect from the beginning, but that does \n\
+                                      \ \ \ \ \ not mean it isn\'t allowed to think about the other aspects if this seems appropriate. However, be \n\
+                                      \ \ \ \ \ careful not to drift away from the aspect-oriented way of working!
+Quiz3WizardPage_Question3_S=You are advised to work in a flow-oriented way. Which of these statements is correct?
+Quiz3WizardPage_Question3_S_answer1=Flow-oriented modeling implies that it is allowed to return to already finished parts in order \n\
+                                    to alter, add or remove model elements of that parts.
+Quiz3WizardPage_Question3_S_answer2=Flow-oriented modeling implies that you create, position and format every model element \n\
+                                    separately and in one take before continuing with the next model element.
+Quiz3WizardPage_Question3_S_answer3=Flow-oriented modeling implies that you never create elements further on in the model until \n\
+                                    the whole model up until that part is finished.
+Quiz3WizardPage_Question3_S_answer4=Flow-oriented modeling implies that most model elements are never touched again once \n\
+                                    they were created.
+Quiz3WizardPage_Question3_S_feedback1=\ \ \ \ \ > CORRECT\! It is advised to try to finish parts before continuing, this does not mean you are \n\
+                                      \ \ \ \ \ not allowed to correct mistakes that you discover in the \u2018already finished\u2019 parts.\n
+Quiz3WizardPage_Question3_S_feedback2=\ \ \ \ \ > INCORRECT. Work part by part. Each part can consists of multiple (but few) model elements. \n\
+                                      \ \ \ \ \ However, if this should feel better, it is allowed to work on a single element at a time.\n
+Quiz3WizardPage_Question3_S_feedback3=\ \ \ \ \ > INCORRECT. The main thing is to work in small parts that you finish before turning your \n\
+                                      \ \ \ \ \ attention to other parts. Further, it is advised to model rather in the order of the process \n\
+                                      \ \ \ \ \ flow, but exceptions are allowed (e.g., when the case description is ordered otherwise).
+Quiz3WizardPage_Question3_S_feedback4=\ \ \ \ \ > INCORRECT. It is advised not to proceed until each part is finished, which does not mean it \n\
+                                      \ \ \ \ \ can\'t take a few revision operations before you consider a part as finished.\n
+Quiz4WizardPage_aspect_oriented=aspect-oriented
+Quiz4WizardPage_combined=combining flow-oriented and aspect-oriented
+Quiz4WizardPage_flow_oriented=flow-oriented
+Quiz4WizardPage_Introduction=You now know something about field-dependency and desire for structure. Lets see which details \n\
+                             need further explanation. \n\
+                             Again, you can keep trying until you find the correct answer, but all your attempts will be logged.
+Quiz4WizardPage_Question4_FD=You are considered relatively field-dependent. Which of these statements is correct?
+Quiz4WizardPage_Question4_FD_answer1=You work best if you follow the order of the case description. Depending on this order, it may \n\
+                                     contradict with your instructions to model {0}.
+Quiz4WizardPage_Question4_FD_answer2=You work best if you take frequent short mental breaks. This does contradict with your \n\
+                                     instructions to model {0}.
+Quiz4WizardPage_Question4_FD_answer3=Field-dependent people like to know details. The more details they know, the more they like it.
+Quiz4WizardPage_Question4_FD_answer4=Field-dependent people never like abstract problems or solutions. If they cannot imagine \n\
+                                     how to link it to a concrete situation, they feel lost.
+Quiz4WizardPage_Question4_FD_B_feedback1=INCORRECT. The main thing about combined modeling is that you work in bigger chunks and \n\
+                                         when you feel like it, take some time to turn to different aspects of these chunks. The order \n\
+                                         of focusing on the different model elements of each chunk is not specified by the combined \n\
+                                         style; but because of your field-dependency it is advised to follow the case description order.
+Quiz4WizardPage_Question4_FD_B_feedback2=INCORRECT. You are instructed to work on similar aspects of larger chunks before turning to \n\
+                                         other aspects or other chunks. This still allow to take short mental breaks in between. A \n\
+                                         mental break can be to revise your actions of the current aspect in the current chunk.
+Quiz4WizardPage_Question4_FD_feedback3=INCORRECT. You need specific information, and you don\'t like abstract information. This does \n\
+                                       not automatically mean that you like to know a lot more details than you need for \n\
+                                       understanding a problem or solution.
+Quiz4WizardPage_Question4_FD_feedback4=CORRECT\! Field-dependent people need concrete information in order to not feel lost when \n\
+                                       trying to understand problems and proposed solutions. You rather like to go search for a \n\
+                                       cable named \'XT392.44\' than to have to search for any cable that is \'water-resistant\', \n\
+                                       \'conducting\' and preferably blue or black because of the \'automobile color-coding conduct\'.
+Quiz4WizardPage_Question4_FD_G_feedback1=INCORRECT. The main thing about aspect-oriented modeling is that you work aspect by \n\
+                                         aspect. The order in which you focus on the different model elements during each aspect is \n\
+                                         not specified for global learners; but because you are relatively field-dependent, you better \n\
+                                         follow the order of the case description.
+Quiz4WizardPage_Question4_FD_G_feedback2=INCORRECT. You are instructed to work aspect by aspect. This still allows to take short mental \n\
+                                         breaks when not all model elements are considered. A mental break can be to revise your \n\
+                                         actions within the current aspect so far or to plan some future actions already.
+Quiz4WizardPage_Question4_FD_S_feedback1=INCORRECT. The main thing about flow-oriented modeling is that you work in small parts \n\
+                                         which you complete before continuing with other parts. Field-dependent sequential learners \n\
+                                         should still follow the order of the case description (even if this does not accord with the \n\
+                                         process flow, which you would probably prefer).
+Quiz4WizardPage_Question4_FD_S_feedback2=INCORRECT. The idea of working consecutively at smaller parts fits perfectly with having a \n\
+                                         short mental break after each part. In fact, working on secondary aspects of each part (such as \n\
+                                         lay-out), probably does not take much cognitive effort and thus it serves as a mental break\!
+Quiz4WizardPage_Question4_FID=You are considered relatively field-independent. Which of these statements is correct?
+Quiz4WizardPage_Question4_FID_answer1=It is okay to sometimes temporarily skip parts. This may contradict with your instructions to \n\
+                                      model {0}. 
+Quiz4WizardPage_Question4_FID_answer2=Field-independent people like abstract problems or solutions. They usually find it difficult to \n\
+                                      translate them to specific problems or solutions.
+Quiz4WizardPage_Question4_FID_answer3=Field-independent people don\u2019t like to know details. The more details they know, the less \n\
+                                      they like it.
+Quiz4WizardPage_Question4_FID_answer4=Field-independent people have no difficulty at all with abstract problems or solutions.
+Quiz4WizardPage_Question4_FID_C_feedback1=INCORRECT. The main thing about combined modeling is that you work in bigger chunks and \n\
+                                          when you feel like it, take some time to turn to different aspects of these chunks. The order of \n\
+                                          focusing on the different model elements of each chunk is not specified by the combined style.
+Quiz4WizardPage_Question4_FID_feedback2=INCORRECT. They may or may not have difficulties in translating their abstract thoughts into \n\
+                                        specific terminology. They tend to reason at an abstract level, but how they express \n\
+                                        themselves best depends on other factors.
+Quiz4WizardPage_Question4_FID_feedback3=INCORRECT. You don\'t need specific information to understand things. This does not \n\
+                                        automatically mean that you don\'t like to know more details than you need for \n\
+                                        understanding a problem or solution.
+Quiz4WizardPage_Question4_FID_feedback4=CORRECT\! Field-independent people don\'t need concrete information in order to understand \n\
+                                        problems and proposed solutions. You may even prefer to go search for any cable that is \n\
+                                        \'water-resistant\', \'conducting\' and preferably blue or black because of the \'automobile color-\n\
+                                        coding conduct\' than to have to search for a cable named \'XT392.44\'.
+Quiz4WizardPage_Question4_FID_G_feedback1=INCORRECT. The main thing about aspect-oriented modeling is that you work aspect by aspect. \n\
+                                          The order in which you focus on the different model elements during each aspect is not \n\
+                                          specified for global learners. Therefore it is okay to temporarily skip parts if you feel this would \n\
+                                          be helpful.
+Quiz4WizardPage_Question4_FID_S_feedback1=INCORRECT. The main thing about flow-oriented modeling is that you work in small parts \n\
+                                          which you complete before continuing with other parts. The order in which you focus on these \n\
+                                          smaller parts is not that important. It can feel more natural to follow the order of the process \n\
+                                          flow, the order of the case description or another order.
+
+                                    
+Summary1WizardPage_Desire_for_structure=Having a {0} (you scored {1} in a range from 7 to 1)
+Summary1WizardPage_Field_dependency=A {0} (you scored {1} in a range from 100% to 0%)
+Summary1WizardPage_Field_dependency_guideline_FD=therefore, we recommend you to (1) take frequent small breaks and work on smaller parts at once and \n\
+                                                 (2) model in the provided order and try to keep all parts of your model connected somehow.
+Summary1WizardPage_Field_dependency_guideline_FID=therefore, we recommend you to (1) not be afraid to create the model in one take (working very focused \n\
+                                                  and with few mental breaks), (2) not be afraid to temporarily skip parts, (3) not be afraid to be working all \n\
+                                                  over the model, in big parts or on different parts in parallel.
+Summary1WizardPage_field_dependent=field-dependent person
+Summary1WizardPage_field_independent=field-independent person
+Summary1WizardPage_global_learner=global learner
+Summary1WizardPage_high_desire=high desire for structure
+Summary1WizardPage_in_between_learner=in between sequential and global learner
+Summary1WizardPage_Learning_style=A {0} (you scored {1} in a range from +11 to -11)
+Summary1WizardPage_Learning_style_guideline_AO=therefore, we recommend you to apply aspect-oriented modeling approach (modeling aspect by aspect, \n\
+                                               regardless which order and combination of aspects you prefer: e.g. content, order, structure, lay-out, text \n\
+                                               labels, edge routing, ...).
+Summary1WizardPage_Learning_style_guideline_C=therefore, we recommend you to apply combination of flow-oriented and aspect-oriented modeling \n\
+                                              approach (modeling chunk by chunk, and for each (large) chunk of the model work consecutively on \n\
+                                              different aspects).
+Summary1WizardPage_Learning_style_guideline_FO=therefore, we recommend you to apply a flow-oriented modeling approach (modeling in the given order, \n\
+                                               part by part, completing each part before continuing with the next part).
+Summary1WizardPage_low_desire=low desire for structure
+Summary1WizardPage_Need_for_structure_1_HNFS1=therefore, we want you to realize (1) you may feel that the provided guidelines are not new to you as you \n\
+                                              would apply them anyway and (2) you may enjoy trying these guidelines and using them to perfect your \n\
+                                              own structuring style.
+Summary1WizardPage_Need_for_structure1_LNFS1=therefore, we want you to realize (1) you may improve much when applying the guidelines, even if they \n\
+                                             do not feel natural to you and (2) you may not enjoy trying these guidelines and using them to perfect \n\
+                                             your own structuring style. However, we ask you to make an effort to try to follow the directions of this \n\
+                                             tutorial as precise as possible.
+Summary1WizardPage_sequential_learner=sequential learner
+Summary1WizardPage_You_are=You are considered:
+
+Summary2WizardPage_Desire_for_structure=Concerning desire for structure:
+Summary2WizardPage_Field_dependency=Concerning field-dependency:
+Summary2WizardPage_Learning_style=Concerning learning style:
+Summary2WizardPage_Reminder=We would like to remind you that you indicated to going to spend attention to next focus points.

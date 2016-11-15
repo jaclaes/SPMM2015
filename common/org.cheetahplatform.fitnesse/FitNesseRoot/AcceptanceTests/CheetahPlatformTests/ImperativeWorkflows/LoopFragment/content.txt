@@ -1,0 +1,47 @@
+!1 Loop Fragment
+
+!img-l http://files/images/Loop.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createLoopStart|Loopstart|                    |
+|createLoopEnd  |Loopend  |                    |
+|createActivity |A        |                    |
+|createActivity |B        |                    |
+|createActivity |C        |                    |
+|link           |Start    |A        |          |
+|link           |A        |Loopstart|          |
+|link           |Loopstart|B        |          |
+|link           |B        |Loopend  |          |
+|link           |Loopend  |Loopstart|          |
+|link           |Loopend  |C        |          |
+|link           |C        |End      |          |
+
+
+|${IMPERATIVE_SESE_FIXTURE}                 |
+|start    |${IMPERATIVE_SESE_FIXTURE}       |
+|children |component   |3                   |
+|type     |component   |!-ProcessFragment-! |
+|startNode|component   |Start               |
+|endNode  |component   |End                 |
+|store    |component[0]|polygon1           ||
+|store    |component[1]|loop               ||
+|store    |component[2]|polygon2           ||
+|children |polygon1    |1                   |
+|type     |polygon1    |!-Polygon-!         |
+|name     |polygon1[0] |A                   |
+|type     |loop        |!-LoopFragment-!    |
+|startNode|loop        |Loopstart           |
+|endNode  |loop        |Loopend             |
+|children |loop        |1                   |
+|store    |loop[0]     |innerLoop          ||
+|type     |innerLoop   |!-Polygon-!         |
+|children |innerLoop   |1                   |
+|name     |innerLoop[0]|B                   |
+|children |polygon2    |1                   |
+|type     |polygon2    |!-Polygon-!         |
+|name     |polygon2[0] |C                   |

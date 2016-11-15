@@ -1,0 +1,35 @@
+!1 Two Parallel Activities
+
+!img-l http://files/images/parallel_simple.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                 |
+|start        |${TDD_FIXTURE}   |
+|addActivity  |A    |8:00|12:00||
+|addActivity  |B    |8:00|11:00||
+|layout       |                 |
+|maxParallel|2|
+|parallelCount|7:59 |0         |
+|parallelCount|8:00 |2          |
+|parallelCount|10:59|2          |
+|parallelCount|11:00|1          |
+|parallelCount|11:59|1          |
+|parallelCount|12:00|0        |
+|x            |A    |0          |
+|y            |A    |1h         |
+|width        |A    |1          |
+|height       |A    |4h         |
+|x            |B    |1          |
+|y            |B    |1h         |
+|width        |B    |1          |
+|height       |B    |3h         |

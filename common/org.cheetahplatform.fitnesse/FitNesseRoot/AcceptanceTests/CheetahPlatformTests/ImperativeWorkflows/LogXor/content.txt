@@ -1,0 +1,30 @@
+!1 Logging a Simple Xor
+
+!img-l http://files/images/Xor.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|Xorsplit    |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createXorJoin |Xorjoin     |                 |
+|link          |Start       |Xorsplit    |    |
+|link          |Xorsplit    |A           |    |
+|link          |Xorsplit    |B           |    |
+|link          |A           |Xorjoin     |    |
+|link          |B           |Xorjoin     |    |
+|link          |Xorjoin     |End         |    |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                                                                                                             |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}                                                                                                  |
+|checkLog  |INSTANTIATE,DummySchema;CREATE,Start;ACTIVATE,Start;LAUNCH,Start;COMPLETE,Start;CREATE,Xorsplit;ACTIVATE,Xorsplit;CREATE,A;CREATE,B;ACTIVATE,A;ACTIVATE,B|
+|launch    |A                                                            |                                                                   |
+|checkLog|SKIP,B;CREATE,Xorjoin;LAUNCH,A|
+|complete  |A                                                            |                                                                   |
+|checkLog|COMPLETE,A;CREATE,End;ACTIVATE,Xorjoin;LAUNCH,Xorjoin;COMPLETE,Xorjoin;ACTIVATE,End;LAUNCH,End;COMPLETE,End|
+

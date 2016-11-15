@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.datasource">jdbc/MySQLPool</property>
+		<property name="hibernate.connection.autocommit">false</property>
+		<property name="transaction.factory_class">org.hibernate.transaction.JTATransactionFactory</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="driver-package-name">com.mysql.jdbc.Driver</property>
+		<property name="driver-file-name">mysql-connector-java-3.1.11-bin.jar</property>
+		<property name="connection-url">jdbc:mysql://localhost:3306/cheetahplatform</property>
+		<property name="hibernate-dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="username">cheetahplatform</property>
+		<property name="password">topsecret</property>
+
+		<!-- mapping files -->
+		<mapping resource="hibernate/Constraints.hbm.xml" />
+		<mapping resource="hibernate/NodeHierarchy.hbm.xml" />
+		<mapping resource="hibernate/ProcessSchema.hbm.xml" />
+		<mapping resource="hibernate/Reminder.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

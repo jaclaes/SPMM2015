@@ -1,0 +1,107 @@
+\contentsline {chapter}{Acknowledgment}{3}
+\contentsline {chapter}{Declaration of Authorship}{7}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Problem Statement and Motivation}{2}
+\contentsline {subsection}{\numberline {1.1.1}A Case Study}{2}
+\contentsline {subsubsection}{An Air Ambulance Process}{3}
+\contentsline {subsubsection}{The Involved Roles}{5}
+\contentsline {subsubsection}{Conclusion}{6}
+\contentsline {section}{\numberline {1.2}Background}{6}
+\contentsline {subsection}{\numberline {1.2.1}Mashup}{6}
+\contentsline {subsubsection}{Definition of a Mashup}{7}
+\contentsline {subsubsection}{Types of Mashups}{8}
+\contentsline {subsection}{\numberline {1.2.2}SOA - Service Oriented Architecture}{9}
+\contentsline {section}{\numberline {1.3}Related Work}{10}
+\contentsline {subsection}{\numberline {1.3.1}A Service-Oriented Approach to Document-Centric Situational Collaboration Processes}{10}
+\contentsline {subsection}{\numberline {1.3.2}FAST}{10}
+\contentsline {subsection}{\numberline {1.3.3}MarcoFlow}{11}
+\contentsline {subsection}{\numberline {1.3.4}Approaches based on the OSGi Framework}{11}
+\contentsline {subsubsection}{Swordfish}{12}
+\contentsline {subsubsection}{Riena}{12}
+\contentsline {subsection}{\numberline {1.3.5}Dashboards}{12}
+\contentsline {subsection}{\numberline {1.3.6}Portals and Portlets}{13}
+\contentsline {section}{\numberline {1.4}Research Objectives}{14}
+\contentsline {section}{\numberline {1.5}Research Method}{14}
+\contentsline {section}{\numberline {1.6}Structure of the Thesis}{15}
+\contentsline {chapter}{\numberline {2}Evaluation of Mashup Composers}{17}
+\contentsline {section}{\numberline {2.1}Evaluation Preparation}{17}
+\contentsline {subsection}{\numberline {2.1.1}Evaluation Objects}{17}
+\contentsline {subsubsection}{Microsoft Popfly}{18}
+\contentsline {paragraph}{Mashup Creator}{18}
+\contentsline {paragraph}{Using the created Mashup}{21}
+\contentsline {paragraph}{The concept of a Mashup within Microsoft Popfly}{21}
+\contentsline {paragraph}{Mashup Execution}{25}
+\contentsline {subsubsection}{Yahoo Pipes}{25}
+\contentsline {paragraph}{The Pipes Editor}{25}
+\contentsline {paragraph}{The concept of a Mashup within Yahoo Pipes}{25}
+\contentsline {paragraph}{Mashup Execution}{27}
+\contentsline {paragraph}{Using the created Pipe}{27}
+\contentsline {subsubsection}{IBM Mashup Center}{29}
+\contentsline {paragraph}{InfoSphere MashupHub}{29}
+\contentsline {paragraph}{Lotus Mashups}{30}
+\contentsline {paragraph}{The concept of a Mashup within IBM Mashup Center}{32}
+\contentsline {subsection}{\numberline {2.1.2}Evaluation Goal}{32}
+\contentsline {subsection}{\numberline {2.1.3}Evaluation Criteria}{34}
+\contentsline {subsection}{\numberline {2.1.4}Rating}{36}
+\contentsline {section}{\numberline {2.2}The Evaluation}{36}
+\contentsline {subsection}{\numberline {2.2.1}User Interface and Usability}{37}
+\contentsline {subsubsection}{Microsoft Popfly}{37}
+\contentsline {subsubsection}{Yahoo Pipes}{38}
+\contentsline {subsubsection}{IBM Mashup Center}{38}
+\contentsline {subsubsection}{Conclusion}{39}
+\contentsline {subsection}{\numberline {2.2.2}Data Access and Processing}{39}
+\contentsline {subsubsection}{Microsoft Popfly}{39}
+\contentsline {subsubsection}{Yahoo Pipes}{40}
+\contentsline {subsubsection}{IBM Mashup Center}{40}
+\contentsline {subsubsection}{Conclusion}{41}
+\contentsline {subsection}{\numberline {2.2.3}Extensibility}{41}
+\contentsline {subsection}{\numberline {2.2.4}Multiple Instances}{42}
+\contentsline {subsection}{\numberline {2.2.5}Grouping of Blocks}{42}
+\contentsline {subsection}{\numberline {2.2.6}Reusability of Groups / Hot Deployment and Life-cycle Management / Event Management / Logging}{43}
+\contentsline {subsection}{\numberline {2.2.7}Overall Evaluation Results}{43}
+\contentsline {chapter}{\numberline {3}Requirements}{45}
+\contentsline {chapter}{\numberline {4}Component Framework}{49}
+\contentsline {section}{\numberline {4.1}OSGi Service Platform}{49}
+\contentsline {subsection}{\numberline {4.1.1}OSGi Framework}{51}
+\contentsline {subsection}{\numberline {4.1.2}OSGi Framework Specification}{51}
+\contentsline {subsubsection}{Execution Environment}{52}
+\contentsline {subsubsection}{Module-Layer:}{53}
+\contentsline {subsubsection}{Life-Cycle-Layer:}{54}
+\contentsline {subsubsection}{Service-Layer:}{54}
+\contentsline {subsubsection}{Security Layer:}{56}
+\contentsline {subsection}{\numberline {4.1.3}OSGi Standard Services}{56}
+\contentsline {subsection}{\numberline {4.1.4}OSGi Implementations}{57}
+\contentsline {subsubsection}{Open Source Implementations}{57}
+\contentsline {subsubsection}{Commercial Implementations}{58}
+\contentsline {section}{\numberline {4.2}Component Framework}{58}
+\contentsline {subsection}{\numberline {4.2.1}Components - The major Building Blocks of the Component Framework}{59}
+\contentsline {subsection}{\numberline {4.2.2}Grouping of Components (Requirements 5 and 6)}{59}
+\contentsline {subsubsection}{Projects - Containers for Components}{60}
+\contentsline {subsubsection}{Complex Components}{60}
+\contentsline {paragraph}{Group Component}{62}
+\contentsline {paragraph}{Tabfolder Component}{62}
+\contentsline {subsection}{\numberline {4.2.3}Services of the Component Framework}{65}
+\contentsline {subsubsection}{Introduction: The OSGi Framework as Basis for the Component Framework}{65}
+\contentsline {subsubsection}{Component Starter and ID Service (Requirement 4)}{66}
+\contentsline {paragraph}{The Component Starter Service}{66}
+\contentsline {paragraph}{The ID Service}{66}
+\contentsline {subsubsection}{Communication and Data Exchange (Requirements 2 and 8)}{68}
+\contentsline {paragraph}{Background}{68}
+\contentsline {subparagraph}{Datatype channel}{69}
+\contentsline {subparagraph}{Publish-Subscribe channel}{69}
+\contentsline {paragraph}{Wire Admin Service}{69}
+\contentsline {subparagraph}{Extensions of the Wire Admin Service by the Component Framework}{70}
+\contentsline {paragraph}{Event Admin Service}{71}
+\contentsline {subparagraph}{Event Information - An Extension to the Event Admin Service}{72}
+\contentsline {subsubsection}{Component Service (Requirements 4, 6 and 7)}{72}
+\contentsline {subsubsection}{Component Log Service (Requirement 9)}{74}
+\contentsline {subsection}{\numberline {4.2.4}Extending the Component Framework (Requirement 3)}{74}
+\contentsline {subsubsection}{Introduction}{75}
+\contentsline {subsubsection}{Implementing the component}{77}
+\contentsline {chapter}{\numberline {5}Validation of the Component Framework}{79}
+\contentsline {section}{\numberline {5.1}Air Ambulance Test Application}{79}
+\contentsline {section}{\numberline {5.2}Scrumtool}{82}
+\contentsline {section}{\numberline {5.3}Solution Analysis}{82}
+\contentsline {chapter}{\numberline {6}Summary}{87}
+\contentsline {section}{\numberline {6.1}Conclusion}{87}
+\contentsline {section}{\numberline {6.2}Outlook}{88}

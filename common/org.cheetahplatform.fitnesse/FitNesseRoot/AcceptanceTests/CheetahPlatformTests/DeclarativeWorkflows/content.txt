@@ -1,0 +1,33 @@
+!1 Declarative Workflows
+!define DECLARATIVE_CREATION_FIXTURE {!-org.cheetahplatform.test.fitnesse.DeclarativeWorkflowCreationFixture-!}
+!define DECLARATIVE_EXECUTION_FIXTURE {!-org.cheetahplatform.test.fitnesse.DeclarativeWorkflowExecutionFixture-!}
+
+!3 Constraints
+[[Alternate Precedence][DeclarativeWorkflows.AlternatePrecedence]]
+[[Chained Precedence][DeclarativeWorkflows.ChainedPrecedence]]
+[[Chained Response][DeclarativeWorkflows.ChainedResponse]]
+[[Chained Succession][DeclarativeWorkflows.ChainedSuccession]]
+[[Co Existence][DeclarativeWorkflows.CoExistenceConstraint]]
+[[Earliest Start Time][DeclarativeWorkflows.EarliestStartTime]]
+[[Exclusive Choice][DeclarativeWorkflows.ExclusiveChoice]]
+[[Init][DeclarativeWorkflows.InitConstraint]]
+[[Last][DeclarativeWorkflows.LastConstraint]]
+[[Latest Start Time][DeclarativeWorkflows.LatestStartTime]]
+[[M out of N][DeclarativeWorkflows.MoutOfnConstraint]]
+[[Max Select][DeclarativeWorkflows.MaxSelectConstraint]]
+[[Min Select][DeclarativeWorkflows.MinSelectConstraint]]
+[[Min and Max Select][DeclarativeWorkflows.MinMaxSelectConstraint]]
+[[Multi Precedence][DeclarativeWorkflows.MultiPrecedenceConstraint]]
+[[Multi Response][DeclarativeWorkflows.MultiResponseConstraint]]
+[[Multi Succession][DeclarativeWorkflows.MultiSuccessionConstraint]]
+[[Multi Exclusive Choice][DeclarativeWorkflows.MultiExclusiveChoiceConstraint]]
+[[Mutual Exclusion][DeclarativeWorkflows.MutualExclusionConstraint]]
+[[Negation Response][DeclarativeWorkflows.NegationResponseConstraint]]
+[[Precedence][DeclarativeWorkflows.PrecedenceConstraint]]
+[[Responded Existence][DeclarativeWorkflows.RespondedExistenceConstraint]]
+[[Response][DeclarativeWorkflows.ResponseConstraint]]
+[[Succession][DeclarativeWorkflows.SuccessionConstraint]]
+
+
+!3 Reminders
+[[Milestone Activity Reminder][DeclarativeWorkflows.MilestoneActivityReminder]]

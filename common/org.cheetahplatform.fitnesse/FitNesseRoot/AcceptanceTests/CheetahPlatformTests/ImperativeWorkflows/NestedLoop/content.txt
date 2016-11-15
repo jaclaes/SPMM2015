@@ -1,0 +1,52 @@
+!1 Nested Loop
+!img-l http://files/images/Loop_within_Xor.png
+
+
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit |split    |                    |
+|createXorJoin  |join     |                    |
+|createLoopStart|loopstart|                    |
+|createLoopEnd  |loopend  |                    |
+|createActivity |A        |                    |
+|createActivity |B        |                    |
+|link           |Start    |split    |          |
+|link           |split    |A        |          |
+|link           |split    |loopstart|          |
+|link           |loopstart|B        |          |
+|link           |B        |loopend  |          |
+|link           |loopend  |loopstart|          |
+|link           |loopend  |join     |          |
+|link           |A        |join     |          |
+|link           |join     |End      |          |
+
+
+|${IMPERATIVE_SESE_FIXTURE}                 |
+|start    |${IMPERATIVE_SESE_FIXTURE}       |
+|children |component   |1                   |
+|type     |component   |!-ProcessFragment-! |
+|store    |component[0]|xor                ||
+|type     |xor         |!-XorFragment-!     |
+|children |xor         |2                   |
+|startNode|xor         |split               |
+|endNode  |xor         |join                |
+|store    |xor[0]      |a                  ||
+|store    |xor[1]      |loop               ||
+|type     |a           |!-Polygon-!         |
+|name     |a[0]        |A                   |
+|startNode|loop        |loopstart           |
+|endNode  |loop        |loopend             |
+|type     |loop        |!-LoopFragment-!    |
+|children |loop        |1                   |
+|store    |loop[0]     |b                  ||
+|type     |b           |Polygon             |
+|name     |b[0]        |B                   |
+

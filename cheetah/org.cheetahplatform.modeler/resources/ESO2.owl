@@ -1,0 +1,894 @@
+Prefix: : <http://users.isoco.net/~slosada/swws/bank.owl#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: daml: <http://www.daml.org/2001/03/daml+oil#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: protege: <http://protege.stanford.edu/plugins/owl/protege#>
+
+
+
+Ontology: <http://users.isoco.net/~slosada/swws/bank.owl>
+
+Import: <http://protege.stanford.edu/plugins/owl/protege>
+
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: xsd:duration
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:date
+
+    
+Datatype: xsd:boolean
+
+    
+Datatype: xsd:string
+
+    
+Datatype: xsd:float
+
+    
+ObjectProperty: CIF
+
+    Annotations: 
+        rdfs:comment "Código de Identificación Fiscal"@es
+    
+    Domain: 
+        Company
+    
+    
+ObjectProperty: channel
+
+    Domain: 
+        ServiceContractedByCustomerInChannel
+    
+    Range: 
+        Channel
+    
+    
+ObjectProperty: cancelationCommission
+
+    Annotations: 
+        rdfs:comment "Commission to be paid when a mortgage is
+cancelled"@en,
+        rdfs:comment "Comisión de cancelación"@es
+    
+    Characteristics: 
+        InverseFunctional,
+        Functional
+    
+    Domain: 
+        CurrentMortageLoan
+    
+    Range: 
+        Quota
+    
+    
+ObjectProperty: password
+
+    Domain: 
+        User
+    
+    
+ObjectProperty: titularity
+
+    Characteristics: 
+        Symmetric
+    
+    Domain: 
+        Customer
+    
+    Range: 
+        Product
+    
+    
+ObjectProperty: openingCommission
+
+    Annotations: 
+        rdfs:comment "Comisión de apertura.",
+        rdfs:comment "Commission to be paid when a mortgage is
+opened"@en
+    
+    Characteristics: 
+        Functional
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    Range: 
+        Quota
+    
+    
+ObjectProperty: payments
+
+    Annotations: 
+        rdfs:comment "Payments due in a saving account"@en
+    
+    Domain: 
+        SavingAccount
+    
+    Range: 
+        Payment
+    
+    
+ObjectProperty: service
+
+    Domain: 
+        ServiceContractedByCustomerInChannel
+    
+    Range: 
+        Service
+    
+    
+ObjectProperty: NIF
+
+    Domain: 
+        Person
+         or SOHO
+    
+    
+ObjectProperty: currencyProduct
+
+    Domain: 
+        Product
+    
+    Range: 
+        Currency
+    
+    
+ObjectProperty: customer
+
+    Domain: 
+        ServiceContractedByCustomerInChannel
+    
+    Range: 
+        Customer
+    
+    
+ObjectProperty: interestRateType
+
+    Annotations: 
+        rdfs:comment "Type of interest rate of a bank
+product"@en
+    
+    Domain: 
+        Product
+    
+    Range: 
+        ProductRateApplication
+    
+    
+ObjectProperty: rateVariable
+
+    Domain: 
+        ProductRateApplicationMixed
+    
+    Range: 
+        ProductRateApplicationVariable
+    
+    
+ObjectProperty: subrogationCommission
+
+    Annotations: 
+        rdfs:comment "Commission to be paid when a mortgage is
+subrogated"@en,
+        rdfs:comment "Comisión de subrogación."^^xsd:string
+    
+    Characteristics: 
+        Functional
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    Range: 
+        Quota
+    
+    
+DataProperty: endingDate
+
+    Domain: 
+        Quota
+    
+    
+DataProperty: term
+
+    Annotations: 
+        rdfs:comment "Plazo de amortización de la hipoteca."
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: startingDate
+
+    Domain: 
+        Quota
+    
+    
+DataProperty: typeOfRate
+
+    Range: 
+        {"fixed" , "mixed" , "variable"}
+    
+    
+DataProperty: buyCostProperty
+
+    Annotations: 
+        rdfs:comment "Valor de la propiedad asociada a la
+hipoteca"@es,
+        rdfs:comment "Value of the land or property associated to a
+mortgage"@en
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: delayInterestRate
+
+    Annotations: 
+        rdfs:comment "Tipo de interes si se demoran pagos. No es necesario para la
+simulación."
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: saleCostProperty
+
+    Domain: 
+        CurrentMortageLoan
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: interestRateValue
+
+    Annotations: 
+        rdfs:comment "Valor númerico del tipo de interés"
+    
+    Domain: 
+        Product
+         or ProductRateApplication
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: revisionTermNext
+
+    Annotations: 
+        rdfs:comment "Plazo de tiempo que transcurre hasta la proxima revision del tipo de
+interes en hipotecas de interes variable"
+    
+    Domain: 
+        MortgageLoan
+    
+    
+DataProperty: initalQuota
+
+    Annotations: 
+        rdfs:comment "Cuota inicial a pagar."^^xsd:string
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: interesDelay
+
+    Annotations: 
+        rdfs:comment "Interes de demora. No es necesario para simulación"
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: login
+
+    Domain: 
+        User
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: homeInsurance
+
+    Annotations: 
+        rdfs:comment "Indica si el inmueble tiene un seguro."
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: name
+
+    Annotations: 
+        rdfs:comment "Nombre del producto financiero."
+    
+    Domain: 
+        Customer
+         or Product
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: interestNextRevision
+
+    Domain: 
+        CurrentMortageLoan
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: lifeInsurance
+
+    Annotations: 
+        rdfs:comment "Indica si los suscriptores de la hipoteca tienen un seguro de vida
+cuyo beneficiario es la hipoteca."
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: APR
+
+    Annotations: 
+        rdfs:comment "Tasa Anual Efectiva (TAE)"@es,
+        rdfs:comment "Tasa anual efectiva. Poner formula matématica",
+        rdfs:comment "Annual Percentage Rate"@en
+    
+    Characteristics: 
+        Functional
+    
+    Domain: 
+        Product
+    
+    
+DataProperty: expirationDate
+
+    Annotations: 
+        rdfs:comment "Fecha en la que expira el producto financiero. p.e. Plazo
+fijo."
+    
+    Domain: 
+        Product
+    
+    
+DataProperty: periodicityCuota
+
+    Annotations: 
+        rdfs:comment "Periodos en los que se paga la cuota cada tres meses, 12 cuotas al
+año etc."
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: termRateFixed
+
+    Characteristics: 
+        Functional
+    
+    Domain: 
+        ProductRateApplicationMixed
+    
+    
+DataProperty: signalDateContract
+
+    Annotations: 
+        rdfs:comment "Fecha que se firma el contrato del producto
+financiero."
+    
+    Domain: 
+        Product
+    
+    
+DataProperty: capital
+
+    Annotations: 
+        rdfs:comment "Importe de la hipoteca, capital
+prestado"@es
+    
+    Domain: 
+        MortgageLoan
+    
+    
+DataProperty: typeReferenceRate
+
+    Range: 
+        {"CECA" , "Euribor" , "IRPH-cajas" , "IRPH-ent"}
+    
+    
+DataProperty: initialPeriod
+
+    Annotations: 
+        rdfs:comment "¿Periodo de tiempo en hipotecas de interes variable en el que se paga
+tipo de interes fijo?"
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: mortgageTaxation
+
+    Annotations: 
+        rdfs:comment "Impuestos de la hipoteca."^^xsd:string
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: quotaAfterRevision
+
+    Annotations: 
+        rdfs:comment "Cuota estimada tras la próxima revisión del tipo de
+interés"@es
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: value
+
+    Characteristics: 
+        Functional
+    
+    Range: 
+        xsd:float
+    
+    
+DataProperty: revisionTerm
+
+    Annotations: 
+        rdfs:comment "Periodo de revisión. Tiempo en el que se revisará el tipo de
+interes"
+    
+    Domain: 
+        FutureMortgageLoan
+    
+    
+DataProperty: handlingCapital
+
+    Domain: 
+        CurrentMortageLoan
+    
+    
+Class: Corporative
+
+    Annotations: 
+        rdfs:comment "Company with a specific set of characteristics that
+require a personalised commercial treatment. Depending on each bank, the set of
+characteristics may change, although they normally refer to number of employees and
+annual turnover. It includes company groups, multinational companies,
+etc."@en,
+        rdfs:comment "Empresa que por sus caracteríticas merece un
+tratamiento comercial individualizado. Dependiendo de cada Banco estas características
+pueden variar, aunque normalmente se refieren a número de empleados y/o facturación
+anual. Inluye grupos de empresas, multinacionales, etc"@es
+    
+    SubClassOf: 
+        Department
+    
+    
+Class: ProductRateApplicationMixed
+
+    Annotations: 
+        rdfs:comment "Mixed interest rate, usually composed of fixed and
+variable interest rates"@en,
+        rdfs:comment "tipo de interés mixto. Es una mezcla de tipo fijo y
+variable. Normalmente fijo en las primeras cuotas y variable en las
+demás"@es
+    
+    SubClassOf: 
+        ProductRateApplication
+    
+    DisjointWith: 
+        ProductRateApplicationFixed, ProductRateApplicationVariable
+    
+    
+Class: Collection
+
+    Annotations: 
+        rdfs:comment "Ingreso en cuenta"@es,
+        rdfs:comment "Deposit in a saving account"@en
+    
+    
+Class: Quota
+
+    Annotations: 
+        rdfs:comment "Amount to be paid in a loan"@en
+    
+    
+Class: ProductRateApplication
+
+    Annotations: 
+        rdfs:comment "Applied interest rate"@en,
+        rdfs:comment "Tipo de interés aplicado"@es
+    
+    
+Class: CurrentMortageLoan
+
+    Annotations: 
+        rdfs:comment "Préstamo hipotecario actual que el usuario está
+pensando en cambiar"@es,
+        rdfs:comment "Current mortgage loan that the user is willing to
+change."@en
+    
+    SubClassOf: 
+        MortgageLoan
+    
+    
+Class: InvestmentAccount
+
+    Annotations: 
+        rdfs:comment "Cuenta de inversión. Por ejemplo una imposición a
+plazo fijo (IPF) o un depósito remunerado"@es,
+        rdfs:comment "Account setup to perform an investment, such as a
+fixed term deposit"@en
+    
+    SubClassOf: 
+        Asset
+    
+    
+Class: Loan
+
+    Annotations: 
+        rdfs:comment "Money let out at interest"@en,
+        rdfs:comment "Préstamo, crédito, cualquier cuenta con saldo a favor
+del banco"@es
+    
+    
+Class: User
+
+    
+Class: Customer
+
+    Annotations: 
+        rdfs:comment "Bank client, who usually has a contractual
+relationship with the bank"@en,
+        rdfs:comment "Cliente que mantiene una relación contractual con el
+banco (normalmente una cuenta bancaria)"@es
+    
+    SubClassOf: 
+        User
+    
+    
+Class: Department
+
+    Annotations: 
+        rdfs:comment "Departamento. Area interna del Banco que tiene una
+misión dentro de él"@es,
+        rdfs:comment "Internal area of the bank that performs a specific
+function"@en
+    
+    SubClassOf: 
+        User
+    
+    
+Class: ProductRateApplicationVariable
+
+    Annotations: 
+        rdfs:comment "Variable interest rate. It may vary during the
+mortgage life"@en,
+        rdfs:comment "tipo de interés variable. Es un tipo de interés que se
+modifica periódicamente en función de los tipos de interés de mercado que se hayan
+predefinido en contrato"@es
+    
+    SubClassOf: 
+        ProductRateApplication
+    
+    DisjointWith: 
+        ProductRateApplicationMixed, ProductRateApplicationFixed
+    
+    
+Class: Service
+
+    Annotations: 
+        rdfs:comment "Financial products offered by a bank or services that
+do not require a contract, like a bank transfer order"@en,
+        rdfs:comment "Service es el tipo de cosas que se pueden hacer pero
+que no requieren contrato (ejemplo : una orden de transferencia). Service tambien es
+cualquier producto no financiero que distribuya un banco."@es
+    
+    
+Class: Employee
+
+    SubClassOf: 
+        User
+    
+    
+Class: Currency
+
+    Annotations: 
+        rdfs:comment "Money in circulation"@en,
+        rdfs:comment "Divisa, incluyendo la moneda
+nacional"@es
+    
+    
+Class: Person
+
+    Annotations: 
+        rdfs:comment "Bank client that represents a single person (physical
+or juridical)"@en,
+        rdfs:comment "Persona física o jurídica"@es
+    
+    SubClassOf: 
+        Customer
+    
+    DisjointWith: 
+        Company, SOHO
+    
+    
+Class: ServiceContractedByCustomerInChannel
+
+    Annotations: 
+        rdfs:comment "Productos contratados por un canal"@es,
+        rdfs:comment "Product or service contracted by a
+channel"@en
+    
+    
+Class: Channel
+
+    Annotations: 
+        rdfs:comment "Communication means used in the relationship
+between the bank and its customers, including branches, phone, Internet, virtual
+banking, etc."@en,
+        rdfs:comment "Canal de relación entre el cliente y el banco. Es el
+medio que utiliza el cliente o el Banco para comunicarse: Oficinas, Internet, Banca
+Telefónica, Teléfono móvil, Agentes, Oficinas Virtuales, etc."@es
+    
+    
+Class: SOHO
+
+    Annotations: 
+        rdfs:comment "Small Office, Home Office. It usually refers to
+professionals who work in their own offices"@en,
+        rdfs:comment "Small Office, Home Office. Normalmente se refiere a
+profesionales que trabajan en su propio despacho o negocio"@es
+    
+    SubClassOf: 
+        Customer
+    
+    DisjointWith: 
+        Company, Person
+    
+    
+Class: SME
+
+    Annotations: 
+        rdfs:comment "Small or Medium Enterprise"@en,
+        rdfs:comment "Pequeña y Mediana Empresa
+(PYME)"@es
+    
+    SubClassOf: 
+        Department
+    
+    
+Class: Company
+
+    Annotations: 
+        rdfs:comment "A number of people grouped together as a business
+enterprise. Types of companies include public limited companies, partnerships, joint
+ventures and proprietorships, and branches of foreign companies"@en
+    
+    SubClassOf: 
+        Customer
+    
+    DisjointWith: 
+        Person, SOHO
+    
+    
+Class: Individuals
+
+    Annotations: 
+        rdfs:comment "Department that deals with physical
+persons"@en
+    
+    SubClassOf: 
+        Department
+    
+    
+Class: Asset
+
+    Annotations: 
+        rdfs:comment "The land or property of a company or individual,
+payments due from bills, investments, and anything else owned that can be turned into
+cash "@en,
+        rdfs:comment "Activo bancario. Cuenta con saldo a favor del
+cliente."@es
+    
+    SubClassOf: 
+        Product
+    
+    
+Class: InvestmentFund
+
+    Annotations: 
+        rdfs:comment "Fondo de Inversión. Club de inversión donde muchas
+personas ponen un dinero que el Banco invierte en su nombre y cuyos
+beneficios/pérdidas se reinvierten. Es disponible en cualquier momento vendiendo las
+participaciones que en su día se compraron."@es,
+        rdfs:comment "Investment club where a set of customers put their
+money so that the bank performs an investment on behalf of them."@en
+    
+    SubClassOf: 
+        Asset
+    
+    
+Class: SavingAccount
+
+    Annotations: 
+        rdfs:comment "Account without a chequebook and normally with a
+low interest rate"@en,
+        rdfs:comment "Cuenta de Ahorro. Es lo mismo que una cuenta
+corriente, pero con libreta y sin talonario de cheques. Normalmente está remunerada a
+un tipo de interés que suele ser bajo"@es
+    
+    SubClassOf: 
+        Asset
+    
+    
+Class: FutureMortgageLoan
+
+    Annotations: 
+        rdfs:comment "Préstamo hipotecario por el que el usuario está
+pensando cambiar su préstamo actual"@es,
+        rdfs:comment "Future mortgage loan that the user will use instead of
+the current one"@en
+    
+    SubClassOf: 
+        MortgageLoan
+    
+    
+Class: Product
+
+    Annotations: 
+        rdfs:comment "Bank product that requires the signature of a contract
+between the customer and the bank"@en,
+        rdfs:comment "Cualquier producto bancario que requiere la firma de
+un contrato (ejemplo: una cuenta corriente o un crédito). "@es
+    
+    
+Class: AddedValue
+
+    Annotations: 
+        rdfs:comment "Es el valor con que enriqueces algo al transformarlo.
+Normalmente se calcula como la diferencia entre el valor de compra y el valor de venta,
+aunque es algo más intangible"@es,
+        rdfs:comment "The sales revenue from selling a product less the cost
+of the materials or purchases used in those products. It is an indicator of relative
+efficiency within and between firms, although in the latter case it is open to distortion
+where mark-up varies between standard and premium-priced segments of a
+market"@en
+    
+    
+Class: ProductRateApplicationFixed
+
+    Annotations: 
+        rdfs:comment "tipo de interés fijo. Es un tipo de interés que no
+cambia en toda la vida del préstamo."@es,
+        rdfs:comment "Fixed interest rate. It never varies during the
+mortgage life"@en
+    
+    SubClassOf: 
+        ProductRateApplication
+    
+    DisjointWith: 
+        ProductRateApplicationMixed, ProductRateApplicationVariable
+    
+    
+Class: vBanking
+
+    Annotations: 
+        rdfs:comment "Virtual Banking. Banking without human
+intervention"@en,
+        rdfs:comment "Virtual Banking Banca por medios físicos o sin
+intermediación humana."@es
+    
+    
+Class: MortgageLoan
+
+    Annotations: 
+        rdfs:comment "A long-term loan backed by real estate or valuable
+property, usually the item purchased with the loan. The creditor can claim that property
+if all payments are not made by the borrower when they are due"@en,
+        rdfs:comment "Préstamo hipotecario"@es
+    
+    SubClassOf: 
+        Loan
+    
+    
+Class: Staff
+
+    Annotations: 
+        rdfs:comment "Central Services of a company, such as Human
+Resources, Management, Innovation, etc."@en,
+        rdfs:comment "Servicios Centrales de una empresa. Por ejemplo:
+Recursos humanos, Alta dirección, Inmuebles y Servicios Generales, Innovación,
+etc"@es
+    
+    SubClassOf: 
+        Employee
+    
+    
+Class: Liability
+
+    Annotations: 
+        rdfs:comment "Cantidad que un individuo o compañía debe a otros.
+Esta cantidad puede ser dinero, productos o servicios"@es,
+        rdfs:comment "The amount that is owed by an individual or
+company, whether money, products, or services, to others."@en
+    
+    
+Class: Administrative
+
+    Annotations: 
+        rdfs:comment "Empleado con funciones de
+administración."@es,
+        rdfs:comment "Employee with administrative
+functions"@en
+    
+    SubClassOf: 
+        Employee
+    
+    
+Class: Invoice
+
+    Annotations: 
+        rdfs:comment "An itemized statement given to a buyer by a seller
+and usually specifying the price of goods or services and the terms of
+sale"@en,
+        rdfs:comment "Factura"@es
+    
+    SubClassOf: 
+        Payment
+    
+    
+Class: Commercial
+
+    Annotations: 
+        rdfs:comment "Employee with commercial
+functions"@en,
+        rdfs:comment "Empleado con funciones
+comerciales"@es
+    
+    SubClassOf: 
+        Employee
+    
+    
+Class: Branch
+
+    Annotations: 
+        rdfs:comment "Physical bank office"@en,
+        rdfs:comment "Oficina bancaria fisica"@es
+    
+    
+Class: Payment
+
+    Annotations: 
+        rdfs:comment "Money given to pay for something"@en,
+        rdfs:comment "Pago"@es
+    
+    

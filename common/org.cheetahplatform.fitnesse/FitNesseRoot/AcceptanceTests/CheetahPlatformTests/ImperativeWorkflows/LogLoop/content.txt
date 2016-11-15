@@ -1,0 +1,50 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Simple Loop
+
+!img-l http://files/images/Loop.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createActivity |A            |                |
+|createLoopStart|Loopstart    |                |
+|createActivity |B            |                |
+|createLoopEnd  |Loopend      |                |
+|createActivity |C            |                |
+|link           |Start        |A           |   |
+|link           |A            |Loopstart   |   |
+|link           |Loopstart    |B           |   |
+|link           |B            |Loopend     |   |
+|link           |Loopend      |Loopstart   |   |
+|link           |Loopend      |C           |   |
+|link           |C            |End         |   |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                                                                                                                                                   |
+|start   |${IMPERATIVE_EXECUTION_FIXTURE}                                                                                                                                          |
+|checkLog|INSTANTIATE,schema;CREATE,Start;ACTIVATE,Start;LAUNCH,Start;COMPLETE,Start;CREATE,A;ACTIVATE,A                                                                           |
+|launch  |A                                                                                     |                                                                                  |
+|checkLog|LAUNCH,A                                                                                                                                                                 |
+|complete|A                                                                                     |                                                                                  |
+|checkLog|COMPLETE,A;CREATE,Loopstart;ACTIVATE,Loopstart;CREATE,B;ACTIVATE,B                                                                                                       |
+|launch  |B                                                                                     |                                                                                  |
+|checkLog|LAUNCH,Loopstart;LAUNCH,B                                                                                                                                                |
+|complete|B                                                                                     |                                                                                  |
+|checkLog|COMPLETE,Loopstart;COMPLETE,B;CREATE,Loopend;ACTIVATE,Loopend;LAUNCH,Loopend;COMPLETE,Loopend;CREATE,Loopstart;ACTIVATE,Loopstart;CREATE,B;ACTIVATE,B;CREATE,C;ACTIVATE,C|
+|launch  |B[1]                                                                                  |                                                                                  |
+|checkLog|SKIP,C;LAUNCH,Loopstart;LAUNCH,B                                                                                                                                         |
+|cancel  |B[1]                                                                                  |                                                                                  |
+|checkLog|ACTIVATE,Loopstart;CANCEL,B;ACTIVATE,C                                                                                                                  |
+|launch  |C                                                                                     |                                                                                  |
+|checkLog|SKIP,Loopstart;SKIP,B;LAUNCH,C                                                                                                                |
+|checkState|C|Launched|
+|complete|C                                                                                     |                                                                                  |
+|checkLog|COMPLETE,C;CREATE,End;ACTIVATE,End;LAUNCH,End;COMPLETE,End                                                                                            |
+
+
+
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="at.component.newcomponentwizard"
+            name="OSGi Components">
+      </category>
+      <wizard
+            category="at.component.newcomponentwizard"
+            class="at.component.newcomponentwizard.wizards.ComponentWizard"
+            icon="icons/component-icon.gif"
+            id="at.component.newcomponentwizard.wizards.NewComponentWizard"
+            name="Component"
+            project="true">
+            <description>
+               Creates a project for a Component
+            </description>
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.pde.ui.PDEPerspective">
+         <newWizardShortcut
+               id="at.component.newcomponentwizard.wizards.NewComponentWizard">
+         </newWizardShortcut>
+      </perspectiveExtension>
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <newWizardShortcut
+               id="at.component.newcomponentwizard.wizards.NewComponentWizard">
+         </newWizardShortcut>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

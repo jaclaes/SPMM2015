@@ -1,0 +1,12 @@
+<personendatens>
+  <personendaten id='1'>
+    <Nachname>Stefan</Nachname>
+    <Vorname>Zugal</Vorname>
+    <id>1</id>
+  </personendaten>
+  <personendaten id='2'>
+    <Nachname>Jakob</Nachname>
+    <Vorname>Pinggera</Vorname>
+    <id>2</id>
+  </personendaten>
+</personendatens>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.cheetahplatform.configuration">
+         <configuration priority="2">
+      <configurator
+            class="org.cheetahplatform.demoreplayer.DemoReplayerConfiguration">
+      </configurator>
+      <databaseAccess
+            adminPassword="afjklsad55"
+            adminUserName="demo"
+            password="afjklsad55"
+            url="jdbc:mysql://138.232.65.123:13306/replaydemo"
+            user="demo">
+      </databaseAccess>
+      </configuration> 
+   </extension>
+   <extension
+         point="org.cheetahplatform.replaydemo">
+      <category
+            description="resource/replaydemo/process_of_process_modeling_caise11.html"
+            name="Process of Process Modeling">
+         <entry
+               description="resource/replaydemo/deliberate_before_you_formalize.html"
+               name="Deliberate Before You Formalize"
+               processmodelid="1806">
+         </entry>
+         <entry
+               description="resource/replaydemo/continuous_rework.html"
+               name="Continuous Rework"
+               processmodelid="1640">
+         </entry>
+         <entry
+               description="resource/replaydemo/swinging_modeling.html"
+               name="Swinging Modeling"
+               processmodelid="1656">
+         </entry>
+      </category>
+   </extension>
+
+</plugin>

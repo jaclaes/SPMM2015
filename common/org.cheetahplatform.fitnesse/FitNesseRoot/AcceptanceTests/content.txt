@@ -1,0 +1,8 @@
+!1 Acceptance Tests
+
+Tests regarding the Alaska Simulator can be found here:
+[[Alaska Simulator][AcceptanceTests.AlaskaSimulatorTests]]
+
+Tests regarding the Cheetah Platform can be found here:
+[[Cheetah Platform][AcceptanceTests.CheetahPlatformTests]]
+

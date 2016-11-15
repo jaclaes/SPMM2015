@@ -1,0 +1,69 @@
+!1 Complex Scenario
+!img-l http://files/images/parallel_9.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                  |
+|start        |${TDD_FIXTURE}    |
+|addActivity  |A    |8:00 |12:00||
+|addActivity  |B    |12:00|14:00||
+|addActivity  |C    |10:00|13:00||
+|addActivity  |D    |8:00 |16:00||
+|addActivity  |E    |13:00|16:00||
+|addActivity  |F    |8:00 |10:00||
+|addActivity  |G    |14:00|17:00||
+|layout       |                  |
+|maxParallel  |3                 |
+|parallelCount|7:59 |0           |
+|parallelCount|8:00 |3           |
+|parallelCount|15:59|3           |
+|parallelCount|16:00|1           |
+|parallelCount|16:59|1           |
+|parallelCount|17:00|0           |
+|x            |A    |1           |
+|y            |A    |1h          |
+|width        |A    |1           |
+|height       |A    |4h          |
+|x            |B    |1           |
+|y            |B    |5h          |
+|width        |B    |1           |
+|height       |B    |2h          |
+|x            |C    |2           |
+|y            |C    |3h          |
+|width        |C    |1           |
+|height       |C    |3h          |
+|x            |D    |0           |
+|y            |D    |1h          |
+|width        |D    |1           |
+|height       |D    |8h          |
+|x            |E    |2           |
+|y            |E    |6h          |
+|width        |E    |1           |
+|height       |E    |3h          |
+|x            |F    |2           |
+|y            |F    |1h          |
+|width        |F    |1           |
+|height       |F    |2h          |
+|x            |G    |1           |
+|y            |G    |7h          |
+|width        |G    |1           |
+|height       |G    |3h          |

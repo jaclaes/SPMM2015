@@ -1,0 +1,203 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Chained Xor
+
+!img-l http://files/images/Model_1.png
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                        |
+|start          |${IMPERATIVE_CREATION_FIXTURE}        |
+|createAndSplit |andSplit          |                   |
+|createAndJoin  |andJoin           |                   |
+|createXorSplit |upperXorSplit     |                   |
+|createXorJoin  |upperXorJoin      |                   |
+|createLoopStart|upperLoopStart    |                   |
+|createLoopEnd  |upperLoopEnd      |                   |
+|createXorSplit |lowerOptionalSplit|                   |
+|createXorJoin  |lowerOptionalJoin |                   |
+|createLoopStart|lowerLoopStart    |                   |
+|createLoopEnd  |lowerLoopEnd      |                   |
+|createActivity |X                 |                   |
+|createActivity |L                 |                   |
+|createActivity |N                 |                   |
+|createActivity |Z                 |                   |
+|createActivity |R                 |                   |
+|link           |Start             |X                 ||
+|link           |X                 |andSplit          ||
+|link           |andSplit          |upperXorSplit     ||
+|link           |upperXorSplit     |N                 ||
+|link           |upperXorSplit     |L                 ||
+|link           |L                 |upperXorJoin      ||
+|link           |N                 |upperXorJoin      ||
+|link           |upperXorJoin      |andJoin           ||
+|link           |andJoin           |upperLoopStart    ||
+|link           |upperLoopStart    |R                 ||
+|link           |R                 |upperLoopEnd      ||
+|link           |upperLoopEnd      |upperLoopStart    ||
+|link           |upperLoopEnd      |End               ||
+|link           |andSplit          |lowerOptionalSplit||
+|link           |lowerOptionalSplit|lowerLoopStart    ||
+|link           |lowerOptionalSplit|lowerOptionalJoin ||
+|link           |lowerOptionalJoin |andJoin           ||
+|link           |lowerLoopStart    |Z                 ||
+|link           |Z                 |lowerLoopEnd      ||
+|link           |lowerLoopEnd      |lowerLoopStart    ||
+|link           |lowerLoopEnd      |lowerOptionalJoin ||
+
+
+Trace X L Z Z R
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start               |Completed |
+|checkState|X                   |Activated |
+|launch    |X                   |          |
+|checkState|X                   |Launched  |
+|complete  |X                   |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Activated |
+|checkState|upperXorSplit       |Activated |
+|checkState|L                   |Activated |
+|checkState|N                   |Activated |
+|checkState|lowerOptionalSplit  |Activated |
+|checkState|lowerLoopStart      |Activated |
+|checkState|Z                   |Activated |
+|checkState|lowerOptionalJoin   |Activated |
+|launch    |L                   |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Launched  |
+|checkState|upperXorSplit       |Launched  |
+|checkState|L                   |Launched  |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Activated |
+|checkState|lowerLoopStart      |Activated |
+|checkState|Z                   |Activated |
+|checkState|lowerOptionalJoin   |Activated |
+|complete  |L                   |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Activated |
+|checkState|lowerLoopStart      |Activated |
+|checkState|Z                   |Activated |
+|checkState|lowerOptionalJoin   |Activated |
+|checkState|upperXorJoin        |Completed |
+|launch    |Z                   |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Launched  |
+|checkState|lowerLoopStart      |Launched  |
+|checkState|Z                   |Launched  |
+|checkState|lowerOptionalJoin   |Skipped   |
+|checkState|upperXorJoin        |Completed |
+|complete  |Z                   |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Completed |
+|checkState|lowerLoopStart      |Completed |
+|checkState|lowerLoopEnd        |Completed |
+|checkState|Z                   |Completed |
+|checkState|lowerOptionalJoin   |Activated|
+|checkState|upperXorJoin        |Completed |
+|launch    |Z[1]                |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Completed |
+|checkState|lowerLoopStart[0]   |Completed |
+|checkState|lowerLoopStart[1]   |Launched  |
+|checkState|lowerLoopEnd        |Completed |
+|checkState|Z[0]                |Completed |
+|checkState|Z[1]                |Launched  |
+|checkState|lowerOptionalJoin   |Skipped   |
+|checkState|upperXorJoin        |Completed |
+|complete  |Z[1]                |          |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Completed |
+|checkState|lowerLoopStart[0]   |Completed |
+|checkState|lowerLoopStart[1]   |Completed |
+|checkState|lowerLoopEnd[0]     |Completed |
+|checkState|lowerLoopEnd[1]     |Completed |
+|checkState|Z[0]                |Completed |
+|checkState|Z[1]                |Completed |
+|checkState|lowerOptionalJoin   |Activated |
+|checkState|upperXorJoin        |Completed |
+|skip      |Z[2]                |          |
+|checkState|lowerLoopEnd[1]     |Completed |
+|checkState|Z[2]                |Skipped   |
+|checkState|lowerLoopStart[2]   |Skipped   |
+|checkState|lowerOptionalJoin   |Activated |
+|checkState|R                   |Activated |
+|checkState|andJoin             |Activated |
+|launch    |R                   |          |
+|checkState|R|Launched|
+|checkState|andJoin             |Launched|
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Completed |
+|checkState|lowerLoopStart[0]   |Completed |
+|checkState|lowerLoopStart[1]   |Completed |
+|checkState|lowerLoopEnd[0]     |Completed |
+|checkState|lowerLoopEnd[1]     |Completed |
+|checkState|Z[0]                |Completed |
+|checkState|Z[1]                |Completed |
+|checkState|lowerOptionalJoin   |Launched|
+|checkState|upperLoopStart      |Launched  |
+|checkState|upperXorJoin        |Completed |
+|complete  |R                   |          |
+|checkState|andJoin             |Completed |
+|checkState|X                   |Completed |
+|checkState|andSplit            |Completed |
+|checkState|upperXorSplit       |Completed |
+|checkState|L                   |Completed |
+|checkState|N                   |Skipped   |
+|checkState|lowerOptionalSplit  |Completed |
+|checkState|lowerLoopStart[0]   |Completed |
+|checkState|lowerLoopStart[1]   |Completed |
+|checkState|lowerLoopEnd[0]     |Completed |
+|checkState|lowerLoopEnd[1]     |Completed |
+|checkState|Z[0]                |Completed |
+|checkState|Z[1]                |Completed |
+|checkState|lowerOptionalJoin   |Completed |
+|checkState|upperLoopStart      |Completed |
+|checkState|upperXorJoin        |Completed |
+
+
+
+Trace X Z L Z
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}         |
+|start   |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch  |X               |              |
+|complete|X               |              |
+|launch  |Z               |              |
+|complete|Z               |              |
+|launch  |L               |              |
+|complete|L               |              |
+|launch  |Z[1]               |              |
+|complete|Z[1]               |              |
+

@@ -1,0 +1,53 @@
+!1 Three Parallel Activities With Sequential Activities
+
+!img-l http://files/images/parallel_5.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                  |
+|start        |${TDD_FIXTURE}    |
+|addActivity  |A    |8:00 |12:00||
+|addActivity  |B    |8:30 |10:30||
+|addActivity  |C    |12:30|15:30||
+|layout       |                  |
+|maxParallel  |2                 |
+|parallelCount|7:59 |0           |
+|parallelCount|8:00 |1           |
+|parallelCount|8:29 |1           |
+|parallelCount|8:30 |2           |
+|parallelCount|10:29|2           |
+|parallelCount|10:30|1           |
+|parallelCount|12:00|0           |
+|parallelCount|12:29|0           |
+|parallelCount|12:30|1           |
+|parallelCount|15:29|1           |
+|parallelCount|15:30|0           |
+|x            |A    |0           |
+|y            |A    |1h          |
+|width        |A    |1           |
+|height       |A    |4h          |
+|x            |B    |1           |
+|y            |B    |1h30        |
+|width        |B    |1           |
+|height       |B    |2h          |
+|x            |C    |0           |
+|y            |C    |5h30        |
+|width        |C    |2           |
+|height       |C    |3h          |

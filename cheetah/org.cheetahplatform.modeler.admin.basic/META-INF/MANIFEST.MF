@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Admin Basic
+Bundle-SymbolicName: org.cheetahplatform.modeler.admin.basic;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.cheetahplatform.modeler.admin.basic.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.cheetahplatform.modeler;bundle-version="1.0.0",
+ org.cheetahplatform.modeler.changepattern;bundle-version="1.0.0",
+ org.cheetahplatform.common;bundle-version="1.0.0",
+ org.cheetahplatform.survey;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.cheetahplatform.modeler.admin.basic

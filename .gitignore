@@ -1,0 +1,37 @@
+.svn
+.svn/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Compiled source #
+###################
+*.com
+*.dll
+*.exe
+*.o
+*.so
+*.class
+
+cheetah/at.zugal.fitnesse/*
+cheetah/cheetah.textClipping
+cheetah/collaborative_modeling/*
+cheetah/CoProMod/*
+cheetah/experiments/*
+cheetah/graphsimilarity/*
+cheetah/legacy/*
+cheetah/OSGi/*
+cheetah/taskmanager/*
+
+common/com.google.common.guava/*
+common/org.apache.openejb/*
+common/org.jfree.chart/*
+common/sources/*

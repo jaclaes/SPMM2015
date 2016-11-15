@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="bpmn_modeling_1.0">
+		<ProcessInstance id="2906">
+				<Data>
+					<Attribute name="activity_size_width">120</Attribute>
+					<Attribute name="activity_size_height">50</Attribute>
+					<Attribute name="PROCESS">bpmn_modeling_1.0</Attribute>
+					<Attribute name="type">BPMN</Attribute>
+					<Attribute name="timestamp">1277365257623</Attribute>
+					<Attribute name="host">192.168.66.99 (user-PC)</Attribute>
+					<Attribute name="workflow_configuration_id">1</Attribute>
+					<Attribute name="PROCESS_INSTANCE">2906</Attribute>
+					<Attribute name="MOVE_NODE">1</Attribute>
+					<Attribute name="CREATE_EDGE">1</Attribute>
+					<Attribute name="CREATE_NODE">2</Attribute>
+					<Attribute name="duration_in_seconds">18</Attribute>
+				</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">152</Attribute>
+					<Attribute name="descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="name">Start Event</Attribute>
+					<Attribute name="x">50</Attribute>
+					<Attribute name="y">450</Attribute>
+				</Data>
+				<WorkflowModelElement>Start Event</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-06-24T09:41:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">153</Attribute>
+					<Attribute name="descriptor">BPMN.END_EVENT</Attribute>
+					<Attribute name="name">End Event</Attribute>
+					<Attribute name="x">120</Attribute>
+					<Attribute name="y">450</Attribute>
+				</Data>
+				<WorkflowModelElement>End Event</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-06-24T09:41:05+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">154</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">152</Attribute>
+					<Attribute name="source_node_name">Start Event</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="target_node_id">153</Attribute>
+					<Attribute name="target_node_name">End Event</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.END_EVENT</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Start Event to End Event</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-06-24T09:41:15+0200</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

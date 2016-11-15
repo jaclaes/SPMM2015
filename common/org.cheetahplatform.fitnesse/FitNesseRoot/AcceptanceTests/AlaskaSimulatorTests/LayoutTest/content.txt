@@ -1,0 +1,37 @@
+!3 !c Testing the layout algorithm of the agile ui
+
+
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarFixture-!|
+|start|${ALASKA_UI_PACKAGE}.!-AgileCalendarFixture-!|
+|enter|useJourney|Simple Journey|
+|press|startJourney|
+|check|totalActions|0|
+|check|actions|0|0|
+|enter|schedule|A1,0,0|
+|check|actions|0|1|
+|enter|schedule|A1,0,60|
+|check|actions|0|2|
+|check|boxes|0|2|
+|enter|schedule|A1,0,0,0|
+|check|actions|0|3|
+|check|boxes|0|4|
+|check|totalActions|3|
+|check|structure|0|Box 0:30[Box 0:30[A1 0], Box 0:30[A1 0]], Box 60:90[A1 60]|
+|enter|setEndTime|0,1,500|
+|check|structure|0|Box 0:30[Box 0:30[A1 0], Box 0:30[A1 0]], Box 60:500[A1 60]|
+|enter|schedule|A2,0,120,1|
+|check|structure|0|Box 0:30[Box 0:30[A1 0], Box 0:30[A1 0]], Box 60:500[A1 60, A2 120]|
+|enter|schedule|A2,0,75,1|
+|check|structure|0|Box 0:30[Box 0:30[A1 0], Box 0:30[A1 0]], Box 60:500[Box 60:180[A1 60, A2 120], Box 75:135[A2 75]]|
+|enter|schedule|A1,1,360|
+|enter|setEndTime|1,0,560|
+|enter|schedule|A1,1,400,0|
+|enter|schedule|A1,1,400,0|
+|check|structure|1|Box 360:560[A1 360, Box 400:430[A1 400], Box 400:430[A1 400]]|
+|enter|setStartTime|1,0;1,20|
+|check|structure|1|Box 20:560[Box 20:430[A1 400], Box 360:390[A1 360], Box 400:430[A1 400]]|
+|check|totalActions|8|
+|check|actions|1|3|
+
+
+

@@ -1,0 +1,201 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Nested Xor (2)
+
+!img-l http://files/images/Nested_Xor_(2).png
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|splitG      |                 |
+|createXorSplit|splitW      |                 |
+|createXorSplit|splitQ      |                 |
+|createXorSplit|splitIJ     |                 |
+|createXorJoin |joinG       |                 |
+|createXorJoin |joinW       |                 |
+|createXorJoin |joinQ       |                 |
+|createXorJoin |joinIJ      |                 |
+|createActivity|G           |                 |
+|createActivity|W           |                 |
+|createActivity|Q           |                 |
+|createActivity|I           |                 |
+|createActivity|J           |                 |
+|link          |Start       |splitQ      |    |
+|link          |splitQ      |splitW      |    |
+|link          |splitW      |splitG      |    |
+|link          |splitG      |G           |    |
+|link          |G           |joinG       |    |
+|link          |joinG       |W           |    |
+|link          |W           |joinW       |    |
+|link          |joinW       |Q           |    |
+|link          |Q           |joinQ       |    |
+|link          |joinQ       |splitIJ     |    |
+|link          |splitG      |joinG       |    |
+|link          |splitW      |joinW       |    |
+|link          |splitQ      |joinQ       |    |
+|link          |splitIJ     |I           |    |
+|link          |splitIJ     |J           |    |
+|link          |I           |joinIJ      |    |
+|link          |J           |joinIJ      |    |
+|link          |joinIJ      |End         |    |
+
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkActiveActivities|G,I,J,Q,W                      |
+|checkState           |G           |Activated         |
+|checkState           |I           |Activated         |
+|checkState           |J           |Activated         |
+|checkState           |Q           |Activated         |
+|checkState           |W           |Activated         |
+|checkState           |splitG      |Activated         |
+|checkState           |splitW      |Activated         |
+|checkState           |splitQ      |Activated         |
+|checkState           |splitIJ     |Activated         |
+|checkState           |joinG       |Activated         |
+|checkState           |joinW       |Activated         |
+|checkState           |joinQ       |Activated         |
+|launch               |G           |                  |
+|checkActiveActivities|                               |
+|checkState           |G           |Launched          |
+|checkState           |I           |Skipped           |
+|checkState           |J           |Skipped           |
+|checkState           |Q           |Skipped           |
+|checkState           |W           |Skipped           |
+|checkState           |splitG      |Launched          |
+|checkState           |splitW      |Launched          |
+|checkState           |splitQ      |Launched          |
+|checkState           |splitIJ     |Skipped           |
+|checkState           |joinG       |Skipped           |
+|checkState           |joinW       |Skipped           |
+|checkState           |joinQ       |Skipped           |
+|complete             |G           |                  |
+|checkActiveActivities|W                              |
+|checkState           |G           |Completed         |
+|checkState           |I           |Skipped           |
+|checkState           |J           |Skipped           |
+|checkState           |Q           |Skipped           |
+|checkState           |W           |Activated         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Skipped           |
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Skipped           |
+|checkState           |joinQ       |Skipped           |
+|launch               |W           |                  |
+|checkState           |G           |Completed         |
+|checkState           |I           |Skipped           |
+|checkState           |J           |Skipped           |
+|checkState           |Q           |Skipped           |
+|checkState           |W           |Launched          |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Skipped           |
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Skipped           |
+|checkState           |joinQ       |Skipped           |
+|checkActiveActivities|                               |
+|complete             |W           |                  |
+|checkState           |G           |Completed         |
+|checkState           |I           |Skipped           |
+|checkState           |J           |Skipped           |
+|checkState           |Q           |Activated         |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Skipped           |
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Skipped           |
+|checkActiveActivities|Q                              |
+|launch               |Q           |                  |
+|checkState           |G           |Completed         |
+|checkState           |I           |Skipped           |
+|checkState           |J           |Skipped           |
+|checkState           |Q           |Launched          |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Skipped           |
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Skipped           |
+|checkActiveActivities|                               |
+|complete             |Q           |                  |
+|checkState           |G           |Completed         |
+|checkState           |I           |Activated         |
+|checkState           |J           |Activated         |
+|checkState           |Q           |Completed         |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Activated         |
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Completed         |
+|checkActiveActivities|I,J                            |
+|launch                        |I         |       |
+|checkState           |G           |Completed         |
+|checkState           |I           |Launched          |
+|checkState           |J           |Skipped           |
+|checkState           |Q           |Completed         |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Launched          |
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Completed         |
+|checkActiveActivities|                               |
+|cancel|I         |       |
+|checkState           |G           |Completed         |
+|checkState           |I           |Activated|
+|checkState           |J           |Activated|
+|checkState           |Q           |Completed         |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Activated|
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Completed         |
+|checkActiveActivities|I,J                              |
+|launch|J         |       |
+|checkState           |G           |Completed         |
+|checkState           |I           |Skipped|
+|checkState           |J           |Launched|
+|checkState           |Q           |Completed         |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Launched|
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Completed         |
+|checkActiveActivities|                            |
+|complete|J         |       |
+|checkState           |G           |Completed         |
+|checkState           |I           |Skipped|
+|checkState           |J           |Completed|
+|checkState           |Q           |Completed         |
+|checkState           |W           |Completed         |
+|checkState           |splitG      |Completed         |
+|checkState           |splitW      |Completed         |
+|checkState           |splitQ      |Completed         |
+|checkState           |splitIJ     |Completed|
+|checkState           |joinG       |Completed         |
+|checkState           |joinW       |Completed         |
+|checkState           |joinQ       |Completed         |
+|checkState|joinIJ|Completed|
+|checkState|End|Completed|
+|checkActiveActivities|                            |

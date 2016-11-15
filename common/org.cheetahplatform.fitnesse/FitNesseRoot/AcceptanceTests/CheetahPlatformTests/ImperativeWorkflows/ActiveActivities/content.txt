@@ -1,0 +1,77 @@
+!1 Check Active Activities
+
+!img-l http://files/images/And_Within_Xor.png
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|xorsplit    |                 |
+|createAndSplit|andsplit    |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createActivity|C           |                 |
+|createXorJoin |xorjoin     |                 |
+|createAndJoin |andjoin     |                 |
+|link          |Start       |xorsplit    |    |
+|link          |xorsplit    |A           |    |
+|link          |xorsplit    |andsplit    |    |
+|link          |andsplit    |B           |    |
+|link          |andsplit    |C           |    |
+|link          |B           |andjoin     |    |
+|link          |C           |andjoin     |    |
+|link          |andjoin     |xorjoin     |    |
+|link          |A           |xorjoin     |    |
+|link          |xorjoin     |End         |    |
+
+
+!3 All Actions should be activated after instantiating the workflow
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start          |Completed      |
+|checkState|xorsplit       |Activated      |
+|checkState|A              |Activated      |
+|checkState|B              |Activated      |
+|checkState|C              |Activated      |
+|checkState|andsplit       |Activated      |
+
+!3 Take the upper branch by executing action A
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkActiveActivities|A,B,C                          |
+|launch               |A               |              |
+|checkActiveActivities|                               |
+|complete             |A               |              |
+|checkActiveActivities|                               |
+
+
+
+
+!3 Take a lower branch by executing action B
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkActiveActivities|A,B,C                          |
+|launch               |B               |              |
+|checkActiveActivities|C                              |
+|launch               |C               |              |
+|checkActiveActivities|                               |
+|complete             |B               |              |
+|checkActiveActivities|                               |
+|cancel               |C               |              |
+|checkActiveActivities|C                              |
+|launch               |C               |              |
+|checkActiveActivities|                               |
+|complete             |C               |              |
+|checkActiveActivities|                               |
+
+

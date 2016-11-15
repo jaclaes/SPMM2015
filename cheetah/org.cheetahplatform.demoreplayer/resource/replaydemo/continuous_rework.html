@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Continuous Rework</title>
+</head>
+
+<body>
+<h1>Continuous Rework
+</h1>
+<p align="justify"> After a long initial comprehension phase, the diagram shows alternating modeling and reconciliation phases until reaching a 'plateau' of comprehension and reconciliation
+phases. While the remainder of this process comprises some modeling phases, it 
+remains dominated by long comprehension and reconciliation phases. In comparison to 
+the previous example, this phase diagram is rather flat and unsteady. </p>
+<h2><img src="1640.png" width="805" height="278" alt="Continuous Rework" longdesc="Continuous Rework" /></h2>
+<h2>Measures</h2>
+<p>Our measures classify this process as showing a low chunk size (3) with 
+  a medium number of iterations (18). Moreover, the measures show a high number of
+  reconciliation breaks (38.5%), i.e., modeling iterations that show unexpected reconciliation.
+  This example shows an average score with respect to time spent on comprehension
+  (56.6%).</p>
+<h2> Modeling Strategy</h2>
+<p>The replay confirms the observation that the model is created very
+  slowly; adding new elements is directly followed by layouting, i.e., a reconciliation
+  phase. Extensive layouting also happens prior to adding new elements in order to prepare
+  a certain area of the model for adaptation. Furthermore, reconciliation often affects
+  large parts of the existing model beyond the elements added last. We characterize this
+  strategy as 'continuous rework'.
+</p>
+<h2>Modeling Result</h2>
+<p>The created model is free of syntax errors, but shows a deadlock
+  since a merging of multiple branches is not implemented correctly. The modeling result
+  approximates the expected modeling outcome in terms of graph edit distance slightly
+better than the average score.</p>
+</body>
+</html>

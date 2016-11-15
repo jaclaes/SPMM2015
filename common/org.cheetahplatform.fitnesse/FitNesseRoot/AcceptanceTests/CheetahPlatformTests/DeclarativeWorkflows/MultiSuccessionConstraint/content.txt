@@ -1,0 +1,33 @@
+!1 Multi Succession Constraint
+Succession constraint between more than two activities. Possibly more than one source and target activities.
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A         |                    |
+|createActivity                 |B         |                    |
+|createActivity                 |C         |                    |
+|createActivity                 |D         |                    |
+|createMultiSuccessionConstraint|A         |B,C        |        |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,D                             |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|getExecutableTasks|A,D                             |
+|complete          |A               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C,D                         |
+
+
+
+

@@ -1,0 +1,23 @@
+!1 Multi Exclusive Choice Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                                     |
+|start                               |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                      |A             |                |
+|createActivity                      |B             |                |
+|createActivity                      |C             |                |
+|createActivity                      |D             |                |
+|createMultiExclusiveChoiceConstraint|A,B,C,D       |2       |       |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C,D                         |
+|canTerminate      |false                           |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C,D                         |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |

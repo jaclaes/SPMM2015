@@ -1,0 +1,37 @@
+!1 Welcome to the Tests for the Alaska Simulator
+
+Some simple tests illustrating functionality of the Alaska Simulator:
+[[Journey with three locations][AlaskaSimulatorTests.ThreeLocationsTest]]
+[[Journey lasting seven days][AlaskaSimulatorTests.SevenDayJourneyTest]]
+[[More complicated journey][AlaskaSimulatorTests.HeavyPlanningJourneyTest]]
+
+Tests regarding the Agile Planning component
+[[Layout algorithm][AlaskaSimulatorTests.LayoutTest]]
+[[Moving Boxes][AlaskaSimulatorTests.MoveToSurroundingBoxText]]
+[[Expirable Event on Route][AlaskaSimulatorTests.OnRouteExpirableEventsTest]]
+[[Route change event][AlaskaSimulatorTests.RouteChangeConfigEventTest]]
+[[Nested events][AlaskaSimulatorTests.NestedEvents]]
+[[Overlapping events][AlaskaSimulatorTests.OverlappingEvents]]
+[[Partially overlapping events][AlaskaSimulatorTests.PartiallyOverlappingEvents]]
+[[Businessvalue reduction][AlaskaSimulatorTests.ReducedBusinessValueForNextDay]]
+[[Minimum amount of slepp][AlaskaSimulatorTests.MinimumAmountOfSleepTest]]
+[[After execution of activity change event][AlaskaSimulatorTests.AfterActivityChangeConfigEvent]]
+[[Execution Paths][AlaskaSimulatorTests.ExecutionPathTest]]
+[[Validation of journeys][AlaskaSimulatorTests.ValidationTest]]
+
+Restoring of journeys
+[[Simple restore test][AlaskaSimulatorTests.RestoreTest]]
+[[Restoring including parallel actions][AlaskaSimulatorTests.RestoreWithParallelActionsAndBookingTest]]
+[[Restoring including unavailable actions][AlaskaSimulatorTests.RestoreWithUnavailableActionTest]]
+
+
+
+
+!3 Test Environment Setup
+!define ALASKA_CORE_PACKAGE {org.alaskasimulator.test.fitnesse.core}
+!define ALASKA_UI_PACKAGE {org.alaskasimulator.test.fitnesse.ui}
+
+!path ../org.alaskasimulator.core/bin
+!path ../org.alaskasimulator.ui/bin
+!path ../org.cheetahplatform.survey/bin
+!path ../org.alaskasimulator.gameconfig/bin

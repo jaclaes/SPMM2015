@@ -1,0 +1,62 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Test for Bug
+!img-l http://files/images/parallel_10.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                  |
+|start        |${TDD_FIXTURE}    |
+|addActivity  |A    |8:30 |13:00||
+|addActivity  |B    |8:30 |9:30 ||
+|addActivity  |C    |9:00 |13:30||
+|addActivity  |D    |11:30|14:00||
+|addActivity  |E    |9:00 |9:30 ||
+|layout       |                  |
+|maxParallel  |4                 |
+|parallelCount|8:29 |0           |
+|parallelCount|8:30 |2           |
+|parallelCount|8:59 |2           |
+|parallelCount|9:00 |4           |
+|parallelCount|9:29 |4           |
+|parallelCount|9:30 |2           |
+|parallelCount|11:29|2           |
+|parallelCount|11:30|3           |
+|parallelCount|12:59|3           |
+|parallelCount|13:00|2           |
+|parallelCount|13:29|2           |
+|parallelCount|13:30|1           |
+|parallelCount|13:59|1           |
+|parallelCount|14:00|0           |
+|x            |A    |0           |
+|y            |A    |1h30        |
+|width        |A    |1           |
+|height       |A    |4h30        |
+|x            |B    |1           |
+|y            |B    |1h30        |
+|width        |B    |1           |
+|height       |B    |1h          |
+|x            |C    |2           |
+|y            |C    |2h          |
+|width        |C    |1           |
+|height       |C    |4h30        |
+|x            |D    |1           |
+|y            |D    |4h30        |
+|width        |D    |1           |
+|height       |D    |2h30        |
+|x            |E    |3           |
+|y            |E    |2h          |
+|width        |E    |1           |
+|height       |E    |0h30        |

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: org.cheetahplatform.j2ee.core.jar 
+ jbosscache-core.jar 
+ lib/hibernate-core.jar 
+ lib/jbosscache-pojo.jar
+

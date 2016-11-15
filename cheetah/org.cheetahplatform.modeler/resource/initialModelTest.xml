@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<graph>
+  <nodes>
+    <node>
+      <id>29</id>
+      <name>A</name>
+      <type>BPMN.ACTIVITY</type>
+      <bounds>
+        <x>143</x>
+        <y>66</y>
+        <width>120</width>
+        <height>50</height>
+      </bounds>
+    </node>
+    <node>
+      <id>31</id>
+      <name>B</name>
+      <type>BPMN.ACTIVITY</type>
+      <bounds>
+        <x>145</x>
+        <y>182</y>
+        <width>120</width>
+        <height>50</height>
+      </bounds>
+    </node>
+  </nodes>
+  <edges>
+    <edge>
+      <id>32</id>
+      <name></name>
+      <offset>
+        <x>0</x>
+        <y>0</y>
+      </offset>
+      <type>BPMN.SEQUENCE_FLOW</type>
+      <source>29</source>
+      <target>31</target>
+      <bendpoints/>
+    </edge>
+  </edges>
+</graph>

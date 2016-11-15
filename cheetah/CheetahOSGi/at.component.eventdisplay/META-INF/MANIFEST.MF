@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Event Display
+Bundle-SymbolicName: at.component.eventdisplay
+Bundle-Version: 1.0.0
+Bundle-Activator: at.component.eventdisplay.Activator
+Component-Identifier: component
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: at.component;version="1.0.0",
+ org.osgi.framework;version="1.3.0",
+ org.osgi.service.event;version="1.2.0",
+ org.osgi.service.wireadmin;version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.swt;bundle-version="3.5.0"

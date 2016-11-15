@@ -1,0 +1,10 @@
+<flugDatums>
+  <flugDatum id='1'>
+    <Datum>112009</Datum>
+    <id>1</id>
+  </flugDatum>
+  <flugDatum id='2'>
+    <Datum>10102010</Datum>
+    <id>2</id>
+  </flugDatum>
+</flugDatums>

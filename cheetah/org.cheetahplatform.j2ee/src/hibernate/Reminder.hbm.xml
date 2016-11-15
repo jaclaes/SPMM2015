@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.cheetahplatform.core.declarative.modeling.IReminder"
+		abstract="true" table="reminders">
+		<id name="databaseId" type="long" column="id">
+			<generator class="native" />
+		</id>
+		<discriminator column="reminderType" type="string" />
+
+		<subclass
+			name="org.cheetahplatform.core.declarative.modeling.MilestoneActivityReminder"
+			discriminator-value="MILESTONE_ACTIVITY">
+			<property name="name" type="text" access="field" column="name" />
+			<property name="activity"
+				type="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity"
+				access="field" />
+			<property name="milestone"
+				type="org.cheetahplatform.core.declarative.modeling.Milestone"
+				access="field" />
+			<property name="reminderText" type="text" access="field" />
+			<property name="duration" type="hibernate.DurationUserType"
+				access="field">
+				<column name="time" />
+				<column name="inclusive" />
+			</property>
+		</subclass>
+	</class>
+</hibernate-mapping> 

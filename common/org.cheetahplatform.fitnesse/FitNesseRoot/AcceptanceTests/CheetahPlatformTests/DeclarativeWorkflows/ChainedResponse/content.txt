@@ -1,0 +1,31 @@
+!1 Chained Response Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A         |                    |
+|createActivity                 |B         |                    |
+|createActivity                 |C         |                    |
+|createChainedResponseConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|getExecutableTasks|A,B,C                               |
+|complete          |A               |               |
+|canTerminate      |false                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+

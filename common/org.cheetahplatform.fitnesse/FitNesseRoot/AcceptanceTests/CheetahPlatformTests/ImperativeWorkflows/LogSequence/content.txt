@@ -1,0 +1,34 @@
+!1 Logging a Simple Sequence
+
+ !img-l http://files/images/Sequence.png
+
+
+
+!|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createActivity|C           |                 |
+|link          |Start       |A         |      |
+|link          |A           |B         |      |
+|link          |B           |C         |      |
+|link          |C           |End       |      |
+
+
+!|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start   |${IMPERATIVE_EXECUTION_FIXTURE}                                                                    |
+|checkLog|INSTANTIATE,DummySchema;CREATE,Start;ACTIVATE,Start;LAUNCH,Start;COMPLETE,Start;CREATE,A;ACTIVATE,A|
+|launch  |A                                                 |                                                |
+|checkLog|LAUNCH,A                                                                                           |
+|complete|A                                                 |                                                |
+|checkLog|COMPLETE,A;CREATE,B;ACTIVATE,B                                                                     |
+|launch  |B                                                 |                                                |
+|checkLog|LAUNCH,B                                                                                           |
+|complete|B                                                 |                                                |
+|checkLog|COMPLETE,B;CREATE,C;ACTIVATE,C                                                                     |
+|launch  |C                                                 |                                                |
+|checkLog|LAUNCH,C                                                                                           |
+|complete|C                                                 |                                                |
+|checkLog|COMPLETE,C;CREATE,End;ACTIVATE,End;LAUNCH,End;COMPLETE,End                                         |
+
+

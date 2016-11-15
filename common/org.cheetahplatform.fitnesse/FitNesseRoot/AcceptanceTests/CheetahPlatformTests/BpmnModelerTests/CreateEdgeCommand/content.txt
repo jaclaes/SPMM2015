@@ -1,0 +1,14 @@
+!1 Create Edge Command
+
+|${BPMN_COMMAND_FIXTURE}                |
+|start          |${BPMN_COMMAND_FIXTURE}|
+|createActivity |A     |1 |100,50  |    |
+|createActivity |B     |2 |10,60   |    |
+|createActivity |C     |4 |100,600 |    |
+|createEdge     |A->B  |3 |1       |2 | |
+|containsElement|3     |true            |
+|checkName      |3     |A->B            |
+|createEdge     |A->C  |5 |1       |4 | |
+|containsElement|5     |true            |
+|checkName      |5     |A->C            |
+

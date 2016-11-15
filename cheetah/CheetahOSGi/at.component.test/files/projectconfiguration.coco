@@ -1,0 +1,107 @@
+<ProjectConfiguration>
+  <projectComponentInformation>
+    <bundlePath>initial@reference:file:../../../Dokumente und Einstellungen/user/Desktop/Workspaces/Eclipse 3.5.1/Masterarbeit/OSGi/at.component.group/</bundlePath>
+    <componentId>1</componentId>
+    <childComponentInformation class="linked-list">
+      <ComponentInformation>
+        <bundlePath>initial@reference:file:../../../Dokumente und Einstellungen/user/Desktop/Workspaces/Eclipse 3.5.1/Masterarbeit/OSGi/at.component.eventdisplay/</bundlePath>
+        <componentId>2</componentId>
+        <parentComponentId>1</parentComponentId>
+        <childComponentInformation class="linked-list"/>
+        <bounds>
+          <x>165</x>
+          <y>60</y>
+          <width>183</width>
+          <height>190</height>
+        </bounds>
+      </ComponentInformation>
+      <ComponentInformation>
+        <bundlePath>initial@reference:file:../../../Dokumente und Einstellungen/user/Desktop/Workspaces/Eclipse 3.5.1/Masterarbeit/OSGi/at.component.calculation/</bundlePath>
+        <componentId>3</componentId>
+        <parentComponentId>1</parentComponentId>
+        <childComponentInformation class="linked-list"/>
+        <data>
+          <entry>
+            <string>number2</string>
+            <string>5</string>
+          </entry>
+          <entry>
+            <string>number1</string>
+            <string>4</string>
+          </entry>
+        </data>
+        <bounds>
+          <x>210</x>
+          <y>300</y>
+          <width>227</width>
+          <height>97</height>
+        </bounds>
+        <wireComponentIds>
+          <at.component.util.services.componentwireadmin.ConnectionInformation>
+            <consumerPid>test?5</consumerPid>
+            <producerPid>test?3</producerPid>
+          </at.component.util.services.componentwireadmin.ConnectionInformation>
+          <at.component.util.services.componentwireadmin.ConnectionInformation>
+            <consumerPid>test?4</consumerPid>
+            <producerPid>test?3</producerPid>
+          </at.component.util.services.componentwireadmin.ConnectionInformation>
+        </wireComponentIds>
+      </ComponentInformation>
+      <ComponentInformation>
+        <bundlePath>initial@reference:file:../../../Dokumente und Einstellungen/user/Desktop/Workspaces/Eclipse 3.5.1/Masterarbeit/OSGi/at.component.calculation/</bundlePath>
+        <componentId>4</componentId>
+        <parentComponentId>1</parentComponentId>
+        <childComponentInformation class="linked-list"/>
+        <data>
+          <entry>
+            <string>number1</string>
+            <string>9</string>
+          </entry>
+        </data>
+        <bounds>
+          <x>615</x>
+          <y>210</y>
+          <width>227</width>
+          <height>97</height>
+        </bounds>
+        <wireComponentIds>
+          <at.component.util.services.componentwireadmin.ConnectionInformation>
+            <consumerPid>test?3</consumerPid>
+            <producerPid>test?4</producerPid>
+          </at.component.util.services.componentwireadmin.ConnectionInformation>
+        </wireComponentIds>
+      </ComponentInformation>
+      <ComponentInformation>
+        <bundlePath>initial@reference:file:../../../Dokumente und Einstellungen/user/Desktop/Workspaces/Eclipse 3.5.1/Masterarbeit/OSGi/at.component.display/</bundlePath>
+        <componentId>5</componentId>
+        <parentComponentId>1</parentComponentId>
+        <childComponentInformation class="linked-list"/>
+        <data>
+          <entry>
+            <string>display_text</string>
+            <string>9</string>
+          </entry>
+        </data>
+        <bounds>
+          <x>540</x>
+          <y>375</y>
+          <width>243</width>
+          <height>63</height>
+        </bounds>
+        <wireComponentIds>
+          <at.component.util.services.componentwireadmin.ConnectionInformation>
+            <consumerPid>test?3</consumerPid>
+            <producerPid>test?5</producerPid>
+          </at.component.util.services.componentwireadmin.ConnectionInformation>
+        </wireComponentIds>
+      </ComponentInformation>
+    </childComponentInformation>
+    <bounds>
+      <x>2</x>
+      <y>20</y>
+      <width>1413</width>
+      <height>942</height>
+    </bounds>
+  </projectComponentInformation>
+  <projectName>test</projectName>
+</ProjectConfiguration>

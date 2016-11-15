@@ -1,0 +1,56 @@
+!1 Nested And Fragments
+
+!img-l http://files/images/Nested_And.png
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                 |
+|start           |${IMPERATIVE_CREATION_FIXTURE}|
+|createAndSplit  |split1  |                     |
+|createAndSplit  |split2  |                     |
+|createActivity  |A       |                     |
+|createActivity  |B       |                     |
+|createActivity  |C       |                     |
+|createAndJoin   |join1   |                     |
+|createAndJoin   |join2   |                     |
+|link            |Start   |split1  |            |
+|link            |split1  |split2  |            |
+|link            |split1  |C       |            |
+|link            |split2  |A       |            |
+|link            |split2  |B       |            |
+|link            |A       |join2   |            |
+|link            |B       |join2   |            |
+|link            |join2   |join1   |            |
+|link            |C       |join1   |            |
+|link            |join1   |End     |            |
+
+
+
+|${IMPERATIVE_SESE_FIXTURE}                            |
+|start    |${IMPERATIVE_SESE_FIXTURE}                  |
+|children |component   |1                              |
+|type     |component   |!-ProcessFragment-!            |
+|store    |component[0]|and1                          ||
+|startNode|and1        |split1                         |
+|endNode  |and1        |join1                          |
+|type     |and1        |!-AndFragment-!                |
+|children |and1        |2                              |
+|store    |and1[0]     |and2                          ||
+|store    |and1[1]     |c                             ||
+|type     |c           |Polygon                        |
+|name     |c[0]        |C                              |
+|type     |and2        |!-AndFragment-!                |
+|startNode|and2        |split2                         |
+|endNode  |and2        |join2                          |
+|children |and2        |2                              |
+|store    |and2[0]     |a                             ||
+|store    |and2[1]     |b                             ||
+|type     |a[0]        |!-SingleEntrySingleExitNode -! |
+|type     |b[0]        |!-SingleEntrySingleExitNode -! |
+|name     |a[0]        |A                              |
+|name     |b[0]        |B                              |

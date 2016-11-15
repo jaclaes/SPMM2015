@@ -1,0 +1,4 @@
+class FlugDatum {
+	Integer Datum
+}
+

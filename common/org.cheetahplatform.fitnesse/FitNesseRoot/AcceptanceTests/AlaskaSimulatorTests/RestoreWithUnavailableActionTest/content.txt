@@ -1,0 +1,225 @@
+!3 !c Restore a journey
+
+Start game restoration
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|start|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|enter|load|Journey_With_Unavailable_Event.xml|
+|check|countCommands|16|
+|check|businessValue|0|
+|check|expectedBusinessValue|0|
+|check|expenses|0|
+|check|expectedExpenses|0|
+|check|totalActions|0|
+
+Add San Fran <-> Napa Valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|5|
+|check|expenses|0|
+|check|expectedExpenses|10.0|
+|check|totalActions|1|
+|check|actions|0|1|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300]|
+|check|actionState|San Francisco <-> Napa Valley,0,300|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|4|
+
+Add winery tour
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|880|
+|check|expenses|0|
+|check|expectedExpenses|210|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360]|
+|check|actionState|Private Napa Valley Winery Tour,0,360|PLANNED|
+|check|failures|3|
+
+Add Napa Valley <-> Sonoma Valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|885|
+|check|expenses|0|
+|check|expectedExpenses|215|
+|check|totalActions|3|
+|check|actions|0|3|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660]|
+|check|actionState|Napa Valley <-> Sonoma Valley,0,660|PLANNED|
+|check|failures|3|
+
+
+Add Sonoma Motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|885|
+|check|expenses|0|
+|check|expectedExpenses|335|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Sonoma Hotel,0,721|PLANNED|
+|check|failures|3|
+
+Add Napa Valley <-> Sonoma Valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|890|
+|check|expenses|0|
+|check|expectedExpenses|340|
+|check|totalActions|5|
+|check|actions|1|1|
+|check|structure|1|Box 0:30[Napa Valley <-> Sonoma Valley 0]|
+|check|actionState|Napa Valley <-> Sonoma Valley,0,660|PLANNED|
+|check|failures|3|
+
+Book Winery Tour
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|890|
+|check|expenses|200|
+|check|expectedExpenses|340|
+|check|totalActions|5|
+|check|actions|0|4|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Private Napa Valley Winery Tour,0,360|PLANNED, Booked|
+|check|failures|3|
+
+Book Sonoma Motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|890|
+|check|expenses|320|
+|check|expectedExpenses|340|
+|check|totalActions|5|
+|check|actions|0|4|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Sonoma Hotel,0,721|PLANNED, Booked|
+|check|failures|3|
+
+start journey
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|890|
+|check|expenses|320|
+|check|expectedExpenses|340|
+|check|totalActions|5|
+|check|actions|0|4|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|failures|3|
+
+execute accident event
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|890|
+|check|expenses|320|
+|check|expectedExpenses|340|
+|check|totalActions|5|
+|check|actions|0|4|
+|check|structure|0|Box 300:355[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|failures|3|
+
+
+execute san fran <-> napa valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|5.4|
+|check|expectedBusinessValue|890.4|
+|check|expenses|330|
+|check|expectedExpenses|340|
+|check|totalActions|5|
+|check|actions|0|4|
+|check|structure|0|Box 300:400[San Francisco <-> Napa Valley 300], Box 360:660[Private Napa Valley Winery Tour 360], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|San Francisco <-> Napa Valley,0,300|DONE|
+|check|failures|5|
+
+
+cancel napa valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|5.4|
+|check|expectedBusinessValue|15.4|
+|check|expenses|330|
+|check|expectedExpenses|340|
+|check|totalActions|4|
+|check|actions|0|3|
+|check|structure|0|Box 300:400[San Francisco <-> Napa Valley 300], Box 660:690[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Private Napa Valley Winery Tour,0,360|CANCELED|
+|check|failures|4|
+
+execute napa valley <-> sonoma valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|12.2|
+|check|expectedBusinessValue|17.2|
+|check|expenses|335|
+|check|expectedExpenses|340|
+|check|totalActions|4|
+|check|actions|0|3|
+|check|structure|0|Box 300:400[San Francisco <-> Napa Valley 300], Box 660:689[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Napa Valley <-> Sonoma Valley,0,660|DONE|
+|check|failures|4|
+
+execute road closure event
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|12.2|
+|check|expectedBusinessValue|17.2|
+|check|expenses|335|
+|check|expectedExpenses|340|
+|check|totalActions|4|
+|check|actions|0|3|
+|check|structure|0|Box 300:400[San Francisco <-> Napa Valley 300], Box 660:689[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Napa Valley <-> Sonoma Valley,0,660|DONE|
+|check|failures|4|
+
+
+execute sonoma motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|12.2|
+|check|expectedBusinessValue|17.2|
+|check|expenses|335|
+|check|expectedExpenses|340|
+|check|totalActions|4|
+|check|actions|0|3|
+|check|structure|0|Box 300:400[San Francisco <-> Napa Valley 300], Box 660:689[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|actionState|Sonoma Hotel,0,721|DONE, Booked|
+|check|failures|4|
+
+Execute Napa Valley <-> Sonoma Valley
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|20.3|
+|check|expectedBusinessValue|20.3|
+|check|expenses|340|
+|check|expectedExpenses|340|
+|check|totalActions|4|
+|check|actions|1|1|
+|check|structure|1|Box 0:28[Napa Valley <-> Sonoma Valley 0]|
+|check|actionState|Napa Valley <-> Sonoma Valley,1,0|DONE|
+|check|failures|4|
+
+Finish Journey
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|20.3|
+|check|expectedBusinessValue|20.3|
+|check|expenses|340|
+|check|expectedExpenses|340|
+|check|totalActions|4|
+|check|actions|0|3|
+|check|actions|1|1|
+|check|structure|0|Box 300:400[San Francisco <-> Napa Valley 300], Box 660:689[Napa Valley <-> Sonoma Valley 660], Sonoma Hotel 721|
+|check|structure|1|Box 0:28[Napa Valley <-> Sonoma Valley 0]|
+|check|failures|4|
+|check|gameState|JOURNEY_UNSUCCESSFULLY_ENDED|

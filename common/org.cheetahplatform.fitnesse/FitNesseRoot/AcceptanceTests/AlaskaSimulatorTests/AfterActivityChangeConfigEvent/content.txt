@@ -1,0 +1,56 @@
+!2 This test creates some activities and attaches events to them. The events are executed after executing the activity.
+
+
+Create a game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                   |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode         |create?|
+|My first configuration |21             |3              |720        |BUSINESS_VALUE_CONSTRAINT|true   |
+
+
+---- Create locations - the first one is the starting location
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name        |create?|
+|Embachklamm |true       |
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateActivityConfigTest-!|
+|name          |businessValue|cost|bookingDeadline|certainty|availability|durationMin|durationMax|create?|
+|Climbing      |10           |10  |3              |1.0      |1           |300        |300        |true   |
+
+
+---- Link actions - actions must be linked to their locations unless they are used in events. Please note that routes must be added to both endpoints of the route.
+
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName     |locationName |linkAction?|countActions?|
+|Climbing       |Embachklamm  |           |1            |
+
+
+---- Create events attached to the routes defined before. This events can occur at the start and end location of a route.
+
+|${ALASKA_CORE_PACKAGE}.!-ChangeTemporalActionEventsTest-!|
+|name|eventSource|actionName|probability|newCost|newBusinessValue|newCertainty|newAvailability |newDuration|expirationTime|create?||
+|Amazing Climbing|Climbing|Climbing|1.0|10|1000|1.0|1.0|300|300|true|Attach event to activity climbing|
+
+
+
+
+---- Create a game from the previous created game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName  |create?|getStartLocation?|
+|cooles Spiel|true       |Embachklamm         |
+
+
+---- Start the game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|
+|true|
+
+
+---- Game-Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|checkExpenses?|getDuration?|getMinutesOfDay?|getDay?|getBusinessValue?|getLocation?|allowsCompletion?||
+|Execute        |Climbing       |0,0      |true          |10             |300         |300             |0      |1000               |Embachklamm   |true|The BV was increased by the event|

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cheetahplatform Survey
+Bundle-SymbolicName: org.cheetahplatform.survey
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.cheetahplatform.survey.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.cheetahplatform.common;bundle-version="1.0.0",
+ org.cheetahplatform.core;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.cheetahplatform.survey,
+ org.cheetahplatform.survey.controller,
+ org.cheetahplatform.survey.core,
+ org.cheetahplatform.survey.core.validator,
+ org.cheetahplatform.survey.wizard

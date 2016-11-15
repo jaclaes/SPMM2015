@@ -1,0 +1,49 @@
+!1 Imperative Workflows
+
+!3 Demonstration of the basic routing nodes
+[[Sequence][ImperativeWorkflows.SequenceTest]]
+[[Xor][ImperativeWorkflows.XorTest]]
+[[Xor (2)][ImperativeWorkflows.XorForMakingActivityOptionalTest]]
+[[And][ImperativeWorkflows.AndTest]]
+[[Loop][ImperativeWorkflows.LoopTest]]
+[[Simple Looping][ImperativeWorkflows.SimpleLooping]]
+
+!3 Combination of routing nodes
+[[Loop within Xor][ImperativeWorkflows.LoopWithinXor]]
+[[Active Activities][ImperativeWorkflows.ActiveActivities]]
+[[Loop within And][ImperativeWorkflows.LoopWithinAnd]]
+[[Nested Xor][ImperativeWorkflows.NestedXor]]
+[[Nested Xor (2)][ImperativeWorkflows.NestedXor2]]
+[[Nested And][ImperativeWorkflows.NestedAnd]]
+[[Cancel within Xor][ImperativeWorkflows.CancelXor]]
+[[And within Xor][ImperativeWorkflows.AndWithinXor]]
+[[And within Xor With Cancel][ImperativeWorkflows.AndWithinXorWithCancel]]
+[[Chained Xor][ImperativeWorkflows.ChainedXor]]
+[[Model 1][ImperativeWorkflows.Model1Page]]
+[[Model 2][ImperativeWorkflows.Model2Page]]
+
+
+!3 Decision Deferal Patterns
+[[Late Binding Box in Sequence][ImperativeWorkflows.LateBindingInSequence]]
+[[Late Modeling Box in Sequence][ImperativeWorkflows.LateModelingInSequence]]
+
+!3 Single Entry Single Exit Decomposition
+[[Sequence][ImperativeWorkflows.SingleEntrySingleExitSequence]]
+[[Xor Fragment][ImperativeWorkflows.XorFragment]]
+[[And Fragment][ImperativeWorkflows.AndFragment]]
+[[Loop Fragment][ImperativeWorkflows.LoopFragment]]
+[[Nested And Fragments][ImperativeWorkflows.NestedFragments]]
+[[Nested Xor Fragments][ImperativeWorkflows.NestedXorFragments]]
+[[Nested Loop Within Xor Fragment][ImperativeWorkflows.NestedLoop]]
+[[Late Binding Box][ImperativeWorkflows.LateBindingBox]]
+[[Late Modeling Box][ImperativeWorkflows.LateModelingBox]]
+
+!3 Logging
+[[Log Sequence][ImperativeWorkflows.LogSequence]]
+[[Log Xor][ImperativeWorkflows.LogXor]]
+[[Log And][ImperativeWorkflows.LogAnd]]
+[[Log Loop][ImperativeWorkflows.LogLoop]]
+
+
+
+[[Temp][ImperativeWorkflows.TemporaryPage]]

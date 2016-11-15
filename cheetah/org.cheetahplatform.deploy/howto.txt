@@ -1,0 +1,17 @@
+Howto setup a domain:
+
+1) Ensure that the bin directory of the application server is added to the PATH variable
+2) Run script createdomain.bat, the passwords used are stored in pw.txt
+3) Copy content of lib to as/libs (ignore domain libs, flatten directory structure!)
+4) Copy all libs from domain libs to the domains's lib folder
+5) Adapt cheetahplatform\config.xml: set hostname where necessary to bind to specific IP adress (e.g., extern instead of intern)
+
+
+
+---------
+   FAQ
+---------
+
+Howto store the login in asadmin?
+1) stop domain
+2) asadmin change-master-password --savemasterpassword=true cheetahplatform

@@ -1,0 +1,96 @@
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="Simple Journey to Alaska" type="Agile">
+		
+		<ProcessInstance id="Simple Journey to Alaska">
+		<Data >
+		<Attribute name="GameConfigName">Simple Journey to Alaska</Attribute>
+	 <Attribute name="Player">Chuck Norris</Attribute>
+	</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#0">&lt;object-array&gt;
+  &lt;string&gt;Fairbanks&lt;/string&gt;
+  &lt;list/&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#1">&lt;object-array&gt;
+  &lt;string&gt;Juneau&lt;/string&gt;
+  &lt;list/&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#2">&lt;object-array&gt;
+  &lt;string&gt;Anchorage&lt;/string&gt;
+  &lt;list/&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.ui.IActionConfigFilterService#0">&lt;object-array&gt;
+  &lt;string&gt;actions&lt;/string&gt;
+  &lt;set/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.ui.IActionConfigFilterService#1">&lt;object-array&gt;
+  &lt;string&gt;rules&lt;/string&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>START_PLANNING</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="Time">[0d,135min]</Attribute>
+					<Attribute name="ID">6</Attribute>
+				</Data>
+				<WorkflowModelElement>4 Hour Scenic Rafting</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,135min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;0&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="Time">[0d,330min]</Attribute>
+					<Attribute name="ID">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Flightseeing</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[0d,330min]</Timestamp>
+			</AuditTrailEntry> 
+<AuditTrailEntry>
+	<Data>
+<Attribute name="Time">[0d,330min]</Attribute>
+<Attribute name="ID">7</Attribute>
+</Data>
+<WorkflowModelElement>Flightseeing</WorkflowModelElement>
+<EventType>MOVE_TO_SURROUNDING_BOX</EventType>
+<Timestamp>[0d,330min]</Timestamp>
+</AuditTrailEntry>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;0&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="BOX_END_TIME">[0d,405min]</Attribute>
+					<Attribute name="Time">[0d,135min]</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>CHANGE_AGILE_BOX_END_TIME</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list&gt;
+  &lt;int&gt;1&lt;/int&gt;
+&lt;/list&gt;</Attribute>
+					<Attribute name="BOX_END_TIME">[0d,480min]</Attribute>
+					<Attribute name="Time">[0d,330min]</Attribute>
+				</Data>
+				<WorkflowModelElement>Simple Journey to Alaska</WorkflowModelElement>
+				<EventType>CHANGE_AGILE_BOX_END_TIME</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

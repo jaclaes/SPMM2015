@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test Plug-in
+Bundle-SymbolicName: org.cheetahplatform.test
+Bundle-Version: 1.0.0
+Bundle-Activator: org.cheetahplatform.test.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.cheetahplatform.common;bundle-version="1.0.0",
+ org.junit4;bundle-version="4.3.1",
+ com.thoughtworks.xstream;bundle-version="1.0.0",
+ org.cheetahplatform.testarossa;bundle-version="1.0.0",
+ org.cheetahplatform.modeler;bundle-version="1.0.0",
+ org.alaskasimulator.core;bundle-version="1.0.0",
+ org.alaskasimulator.ui;bundle-version="1.0.0",
+ org.alaskasimulator.gameconfig;bundle-version="1.0.0",
+ org.eclipse.gef,
+ org.eclipse.jface.text;bundle-version="3.5.0",
+ org.alaskasimulator.workflow;bundle-version="1.0.0",
+ alaska.config;bundle-version="1.0.0",
+ org.cheetahplatform.core;bundle-version="1.0.0",
+ org.cheetahplatform.modeler.changepattern;bundle-version="1.0.0",
+ org.cheetahplatform.experiment.2011_04_thinkaloud;bundle-version="1.0.0",
+ org.cheetahplatform.experiment.2011_10_tdm_case_study;bundle-version="1.0.0",
+ org.jbpt;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -1,0 +1,40 @@
+\chapter{Summary}
+\label{chapter:summary}
+
+The evaluation of three mashup composers (see Chapter \ref{chapter:evaluation}), namely
+``Microsoft Popfly'', ``Yahoo Pipes'' and ``IBM Mashup Center'' revealed, besides strengths like
+the user interface, some major problems or shortcomings respectively, which are not solved or
+implemented yet. Hence, requirements for a software product which integrates the identified
+strengths and eliminates the weaknesses from the introduced evaluation criteria, are deduced (see
+Chapter \ref{chapter:requirements}). Chapter \ref{chapter:osgi} introduces the Component Framework,
+which is based on approved technologies and extends them with the required functionality to support
+the identified requirements. Finally, Chapter \ref{chapter:applications} validates the introduced
+framework by implementing a test application which can be seen as an interface to the Component
+Framework and hence uses all its major functionalities.
+
+\section{Conclusion}
+
+To sum up, the Component Framework provides means to easily develop mashups and applications on the
+basis of approved technologies like Java and OSGi. It eliminates most weaknesses of the evaluated
+mashup composers by providing an extensive and further extensible grouping functionality of single
+components, by making these groups reusable within other mashups, by integrating a life-cycle
+management for single components as well as groups, by implementing an event management system
+which enables a loosely coupled communication between components and by providing a logging
+mechanism which provides a source for important feedback for the component developer and enablesdata mining.
+The implemented prototype application, which can be seen as an interface to the Component Framework,
+finally provides methods to drag, drop and arrange components on a working area, to group components
+within various forms of display, to connect components, in order to exchange, aggregate and process
+data and to save and reuse the created projects.
+Furthermore, a plug-in for Eclipse is provided, which alleviates the process of implementing custom
+components and hence extend and enhance the framework or the prototype application respectively.
+Hence, the developed solution provides better means than existing mashup composer tools to fulfill
+the requirements of the introduced air ambulance scenario as well as of similar examples.
+
+\section{Outlook}
+
+As master theses are in most cases limited in time and resources that can be spent on it, the
+Component Framework and the prototype application which were developed for this thesis indeed
+fulfill the identified requirements, but still have great potentials to be further extended and
+enhanced. A XML-based communication standard which is newly implemented or adapted from existing
+service oriented technologies or the creation of a central service repository would be only two of
+many interesting extensions.

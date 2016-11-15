@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.cheetahplatform.editor">
+      <editor
+            class="org.cheetahplatform.modeler.changepattern.ChangePatternEditorProvider">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.cheetahplatform.modeler.changepattern.ChangePatternEditor"
+            default="false"
+            id="org.cheetahplatform.modeler.ChangePatternEditor"
+            name="Change Pattern">
+      </editor>
+   </extension>
+   <extension
+         point="org.cheetahplatform.menu">
+      <menuItem
+            class="org.cheetahplatform.modeler.changepattern.action.ShowChangePatternTutorialAction"
+            configurationId="show_change_pattern_tutorial"
+            path="tutorial">
+      </menuItem>
+   </extension>
+   <extension
+         point="org.cheetahplatform.activity.provider">
+      <activityFactory
+            class="org.cheetahplatform.modeler.changepattern.ChangePatternActivityFactory">
+         <activityType
+               subtype="Change Pattern Tutorial"
+               type="ExpEditor.TutorialActivity">
+         </activityType>
+         <activityType
+               type="ExpEditor.ChangePatternModelingActivity">
+         </activityType>
+      </activityFactory>
+   </extension>
+</plugin>

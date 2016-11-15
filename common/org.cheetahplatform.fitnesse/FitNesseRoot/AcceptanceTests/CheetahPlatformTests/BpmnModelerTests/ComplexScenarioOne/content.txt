@@ -1,0 +1,15 @@
+!1 Complex Scenario 1
+
+|${BPMN_COMMAND_FIXTURE}                |
+|start          |${BPMN_COMMAND_FIXTURE}|
+|createActivity |A    |1    |100,50  |  |
+|createActivity |B    |2    |10,60   |  |
+|createActivity |C    |4    |100,600 |  |
+|createEdge     |A->B |3    |1       |2||
+|deleteNode     |2    |                 |
+|reconnectEdge  |3    |1    |4       |  |
+|containsElement|1    |true             |
+|containsElement|3    |true |           |
+|containsElement|4    |true             |
+|checkEdges     |3    |1    |4          |
+

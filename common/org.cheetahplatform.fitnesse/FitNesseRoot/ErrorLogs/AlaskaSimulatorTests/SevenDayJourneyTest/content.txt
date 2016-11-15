@@ -1,0 +1,20 @@
+!3 !-fit-!
+|'''Date: '''|!-2:42:30 PM (MESZ) on Freitag, Oktober 2, 2009-!|
+|'''Test Page: '''|.AlaskaSimulatorTests.SevenDayJourneyTest|
+|'''Command: '''|!-java -cp ../org.alaskasimulator.core/bin;../org.cheetahplatform.survey/bin;classes;fitnesse.jar;../org.cheetahplatform.test/bin;../org.cheetahplatform.service/bin;../org.cheetahplatform.j2ee.core/build/classes;../org.cheetahplatform.tdd/bin;../org.cheetahplatform.modeler/bin;../org.cheetahplatform.common/bin;../com.thoughtworks.xstream;customLibs/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;customLibs/org.eclipse.core.runtime_3.4.0.v20080512.jar;customLibs/org.eclipse.osgi_3.4.0.v20080605-1900.jar;customLibs/org.eclipse.gef_3.4.1.v20080806.jar;customLibs/org.eclipse.draw2d_3.4.2.v20090114-1330.jar;customLibs/org.eclipse.ui.workbench_3.5.0.I20090603-2000.jar;customLibs/org.eclipse.jface_3.5.0.I20090525-2000.jar;customLibs/org.eclipse.swt.win32.win32.x86_3.5.0.v3550b.jar;customLibs/org.eclipse.equinox.preferences_3.2.300.v20090520-1800.jar fit.FitServer laptop-sz 8001 7-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.953 seconds-!|
+----'''Standard Error:'''
+{{{Warning: NLS missing message: ComboInputAttribute_0 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: GameAttribute_1 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: GameAttribute_5 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: IntegerValidator_0 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: IntegerValidator_3 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: IntegerValidator_6 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: TextInputAttribute_4 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: TextInputAttribute_5 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: TextInputAttribute_6 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: TextInputAttribute_7 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: TextInputAttribute_8 in: org.alaskasimulator.core.messages
+Warning: NLS missing message: TextInputAttribute_9 in: org.alaskasimulator.core.messages
+}}}

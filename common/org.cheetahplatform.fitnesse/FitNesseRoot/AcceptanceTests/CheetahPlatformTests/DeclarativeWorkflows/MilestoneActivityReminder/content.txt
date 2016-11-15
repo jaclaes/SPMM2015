@@ -1,0 +1,20 @@
+!1 Milestone - Activity - Reminder
+
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A  |                           |
+|createMilestone                |M1 |5:00 |                     |
+|createMilestoneActivityReminder|A  |M1   |R1 |Execute A |2:00 ||
+
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getActiveReminders|                                |
+|setTime           |2:59              |             |
+|getActiveReminders|                                |
+|setTime           |3:00              |             |
+|getActiveReminders|R1                              |
+|setTime           |3:01              |             |
+|getActiveReminders|R1                                |

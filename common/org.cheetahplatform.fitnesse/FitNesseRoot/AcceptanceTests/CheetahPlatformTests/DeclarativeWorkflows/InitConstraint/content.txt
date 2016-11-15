@@ -1,0 +1,33 @@
+!1 Init Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                     |
+|start               |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity      |A         |                    |
+|createActivity      |B         |                    |
+|createActivity      |C         |                    |
+|createInitConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A                               |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|getExecutableTasks|A                               |
+|canTerminate      |true                            |
+|complete          |A               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|complete          |A               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true|
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+

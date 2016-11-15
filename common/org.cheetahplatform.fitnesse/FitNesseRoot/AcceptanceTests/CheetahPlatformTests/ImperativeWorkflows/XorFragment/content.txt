@@ -1,0 +1,42 @@
+!1 Xor Fragment
+
+!img-l http://files/images/Xor.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                  |
+|start            |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit   |Split  |                      |
+|createXorJoin    |Join   |                      |
+|createActivity   |A      |                      |
+|createActivity   |B      |                      |
+|link             |Start  |Split  |              |
+|link             |Split  |A      |              |
+|link             |Split  |B      |              |
+|link             |A      |Join   |              |
+|link             |B      |Join   |              |
+|link             |Join   |End    |              |
+
+
+|${IMPERATIVE_SESE_FIXTURE}                            |
+|start    |${IMPERATIVE_SESE_FIXTURE}                  |
+|children |component   |1                              |
+|startNode|component   |Start                          |
+|endNode  |component   |End                            |
+|type     |component   |!-ProcessFragment-!            |
+|store    |component[0]|fragment                      ||
+|children |fragment    |2                              |
+|type     |fragment    |!-XorFragment-!                |
+|startNode|fragment    |Split                          |
+|endNode  |fragment    |Join                           |
+|store    |fragment[0] |branchA                       ||
+|type     |branchA     |!-Polygon-!                    |
+|children |branchA     |1                              |
+|type     |branchA[0]  |!-SingleEntrySingleExitNode -! |
+|name     |branchA[0]  |A                              |
+|store    |fragment[1] |branchB                       ||
+|type     |branchB     |!-Polygon-!                    |
+|type     |branchB[0]  |!-SingleEntrySingleExitNode -! |
+|name     |branchB[0]  |B                              |

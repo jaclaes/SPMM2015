@@ -1,0 +1,48 @@
+!1 Min Select Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                          |
+|start                    |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity           |A         |                    |
+|createActivity           |B         |                    |
+|createActivity           |C         |                    |
+|createMinSelectConstraint|A         |1         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |false                           |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|canTerminate      |false                           |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+
+
+Test the cancelation of activities
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |false                           |
+|launch            |A               |               |
+|canTerminate      |false                           |
+|cancel            |A               |               |
+|canTerminate      |false                           |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+
+

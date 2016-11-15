@@ -1,0 +1,60 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Loop within And
+
+!img-l http://files/images/Loop_within_And.png
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createAndSplit |Andsplit     |                |
+|createActivity |A            |                |
+|createAndJoin  |Andjoin      |                |
+|createLoopStart|Loopstart    |                |
+|createActivity |B            |                |
+|createLoopEnd  |Loopend      |                |
+|link           |Start        |Andsplit    |   |
+|link           |Andsplit     |Loopstart   |   |
+|link           |Andsplit     |A           |   |
+|link           |A            |Andjoin     |   |
+|link           |Loopstart    |B           |   |
+|link           |B            |Loopend     |   |
+|link           |Loopend      |Loopstart   |   |
+|link           |Loopend      |Andjoin     |   |
+|link           |Andjoin      |End         |   |
+
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start            |Completed    |
+|checkState|Andsplit         |Activated    |
+|checkState|A                |Activated    |
+|checkState|Loopstart        |Activated    |
+|checkState|B                |Activated    |
+|launch    |A                |             |
+|checkState|A                |Launched     |
+|checkState|Andsplit         |Launched     |
+|checkState|Loopstart        |Activated    |
+|checkState|B                |Activated    |
+|complete  |A                |             |
+|checkState|A                |Completed    |
+|checkState|B                |Activated    |
+|launch    |B                |             |
+|complete  |B                |             |
+|checkState|Andsplit         |Completed    |
+|checkState|B                |Completed    |
+|checkState|Loopend          |Completed    |
+|checkState|Andjoin          |Activated    |
+|skip      |B[1]             |             |
+|checkState|B[1]             |Skipped      |
+|checkState|Loopstart[1]     |Skipped      |
+|checkState|Andjoin          |Completed    |
+|checkState|End              |Completed    |
+
+

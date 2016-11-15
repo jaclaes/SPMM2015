@@ -1,0 +1,70 @@
+!1 Simple Loop
+
+!img-l http://files/images/Loop.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createActivity |A            |                |
+|createLoopStart|Loopstart    |                |
+|createActivity |B            |                |
+|createLoopEnd  |Loopend      |                |
+|createActivity |C            |                |
+|link           |Start        |A           |   |
+|link           |A            |Loopstart   |   |
+|link           |Loopstart    |B           |   |
+|link           |B            |Loopend     |   |
+|link           |Loopend      |Loopstart   |   |
+|link           |Loopend      |C           |   |
+|link           |C            |End         |   |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                    |
+|start              |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState         |Start            |Completed    |
+|checkState         |A                |Activated    |
+|launch             |A                |             |
+|checkState         |A                |Launched     |
+|checkSuccessorCount|A                |0            |
+|complete           |A                |             |
+|checkState         |A                |Completed    |
+|checkState         |Loopstart        |Activated    |
+|checkState         |B                |Activated    |
+|checkSuccessorCount|A                |1            |
+|checkSuccessorCount|B                |0            |
+|checkSuccessorCount|Loopstart        |1            |
+|launch             |B                |             |
+|checkState         |Loopstart        |Launched     |
+|checkState         |B                |Launched     |
+|checkSuccessorCount|B                |0            |
+|complete           |B                |             |
+|checkState         |B                |Completed    |
+|checkState         |Loopstart        |Completed    |
+|checkState         |Loopend          |Completed    |
+|checkState         |Loopstart[1]     |Activated    |
+|checkSuccessorCount|Loopend          |2            |
+|checkState         |B[1]             |Activated    |
+|launch             |B[1]             |             |
+|checkState         |Loopstart[1]     |Launched     |
+|checkState         |B[1]             |Launched     |
+|cancel             |B[1]             |             |
+|skip               |B[1]             |             |
+|checkState         |Loopstart[1]     |Skipped      |
+|checkState         |B[1]             |Skipped      |
+|checkState         |Loopstart[1]     |Skipped      |
+|checkState         |B[1]             |Skipped      |
+|checkState         |C                |Activated    |
+|launch             |C                |             |
+|checkState         |C                |Launched     |
+|checkState         |B[1]             |Skipped      |
+|checkState         |Loopstart[1]     |Skipped      |
+|complete           |C                |             |
+|checkState         |C                |Completed    |
+|checkState         |End              |Completed    |
+
+
+
+

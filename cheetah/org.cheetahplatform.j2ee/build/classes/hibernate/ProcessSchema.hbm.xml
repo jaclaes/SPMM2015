@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.cheetahplatform.core.common.modeling.ProcessSchema"
+		abstract="true" table="processSchemas" lazy="false">
+		<id name="databaseId" type="long" column="id" access="field">
+			<generator class="native" />
+		</id>
+		<discriminator column="schemaType" type="string" />
+		<property name="name" type="text" access="field" column="name" lazy="false"/>
+		<property name="cheetahId" type="long" access="field" lazy="false"/>
+
+		<list name="nodes" cascade="all" access="field" table="nodes_for_processschema" lazy="false">
+			<key column="fk_processSchema" />
+			<index column="nodesListIndex" />
+			<one-to-many class="org.cheetahplatform.core.common.modeling.INode" />
+		</list>
+
+		<subclass
+			name="org.cheetahplatform.core.imperative.modeling.ImperativeProcessSchema"
+			discriminator-value="IMPERATIVE_PROCESS_SCHEMA">
+
+			<many-to-one name="start" access="field" cascade="all" lazy="false"
+				column="start" />
+			<many-to-one name="end" access="field" cascade="all" lazy="false"
+				column="end"
+				class="org.cheetahplatform.core.imperative.modeling.IImperativeNode" />
+		</subclass>
+
+		<subclass
+			name="org.cheetahplatform.core.declarative.modeling.DeclarativeProcessSchema"
+			discriminator-value="DECLARATIVE_PROCESS_SCHEMA">
+
+			<set name="milestones" access="field" table="milestonesOfProcessSchema"
+				cascade="all,delete-orphan" lazy="false">
+				<key column="fk_milestone_to_process_schema" />
+				<one-to-many
+					class="org.cheetahplatform.core.declarative.modeling.Milestone" />
+			</set>
+
+			<set name="constraints" access="field" table="constraintsOfProcessSchema"
+				cascade="all,delete-orphan" lazy="false">
+				<key column="fk_processSchema" />
+				<one-to-many
+					class="org.cheetahplatform.core.declarative.constraint.IDeclarativeConstraint" />
+			</set>
+			
+			<list name="reminders" access="field" table="remindersOfProcessSchema"
+				cascade="all,delete-orphan" lazy="false">
+				<key column="fk_processSchema" />
+				<index column="reminders_list_index"/>
+				<one-to-many
+					class="org.cheetahplatform.core.declarative.modeling.IReminder" />
+			</list>
+		</subclass>
+	</class>
+</hibernate-mapping> 

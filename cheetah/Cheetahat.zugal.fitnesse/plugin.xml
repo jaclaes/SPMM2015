@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="at.zugal.fitnesse.editor.WikiEditor"
+            default="false"
+            extensions="txt"
+            icon="img/FitNesseLogo.gif"
+            id="at.zugal.fitnesse.WikiEdotir"
+            name="WikiEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.core.filebuffers.documentSetup">
+      <participant
+            class="at.zugal.fitnesse.editor.WikiDocumentParticipant"
+            extensions="txt">
+      </participant>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="at.zugal.fitnesse.launcher.FitnesseTestLaunchDelegate"
+            id="at.zugal.fitnesse.FitnesseTestLauncher"
+            modes="run, debug"
+            name="Fitnesse Test"
+            public="true">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="at.zugal.fitnesse.launcher.FitnesseTestLaunchConfigurationTabGroup"
+            description="Fitnesse Test"
+            id="at.zugal.fitnesse.FitnesseTestLaunchConfigurationTabGroup"
+            type="at.zugal.fitnesse.FitnesseTestLauncher">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="at.zugal.fitnesse.FitnesseTestLauncher"
+            icon="img/FitNesseLogo.gif"
+            id="at.zugal.fitnesse.FitnesseTestLaunchConfigurationImage">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            class="at.zugal.fitnesse.launcher.FitnesseTestLaunchShortcut"
+            description="Launch as Fitnesse Test"
+            icon="img/FitNesseLogo.gif"
+            id="at.zugal.fitnesse.FitnesseTestShortcut"
+            label="Fitnesse Test"
+            modes="run, debug">
+         <configurationType
+               id="at.zugal.fitnesse.FitnesseTestLauncher">
+         </configurationType>
+         <description
+               description="description"
+               mode="run, debug">
+         </description>
+         <contextualLaunch>
+            <contextLabel
+                  label="Fitnesse Test"
+                  mode="run">
+            </contextLabel>
+            <contextLabel
+                  label="Fitnesse Test"
+                  mode="debug">
+            </contextLabel>
+            <enablement>
+               <with
+                     variable="selection">
+                  <count
+                        value="1">
+                  </count>
+               </with>
+            </enablement>
+         </contextualLaunch>
+      </shortcut>
+   </extension>
+
+</plugin>

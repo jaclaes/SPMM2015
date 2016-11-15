@@ -1,0 +1,338 @@
+!c !3 Restores a journey which contains parallel and booked actions
+
+Start game restoration
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|start|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|enter|load|Journey_with_Booking_and_Parallel_Actions.xml|
+|check|countCommands|19|
+|check|businessValue|0|
+|check|expectedBusinessValue|0|
+|check|expenses|0|
+|check|expectedExpenses|0|
+|check|totalActions|0|
+|check|failures|2|
+
+Add Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|1.2|
+|check|expenses|0|
+|check|expectedExpenses|10|
+|check|totalActions|1|
+|check|actions|0|1|
+|check|structure|0|Box 0:45[Short Hike 0]|
+|check|actionState|Short Hike,0,0|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|1|
+|check|time|Upfront|
+|check|location|Juneau|
+|check|restoredCommands|1|
+
+
+Add Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|2.3|
+|check|expenses|0|
+|check|expectedExpenses|20|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]]|
+|check|actionState|Short Hike,0,30|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|1|
+|check|time|Upfront|
+|check|location|Juneau|
+|check|restoredCommands|2|
+
+Book Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|2.3|
+|check|expenses|10|
+|check|expectedExpenses|20|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]]|
+|check|actionState|Short Hike,0,0|PLANNED, Booked|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|1|
+|check|time|Upfront|
+|check|location|Juneau|
+|check|restoredCommands|3|
+
+Add Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3.3|
+|check|expenses|10|
+|check|expectedExpenses|30|
+|check|totalActions|3|
+|check|actions|0|3|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]], Box 240:280[Highway 240]|
+|check|actionState|Highway,0,240|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|1|
+|check|time|Upfront|
+|check|location|Juneau|
+|check|restoredCommands|4|
+
+Add Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|8.3|
+|check|expenses|10|
+|check|expectedExpenses|50|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360]|
+|check|actionState|Alaskan Highway,0,360|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|2|
+|check|time|Upfront|
+|check|location|Juneau|
+|check|restoredCommands|5|
+
+
+Add Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|13.3|
+|check|expenses|10|
+|check|expectedExpenses|70|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Alaskan Highway,0,480|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|0|
+|check|time|Upfront|
+|check|location|Juneau|
+|check|restoredCommands|6|
+
+Start the journey
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|13.3|
+|check|expenses|10|
+|check|expectedExpenses|70|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Alaskan Highway,0,480|PLANNED|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,0|
+|check|location|Juneau|
+|check|restoredCommands|7|
+
+Events occur, they should not change the game state
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|13.3|
+|check|expenses|10|
+|check|expectedExpenses|70|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:75[Box 0:45[Short Hike 0], Box 30:75[Short Hike 30]], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Alaskan Highway,0,480|PLANNED|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,0|
+|check|location|Juneau|
+|check|restoredCommands|8|
+
+Cancel Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|12.2|
+|check|expenses|10|
+|check|expectedExpenses|60|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 0:45[Short Hike 0], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Short Hike,0,30|CANCELED|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,0|
+|check|location|Juneau|
+|check|restoredCommands|9|
+
+Execute Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|2.1|
+|check|expectedBusinessValue|13.1|
+|check|expenses|10|
+|check|expectedExpenses|60|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 0:45[Short Hike 0], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Short Hike,0,0|DONE, Booked|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,45|
+|check|location|Juneau|
+|check|restoredCommands|10|
+
+Events occur
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|2.1|
+|check|expectedBusinessValue|32.1|
+|check|expenses|10|
+|check|expectedExpenses|50|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 0:45[Short Hike 0], Box 240:280[Highway 240], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Short Hike,0,0|DONE, Booked|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|1|
+|check|time|0,45|
+|check|location|Juneau|
+|check|restoredCommands|11|
+
+Cancel Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|2.1|
+|check|expectedBusinessValue|12.1|
+|check|expenses|10|
+|check|expectedExpenses|50|
+|check|totalActions|3|
+|check|actions|0|3|
+|check|structure|0|Box 0:45[Short Hike 0], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Highway,0,240|CANCELED|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|2|
+|check|time|0,45|
+|check|location|Juneau|
+|check|restoredCommands|12|
+
+Add Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|2.1|
+|check|expectedBusinessValue|13.1|
+|check|expenses|10|
+|check|expectedExpenses|60|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480]|
+|check|actionState|Super Fast Highway,0,300|PLANNED|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|1|
+|check|time|0,45|
+|check|location|Juneau|
+|check|restoredCommands|13|
+
+Add Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|2.1|
+|check|expectedBusinessValue|18.1|
+|check|expenses|10|
+|check|expectedExpenses|80|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480], Box 600:720[Alaskan Highway 600]|
+|check|actionState|Alaskan Highway,0,600|PLANNED|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,45|
+|check|location|Juneau|
+|check|restoredCommands|14|
+
+Execute Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|4.1|
+|check|expectedBusinessValue|19.1|
+|check|expenses|20|
+|check|expectedExpenses|80|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480], Box 600:720[Alaskan Highway 600]|
+|check|actionState|Super Fast Highway,0,300|DONE|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,315|
+|check|location|Fairbanks|
+|check|restoredCommands|15|
+
+Execute Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|9.1|
+|check|expectedBusinessValue|19.1|
+|check|expenses|40|
+|check|expectedExpenses|80|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480], Box 600:720[Alaskan Highway 600]|
+|check|actionState|Alaskan Highway,0,360|DONE|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,480|
+|check|location|Anchorage|
+|check|restoredCommands|16|
+
+Execute Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|14.1|
+|check|expectedBusinessValue|19.1|
+|check|expenses|60|
+|check|expectedExpenses|80|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480], Box 600:720[Alaskan Highway 600]|
+|check|actionState|Alaskan Highway,0,480|DONE|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,600|
+|check|location|Fairbanks|
+|check|restoredCommands|17|
+
+Execute Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|19.1|
+|check|expectedBusinessValue|19.1|
+|check|expenses|80|
+|check|expectedExpenses|80|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480], Box 600:720[Alaskan Highway 600]|
+|check|actionState|Alaskan Highway,0,600|DONE|
+|check|gameState|JOURNEY_STARTED|
+|check|failures|0|
+|check|time|0,720|
+|check|location|Anchorage|
+|check|restoredCommands|18|
+
+Finish the journey
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|19.1|
+|check|expectedBusinessValue|19.1|
+|check|expenses|80|
+|check|expectedExpenses|80|
+|check|totalActions|5|
+|check|actions|0|5|
+|check|structure|0|Box 0:45[Short Hike 0], Box 300:315[Super Fast Highway 300], Box 360:480[Alaskan Highway 360], Box 480:600[Alaskan Highway 480], Box 600:720[Alaskan Highway 600]|
+|check|actionState|Alaskan Highway,0,600|DONE|
+|check|gameState|JOURNEY_SUCCESSFULLY_ENDED|
+|check|failures|0|
+|check|time|0,720|
+|check|location|Anchorage|
+|check|restoredCommands|19|

@@ -1,0 +1,75 @@
+!2 A simple test which creates a few routes and attaches actions to them. These events are executed whenever one is at the start or end location of a route.
+
+
+!-!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}-!
+
+Create a game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                   |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode         |create?|
+|My first configuration |21             |3              |720        |BUSINESS_VALUE_CONSTRAINT|true   |
+
+
+---- Create locations - the first one is the starting location
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name      |create?|
+|Brixlegg  |true       |
+|Kirchbichl|true       |
+|Innsbruck |true       |
+
+
+---- Create routes - min Duration equals max Duration to make duration check easier ;)
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateRouteConfigTest-!|
+|name          |businessValue|cost|certainty|availability|minDuration|maxDuration|locationNameA|locationNameB|bookingDeadline|create?|
+|Bundesstraße  |1            |20  |1.0      |1.0         |60         |60         |Brixlegg     |Kirchbichl   |-1             |true|
+|Autobahn      |5            |50  |1.0      |1.0         |30         |30         |Kirchbichl   |Brixlegg     |3              |true|
+|Radweg        |10           |5   |1.0      |1.0         |180        |180        |Brixlegg     |Innsbruck    |-1             |true|
+
+
+
+
+---- Link actions - actions must be linked to their locations unless they are used in events. Please note that routes must be added to both endpoints of the route.
+
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName     |locationName|linkAction?|countActions?|
+|Bundesstraße   |Brixlegg    ||1|
+|Autobahn       |Kirchbichl  ||1|
+|Radweg         |Brixlegg    ||2|
+|Bundesstraße   |Kirchbichl  ||2|
+|Autobahn       |Brixlegg    ||3|
+|Radweg         |Innsbruck   ||1|
+
+
+---- Create events attached to the routes defined before. This events can occur at the start and end location of a route.
+
+|${ALASKA_CORE_PACKAGE}.!-ChangeTemporalActionEventsTest-!|
+|name|eventSource|actionName|probability|newCost|newBusinessValue|newCertainty|newAvailability |newDuration|expirationTime|create?||
+|Free Vignette|Brixlegg|Autobahn|1.0|25|5|1.0|1.0|-1|600|true|Someone gave you a free toll ticket - half costs|
+
+
+
+
+---- Create a game from the previous created game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName  |create?|getStartLocation?|
+|cooles Spiel|true       |Brixlegg         |
+
+
+---- Start the game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|
+|true|
+
+
+---- Game-Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|checkExpenses?|getDuration?|getMinutesOfDay?|getDay?|getBusinessValue?|getLocation?|allowsCompletion?||
+|Execute         |Radweg       |0,0      |true          |5             |180         |180             |0      |10               |Innsbruck   |true||
+|Execute         |Radweg       |0,180    |true          |10            |180         |360             |0      |10               |Brixlegg    |true||
+|Execute         |Autobahn     |0,360    |true          |35            |30          |390             |0      |5                |Kirchbichl  |true|Free Vignette - half costs|
+|Execute         |Bundesstraße |0,390    |true          |55            |60          |450             |0      |1                |Brixlegg    |true||

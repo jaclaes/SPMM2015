@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UML_ER:ERmodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UML_ER="UML_ER">
+  <InstanceElement xsi:type="UML_ER:Entity" name="Product">
+    <attribute name="name"/>
+  </InstanceElement>
+  <InstanceElement xsi:type="UML_ER:Entity" name="Organized Product">
+    <attribute name="startTime"/>
+    <attribute name="endTime"/>
+  </InstanceElement>
+  <InstanceElement xsi:type="UML_ER:BinaryRelationship" name="Organized Product" source="//@InstanceElement.2/@role.1" target="//@InstanceElement.2/@role.0">
+    <role connectedEntity="//@InstanceElement.0"/>
+    <role connectedEntity="//@InstanceElement.1"/>
+  </InstanceElement>
+  <InstanceElement xsi:type="UML_ER:Entity" name="Organisation">
+    <attribute name="name"/>
+    <attribute name="adress"/>
+  </InstanceElement>
+  <InstanceElement xsi:type="UML_ER:BinaryRelationship" name="organizedBy" source="//@InstanceElement.4/@role.1" target="//@InstanceElement.4/@role.0">
+    <role connectedEntity="//@InstanceElement.3"/>
+    <role connectedEntity="//@InstanceElement.0"/>
+  </InstanceElement>
+  <InstanceElement xsi:type="UML_ER:Entity" name="Person"/>
+  <InstanceElement xsi:type="UML_ER:Entity" name="Employee"/>
+  <InstanceElement xsi:type="UML_ER:Generalization" specific="//@InstanceElement.6" general="//@InstanceElement.5"/>
+</UML_ER:ERmodel>

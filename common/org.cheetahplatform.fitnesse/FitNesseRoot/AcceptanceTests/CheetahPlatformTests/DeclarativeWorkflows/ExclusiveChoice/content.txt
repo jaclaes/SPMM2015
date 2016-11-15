@@ -1,0 +1,36 @@
+!1 Exclusive Choice Constraint
+
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A         |                    |
+|createActivity                 |B         |                    |
+|createActivity                 |C         |                    |
+|createExclusiveChoiceConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |false                           |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|getExecutableTasks|A,C                             |
+|cancel            |A               |               |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|B,C                             |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|B,C                             |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|B,C                             |
+

@@ -1,0 +1,812 @@
+!3 !c Restore a journey
+
+Start game restoration
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|start|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|enter|load|Simple_Journey_1.xml|
+|check|countCommands|47|
+|check|businessValue|0|
+|check|expectedBusinessValue|0|
+|check|expenses|0|
+|check|expectedExpenses|0|
+|check|totalActions|0|
+
+Add visitor centre
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3|
+|check|expenses|0|
+|check|expectedExpenses|8|
+|check|totalActions|1|
+|check|actions|0|1|
+|check|structure|0|Box 150:330[Visitor Centre 150]|
+|check|actionState|Visitor Centre,0,150|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|3|
+
+Add visitor centre
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|6|
+|check|expenses|0|
+|check|expectedExpenses|16|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 150:465[Box 150:330[Visitor Centre 150], Box 285:465[Visitor Centre 285]]|
+|check|actionState|Visitor Centre,0,285|PLANNED|
+|check|failures|4|
+
+Resize box
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|6|
+|check|expenses|0|
+|check|expectedExpenses|16|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 150:675[Box 150:330[Visitor Centre 150], Box 285:465[Visitor Centre 285]]|
+|check|actionState|Visitor Centre,0,285|PLANNED|
+|check|failures|4|
+
+Add Flightseeing
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|6|
+|check|expenses|0|
+|check|expectedExpenses|311|
+|check|totalActions|3|
+|check|actions|0|3|
+|check|structure|0|Box 150:675[Box 150:330[Visitor Centre 150], Box 285:465[Visitor Centre 285], Flightseeing 495]|
+|check|actionState|Flightseeing,0,495|PLANNED|
+|check|failures|4|
+
+Add Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|7.2|
+|check|expenses|0|
+|check|expectedExpenses|321|
+|check|totalActions|4|
+|check|actions|0|4|
+|check|structure|0|Box 30:75[Short Hike 30], Box 150:675[Box 150:330[Visitor Centre 150], Box 285:465[Visitor Centre 285], Flightseeing 495]|
+|check|actionState|Short Hike,0,30|PLANNED|
+|check|failures|3|
+
+Cancel Visitor Centre
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|4.2|
+|check|expenses|0|
+|check|expectedExpenses|313|
+|check|totalActions|3|
+|check|actions|0|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 285:675[Visitor Centre 285, Flightseeing 495]|
+|check|actionState|Visitor Centre,0,150|CANCELED|
+|check|failures|3|
+
+Cancel Visitor Centre
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|1.2|
+|check|expenses|0|
+|check|expectedExpenses|305|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495]|
+|check|actionState|Visitor Centre,0,285|CANCELED|
+|check|failures|1|
+
+Add Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|6.2|
+|check|expenses|0|
+|check|expectedExpenses|325|
+|check|totalActions|3|
+|check|actions|0|2|
+|check|actions|1|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495]|
+|check|structure|1|Box 180:300[Alaskan Highway 180]|
+|check|actionState|Alaskan Highway,1,180|PLANNED|
+|check|failures|4|
+
+Add Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|11.2|
+|check|expenses|0|
+|check|expectedExpenses|345|
+|check|totalActions|4|
+|check|actions|0|2|
+|check|actions|1|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495]|
+|check|structure|1|Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Alaskan Highway,1,375|PLANNED|
+|check|failures|3|
+
+Add Anchorage Motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|12.2|
+|check|expenses|0|
+|check|expectedExpenses|365|
+|check|totalActions|5|
+|check|actions|0|3|
+|check|actions|1|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Anchorage Motel 750|
+|check|structure|1|Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Alaskan Highway,1,375|PLANNED|
+|check|failures|2|
+
+Cancel Anchorage Motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|11.2|
+|check|expenses|0|
+|check|expectedExpenses|345|
+|check|totalActions|4|
+|check|actions|0|2|
+|check|actions|1|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495]|
+|check|structure|1|Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Anchorage Motel,0,750|CANCELED|
+|check|failures|3|
+
+Add Hotel in Juneau
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|12.2|
+|check|expenses|0|
+|check|expectedExpenses|395|
+|check|totalActions|5|
+|check|actions|0|3|
+|check|actions|1|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Hotel in Juneau,0,750|PLANNED|
+|check|failures|2|
+
+Add Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|13.2|
+|check|expenses|0|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:85[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Hotel in Juneau,0,750|PLANNED|
+|check|failures|0|
+
+Begin the journey
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|13.2|
+|check|expenses|0|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:85[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Short Hike,0,30|PLANNED|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|0,0|
+
+Execute Events: Super Fast Highway available now
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|13.2|
+|check|expenses|0|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:85[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Short Hike,0,30|PLANNED|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|actionConfigs|10|
+|check|actionConfig|Super Fast Highway|Super Fast Highway,10.0,2.0,1.0|
+|check|time|0,0|
+
+Execute Short Hike
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|1.4|
+|check|expectedBusinessValue|13.4|
+|check|expenses|10|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:85[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Short Hike,0,30|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|0,75|
+
+Execute Flightseeing
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|5.3|
+|check|expectedBusinessValue|17.3|
+|check|expenses|305|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:85[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Flightseeing,0,495|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|0,615|
+
+Execute Hotel in Juneau
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|5.9|
+|check|expectedBusinessValue|16.9|
+|check|expenses|355|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:85[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Hotel in Juneau,0,750|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,0|
+
+Execute Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|5.9|
+|check|expectedBusinessValue|15.9|
+|check|expenses|365|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Highway,1,45|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,78|
+
+Execute Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|10.9|
+|check|expectedBusinessValue|15.9|
+|check|expenses|385|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Alaskan Highway,1,180|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,300|
+
+Execute Events: Road Closure
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|10.9|
+|check|expectedBusinessValue|15.9|
+|check|expenses|385|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Alaskan Highway,1,180|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,300|
+|check|actionConfig|Highway|Highway,0.0,20.0,0.0|
+
+Execute Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|15.9|
+|check|expenses|405|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Alaskan Highway,1,375|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Execute Events: White-water Rafting available now
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|15.9|
+|check|expenses|405|
+|check|expectedExpenses|405|
+|check|totalActions|6|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|actionState|Alaskan Highway,1,375|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+|check|actionConfig|White-water Rafting|White-water Rafting,72.0,2.0,1.0|
+
+Add White-water rafting
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|17.9|
+|check|expenses|405|
+|check|expectedExpenses|477|
+|check|totalActions|7|
+|check|actions|0|3|
+|check|actions|1|4|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 525:645[White-water Rafting 525]|
+|check|actionState|White-water Rafting,1,525|PLANNED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Move White-water Rafting
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|17.9|
+|check|expenses|405|
+|check|expectedExpenses|477|
+|check|totalActions|7|
+|check|actions|0|3|
+|check|actions|1|4|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 585:705[White-water Rafting 585]|
+|check|actionState|White-water Rafting,1,585|PLANNED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Add Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|18.9|
+|check|expenses|405|
+|check|expectedExpenses|487|
+|check|totalActions|8|
+|check|actions|0|3|
+|check|actions|1|5|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 525:540[Super Fast Highway 525], Box 585:705[White-water Rafting 585]|
+|check|actionState|Super Fast Highway,1,525|PLANNED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Add Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|38.9|
+|check|expenses|405|
+|check|expectedExpenses|487|
+|check|totalActions|9|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 525:540[Super Fast Highway 525], Box 540:580[Highway 540], Box 585:705[White-water Rafting 585]|
+|check|actionState|Highway,1,540|PLANNED|
+|check|failures|3|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Cancel Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|37.9|
+|check|expenses|405|
+|check|expectedExpenses|477|
+|check|totalActions|8|
+|check|actions|0|3|
+|check|actions|1|5|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 540:580[Highway 540], Box 585:705[White-water Rafting 585]|
+|check|actionState|Super Fast Highway,1,525|CANCELED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Cancel Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|17.9|
+|check|expenses|405|
+|check|expectedExpenses|477|
+|check|totalActions|7|
+|check|actions|0|3|
+|check|actions|1|4|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 585:705[White-water Rafting 585]|
+|check|actionState|Highway,1,540|CANCELED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Move White-water Rafting
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|17.9|
+|check|expenses|405|
+|check|expectedExpenses|477|
+|check|totalActions|7|
+|check|actions|0|3|
+|check|actions|1|3|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375]|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|White-water Rafting,2,330|PLANNED|
+|check|failures|2|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Add Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|18.9|
+|check|expenses|405|
+|check|expectedExpenses|487|
+|check|totalActions|8|
+|check|actions|0|3|
+|check|actions|1|4|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 525:540[Super Fast Highway 525]|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Super Fast Highway,1,525,1|PLANNED|
+|check|failures|3|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Move Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|18.9|
+|check|expenses|405|
+|check|expectedExpenses|487|
+|check|totalActions|8|
+|check|actions|0|3|
+|check|actions|1|4|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 660:675[Super Fast Highway 660]|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Super Fast Highway,1,660|PLANNED|
+|check|failures|3|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Add Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|23.9|
+|check|expenses|405|
+|check|expectedExpenses|507|
+|check|totalActions|9|
+|check|actions|0|3|
+|check|actions|1|5|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660]|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Alaskan Highway,1,510|PLANNED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Add Anchorage Motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|24.9|
+|check|expenses|405|
+|check|expectedExpenses|527|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Anchorage Motel 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Anchorage Motel,1,750|PLANNED|
+|check|failures|3|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Cancel Anchorage Motel
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|23.9|
+|check|expenses|405|
+|check|expectedExpenses|507|
+|check|totalActions|9|
+|check|actions|0|3|
+|check|actions|1|5|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660]|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Anchorage Motel,1,750|CANCELED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Add Hotel in Juneau
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|15.9|
+|check|expectedBusinessValue|24.9|
+|check|expenses|405|
+|check|expectedExpenses|557|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Hotel in Juneau,1,750|PLANNED|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,495|
+
+Execute Alaskan Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|20.9|
+|check|expectedBusinessValue|24.9|
+|check|expenses|425|
+|check|expectedExpenses|557|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Alaskan Highway,1,510|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,630|
+
+Execute Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|22.9|
+|check|expectedBusinessValue|25.9|
+|check|expenses|435|
+|check|expectedExpenses|557|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Super Fast Highway,1,660|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|1,675|
+
+Execute Hotel in Juneau
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|24.1|
+|check|expectedBusinessValue|26.1|
+|check|expenses|485|
+|check|expectedExpenses|557|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Hotel in Juneau,1,750|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,0|
+
+Execute White-water Rafting
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|26.1|
+|check|expectedBusinessValue|26.1|
+|check|expenses|557|
+|check|expectedExpenses|557|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|White-water Rafting,2,330|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,450|
+
+Add Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|26.1|
+|check|expectedBusinessValue|27.1|
+|check|expenses|557|
+|check|expectedExpenses|567|
+|check|totalActions|11|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330], Box 525:540[Super Fast Highway 525]|
+|check|actionState|Super Fast Highway,2,525|PLANNED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,450|
+
+Add Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|26.1|
+|check|expectedBusinessValue|28.1|
+|check|expenses|557|
+|check|expectedExpenses|577|
+|check|totalActions|12|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|3|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330], Box 525:540[Super Fast Highway 525], Box 555:570[Super Fast Highway 555]|
+|check|actionState|Super Fast Highway,2,555|PLANNED|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,450|
+
+Cancel Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|26.1|
+|check|expectedBusinessValue|27.1|
+|check|expenses|557|
+|check|expectedExpenses|567|
+|check|totalActions|11|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330], Box 555:570[Super Fast Highway 555]|
+|check|actionState|Super Fast Highway,2,525|CANCELED|
+|check|failures|1|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,450|
+
+Cancel Super Fast Highway
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|26.1|
+|check|expectedBusinessValue|26.1|
+|check|expenses|557|
+|check|expectedExpenses|557|
+|check|totalActions|10|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|1|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330]|
+|check|actionState|Super Fast Highway,2,555|CANCELED|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,450|
+
+Add Sleep in Car
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|26.1|
+|check|expectedBusinessValue|26.1|
+|check|expenses|557|
+|check|expectedExpenses|557|
+|check|totalActions|11|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330], Sleep in Car 750|
+|check|actionState|Sleep in Car,2,750|PLANNED|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|2,450|
+
+Execute Sleep in Car
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|24.1|
+|check|expectedBusinessValue|24.1|
+|check|expenses|557|
+|check|expectedExpenses|557|
+|check|totalActions|11|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330], Sleep in Car 750|
+|check|actionState|Sleep in Car,2,750|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_STARTED|
+|check|time|3,0|
+
+Finish Journey
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|24.1|
+|check|expectedBusinessValue|24.1|
+|check|expenses|557|
+|check|expectedExpenses|557|
+|check|totalActions|11|
+|check|actions|0|3|
+|check|actions|1|6|
+|check|actions|2|2|
+|check|structure|0|Box 30:75[Short Hike 30], Box 495:675[Flightseeing 495], Hotel in Juneau 750|
+|check|structure|1|Box 45:78[Highway 45], Box 180:300[Alaskan Highway 180], Box 375:495[Alaskan Highway 375], Box 510:630[Alaskan Highway 510], Box 660:675[Super Fast Highway 660], Hotel in Juneau 750|
+|check|structure|2|Box 330:450[White-water Rafting 330], Sleep in Car 750|
+|check|actionState|Sleep in Car,2,750|DONE|
+|check|failures|0|
+|check|gameState|JOURNEY_SUCCESSFULLY_ENDED|
+|check|time|3,0|

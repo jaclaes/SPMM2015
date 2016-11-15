@@ -1,0 +1,48 @@
+!1 Simple Xor
+
+!img-l http://files/images/Canceled_Xor.png
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|Xorsplit    |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createXorJoin |Xorjoin     |                 |
+|link          |Start       |Xorsplit    |    |
+|link          |Xorsplit    |A           |    |
+|link          |Xorsplit    |B           |    |
+|link          |A           |Xorjoin     |    |
+|link          |B           |Xorjoin     |    |
+|link          |Xorjoin     |End         |    |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start          |Completed      |
+|checkState|Xorsplit       |Activated      |
+|checkState|A              |Activated      |
+|checkState|B              |Activated      |
+|launch    |A              |               |
+|checkState|Xorsplit       |Launched       |
+|checkState|A              |Launched       |
+|checkState|B              |Skipped        |
+|cancel    |A              |               |
+|checkState|Start          |Completed      |
+|checkState|Xorsplit       |Activated      |
+|checkState|A              |Activated      |
+|checkState|B              |Activated      |
+|launch    |B              |               |
+|checkState|Xorsplit       |Launched       |
+|checkState|B              |Launched       |
+|checkState|A              |Skipped        |
+|complete  |B              |               |
+|checkState|Xorsplit       |Completed      |
+|checkState|Xorjoin        |Completed      |
+|checkState|B              |Completed      |
+|checkState|A              |Skipped        |

@@ -1,0 +1,4 @@
+class Reiseziel {
+	String Resisedomizil
+}
+

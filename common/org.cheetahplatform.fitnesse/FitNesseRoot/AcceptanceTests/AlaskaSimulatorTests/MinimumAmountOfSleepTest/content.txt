@@ -1,0 +1,99 @@
+!2 This test demonstrates what happens if the last activity of the day is delayed because of an event and the sleepPenaltyMode is set to minimum amount of sleep. The next day starts later and the user is not able to execute actions that morning.
+
+
+!-!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}-!
+
+Create a game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                   |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode |minimumSleepAmount |create?|
+|My first configuration |21             |3              |720        |MINIMUM_SLEEP    |720                |true   |
+
+
+---- Create locations - the first one is the starting location
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name      |create?|
+|Brixlegg  |true       |
+|Kirchbichl|true       |
+|Innsbruck |true       |
+
+
+---- Create routes - min Duration equals max Duration to make duration check easier ;)
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateRouteConfigTest-!|
+|name         |businessValue|cost|certainty|availability|minDuration|maxDuration|locationNameA|locationNameB|bookingDeadline|create?|
+|Bundesstraße |10           |20  |1.0      |1.0         |60         |60         |Brixlegg     |Kirchbichl   |-1             |true|
+|Autobahn     |10           |50  |1.0      |1.0         |30         |30         |Kirchbichl   |Brixlegg     |-1             |true|
+|Radweg       |10           |5   |1.0      |1.0         |180        |180        |Brixlegg     |Innsbruck    |-1             |true|
+
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateActivityConfigTest-!|
+|name          |businessValue|cost|bookingDeadline|certainty|availability|durationMin|durationMax|create?|
+|Climbing      |1000         |10  |3              |1.0      |1           |300        |300        |true   |
+
+---- Create accommodations
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateAccommodationConfigTest-!|
+| name          |businessValue|cost|bookingDeadline|certainty|availability|create?|
+|Hilton-Hotel   |150          |200 |7              |1.0      |1.0         |true|
+|Campingplatz   |20           |40  |2              |1.0      |1.0         |true|
+|Zugi-Wohnung   |50           |0   |1              |1.0      |1.0         |true|
+
+
+
+---- Link actions - actions must be linked to their locations unless they are used in events. Please note that routes must be added to both endpoints of the route.
+
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName     |locationName|linkAction?|countActions?|
+|Bundesstraße   |Brixlegg    |           |1|
+|Autobahn       |Kirchbichl  |           |1|
+|Radweg         |Brixlegg    |           |2|
+|Bundesstraße   |Kirchbichl  |           |2|
+|Autobahn       |Brixlegg    |           |3|
+|Radweg         |Innsbruck   |           |1|
+|Climbing       |Brixlegg    |           |4|
+|Zugi-Wohnung   |Brixlegg    |           |5|
+|Campingplatz   |Kirchbichl  |           |3|
+|Hilton-Hotel   |Innsbruck   |           |2|
+
+
+---- Create events attached to the routes defined before. These events are triggered when a route is executed for the first time. After the given expiration time the changes of the event are undone.
+
+|${ALASKA_CORE_PACKAGE}.!-ChangeTemporalActionEventsTest-!|
+|name         |actionName  |eventSource |probability|newCost|newBusinessValue|newCertainty|newAvailability|newDuration|expirationTime| create?||
+|Hill         |Radweg      |Radweg      |1.0        |5      |10              |1.0         |1.0            |400        |400           |true    |huge hill, takes a little more time|
+|Accident     |Autobahn    |Autobahn    |1.0        |100    |5               |1.0         |1.0            |100        |100           |true    |You had an accident - takes more time|
+
+
+---- Create a game from the previous created game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName  |create?|getStartLocation?|
+|cooles Spiel|true   |Brixlegg         |
+
+
+---- Start the game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|
+|true|
+
+---- Game-Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|checkExpenses?|getDuration?|getMinutesOfDay?|getDay?|getBusinessValue?|getLocation?|allowsCompletion?||
+|Execute         |Climbing     |0,0      |true          |10            |300         |300             |0      |1000             |Brixlegg    |true             ||
+|Execute         |Autobahn     |0,690    |true          |110           |100         |720             |0      |5                |Kirchbichl  |true             |accident on the highway - took more time|
+|Execute         |Campingplatz |0,720    |true          |150           |            |70              |1      |20               |Kirchbichl  |true             |had to sleep longer the next morning - day starts 70 minutes later|
+|Execute         |Bundesstraße |1,70     |true          |170           |60          |130             |1      |10               |Brixlegg    |true             ||
+|Execute         |Climbing     |1,130    |true          |180           |300         |430             |1      |1000             |Brixlegg    |true             ||
+|Execute         |Radweg       |1,540    |true          |185           |400         |720             |1      |10               |Innsbruck   |true             |took longer than expected|
+|Execute         |Hilton-Hotel |1,720    |true          |385           |            |220             |2      |150              |Innsbruck   |true             |had to sleep longer the next morning - day starts 220 minutes later|
+|Execute         |Radweg       |2,220    |true          |390           |180         |400             |2      |10               |Brixlegg    |true             ||
+|Execute         |Climbing     |2,400    |true          |400           |300         |700             |2      |1000             |Brixlegg    |true             ||
+
+
+
+
+

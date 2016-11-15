@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<graph>
+  <nodes>
+    <node>
+      <id>22</id>
+      <name>A</name>
+      <type>DECSERFLOW.ACTIVITY</type>
+      <bounds>
+        <x>144</x>
+        <y>76</y>
+        <width>120</width>
+        <height>40</height>
+      </bounds>
+    </node>
+    <node>
+      <id>23</id>
+      <name>B</name>
+      <type>DECSERFLOW.ACTIVITY</type>
+      <bounds>
+        <x>159</x>
+        <y>275</y>
+        <width>120</width>
+        <height>40</height>
+      </bounds>
+    </node>
+  </nodes>
+  <edges>
+    <edge>
+      <id>24</id>
+      <name></name>
+      <offset>
+        <x>0</x>
+        <y>0</y>
+      </offset>
+      <type>DECSERFLOW.SUCCESSION</type>
+      <source>22</source>
+      <target>23</target>
+      <bendpoints/>
+    </edge>
+  </edges>
+</graph>

@@ -1,0 +1,2179 @@
+!1 Load and Replay Log File
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|nodeCount       |1                              |
+|edgeCount       |0                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|nodeCount       |2                              |
+|edgeCount       |0                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|nodeCount       |3                              |
+|edgeCount       |0                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|nodeCount       |3                              |
+|edgeCount       |1                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|nodeCount       |4                              |
+|edgeCount       |1                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|nodeCount       |4                              |
+|edgeCount       |2                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|nodeCount       |5                              |
+|edgeCount       |2                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |V            |
+|checkCoordinates|7                |545,275      |
+|nodeCount       |6                              |
+|edgeCount       |2                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |545,275      |
+|nodeCount       |6                              |
+|edgeCount       |2                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |545,275      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|nodeCount       |6                              |
+|edgeCount       |3                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |545,275      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|nodeCount       |6                              |
+|edgeCount       |4                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|nodeCount       |6                              |
+|edgeCount       |4                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |711,235      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |650,262      |
+|nodeCount       |7                              |
+|edgeCount       |4                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |650,262      |
+|nodeCount       |7                              |
+|edgeCount       |4                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|nodeCount       |7                              |
+|edgeCount       |4                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |10    |
+|nodeCount       |7                              |
+|edgeCount       |5                              |
+
+There seems to be a maximum length for a test ;) Just restart the fixture and go to the last step
+
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|executeSteps    |16               |             |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |10    |
+|nodeCount       |7                              |
+|edgeCount       |5                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |10    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |10    |
+|nodeCount       |7                              |
+|edgeCount       |6                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |10    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |10    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |701,269      |
+|nodeCount       |8                              |
+|edgeCount       |6                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |10    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |701,269      |
+|nodeCount       |8                              |
+|edgeCount       |6                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |701,269      |
+|nodeCount       |8                              |
+|edgeCount       |6                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|nodeCount       |8                              |
+|edgeCount       |6                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|nodeCount       |9                              |
+|edgeCount       |6                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|nodeCount       |9                              |
+|edgeCount       |7                              |
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|executeSteps    |23               |             |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|nodeCount       |9                              |
+|edgeCount       |7                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|nodeCount       |10                             |
+|edgeCount       |7                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|nodeCount       |11                             |
+|edgeCount       |7                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|nodeCount       |12                             |
+|edgeCount       |7                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|nodeCount       |13                             |
+|edgeCount       |7                              |
+
+
+
+
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|executeSteps    |28               |             |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|nodeCount       |13                             |
+|edgeCount       |8                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|nodeCount       |13                             |
+|edgeCount       |9                              |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|nodeCount       |13                             |
+|edgeCount       |10                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|nodeCount       |13                             |
+|edgeCount       |11                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|nodeCount       |13                             |
+|edgeCount       |12                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|executeSteps    |33               |             |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |154,171      |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |242,191      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |118,228      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |416,211      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+
+
+
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|executeSteps    |36               |             |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |118,228      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |270,234      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |118,228      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |280,231      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |581,97       |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |118,228      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |280,231      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |397,109      |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |482,328      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+
+
+|${BPMN_COMMAND_FIXTURE}                         |
+|start           |${BPMN_COMMAND_FIXTURE}        |
+|loadLog         |1254403555000.xml|             |
+|executeSteps    |39               |             |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |118,228      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |280,231      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |397,109      |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |369,312      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |727,293      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+|nextLogEntry    |                               |
+|containsElement |0                |true         |
+|checkName       |0                |Start Event  |
+|checkCoordinates|0                |41,225       |
+|containsElement |1                |true         |
+|checkName       |1                |End Event    |
+|checkCoordinates|1                |831,264      |
+|containsElement |2                |true         |
+|checkName       |2                |A            |
+|checkCoordinates|2                |118,228      |
+|containsElement |3                |true         |
+|checkName       |3                |Sequence Flow|
+|checkEdges      |3                |0     |2     |
+|containsElement |4                |true         |
+|checkName       |4                |XOR          |
+|checkCoordinates|4                |280,231      |
+|containsElement |5                |true         |
+|checkName       |5                |Sequence Flow|
+|checkEdges      |5                |2     |4     |
+|containsElement |6                |true         |
+|checkName       |6                |B            |
+|checkCoordinates|6                |397,109      |
+|containsElement |7                |true         |
+|checkName       |7                |C            |
+|checkCoordinates|7                |369,312      |
+|containsElement |8                |true         |
+|checkName       |8                |Sequence Flow|
+|checkEdges      |8                |4     |6     |
+|containsElement |9                |true         |
+|checkName       |9                |Sequence Flow|
+|checkEdges      |9                |4     |7     |
+|containsElement |10               |true         |
+|checkName       |10               |AND          |
+|checkCoordinates|10               |702,268      |
+|containsElement |11               |true         |
+|checkName       |11               |Sequence Flow|
+|checkEdges      |11               |6     |13    |
+|containsElement |12               |true         |
+|checkName       |12               |Sequence Flow|
+|checkEdges      |12               |7     |13    |
+|containsElement |13               |true         |
+|checkName       |13               |XOR          |
+|checkCoordinates|13               |503,216      |
+|containsElement |15               |true         |
+|checkName       |15               |D            |
+|checkCoordinates|15               |717,382      |
+|containsElement |16               |true         |
+|checkName       |16               |Sequence Flow|
+|checkEdges      |16               |13    |15    |
+|containsElement |18               |true         |
+|checkName       |18               |AND          |
+|checkCoordinates|18               |483,450      |
+|containsElement |19               |true         |
+|checkName       |19               |E            |
+|checkCoordinates|19               |541,442      |
+|containsElement |20               |true         |
+|checkName       |20               |F            |
+|checkCoordinates|20               |533,522      |
+|containsElement |21               |true         |
+|checkName       |21               |AND          |
+|checkCoordinates|21               |722,506      |
+|containsElement |22               |true         |
+|checkName       |22               |Sequence Flow|
+|checkEdges      |22               |15    |18    |
+|containsElement |23               |true         |
+|checkName       |23               |Sequence Flow|
+|checkEdges      |23               |18    |19    |
+|containsElement |24               |true         |
+|checkName       |24               |Sequence Flow|
+|checkEdges      |24               |18    |20    |
+|containsElement |25               |true         |
+|checkName       |25               |Sequence Flow|
+|checkEdges      |25               |19    |21    |
+|containsElement |26               |true         |
+|checkName       |26               |Sequence Flow|
+|checkEdges      |26               |20    |21    |
+|containsElement |28               |true         |
+|checkName       |28               |Sequence Flow|
+|checkEdges      |28               |21    |1     |
+|nodeCount       |13                             |
+|edgeCount       |13                             |
+
+

@@ -1,0 +1,94 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}-!
+
+!1 Loop within Xor
+
+!img-l http://files/images/Loop_within_Xor.png
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit |Xorsplit     |                |
+|createActivity |A            |                |
+|createXorJoin  |Xorjoin      |                |
+|createLoopStart|Loopstart    |                |
+|createActivity |B            |                |
+|createLoopEnd  |Loopend      |                |
+|link           |Start        |Xorsplit    |   |
+|link           |Xorsplit     |Loopstart   |   |
+|link           |Xorsplit     |A           |   |
+|link           |A            |Xorjoin     |   |
+|link           |Loopstart    |B           |   |
+|link           |B            |Loopend     |   |
+|link           |Loopend      |Loopstart   |   |
+|link           |Loopend      |Xorjoin     |   |
+|link           |Xorjoin      |End         |   |
+
+
+!3 Take the upper branch of the Xor Split and skip the loop
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                    |
+|start              |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState         |Start          |Completed      |
+|checkState         |Xorsplit       |Activated      |
+|checkState         |A              |Activated      |
+|checkState         |Loopstart      |Activated      |
+|checkState         |B              |Activated      |
+|launch             |A              |               |
+|checkState         |A              |Launched       |
+|checkState         |Xorsplit       |Launched       |
+|checkState         |Loopstart      |Skipped        |
+|checkState         |B              |Skipped        |
+|complete           |A              |               |
+|checkState         |A              |Completed      |
+|checkSuccessorCount|A              |1              |
+|checkSuccessorCount|Loopstart      |1              |
+|checkState         |B              |Skipped        |
+|checkSuccessorCount|B              |1              |
+|checkState         |Loopend        |Skipped        |
+|checkSuccessorCount|Loopend        |1              |
+|checkState         |Xorsplit       |Completed      |
+|checkState         |Xorjoin        |Completed|
+|checkState         |End            |Completed      |
+
+
+!3 Take the lower branch of the Xor Split and skip activity A
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState           |Start            |Completed    |
+|checkState           |Xorsplit         |Activated    |
+|checkState           |A                |Activated    |
+|checkState           |Loopstart        |Activated    |
+|checkState           |B                |Activated    |
+|launch               |B                |             |
+|checkState           |Xorsplit         |Launched     |
+|checkState           |A                |Skipped      |
+|checkState           |Loopstart        |Launched     |
+|checkState           |B                |Launched     |
+|complete             |B                |             |
+|checkState           |Xorsplit         |Completed    |
+|checkState           |A                |Skipped      |
+|checkState           |Loopstart        |Completed    |
+|checkState           |B                |Completed    |
+|checkState           |Loopend          |Completed    |
+|checkState           |B[1]             |Activated    |
+|launch               |B[1]             |             |
+|complete             |B[1]             |             |
+|checkState           |B[1]             |Completed    |
+|checkState           |Loopend[1]       |Completed    |
+|checkState           |Loopstart[2]     |Activated    |
+|checkState           |B[2]             |Activated    |
+|checkActiveActivities|B,End                              |
+|skip                 |B[2]             |             |
+|checkState           |End              |Completed    |
+|checkState           |Xorjoin          |Activated|
+|checkState           |Loopend[1]       |Completed    |
+|checkState           |B[2]             |Skipped      |
+|checkState           |Loopstart[2]     |Skipped      |
+|checkState           |Loopend          |Completed    |
+

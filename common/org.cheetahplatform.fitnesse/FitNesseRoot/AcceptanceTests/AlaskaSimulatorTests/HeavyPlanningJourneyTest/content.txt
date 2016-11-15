@@ -1,0 +1,85 @@
+Create game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode          |create?|
+|Reise ins Ungewisse |15             |4              |720        |BUSINESS_VALUE_CONSTRAINT |true   |
+
+
+---- Create locations
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name|create?|
+|Ort A|true|
+|Ort B|true|
+
+
+---- Create routes
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateRouteConfigTest-!|
+|name|businessValue|cost|certainty|availability|minDuration|maxDuration|locationNameA|locationNameB|bookingDeadline|create?|
+|Route 1|50|10|0.8|1.0|10|10|Ort A|Ort B| 2|true|
+|Route 2|10|10|0.8|1.0|360|360|Ort A|Ort B|-1|true|
+
+
+---- Create accommodations
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateAccommodationConfigTest-!|
+|name|businessValue|cost|certainty|availability|bookingDeadline|create?|
+|Hotel A1|100|30|0.8|1.0|4|true|
+|Hotel A2| 10| 5|0.9|0.2|2|true|
+|Hotel B1|100|25|0.5|0.1|7|true|
+
+
+---- Link actions
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName|locationName|linkAction?|countActions?|
+|Route 1|Ort A|true|1|
+|Route 1|Ort B|true|1|
+|Route 2|Ort A|true|2|
+|Route 2|Ort B|true|2|
+|Hotel A1|Ort A|true|3|
+|Hotel A2|Ort A|true|4|
+|Hotel B1|Ort B|true|3|
+
+---- Create constraints
+
+|${ALASKA_CORE_PACKAGE}.!-CreateBudgetConstraintTest-!|
+|budget|createConstraint?|
+|100|true|
+
+
+
+---- Create game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName|create?|getStartLocation?|
+|PlayerXYZ|true|Ort A|
+
+Pre-initial Planning Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName|startTime|executeAction?|checkExpenses?|getDuration?|getMinutesOfDay?|getBusinessValue?|
+|Book|Hotel A2  |0,720         |true          |5           |0          |0                 |0                |
+|Book|Hotel B1  |1,720         |true          |30           |0          |0                |0                |
+
+
+---- Start game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|getDay?|
+|true|0|
+
+---- Execute actions - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName|startTime|executeAction?|checkExpenses?|getLocation?|getDuration?|getDay?|getMinutesOfDay?|getBusinessValue?||
+|Execute|Route 1   |0,0         |true          |40           |Ort B       |10         |0     |10                |||
+|Execute|Hotel A1  |0,720        |false         |40           |Ort B       |0           |0      |10             |||
+|Execute|Route 2   |0,10        |true          |50           |Ort A       |360         |0      |370             |||
+|Execute|Hotel A2  |0,370        |true          |50           |Ort A       |0        |1      |0               |||
+|Execute|Hotel B1  |1,720        |false         |50           |Ort A       |0           |1      |0               |||
+|Execute|Route 1   |1,0        |true          |60           |Ort B       |10         |1      |10             |||
+|Execute|Route 1   |1,10        |true          |70           |Ort A       |10         |1      |20             |||
+|Execute|Route 1   |1,20       |true          |80           |Ort B       |10         |1      |30             |||
+|Execute|Route 1   |1,30        |true          |90           |Ort A       |10         |1      |40             |||
+|Execute|Route 1   |1,40        |true          |100          |Ort B       |10         |1      |50             |||
+|Execute|Route 1   |1,50        |false         |100          |Ort B       |0          |1      |50             ||No money anymore|

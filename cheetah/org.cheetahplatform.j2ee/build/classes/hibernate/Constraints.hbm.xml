@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.cheetahplatform.core.declarative.constraint">
+	<class name="IDeclarativeConstraint" abstract="true" table="constraints">
+		<id name="databaseId" type="long" column="id">
+			<generator class="native" />
+		</id>
+		<discriminator column="constraintType" type="string" />
+
+		<subclass name="AbstractDeclarativeConstraintWithOneActivity"
+			abstract="true">
+			<many-to-one name="activity" class="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity" access="field"/>
+
+			<subclass name="EarliestStartTimeConstraint"
+				discriminator-value="EARLIEST_START_TIME">
+				<property name="durationSinceStart" type="hibernate.DurationUserType"
+					access="field">
+					<column name="time" />
+					<column name="inclusive" />
+				</property>
+			</subclass>
+			<subclass name="LatestStartTimeConstraint"
+				discriminator-value="LATEST_START_TIME">
+				<property name="durationSinceStart" type="hibernate.DurationUserType"
+					access="field">
+					<column name="time" />
+					<column name="inclusive" />
+				</property>
+			</subclass>
+			<subclass name="MinSelectConstraint" discriminator-value="MIN_SELECT">
+				<property name="minimum" access="field"/>
+				<property name="maximum" access="field"/>
+			</subclass>
+		</subclass>
+
+		<subclass name="AbstractDeclarativeConstraintWithTwoActivities">
+			<many-to-one name="activity1" class="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity" access="field"/>
+			<many-to-one name="activity2" class="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity" access="field"/>
+
+			<subclass name="ResponseConstraint" discriminator-value="RESPONSE" />
+			<subclass name="MutualExclusionConstraint"
+				discriminator-value="MUTUAL_EXCLUSION" />
+		</subclass>
+
+		<!--
+			<subclass name="AbstractDeclarativeTerminationConstraint"
+			abstract="true"> <subclass name="ResponseConstraint"
+			discriminator-value="RESPONSE"> <property name="activity"
+			type="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity"
+			access="field" /> <property name="activity2"
+			type="org.cheetahplatform.core.declarative.modeling.DeclarativeActivity"
+			access="field" /> </subclass> </subclass>
+		-->
+	</class>
+</hibernate-mapping> 

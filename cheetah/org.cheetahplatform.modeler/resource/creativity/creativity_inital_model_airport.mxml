@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="bpmn_modeling_1.0">
+		<ProcessInstance id="95">
+				<Data>
+					<Attribute name="activity_size_width">120</Attribute>
+					<Attribute name="activity_size_height">50</Attribute>
+					<Attribute name="PROCESS">bpmn_modeling_1.0</Attribute>
+					<Attribute name="type">BPMN</Attribute>
+					<Attribute name="timestamp">1302769540500</Attribute>
+					<Attribute name="host">192.168.66.70 (laptop-barbara)</Attribute>
+					<Attribute name="display_resolution_width">2920</Attribute>
+					<Attribute name="display_resolution_height">1776</Attribute>
+					<Attribute name="workflow_configuration_id">1</Attribute>
+					<Attribute name="experimental workflow activity duration">726465</Attribute>
+					<Attribute name="PROCESS_INSTANCE">95</Attribute>
+					<Attribute name="MOVE_EDGE_LABEL">14</Attribute>
+					<Attribute name="GROUP_EVENT_START">2</Attribute>
+					<Attribute name="RESIZE_NODE">7</Attribute>
+					<Attribute name="MOVE_EDGE_BENDPOINT">5</Attribute>
+					<Attribute name="GROUP_EVENT_END">2</Attribute>
+					<Attribute name="MOVE_NODE">29</Attribute>
+					<Attribute name="CREATE_EDGE">25</Attribute>
+					<Attribute name="CREATE_NODE">22</Attribute>
+					<Attribute name="RENAME">20</Attribute>
+					<Attribute name="CREATE_EDGE_BENDPOINT">8</Attribute>
+					<Attribute name="durationInSeconds">428515</Attribute>
+				</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">502</Attribute>
+					<Attribute name="descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="name">Start Event</Attribute>
+					<Attribute name="x">32</Attribute>
+					<Attribute name="y">270</Attribute>
+				</Data>
+				<WorkflowModelElement>Start Event</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:25:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">503</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Register at customer check-in</Attribute>
+					<Attribute name="x">111</Attribute>
+					<Attribute name="y">255</Attribute>
+					<Attribute name="add_node_start_time">1302769548877</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Register at customer check-in&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:26:07+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">504</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Provide directions to airport based on location information</Attribute>
+					<Attribute name="x">330</Attribute>
+					<Attribute name="y">153</Attribute>
+					<Attribute name="add_node_start_time">1302769601216</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:26:55+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">505</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Propose available hotel rooms</Attribute>
+					<Attribute name="x">341</Attribute>
+					<Attribute name="y">449</Attribute>
+					<Attribute name="add_node_start_time">1302769621979</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Propose available hotel rooms&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:27:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="x">603</Attribute>
+					<Attribute name="y">440</Attribute>
+					<Attribute name="add_node_start_time">1302769632135</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:27:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">507</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Notify customer</Attribute>
+					<Attribute name="x">813</Attribute>
+					<Attribute name="y">230</Attribute>
+					<Attribute name="add_node_start_time">1302769650792</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:27:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">508</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Remind customer to come to airport</Attribute>
+					<Attribute name="x">999</Attribute>
+					<Attribute name="y">229</Attribute>
+					<Attribute name="add_node_start_time">1302769659622</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Remind customer to come to airport&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:27:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">509</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;First gate passed&quot;</Attribute>
+					<Attribute name="x">1191</Attribute>
+					<Attribute name="y">228</Attribute>
+					<Attribute name="add_node_start_time">1302769672742</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;First gate passed&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:28:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="x">1192</Attribute>
+					<Attribute name="y">321</Attribute>
+					<Attribute name="add_node_start_time">1302769696142</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:28:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer customer security check information in local language</Attribute>
+					<Attribute name="x">1384</Attribute>
+					<Attribute name="y">227</Attribute>
+					<Attribute name="add_node_start_time">1302769736343</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:29:22+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="x">1552</Attribute>
+					<Attribute name="y">227</Attribute>
+					<Attribute name="add_node_start_time">1302769771162</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:29:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">513</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;in airplane&quot;</Attribute>
+					<Attribute name="x">1716</Attribute>
+					<Attribute name="y">227</Attribute>
+					<Attribute name="add_node_start_time">1302769797424</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;in airplane&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:30:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">514</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Remind customer to switch off mobile</Attribute>
+					<Attribute name="x">1884</Attribute>
+					<Attribute name="y">226</Attribute>
+					<Attribute name="add_node_start_time">1302769819681</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Remind customer to switch off mobile&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:30:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">515</Attribute>
+					<Attribute name="descriptor">BPMN.END_EVENT</Attribute>
+					<Attribute name="name">End Event</Attribute>
+					<Attribute name="x">2046</Attribute>
+					<Attribute name="y">239</Attribute>
+				</Data>
+				<WorkflowModelElement>End Event</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:30:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">516</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">514</Attribute>
+					<Attribute name="source_node_name">Remind customer to switch off mobile</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">515</Attribute>
+					<Attribute name="target_node_name">End Event</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.END_EVENT</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Remind customer to switch off mobile&apos; to End Event</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:30:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">517</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">513</Attribute>
+					<Attribute name="source_node_name">Update status to &quot;in airplane&quot;</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">514</Attribute>
+					<Attribute name="target_node_name">Remind customer to switch off mobile</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Update status to &quot;in airplane&quot;&apos; to Activity &apos;Remind customer to switch off mobile&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:30:47+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">518</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">512</Attribute>
+					<Attribute name="source_node_name">Update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">513</Attribute>
+					<Attribute name="target_node_name">Update status to &quot;in airplane&quot;</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Update status to &quot;security check passed&quot;&apos; to Activity &apos;Update status to &quot;in airplane&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:30:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">519</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">511</Attribute>
+					<Attribute name="source_node_name">Offer customer security check information in local language</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">512</Attribute>
+					<Attribute name="target_node_name">Update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Offer customer security check information in local language&apos; to Activity &apos;Update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:30:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">520</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">502</Attribute>
+					<Attribute name="source_node_name">Start Event</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.START_EVENT</Attribute>
+					<Attribute name="target_node_id">503</Attribute>
+					<Attribute name="target_node_name">Register at customer check-in</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Start Event to Activity &apos;Register at customer check-in&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">521</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">263</Attribute>
+					<Attribute name="y">266</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:05+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">522</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">503</Attribute>
+					<Attribute name="source_node_name">Register at customer check-in</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">521</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Register at customer check-in&apos; to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">523</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">521</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">504</Attribute>
+					<Attribute name="target_node_name">Provide directions to airport based on location information</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:10+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">524</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">305</Attribute>
+					<Attribute name="y">456</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:14+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">525</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">486</Attribute>
+					<Attribute name="y">457</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">526</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">521</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">524</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">527</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">524</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">505</Attribute>
+					<Attribute name="target_node_name">Propose available hotel rooms</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Propose available hotel rooms&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">528</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">505</Attribute>
+					<Attribute name="source_node_name">Propose available hotel rooms</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">525</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Propose available hotel rooms&apos; to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:20+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">529</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">525</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">506</Attribute>
+					<Attribute name="target_node_name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:22+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">524</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">525</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">531</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">735</Attribute>
+					<Attribute name="y">244</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">532</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">504</Attribute>
+					<Attribute name="source_node_name">Provide directions to airport based on location information</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">531</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Provide directions to airport based on location information&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">533</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">506</Attribute>
+					<Attribute name="source_node_name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">531</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Offer city tour compatible with stopover duration&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:31+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">534</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">774</Attribute>
+					<Attribute name="y">243</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">535</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">953</Attribute>
+					<Attribute name="y">237</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">536</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">1134</Attribute>
+					<Attribute name="y">234</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">537</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">1328</Attribute>
+					<Attribute name="y">235</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-04-14T10:31:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">538</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">537</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">511</Attribute>
+					<Attribute name="target_node_name">Offer customer security check information in local language</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">539</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">509</Attribute>
+					<Attribute name="source_node_name">Update status to &quot;First gate passed&quot;</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">537</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Update status to &quot;First gate passed&quot;&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">540</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">510</Attribute>
+					<Attribute name="source_node_name">Send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">537</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Send customer relevant discount coupons for Duty Free&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">541</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">536</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">510</Attribute>
+					<Attribute name="target_node_name">Send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:31:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">542</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">536</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">509</Attribute>
+					<Attribute name="target_node_name">Update status to &quot;First gate passed&quot;</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Update status to &quot;First gate passed&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">543</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">508</Attribute>
+					<Attribute name="source_node_name">Remind customer to come to airport</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">536</Attribute>
+					<Attribute name="target_node_name">AND</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.AND</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Remind customer to come to airport&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">544</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">507</Attribute>
+					<Attribute name="source_node_name">Notify customer</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">535</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Notify customer&apos; to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">545</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">535</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">508</Attribute>
+					<Attribute name="target_node_name">Remind customer to come to airport</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Remind customer to come to airport&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:04+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">546</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">531</Attribute>
+					<Attribute name="source_node_name">AND</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.AND</Attribute>
+					<Attribute name="target_node_id">534</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">547</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">534</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">507</Attribute>
+					<Attribute name="target_node_name">Notify customer</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">548</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="source_node_id">534</Attribute>
+					<Attribute name="source_node_name">XOR</Attribute>
+					<Attribute name="source_node_descriptor">BPMN.XOR</Attribute>
+					<Attribute name="target_node_id">535</Attribute>
+					<Attribute name="target_node_name">XOR</Attribute>
+					<Attribute name="target_node_descriptor">BPMN.XOR</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-04-14T10:32:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">526</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">278</Attribute>
+					<Attribute name="y">470</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:32:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">526</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">278</Attribute>
+					<Attribute name="y">472</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:32:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">523</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">278</Attribute>
+					<Attribute name="y">177</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:32:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">532</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">750</Attribute>
+					<Attribute name="y">178</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Provide directions to airport based on location information&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:32:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="x">-42</Attribute>
+					<Attribute name="y">4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:33:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:33:04+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:33:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">533</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">750</Attribute>
+					<Attribute name="y">472</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Offer city tour compatible with stopover duration&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:33:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">509</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;First gate passed&quot;</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">-71</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;First gate passed&quot;&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:33:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-29</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:33:30+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">541</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">1147</Attribute>
+					<Attribute name="y">316</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:33:39+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">540</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">1343</Attribute>
+					<Attribute name="y">316</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Send customer relevant discount coupons for Duty Free&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:33:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">542</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">1147</Attribute>
+					<Attribute name="y">182</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Update status to &quot;First gate passed&quot;&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:34:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">539</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="x">1343</Attribute>
+					<Attribute name="y">183</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Update status to &quot;First gate passed&quot;&apos; to AND</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:34:07+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">541</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">1149</Attribute>
+					<Attribute name="y">319</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:34:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">542</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">1149</Attribute>
+					<Attribute name="y">182</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Update status to &quot;First gate passed&quot;&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:34:31+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">523</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="new_name">airport starting point of travel</Attribute>
+					<Attribute name="rename_start_time">1302770092479</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-14T10:35:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">523</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">airport starting point of travel</Attribute>
+					<Attribute name="x">165</Attribute>
+					<Attribute name="y">-9</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;airport starting point of travel&apos; from XOR to Activity &apos;Provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:35:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">526</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="new_name">airport is stopover location </Attribute>
+					<Attribute name="rename_start_time">1302770117174</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-14T10:35:37+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">526</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">airport is stopover location </Attribute>
+					<Attribute name="x">168</Attribute>
+					<Attribute name="y">43</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;airport is stopover location &apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:35:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="new_name">overnight stay necessary due to connecting flight delay</Attribute>
+					<Attribute name="rename_start_time">1302770152633</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to XOR</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-14T10:36:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">overnight stay necessary due to connecting flight delay</Attribute>
+					<Attribute name="x">168</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;overnight stay necessary due to connecting flight delay&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">overnight stay necessary due to connecting flight delay</Attribute>
+					<Attribute name="x">3</Attribute>
+					<Attribute name="y">-7</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;overnight stay necessary due to connecting flight delay&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:10+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">overnight stay necessary due to connecting flight delay</Attribute>
+					<Attribute name="x">-13</Attribute>
+					<Attribute name="y">124</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;overnight stay necessary due to connecting flight delay&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">overnight stay necessary due to connecting flight delay</Attribute>
+					<Attribute name="new_name">no overnight stay necessary</Attribute>
+					<Attribute name="rename_start_time">1302770177920</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;overnight stay necessary due to connecting flight delay&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-14T10:36:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">no overnight stay necessary</Attribute>
+					<Attribute name="x">9</Attribute>
+					<Attribute name="y">-133</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;no overnight stay necessary&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:27+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">505</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Propose available hotel rooms</Attribute>
+					<Attribute name="x">8</Attribute>
+					<Attribute name="y">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Propose available hotel rooms&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:36:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">527</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="new_name">overnight stay due to connecting flight delay</Attribute>
+					<Attribute name="rename_start_time">1302770198372</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Propose available hotel rooms&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-14T10:36:47+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">no overnight stay necessary</Attribute>
+					<Attribute name="x">-7</Attribute>
+					<Attribute name="y">-3</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;no overnight stay necessary&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">no overnight stay necessary</Attribute>
+					<Attribute name="x">3</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;no overnight stay necessary&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">no overnight stay necessary</Attribute>
+					<Attribute name="x">-3</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;no overnight stay necessary&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">no overnight stay necessary</Attribute>
+					<Attribute name="x">3</Attribute>
+					<Attribute name="y">126</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;no overnight stay necessary&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:36:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">527</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">overnight stay due to connecting flight delay</Attribute>
+					<Attribute name="x">-28</Attribute>
+					<Attribute name="y">85</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;overnight stay due to connecting flight delay&apos; from XOR to Activity &apos;Propose available hotel rooms&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:37:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">530</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">no overnight stay necessary</Attribute>
+					<Attribute name="x">18</Attribute>
+					<Attribute name="y">-143</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;no overnight stay necessary&apos; from XOR to XOR</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:37:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">507</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Notify customer</Attribute>
+					<Attribute name="x">8</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:37:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">547</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="new_name">flight delayed</Attribute>
+					<Attribute name="rename_start_time">1302770240492</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from XOR to Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-14T10:37:27+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">547</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">flight delayed</Attribute>
+					<Attribute name="x">-7</Attribute>
+					<Attribute name="y">-19</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;flight delayed&apos; from XOR to Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:37:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">534</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">2</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:37:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">547</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">flight delayed</Attribute>
+					<Attribute name="x">-3</Attribute>
+					<Attribute name="y">88</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow &apos;flight delayed&apos; from XOR to Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_LABEL</EventType>
+				<Timestamp>2011-04-14T10:37:39+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">537</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">515</Attribute>
+					<Attribute name="descriptor">BPMN.END_EVENT</Attribute>
+					<Attribute name="name">End Event</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>End Event</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">534</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">535</Attribute>
+					<Attribute name="descriptor">BPMN.XOR</Attribute>
+					<Attribute name="name">XOR</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>XOR</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">507</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Notify customer</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">508</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Remind customer to come to airport</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Remind customer to come to airport&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">536</Attribute>
+					<Attribute name="descriptor">BPMN.AND</Attribute>
+					<Attribute name="name">AND</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>AND</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer customer security check information in local language</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">514</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Remind customer to switch off mobile</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Remind customer to switch off mobile&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">513</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;in airplane&quot;</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;in airplane&quot;&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-04-14T10:52:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">540</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">1343</Attribute>
+					<Attribute name="y">322</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from Activity &apos;Send customer relevant discount coupons for Duty Free&apos; to AND</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:52:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">541</Attribute>
+					<Attribute name="descriptor">BPMN.SEQUENCE_FLOW</Attribute>
+					<Attribute name="name">Sequence Flow</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">1149</Attribute>
+					<Attribute name="y">322</Attribute>
+				</Data>
+				<WorkflowModelElement>Sequence Flow from AND to Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-04-14T10:52:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">503</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Register at customer check-in</Attribute>
+					<Attribute name="new_name">register at customer check-in</Attribute>
+					<Attribute name="rename_start_time">1303197836819</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Register at customer check-in&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:23:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">504</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Provide directions to airport based on location information</Attribute>
+					<Attribute name="new_name">provide directions to airport based on location information</Attribute>
+					<Attribute name="rename_start_time">1303197840627</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">505</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Propose available hotel rooms</Attribute>
+					<Attribute name="new_name">propose available hotel rooms</Attribute>
+					<Attribute name="rename_start_time">1303197845701</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Propose available hotel rooms&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="new_name">offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="rename_start_time">1303197850460</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">507</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Notify customer</Attribute>
+					<Attribute name="new_name">notify customer</Attribute>
+					<Attribute name="rename_start_time">1303197856203</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Notify customer&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">508</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Remind customer to come to airport</Attribute>
+					<Attribute name="new_name">remind customer to come to airport</Attribute>
+					<Attribute name="rename_start_time">1303197859948</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Remind customer to come to airport&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">509</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;First gate passed&quot;</Attribute>
+					<Attribute name="new_name">update status to &quot;first gate passed&quot;</Attribute>
+					<Attribute name="rename_start_time">1303197862932</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;First gate passed&quot;&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="new_name">send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="rename_start_time">1303197870691</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">send customer relevant discount coupons for Duty Free</Attribute>
+					<Attribute name="new_name">send customer relevant discount coupons for duty free</Attribute>
+					<Attribute name="rename_start_time">1303197875603</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;send customer relevant discount coupons for Duty Free&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Offer customer security check information in local language</Attribute>
+					<Attribute name="new_name">offer customer security check information in local language</Attribute>
+					<Attribute name="rename_start_time">1303197881483</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer customer security check information in local language</Attribute>
+					<Attribute name="new_name">offer customer security check information in local language</Attribute>
+					<Attribute name="rename_start_time">1303197884588</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="new_name">update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="rename_start_time">1303197889091</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:52+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">513</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Update status to &quot;in airplane&quot;</Attribute>
+					<Attribute name="new_name">update status to &quot;in airplane&quot;</Attribute>
+					<Attribute name="rename_start_time">1303197895660</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Update status to &quot;in airplane&quot;&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:24:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">514</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">Remind customer to switch off mobile</Attribute>
+					<Attribute name="new_name">remind customer to switch off mobile</Attribute>
+					<Attribute name="rename_start_time">1303197899892</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Remind customer to switch off mobile&apos;</WorkflowModelElement>
+				<EventType>RENAME</EventType>
+				<Timestamp>2011-04-19T09:25:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="width">124</Attribute>
+					<Attribute name="height">52</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="width">123</Attribute>
+					<Attribute name="height">53</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-04-19T09:25:27+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer customer security check information in local language</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-04-19T09:25:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">512</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">update status to &quot;security check passed&quot;</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;update status to &quot;security check passed&quot;&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer customer security check information in local language</Attribute>
+					<Attribute name="width">127</Attribute>
+					<Attribute name="height">55</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer customer security check information in local language</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">511</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer customer security check information in local language</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer customer security check information in local language&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:47+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">send customer relevant discount coupons for duty free</Attribute>
+					<Attribute name="width">120</Attribute>
+					<Attribute name="height">55</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;send customer relevant discount coupons for duty free&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">510</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">send customer relevant discount coupons for duty free</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;send customer relevant discount coupons for duty free&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:25:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="width">124</Attribute>
+					<Attribute name="height">53</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:26:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="width">118</Attribute>
+					<Attribute name="height">54</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:26:14+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">506</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">offer city tour compatible with stopover duration</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;offer city tour compatible with stopover duration&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:26:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">504</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">provide directions to airport based on location information</Attribute>
+					<Attribute name="width">119</Attribute>
+					<Attribute name="height">56</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>RESIZE_NODE</EventType>
+				<Timestamp>2011-04-19T09:26:22+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">504</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">provide directions to airport based on location information</Attribute>
+					<Attribute name="x">1</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:26:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">504</Attribute>
+					<Attribute name="descriptor">BPMN.ACTIVITY</Attribute>
+					<Attribute name="name">provide directions to airport based on location information</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;provide directions to airport based on location information&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-04-19T09:27:40+0200</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-11:30:23 AM (MEZ) on Donnerstag, März 19, 2009-!|
+|'''Test Page: '''|.ErrorLogs.ImperativeWorkflows.LoopTest|
+|'''Command: '''|!-java -cp classes;fitnesse.jar;../org.cheetahplatform.test/bin;../org.cheetahplatform.service/bin;../org.cheetahplatform.core/bin;customLibs/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;customLibs/org.eclipse.core.runtime_3.4.0.v20080512.jar;customLibs/org.eclipse.osgi_3.4.0.v20080605-1900.jar fit.FitServer ibm-t60-zugi 8080 23-!|
+|'''Exit code: '''|!-1-!|
+|'''Time elapsed: '''|!-0.297 seconds-!|

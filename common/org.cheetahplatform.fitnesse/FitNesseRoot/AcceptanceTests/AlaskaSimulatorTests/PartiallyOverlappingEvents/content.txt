@@ -1,0 +1,146 @@
+!2 This test produces several overlapping events, which are attached to the same activity and do not override all values defined in the activity.
+
+
+!-!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}-!
+
+
+!img http://files/images/PartiallyOverlappingEvents.png
+
+Create a game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                   |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode          |create?|
+|My first configuration |21             |3              |720        |BUSINESS_VALUE_CONSTRAINT |true   |
+
+
+---- Create locations - the first one is the starting location
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name      |create?|
+|Innsbruck |true       |
+|Brixlegg  |true       |
+|Kirchbichl|true       |
+|Lermoos   |true       |
+
+
+---- Create routes - min Duration equals max Duration to make duration check easier ;)
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateRouteConfigTest-!|
+|name|businessValue|cost|certainty|availability|minDuration|maxDuration|locationNameA|locationNameB|bookingDeadline|create?|
+|Bundesstraße |1|20|1.0|1.0|30|30|Brixlegg|Kirchbichl|-1|true|
+|Autobahn|     5|50|1.0|1.0|30|30|Kirchbichl|Brixlegg|3|true|
+|Radweg  |    10| 5|1.0|1.0|30|30|Brixlegg|Innsbruck|-1|true|
+
+
+
+---- Create activities - '''all activities will be 100% available in this test'''
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateActivityConfigTest-!|
+|name          |businessValue|cost|bookingDeadline|certainty|availability|durationMin|durationMax|create?|
+|Climbing      |100          | 10 | 3             |1.0      |1           |100        |100        |true   |
+
+
+---- Link actions - actions must be linked to their locations unless they are used in events. Please note that routes must be added to both endpoints of the route.
+
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName     |locationName|linkAction?|countActions?|
+|Bundesstraße   |Brixlegg    ||1|
+|Autobahn       |Kirchbichl  ||1|
+|Radweg         |Brixlegg    ||2|
+|Bundesstraße   |Kirchbichl  ||2|
+|Autobahn       |Brixlegg    ||3|
+|Radweg         |Innsbruck   ||1|
+|Climbing       |Lermoos     ||1|
+
+
+---- Create events attached to the routes defined before. These events are triggered when a route is executed for the first time. After the given expiration time the changes of the event are undone. -1 indicates that this value should not be altered by the event.
+'''All events change the values for Climbing'''
+
+!|${ALASKA_CORE_PACKAGE}.!-ChangeTemporalActionEventsTest-!|
+|name    |actionName  |eventSource  |probability|newCost|newBusinessValue|newCertainty|newAvailability|newDuration|expirationTime| create?|
+|Event1  |Climbing    |Radweg       |1.0        |100    |-1.0            |-1.0        |-1.0           |-1         |131           |true    |
+|Event2  |Climbing    |Autobahn     |1.0        |-1.0   |2000            |-1.0        |-1.0           |-1         |61            |true    |
+|Event3  |Climbing    |Bundesstraße |1.0        |-1.0   |-1.0            |-1.0        |0.75           |-1         |111           |true    |
+
+---- Create a game from the previous created game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName  |create?|getStartLocation?|
+|cooles Spiel|true   |Innsbruck        |
+
+
+---- Start the game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|
+|true|
+
+---- No events are triggered yet -> values for Climbing should be the ones defined in the configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |100              | 10     |1.0          |1               |100            |
+
+Execute Radweg -> Triggers event1 which changes the values of climbing
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|getLocation?|allowsCompletion?|
+|Execute         |Radweg       |0,0      |true          |Brixlegg    |true             |
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |100              |100     |1.0          |1               |100            |
+
+Execute Autobahn -> Triggers event2 which changes the values of climbing
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|getLocation?|allowsCompletion?|
+|Execute         |Autobahn     |0,30     |true          |Kirchbichl  |true             |
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |2000             |100     |1.0          |1               |100            |
+
+Execute Bundesstraße -> Triggers event3 which changes the values of climbing
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|getLocation?|allowsCompletion?|
+|Execute         |Bundesstraße |0,60     |true          |Brixlegg    |true             |
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |2000             |100     |1.0          |0.75            |100            |
+
+----All events are executed - start with expiration of events.
+Expiration is done by executing some routes -> Triggers Event Service, which removes the expired events.
+
+Event2 was valid for only 61 minutes and was triggered after 30 minutes -> should be expired now
+-> The Business Value should be decreased to the initial value, as Event3, which was triggered after Event2, does not override the Business Value of Climbing.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|getLocation?|allowsCompletion?|
+|Execute         |Bundesstraße |0,100    |true          |Kirchbichl  |true             |
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |100              |100     |1.0          |0.75            |100            |
+
+Event1 is not valid any more -> The cost should be set to the initial value, as Event3, which was triggered after Event1, does not override the Cost of Climbing.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|getLocation?|allowsCompletion?|
+|Execute         |Bundesstraße |0,140    |true          |Brixlegg    |true             |
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |100              |10      |1.0          |0.75            |100            |
+
+Event3 is not valid any more ->  The availability of Climbing should be set to the initial value.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|getLocation?|allowsCompletion?|
+|Execute         |Bundesstraße |0,180    |true          |Kirchbichl  |true             |
+
+!|${ALASKA_CORE_PACKAGE}.!-CheckActivityTest-!|
+|name          |getBusinessValue?|getCost?|getCertainty?|getAvailability?|getDurationMax?|
+|Climbing      |100              | 10     |1.0          |1               |100            |

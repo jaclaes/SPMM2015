@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<h1>Swinging Modeling
+</h1>
+<p>This process does not start with a long comprehension phase, but with immediate 
+  modeling actions. The first half of the graph is flat and comprises long comprehension 
+  phases yet short modeling phases. In the second half, the ratio changes and long modeling 
+  phases alternate with comprehension phases. While there are some reconciliation 
+  phases, all of these are of a rather small size. Furthermore, the graph shows two modeling 
+'dips', meaning that more elements are deleted than created in these phases. </p>
+<p><img src="1656.png" width="805" height="277" alt="Swinging Modeling" longdesc="Swinging Modeling" /></p>
+<h2> Measures </h2>
+<p>The chunk size for this model is small (2.95) along with an average number 
+  of iterations (19). Furthermore, we observe an average number of reconciliation breaks
+  (26.6%) and very much time being spent on comprehension (72.2%).</p>
+<h2> Modeling Strategy</h2>
+<p> The replay shows that the modeler uses deletion operations very 
+  frequently. After elements are added, some of them are immediately deleted again. In 
+  this way, the overall model size increases only sluggishly. In addition, significant reconciliation 
+  takes place by deleting and re-adding elements instead of layouting them. 
+  We characterize this strategy as 'swinging modeling'.</p>
+<h2>  Modeling Result</h2>
+<p>The created model contains various syntax errors. When neglecting 
+  these errors, no behavioral anomalies are observed. The model shows a very weak approximation 
+  of the expected model in terms of graph edit distance, as the scenario is 
+  covered only partially.</p>
+</body>
+</html>

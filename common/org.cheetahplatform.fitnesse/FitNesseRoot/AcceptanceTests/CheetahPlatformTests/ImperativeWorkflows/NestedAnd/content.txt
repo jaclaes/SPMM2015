@@ -1,0 +1,89 @@
+!1 Nested And
+!img-l http://files/images/Nested_And.png
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createAndSplit|split1      |                 |
+|createAndSplit|split2      |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createActivity|C           |                 |
+|createAndJoin |join1       |                 |
+|createAndJoin |join2       |                 |
+|link          |Start       |split1     |     |
+|link          |split1      |C          |     |
+|link          |split1      |split2     |     |
+|link          |split2      |A          |     |
+|link          |split2      |B          |     |
+|link          |A           |join2      |     |
+|link          |B           |join2      |     |
+|link          |join2       |join1      |     |
+|link          |C           |join1      |     |
+|link          |join1       |End        |     |
+
+
+!3 All Actions should be activated after instantiating the workflow
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start         |Completed       |
+|checkState|split1        |Activated       |
+|checkState|split2        |Activated       |
+|checkState|A             |Activated       |
+|checkState|B             |Activated       |
+|checkState|C             |Activated       |
+
+
+!3 Take the upper branch by executing action A
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |A             |                |
+|checkState|A             |Launched        |
+|checkState|split1        |Launched        |
+|checkState|split2        |Launched        |
+|checkState|B             |Activated       |
+|checkState|C             |Activated       |
+|complete  |A             |                |
+|checkState|A             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|B             |Activated       |
+|checkState|C             |Activated       |
+|launch    |C             |                |
+|checkState|A             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|B             |Activated       |
+|checkState|C             |Launched        |
+|launch    |B             |                |
+|checkState|A             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|B             |Launched        |
+|checkState|C             |Launched        |
+|complete  |B             |                |
+|checkState|A             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|B             |Completed       |
+|checkState|C             |Launched        |
+|complete  |C             |                |
+|checkState|A             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|B             |Completed       |
+|checkState|C             |Completed       |
+|checkState|join1         |Completed       |
+|checkState|join2         |Completed       |
+
+
+

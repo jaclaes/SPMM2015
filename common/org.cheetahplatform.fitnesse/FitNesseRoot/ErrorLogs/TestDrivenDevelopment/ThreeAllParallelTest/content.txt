@@ -1,0 +1,9 @@
+!3 !-fit-!
+|'''Date: '''|!-8:15:30 AM (MESZ) on Samstag, Juni 6, 2009-!|
+|'''Test Page: '''|.TestDrivenDevelopment.ThreeAllParallelTest|
+|'''Command: '''|!-java -cp classes;fitnesse.jar;../org.cheetahplatform.test/bin;../org.cheetahplatform.service/bin;../org.cheetahplatform.core/bin;../org.cheetahplatform.tdd/bin;customLibs/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;customLibs/org.eclipse.core.runtime_3.4.0.v20080512.jar;customLibs/org.eclipse.osgi_3.4.0.v20080605-1900.jar;customLibs/org.eclipse.gef_3.4.1.v20080806.jar;customLibs/org.eclipse.draw2d_3.4.2.v20090114-1330.jar fit.FitServer ibm-t61-zugi 8080 111-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.5 seconds-!|
+----'''Standard Output:'''
+{{{Warning: OSGi infrastructure is not running - providing default services.
+}}}

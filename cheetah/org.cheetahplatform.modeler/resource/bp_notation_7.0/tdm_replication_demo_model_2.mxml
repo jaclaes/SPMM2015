@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="bpmn_modeling_1.0">
+		<ProcessInstance id="185">
+				<Data>
+					<Attribute name="PROCESS">bpmn_modeling_1.0</Attribute>
+					<Attribute name="assigned_id">185</Attribute>
+					<Attribute name="type">DECSERFLOW</Attribute>
+					<Attribute name="timestamp">1321374879169</Attribute>
+					<Attribute name="host">192.168.66.168 (laptop-zugi)</Attribute>
+					<Attribute name="display_resolution_width">2970</Attribute>
+					<Attribute name="display_resolution_height">1680</Attribute>
+					<Attribute name="workflow_configuration_id">3</Attribute>
+					<Attribute name="experimental workflow activity duration">118451</Attribute>
+					<Attribute name="PROCESS_INSTANCE">185</Attribute>
+					<Attribute name="DELETE_EDGE_BENDPOINT">1</Attribute>
+					<Attribute name="GROUP_EVENT_START">11</Attribute>
+					<Attribute name="GROUP_EVENT_END">11</Attribute>
+					<Attribute name="CREATE_EDGE">6</Attribute>
+					<Attribute name="MOVE_NODE">35</Attribute>
+					<Attribute name="CREATE_NODE">5</Attribute>
+					<Attribute name="CREATE_EDGE_BENDPOINT">1</Attribute>
+					<Attribute name="durationInSeconds">106</Attribute>
+				</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8733</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Write article</Attribute>
+					<Attribute name="x">189</Attribute>
+					<Attribute name="y">128</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Write article&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-11-15T17:34:44+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8734</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Submit article</Attribute>
+					<Attribute name="x">389</Attribute>
+					<Attribute name="y">134</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Submit article&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-11-15T17:34:49+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">640</Attribute>
+					<Attribute name="y">71</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:15+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8736</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article accepted</Attribute>
+					<Attribute name="x">631</Attribute>
+					<Attribute name="y">237</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:20+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">-32</Attribute>
+					<Attribute name="y">311</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:22+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8736</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article accepted</Attribute>
+					<Attribute name="x">-21</Attribute>
+					<Attribute name="y">-168</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:23+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-208</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:24+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">824</Attribute>
+					<Attribute name="y">183</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:29+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8765</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SELECTION</Attribute>
+					<Attribute name="name">Selection</Attribute>
+					<Attribute name="source_node_id">8734</Attribute>
+					<Attribute name="source_node_name">Submit article</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">8734</Attribute>
+					<Attribute name="target_node_name">Submit article</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="minimum">1</Attribute>
+					<Attribute name="maximum">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Selection from Activity &apos;Submit article&apos; to Activity &apos;Submit article&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-11-15T17:35:36+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8767</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">8733</Attribute>
+					<Attribute name="source_node_name">Write article</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">8734</Attribute>
+					<Attribute name="target_node_name">Submit article</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Write article&apos; to Activity &apos;Submit article&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-11-15T17:35:38+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8768</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">8734</Attribute>
+					<Attribute name="source_node_name">Submit article</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">8736</Attribute>
+					<Attribute name="target_node_name">Article accepted</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Submit article&apos; to Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-11-15T17:35:38+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8769</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">8734</Attribute>
+					<Attribute name="source_node_name">Submit article</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">8735</Attribute>
+					<Attribute name="target_node_name">Article rejected</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Submit article&apos; to Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-11-15T17:35:39+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8770</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">8735</Attribute>
+					<Attribute name="source_node_name">Article rejected</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">8737</Attribute>
+					<Attribute name="target_node_name">Rewrite article</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Article rejected&apos; to Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-11-15T17:35:39+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8772</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.MUTUAL_EXCLUSION</Attribute>
+					<Attribute name="name">Not Co-Existence</Attribute>
+					<Attribute name="source_node_id">8736</Attribute>
+					<Attribute name="source_node_name">Article accepted</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">8735</Attribute>
+					<Attribute name="target_node_name">Article rejected</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Not Co-Existence from Activity &apos;Article accepted&apos; to Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2011-11-15T17:35:44+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8734</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Submit article</Attribute>
+					<Attribute name="x">9</Attribute>
+					<Attribute name="y">-17</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Submit article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:46+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8768</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="x">458</Attribute>
+					<Attribute name="y">89</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Submit article&apos; to Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-11-15T17:35:48+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="compound_command_name">Delete all bendpoints of edge</Attribute>
+				</Data>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:35:51+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8768</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Submit article&apos; to Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2011-11-15T17:35:51+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:35:51+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:53+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:35:54+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8736</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article accepted</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:54+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:54+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:35:54+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-9</Attribute>
+					<Attribute name="y">-30</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:56+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:35:58+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-14</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:58+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:35:58+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:35:58+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:02+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8736</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article accepted</Attribute>
+					<Attribute name="x">-33</Attribute>
+					<Attribute name="y">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:02+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">-33</Attribute>
+					<Attribute name="y">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:02+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-33</Attribute>
+					<Attribute name="y">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:02+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:02+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-39</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:05+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:07+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:07+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:07+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:07+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8733</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Write article</Attribute>
+					<Attribute name="x">10</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Write article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:10+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8733</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Write article</Attribute>
+					<Attribute name="x">19</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Write article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:11+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8733</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Write article</Attribute>
+					<Attribute name="x">12</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Write article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:12+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8734</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Submit article</Attribute>
+					<Attribute name="x">-207</Attribute>
+					<Attribute name="y">-50</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Submit article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8733</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Write article</Attribute>
+					<Attribute name="x">-207</Attribute>
+					<Attribute name="y">-50</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Write article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8736</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article accepted</Attribute>
+					<Attribute name="x">-207</Attribute>
+					<Attribute name="y">-50</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">-207</Attribute>
+					<Attribute name="y">-50</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-207</Attribute>
+					<Attribute name="y">-50</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:16+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8736</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article accepted</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article accepted&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:20+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:24+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">-3</Attribute>
+					<Attribute name="y">11</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:24+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-3</Attribute>
+					<Attribute name="y">11</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:24+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:25+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:26+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">-6</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:26+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">-6</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:26+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:26+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:27+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">7</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:27+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">7</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:27+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:27+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:29+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">-6</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:29+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">-6</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:29+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:29+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2011-11-15T17:36:31+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8735</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Article rejected</Attribute>
+					<Attribute name="x">3</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Article rejected&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:31+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">8737</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Rewrite article</Attribute>
+					<Attribute name="x">3</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Rewrite article&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2011-11-15T17:36:31+0100</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2011-11-15T17:36:31+0100</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

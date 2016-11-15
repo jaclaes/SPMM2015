@@ -1,0 +1,314 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Model 2
+
+!img-l http://files/images/Model_2.png
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createActivity |M             |               |
+|createActivity |D             |               |
+|createActivity |G             |               |
+|createActivity |A             |               |
+|createActivity |Y             |               |
+|createActivity |C             |               |
+|createActivity |J             |               |
+|createActivity |L             |               |
+|createActivity |I             |               |
+|createAndSplit |andSplit      |               |
+|createAndJoin  |andJoin       |               |
+|createLoopStart|outerLoopStart|               |
+|createLoopEnd  |outerLoopEnd  |               |
+|createLoopStart|innerLoopStart|               |
+|createLoopEnd  |innerLoopEnd  |               |
+|createXorSplit |skipLSplit    |               |
+|createXorJoin  |skipLJoin     |               |
+|createLoopStart|iLoopStart    |               |
+|createLoopEnd  |iLoopEnd      |               |
+|link           |Start         |M             ||
+|link           |M             |andSplit      ||
+|link           |andSplit      |outerLoopStart||
+|link           |andSplit      |Y             ||
+|link           |andSplit      |C             ||
+|link           |outerLoopStart|innerLoopStart||
+|link           |innerLoopStart|A             ||
+|link           |A             |innerLoopEnd  ||
+|link           |innerLoopEnd  |innerLoopStart||
+|link           |innerLoopEnd  |outerLoopEnd  ||
+|link           |outerLoopEnd  |G             ||
+|link           |G             |D             ||
+|link           |D             |outerLoopStart||
+|link           |outerLoopEnd  |andJoin       ||
+|link           |Y             |andJoin       ||
+|link           |C             |andJoin       ||
+|link           |andJoin       |J             ||
+|link           |J             |skipLSplit    ||
+|link           |skipLSplit    |skipLJoin     ||
+|link           |skipLSplit    |L             ||
+|link           |L             |skipLJoin     ||
+|link           |skipLJoin     |iLoopStart    ||
+|link           |iLoopStart    |I             ||
+|link           |I             |iLoopEnd      ||
+|link           |iLoopEnd      |iLoopStart    ||
+|link           |iLoopEnd      |End           ||
+
+
+Trace M, Y, C, A, G
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState           |Start            |Completed    |
+|checkState           |M                |Activated    |
+|checkActiveActivities|M                |             |
+|launch               |M                |             |
+|checkState           |M                |Launched  |  |
+|checkActiveActivities|                 |             |
+|complete             |M                |             |
+|checkActiveActivities|A,C,Y            |             |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Activated    |
+|checkState           |outerLoopStart   |Activated    |
+|checkState           |innerLoopStart   |Activated    |
+|launch               |Y                |             |
+|checkActiveActivities|A,C              |             |
+|checkState           |Y                |Launched     |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Launched     |
+|checkState           |outerLoopStart   |Activated    |
+|checkState           |innerLoopStart   |Activated    |
+|complete             |Y                |             |
+|checkActiveActivities|A,C              |             |
+|checkState           |Y                |Completed    |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Completed    |
+|checkState           |outerLoopStart   |Activated    |
+|checkState           |innerLoopStart   |Activated    |
+|launch               |A                |             |
+|checkActiveActivities|C                |             |
+|checkState           |A                |Launched     |
+|checkState           |Y                |Completed    |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Completed    |
+|checkState           |outerLoopStart   |Launched     |
+|checkState           |innerLoopStart   |Launched     |
+|complete             |A                |             |
+|checkActiveActivities|A,C,G            |             |
+|checkState           |A                |Completed    |
+|checkState           |Y                |Completed    |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Completed    |
+|checkState           |outerLoopStart   |Completed    |
+|checkState           |innerLoopStart   |Completed    |
+|checkState           |innerLoopEnd     |Completed    |
+|checkState           |outerLoopEnd     |Completed    |
+|checkState           |G                |Activated    |
+|launch               |G                |             |
+|checkState           |G                |Launched     |
+|checkActiveActivities|C                |             |
+|checkState           |A[0]             |Completed    |
+|checkState           |A[1]             |Skipped      |
+|checkState           |G                |Launched     |
+|checkState           |Y                |Completed    |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Completed    |
+|checkState           |outerLoopStart   |Completed    |
+|checkState           |innerLoopStart   |Completed    |
+|checkState           |innerLoopEnd     |Completed    |
+|checkState           |outerLoopEnd     |Completed    |
+|complete             |G                |             |
+|checkActiveActivities|C,D              |             |
+|checkState           |A[0]             |Completed    |
+|checkState           |G                |Completed    |
+|checkState           |Y                |Completed    |
+|checkState           |M                |Completed    |
+|checkState           |andSplit         |Completed    |
+|checkState           |outerLoopStart   |Completed    |
+|checkState           |innerLoopStart   |Completed    |
+|checkState           |innerLoopEnd     |Completed    |
+|checkState           |outerLoopEnd     |Completed    |
+
+
+Trace M, A, Y, C, G, D
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkActiveActivities|M                              |
+|launch               |M             |                |
+|complete             |M             |                |
+|checkActiveActivities|A,C,Y                          |
+|launch               |A             |                |
+|complete             |A             |                |
+|checkActiveActivities|A,C,G,Y                        |
+|launch               |Y             |                |
+|complete             |Y             |                |
+|checkState           |andJoin       |Created         |
+|checkActiveActivities|A,C,G                          |
+|launch               |C             |                |
+|complete             |C             |                |
+|checkState           |andJoin       |Activated       |
+|checkActiveActivities|A,G,J                          |
+|launch               |G             |                |
+|checkState           |G             |Launched        |
+|checkActiveActivities|                               |
+|complete             |G             |                |
+|checkActiveActivities|D                              |
+|launch               |D             |                |
+|complete             |D             |                |
+
+
+Trace M, A, Y, C, G, D, A, J, L, I
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |M                  |           |
+|complete  |M                  |           |
+|launch    |A                  |           |
+|complete  |A                  |           |
+|launch    |Y                  |           |
+|complete  |Y                  |           |
+|launch    |C                  |           |
+|complete  |C                  |           |
+|launch    |G                  |           |
+|complete  |G                  |           |
+|launch    |D                  |           |
+|complete  |D                  |           |
+|checkState|A[1]               |Activated  |
+|checkState|outerLoopStart[1]  |Activated  |
+|checkState|D                  |Completed  |
+|launch    |A[1]               |           |
+|complete  |A[1]               |           |
+|checkState|andJoin            |Activated  |
+|checkState|J                  |Activated  |
+|launch    |J                  |           |
+|complete  |J                  |           |
+|launch    |L                  |           |
+|complete  |L                  |           |
+|launch    |I                  |           |
+|complete  |I                  |           |
+
+
+
+Trace M, C, A, G, D, A, Y, J
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |M             |                |
+|complete  |M             |                |
+|launch    |C             |                |
+|complete  |C             |                |
+|launch    |A             |                |
+|complete  |A             |                |
+|launch    |G             |                |
+|complete  |G             |                |
+|launch    |D             |                |
+|complete  |D             |                |
+|launch    |A[1]          |                |
+|complete  |A[1]          |                |
+|launch    |Y             |                |
+|complete  |Y             |                |
+|checkState|andJoin       |Activated       |
+|launch    |J             |                |
+|complete  |J             |                |
+
+
+
+Trace M, C, A, Y, A, G, D, A, J, L
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}         |
+|start   |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch  |M                |             |
+|complete|M                |             |
+|launch  |C                |             |
+|complete|C                |             |
+|launch  |A                |             |
+|complete|A                |             |
+|launch  |Y                |             |
+|complete|Y                |             |
+|launch  |A[1]             |             |
+|complete|A[1]             |             |
+|launch  |G                |             |
+|complete|G                |             |
+|launch  |D                |             |
+|complete|D                |             |
+|launch  |A[3]             |             |
+|complete|A[3]             |             |
+|launch  |J                |             |
+|complete|J                |             |
+|launch  |L                |             |
+|complete|L                |             |
+
+
+Trace M, C, Y, A, J, L, I, I, I
+
+|${IMPERATIVE_EXECUTION_FIXTURE}         |
+|start   |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch  |M               |              |
+|complete|M               |              |
+|launch  |C               |              |
+|complete|C               |              |
+|launch  |Y               |              |
+|complete|Y               |              |
+|launch  |A               |              |
+|complete|A               |              |
+|launch  |J               |              |
+|complete|J               |              |
+|launch  |L               |              |
+|complete|L               |              |
+|launch  |I               |              |
+|complete|I               |              |
+|launch  |I               |              |
+|complete|I               |              |
+|launch  |I               |              |
+|complete|I               |              |
+
+
+
+
+Trace M, A, G, D, A, Y, C, J
+
+|${IMPERATIVE_EXECUTION_FIXTURE}         |
+|start   |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch  |M                |             |
+|complete|M                |             |
+|launch  |A                |             |
+|complete|A                |             |
+|launch  |G                |             |
+|complete|G                |             |
+|launch  |D                |             |
+|complete|D                |             |
+|launch  |A[1]             |             |
+|complete|A[1]             |             |
+|launch  |Y                |             |
+|complete|Y                |             |
+|launch  |C                |             |
+|complete|C                |             |
+|launch  |J                |             |
+|complete|J                |             |
+
+
+Trace M, A, A, G, C, Y
+
+|${IMPERATIVE_EXECUTION_FIXTURE}                      |
+|start                |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch               |M               |              |
+|complete             |M               |              |
+|launch               |A               |              |
+|complete             |A               |              |
+|launch               |A               |              |
+|complete             |A               |              |
+|launch               |G               |              |
+|complete             |G               |              |
+|launch               |C               |              |
+|complete             |C               |              |
+|launch               |Y               |              |
+|stop                                                 |
+|complete             |Y               |              |
+|checkActiveActivities|D                              |

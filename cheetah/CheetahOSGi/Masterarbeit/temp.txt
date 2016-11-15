@@ -1,0 +1,146 @@
+Evaluation Criterions:
+
+Getting Started
+Documentation
+Support
+User Interface and Usability
+Performance
+Further Usage
+Testscenarios
+
+Identified Problems:
+
+Data Access
+Data Aggregation
+Number of prebuilt building blocks
+Extensibility
+Eventmanagement
+Saving Or Updating Data
+
+Component Framework:
+
+Simple User Interface
+Running multiple instances of a component
+Grouping Components
+
+
+
+OSGi advantages:
+
+- solid basis
+- eventmanagement
+- lifecycle management --> Hot deployment
+
+Component Framework:
+
+- grouping of components
+- reusability of groups
+- extension of Eventmanagement
+- simple user interface for OSGi and Component Framework features
+- easy extensibility
+
+
+Let's assume an air ambulance company which has to process multiple flights a day with all the common steps that have to be taken, the events that can
+occur and the different roles that are involved.
+
+First of all an insurance company commissions the air ambulance company to transport a patient from destination A to destination B.
+As next step the air ambulance sets up a flight instruction, which contains information about start and destination airport,
+the responsible hospitals, the diagnosis as well as various personal data of the patient. Furthermore, it includes information about
+the flight as well as the medical crew, which includes doctors and nurses and the flight schedule, which provides details about the
+exact flight times and the necessary stopovers to either pick up another patient or to refuel.
+
+The following steps have to be taken to guarantee a smooth transportation of the patient from destination A to destination B.
+
+
+
+
+
+
+
+Scenario:
+
+Angenommen: Eine Versicherungsfirma gibt den Auftrag an eine Fluggesellschaft einen
+Patienten vom Urlaubsort nach Hause zu transportieren.
+
+Folgende Aktionen müssen daher ausgeführt werden:
+- Auftrag von der Versicherungsfirma wird angenommen:
+	- von wo nach wo
+	- Diagnose
+	- Geburtsdatum
+	- Ziel-Adresse
+	- Begleitperson
+
+- Flugauftrag wird erstellt mit den oben genannten Informationen plus Informationen zum Flug selber
+und zu den Piloten:
+	- Flight-Crew und Medical-Crew
+	- Datum des Flugs
+	- eindeutige Fallnummer
+	- Schedule (Flugzeiten, Startort, Zwischenlandungen, Zielort)
+	- Startkrankenhaus + Zielkrankenhaus
+
+- Ambulanzen organisieren, die den/die Patienten zum jeweiligen Flughafen bringen bzw. vom Zielflughafen abholen
+- handling organisieren - d.h.: Firmen die für einen reibungslosen Ablauf bei den Stopps sorgen; wie zum Beispiel
+ambulanzen dürgen zum Flieger fahren, Flieger wird aufgetankt, Lande oder Overflight-Permission für den Flughafen,
+falls übernachtung nötig --> parkposition für den Flieger
+- preflight mit infos über Flieger, Flugnummer, Schedule, Pilot nach Frankfurt --> informiert jeweilige Zielflughäfen
+- Flughäfen wegen Öffnungszeiten anrufen
+- Hotel für etweige Übernachtung organisieren
+- haben flughäfen zoll --> Passkontrolle
+- Kontrolle der Fire kategorie der Zielflughäfen - wenn zu niedrig, darf nicht eingeflogen werden
+- Catering für Passagiere und Crew organisieren
+- Ticket für Patienten und Med Crew erstellen
+- Geld für Pilot für Handlings, Übernachtungen, Ambulanzen, die Bar bezahlt werden wollen, Verpflegung
+- Fuel muss bestellt werden, Handling ist nur dafür zuständig, dass der Tankwagen da steht - getankt wird nur wenns der Fuel bestellt worden ist
+- Crew (Flight + Med) wird informiert
+- anhand des Schedules erstellt der dispatcher die Flugpläne
+
+--> Eintrag ins Flugbuch, wo alle Flüge festgehalten werden. Auch Flugstunden der Piloten, Fulgzeuge
+
+--------------
+
+Startet der Flug besteht während der ganzen zeit Kontakt zwischen Piloten und Organisationszentrale der Fluggesellschaft
+
+What can happen:
+- Verkürzung oder Verlängerung der Flugzeit, auf Grund der Windsituation --> Ambulanzen müssen informiert werden
+- Windsituation kann auch dazu führen, dass ein weiterer Zwischenstopp nötig ist --> mehr Organisationsaufwand
+- Zielkrankenhaus (wurde von auftraggebender Versicherung organisiert) ist für Versorgung des Patienten nicht ausgerüstet --> Alternative muss gesucht werden
+- Wettersituation führt zu Schließung des Zielflughafens --> Alternative suchen
+- Flieger hat technisches Problem --> Notlandung --> Flugbetriebsleitung schreitet ein und bereitet isch auf Heldendaten vor
+
+------------
+
+Verschiedene Rollen während des Ablaufs:
+
+il capo:
+Benötigt ein monitoring tool für alle aktuell bearbeiteten Flüge
+	- wo ist flieger unterwegs
+	- delay
+	- crew
+	- patienten
+	- flugstunden des Fliegers sowie des Piloten
+
+---------
+
+organisationscentrale:
+	selbes tool wie capo + 
+	
+	für den flug
+	- ambulanzfirmen werden per mouse click angerufen (verspätungen und ähnliches)
+	- Kontakt des Auftraggebers
+
+vor dem flug:
+	- Komponente um destinatinonen einzugeben
+			--> Liste der Flughäfen (um anzurufen)
+			--> Liste der ortsansässigen Ambulanzen (um anzurufen)
+	- Komponente zum preflight erstellen (etwaige bereits vorhandene Daten aus der Datenbank holen)
+	- Komponente für Antragsformular für handling
+	- Komponente um Tickets zu erstellen
+	
+---------
+
+Dispatcher:
+	- selbes wie für chef
+	- benachrichtigung des alternate flughafens, falls nötig
+	- aktuelle fuel anzeige
+	- anzeige der genauen flugrute
+	- Komponente zum erstellen des Flugplans

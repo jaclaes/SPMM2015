@@ -1,0 +1,21 @@
+!1 Latest Start Time
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A        |                     |
+|createActivity                 |B        |                     |
+|createLatestStartTimeConstraint|A        |3:30        |        |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B                             |
+|setTime           |2:45              |             |
+|getExecutableTasks|A,B                             |
+|setTime           |3:29              |             |
+|getExecutableTasks|A,B                             |
+|setTime           |3:30              |             |
+|getExecutableTasks|B                               |
+|setTime           |3:31              |             |
+|getExecutableTasks|B                               |
+

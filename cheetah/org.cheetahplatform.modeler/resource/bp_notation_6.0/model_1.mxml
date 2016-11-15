@@ -1,0 +1,4574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="bpmn_modeling_1.0">
+		<ProcessInstance id="3453">
+				<Data>
+					<Attribute name="PROCESS">bpmn_modeling_1.0</Attribute>
+					<Attribute name="type">DECSERFLOW</Attribute>
+					<Attribute name="timestamp">1285662109735</Attribute>
+					<Attribute name="host">192.168.0.245 (laptop-zugi)</Attribute>
+					<Attribute name="workflow_configuration_id">3</Attribute>
+					<Attribute name="experimental workflow activity duration">18032</Attribute>
+					<Attribute name="PROCESS_INSTANCE">3453</Attribute>
+					<Attribute name="DELETE_EDGE">7</Attribute>
+					<Attribute name="DELETE_EDGE_BENDPOINT">17</Attribute>
+					<Attribute name="GROUP_EVENT_START">44</Attribute>
+					<Attribute name="MOVE_EDGE_BENDPOINT">40</Attribute>
+					<Attribute name="GROUP_EVENT_END">44</Attribute>
+					<Attribute name="CREATE_EDGE">22</Attribute>
+					<Attribute name="MOVE_NODE">212</Attribute>
+					<Attribute name="CREATE_NODE">9</Attribute>
+					<Attribute name="EDIT_SELECTION_CONSTRAINT">1</Attribute>
+					<Attribute name="RECONNECT_EDGE">1</Attribute>
+					<Attribute name="CREATE_EDGE_BENDPOINT">19</Attribute>
+					<Attribute name="durationInSeconds">558494</Attribute>
+				</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">463</Attribute>
+					<Attribute name="y">296</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:21:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">708</Attribute>
+					<Attribute name="y">188</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:21:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">824</Attribute>
+					<Attribute name="y">380</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">694</Attribute>
+					<Attribute name="y">297</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:04+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">-26</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-75</Attribute>
+					<Attribute name="y">23</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-43</Attribute>
+					<Attribute name="y">89</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-189</Attribute>
+					<Attribute name="y">-89</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-13</Attribute>
+					<Attribute name="y">-11</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">819</Attribute>
+					<Attribute name="y">212</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:55+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">760</Attribute>
+					<Attribute name="y">118</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:22:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">926</Attribute>
+					<Attribute name="y">295</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:23:04+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">1009</Attribute>
+					<Attribute name="y">389</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:23:07+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">1141</Attribute>
+					<Attribute name="y">272</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>CREATE_NODE</EventType>
+				<Timestamp>2010-09-28T10:23:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-8</Attribute>
+					<Attribute name="y">25</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:23:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">488</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SELECTION</Attribute>
+					<Attribute name="name">Selection</Attribute>
+					<Attribute name="source_node_id">357</Attribute>
+					<Attribute name="source_node_name">M</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">357</Attribute>
+					<Attribute name="target_node_name">M</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="minimum">1</Attribute>
+					<Attribute name="maximum">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Selection from Activity &apos;M&apos; to Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:23:32+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">490</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">357</Attribute>
+					<Attribute name="source_node_name">M</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">359</Attribute>
+					<Attribute name="target_node_name">Y</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;M&apos; to Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:23:37+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">491</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">357</Attribute>
+					<Attribute name="source_node_name">M</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">360</Attribute>
+					<Attribute name="target_node_name">C</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;M&apos; to Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:23:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">492</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SUCCESSION</Attribute>
+					<Attribute name="name">Succession</Attribute>
+					<Attribute name="source_node_id">357</Attribute>
+					<Attribute name="source_node_name">M</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Succession from Activity &apos;M&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:23:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">493</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">358</Attribute>
+					<Attribute name="source_node_name">A</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">460</Attribute>
+					<Attribute name="target_node_name">G</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;A&apos; to Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:23:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">494</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">360</Attribute>
+					<Attribute name="source_node_name">C</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">462</Attribute>
+					<Attribute name="target_node_name">J</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;C&apos; to Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:23:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">462</Attribute>
+					<Attribute name="source_node_name">J</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">463</Attribute>
+					<Attribute name="target_node_name">L</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:24:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">496</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SUCCESSION</Attribute>
+					<Attribute name="name">Succession</Attribute>
+					<Attribute name="source_node_id">462</Attribute>
+					<Attribute name="source_node_name">J</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">464</Attribute>
+					<Attribute name="target_node_name">I</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Succession from Activity &apos;J&apos; to Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:24:05+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">515</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SELECTION</Attribute>
+					<Attribute name="name">Selection</Attribute>
+					<Attribute name="source_node_id">359</Attribute>
+					<Attribute name="source_node_name">Y</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">359</Attribute>
+					<Attribute name="target_node_name">Y</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="minimum">1</Attribute>
+					<Attribute name="maximum">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Selection from Activity &apos;Y&apos; to Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:24:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">544</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SELECTION</Attribute>
+					<Attribute name="name">Selection</Attribute>
+					<Attribute name="source_node_id">360</Attribute>
+					<Attribute name="source_node_name">C</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">360</Attribute>
+					<Attribute name="target_node_name">C</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="minimum">1</Attribute>
+					<Attribute name="maximum">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Selection from Activity &apos;C&apos; to Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:24:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-4</Attribute>
+					<Attribute name="y">20</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:20+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">-35</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">10</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">18</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-9</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">77</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:24:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">566</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SELECTION</Attribute>
+					<Attribute name="name">Selection</Attribute>
+					<Attribute name="source_node_id">463</Attribute>
+					<Attribute name="source_node_name">L</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">463</Attribute>
+					<Attribute name="target_node_name">L</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="minimum">0</Attribute>
+					<Attribute name="maximum">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Selection from Activity &apos;L&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:25:31+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-45</Attribute>
+					<Attribute name="y">19</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:25:32+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">62</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:25:33+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="x">987</Attribute>
+					<Attribute name="y">427</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:25:37+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="source_node_id">464</Attribute>
+					<Attribute name="source_node_name">I</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">463</Attribute>
+					<Attribute name="target_node_name">L</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:25:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="x">1192</Attribute>
+					<Attribute name="y">425</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:25:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">569</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="source_node_id">460</Attribute>
+					<Attribute name="source_node_name">G</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">461</Attribute>
+					<Attribute name="target_node_name">D</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;G&apos; to Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:26:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">142</Attribute>
+					<Attribute name="y">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-8</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">570</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:26:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">571</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="source_node_id">462</Attribute>
+					<Attribute name="source_node_name">J</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">460</Attribute>
+					<Attribute name="target_node_name">G</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;J&apos; to Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:26:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T10:26:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-40</Attribute>
+					<Attribute name="y">28</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-40</Attribute>
+					<Attribute name="y">28</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-40</Attribute>
+					<Attribute name="y">28</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T10:26:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T10:26:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">12</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">12</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">12</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T10:26:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T10:26:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T10:26:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T10:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T10:26:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T10:26:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:26:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T10:26:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="x">943</Attribute>
+					<Attribute name="y">439</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="x">975</Attribute>
+					<Attribute name="y">448</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:04+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">945</Attribute>
+					<Attribute name="y">448</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:07+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:10+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="x">954</Attribute>
+					<Attribute name="y">452</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:17+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">1161</Attribute>
+					<Attribute name="y">453</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:27:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">570</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="x">683</Attribute>
+					<Attribute name="y">144</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T10:27:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">-10</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:27:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">4</Attribute>
+					<Attribute name="y">3</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:27:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">572</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">359</Attribute>
+					<Attribute name="source_node_name">Y</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">462</Attribute>
+					<Attribute name="target_node_name">J</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;Y&apos; to Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T10:28:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">19</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:28:14+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-1</Attribute>
+					<Attribute name="y">16</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:28:17+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">20</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:28:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-6</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T10:28:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">712</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.INIT</Attribute>
+					<Attribute name="name">Init</Attribute>
+					<Attribute name="source_node_id">358</Attribute>
+					<Attribute name="source_node_name">A</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Init from Activity &apos;A&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T11:18:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">712</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.INIT</Attribute>
+					<Attribute name="name">Init</Attribute>
+					<Attribute name="source_node_id">358</Attribute>
+					<Attribute name="source_node_name">A</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Init from Activity &apos;A&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-09-28T11:18:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T11:24:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">56</Attribute>
+					<Attribute name="y">32</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">56</Attribute>
+					<Attribute name="y">32</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">56</Attribute>
+					<Attribute name="y">32</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T11:24:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T11:24:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-50</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-50</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-50</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T11:24:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T11:24:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-22</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-22</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-22</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T11:24:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T11:24:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">39</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">39</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">39</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T11:24:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T11:24:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-17</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-17</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-17</Attribute>
+					<Attribute name="y">-2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T11:24:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T11:24:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">961</Attribute>
+					<Attribute name="y">470</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T11:24:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">1171</Attribute>
+					<Attribute name="y">474</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T11:25:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-393</Attribute>
+					<Attribute name="y">-113</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T14:01:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">570</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">293</Attribute>
+					<Attribute name="y">27</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:01:32+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">566</Attribute>
+					<Attribute name="y">362</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:01:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="source_node_id">464</Attribute>
+					<Attribute name="source_node_name">I</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">463</Attribute>
+					<Attribute name="target_node_name">L</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T14:01:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="x">776</Attribute>
+					<Attribute name="y">357</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:02:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">567</Attribute>
+					<Attribute name="y">360</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:02:21+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">570</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:02:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-83</Attribute>
+					<Attribute name="y">9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-83</Attribute>
+					<Attribute name="y">9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-83</Attribute>
+					<Attribute name="y">9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-83</Attribute>
+					<Attribute name="y">9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-83</Attribute>
+					<Attribute name="y">9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T14:02:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">484</Attribute>
+					<Attribute name="y">361</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:02:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">484</Attribute>
+					<Attribute name="y">372</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:02:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">484</Attribute>
+					<Attribute name="y">366</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:02:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">692</Attribute>
+					<Attribute name="y">365</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:03:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-55</Attribute>
+					<Attribute name="y">-4</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T14:06:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">428</Attribute>
+					<Attribute name="y">365</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:06:10+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">637</Attribute>
+					<Attribute name="y">362</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T14:06:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">638</Attribute>
+					<Attribute name="y">362</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T15:11:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">664</Attribute>
+					<Attribute name="y">365</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T15:11:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="source_node_id">464</Attribute>
+					<Attribute name="source_node_name">I</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">463</Attribute>
+					<Attribute name="target_node_name">L</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-09-28T15:11:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">429</Attribute>
+					<Attribute name="y">362</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T15:11:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">20</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T15:11:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-14</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T15:11:47+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">10</Attribute>
+					<Attribute name="y">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T15:11:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-7</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T15:11:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">638</Attribute>
+					<Attribute name="y">364</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T15:11:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">429</Attribute>
+					<Attribute name="y">364</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T15:11:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">696</Attribute>
+					<Attribute name="y">383</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:42:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">638</Attribute>
+					<Attribute name="y">364</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:42:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">755</Attribute>
+					<Attribute name="y">434</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:43:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">638</Attribute>
+					<Attribute name="y">364</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:47:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:47:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-37</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:47:36+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:47:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">28</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">28</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:47:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">429</Attribute>
+					<Attribute name="y">355</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:47:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">638</Attribute>
+					<Attribute name="y">355</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:47:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:47:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-7</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:47:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:47:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-6</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:47:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:47:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-187</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-402</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">438</Attribute>
+					<Attribute name="y">-13</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">361</Attribute>
+					<Attribute name="y">13</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">221</Attribute>
+					<Attribute name="y">275</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:10+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-220</Attribute>
+					<Attribute name="y">-302</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-325</Attribute>
+					<Attribute name="y">13</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">222</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:17+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-33</Attribute>
+					<Attribute name="y">-54</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-10</Attribute>
+					<Attribute name="y">17</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-277</Attribute>
+					<Attribute name="y">-74</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">339</Attribute>
+					<Attribute name="y">138</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-14</Attribute>
+					<Attribute name="y">-36</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:25+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-19</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-3</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-6</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:35+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-11</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-36</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">36</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">36</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">36</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:48:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:48:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">578</Attribute>
+					<Attribute name="y">226</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:48:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">236</Attribute>
+					<Attribute name="y">363</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:48:55+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">516</Attribute>
+					<Attribute name="y">150</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:48:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-126</Attribute>
+					<Attribute name="y">143</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">578</Attribute>
+					<Attribute name="y">519</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:49:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-425</Attribute>
+					<Attribute name="y">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:07+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">145</Attribute>
+					<Attribute name="y">-134</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-35</Attribute>
+					<Attribute name="y">-175</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">723</Attribute>
+					<Attribute name="y">344</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:49:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">459</Attribute>
+					<Attribute name="y">344</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:49:13+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:49:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-3</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:49:18+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-59</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:22+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-30</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">664</Attribute>
+					<Attribute name="y">344</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-28T17:49:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:49:33+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-10</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:33+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:33+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:49:33+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-10</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:37+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-28T17:49:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-11</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-28T17:49:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-28T17:49:42+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">570</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-09-28T17:53:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T17:53:05+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">672</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-09-28T17:54:08+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-09-28T17:54:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">24</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-09-29T10:58:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">457</Attribute>
+					<Attribute name="y">368</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-29T10:59:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">662</Attribute>
+					<Attribute name="y">368</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-29T10:59:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">273</Attribute>
+					<Attribute name="y">48</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:07:32+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">319</Attribute>
+					<Attribute name="y">95</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:07:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:07:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">236</Attribute>
+					<Attribute name="y">48</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:08:02+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">234</Attribute>
+					<Attribute name="y">51</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:08:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:15:52+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">208</Attribute>
+					<Attribute name="y">42</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:15:55+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">234</Attribute>
+					<Attribute name="y">51</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:15:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:19:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">234</Attribute>
+					<Attribute name="y">51</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:19:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">316</Attribute>
+					<Attribute name="y">33</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">204</Attribute>
+					<Attribute name="y">83</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:16+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">207</Attribute>
+					<Attribute name="y">55</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:30+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:32+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">234</Attribute>
+					<Attribute name="y">51</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:20:39+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:27+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">322</Attribute>
+					<Attribute name="y">71</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">361</Attribute>
+					<Attribute name="y">43</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">1</Attribute>
+					<Attribute name="x">294</Attribute>
+					<Attribute name="y">60</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="x">340</Attribute>
+					<Attribute name="y">93</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">2</Attribute>
+					<Attribute name="x">222</Attribute>
+					<Attribute name="y">74</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-09-30T11:25:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-33</Attribute>
+					<Attribute name="y">-297</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:41+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:57:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-101</Attribute>
+					<Attribute name="y">306</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-101</Attribute>
+					<Attribute name="y">306</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:57:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-45</Attribute>
+					<Attribute name="y">296</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:46+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">25</Attribute>
+					<Attribute name="y">89</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-10</Attribute>
+					<Attribute name="y">-17</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:52+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">105</Attribute>
+					<Attribute name="y">-221</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:57:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="x">501</Attribute>
+					<Attribute name="y">145</Attribute>
+					<Attribute name="index">1</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-10-01T11:57:59+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">482</Attribute>
+					<Attribute name="y">165</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-10-01T11:58:01+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-10-01T11:58:05+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">457</Attribute>
+					<Attribute name="y">147</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-10-01T11:58:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">568</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.NEGATION_RESPONSE</Attribute>
+					<Attribute name="name">Negation Response</Attribute>
+					<Attribute name="index">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Negation Response from Activity &apos;I&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-10-01T11:58:12+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">493</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">358</Attribute>
+					<Attribute name="source_node_name">A</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">460</Attribute>
+					<Attribute name="target_node_name">G</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;A&apos; to Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-10-01T11:58:24+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-101</Attribute>
+					<Attribute name="y">-33</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-110</Attribute>
+					<Attribute name="y">46</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:28+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">74</Attribute>
+					<Attribute name="y">-35</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">492</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SUCCESSION</Attribute>
+					<Attribute name="name">Succession</Attribute>
+					<Attribute name="source_node_id">357</Attribute>
+					<Attribute name="source_node_name">M</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">460</Attribute>
+					<Attribute name="target_node_name">G</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Succession from Activity &apos;M&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>RECONNECT_EDGE</EventType>
+				<Timestamp>2010-10-01T11:58:37+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">503</Attribute>
+					<Attribute name="y">-22</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:43+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-330</Attribute>
+					<Attribute name="y">-14</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">73</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:45+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">-18</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:48+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-82</Attribute>
+					<Attribute name="y">27</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:49+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-5</Attribute>
+					<Attribute name="y">19</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:50+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-38</Attribute>
+					<Attribute name="y">-12</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:51+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:58:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-11</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-1</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:58:54+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:58:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-31</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-31</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-31</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:58:56+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:58:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">75</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">75</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">75</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:58:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:58:58+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">119</Attribute>
+					<Attribute name="y">-9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">119</Attribute>
+					<Attribute name="y">-9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">119</Attribute>
+					<Attribute name="y">-9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:00+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-15</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-21</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-32</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:06+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">36</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">36</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">36</Attribute>
+					<Attribute name="y">2</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:09+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">-7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">-7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">-7</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:11+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:14+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">-22</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">-22</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">6</Attribute>
+					<Attribute name="y">-22</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:15+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">120</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-98</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-2</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:23+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">-24</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:26+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">-6</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:29+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">360</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">C</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;C&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-9</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:34+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">357</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">M</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;M&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">462</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">J</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">359</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">Y</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;Y&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:38+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T11:59:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">460</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">G</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;G&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">461</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">D</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;D&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">0</Attribute>
+					<Attribute name="y">-5</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T11:59:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T11:59:40+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">495</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="index">0</Attribute>
+					<Attribute name="x">457</Attribute>
+					<Attribute name="y">138</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;J&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_EDGE_BENDPOINT</EventType>
+				<Timestamp>2010-10-01T11:59:44+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">566</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SELECTION</Attribute>
+					<Attribute name="name">Selection</Attribute>
+					<Attribute name="minimum">0</Attribute>
+					<Attribute name="maximum">5</Attribute>
+				</Data>
+				<WorkflowModelElement>Selection from Activity &apos;L&apos; to Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>EDIT_SELECTION_CONSTRAINT</EventType>
+				<Timestamp>2010-10-01T12:00:03+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_START</EventType>
+				<Timestamp>2010-10-01T12:10:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">464</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">I</Attribute>
+					<Attribute name="x">-18</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;I&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T12:10:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">463</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">L</Attribute>
+					<Attribute name="x">-18</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;L&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T12:10:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">358</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="name">A</Attribute>
+					<Attribute name="x">-18</Attribute>
+					<Attribute name="y">0</Attribute>
+				</Data>
+				<WorkflowModelElement>Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>MOVE_NODE</EventType>
+				<Timestamp>2010-10-01T12:10:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement></WorkflowModelElement>
+				<EventType>GROUP_EVENT_END</EventType>
+				<Timestamp>2010-10-01T12:10:19+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">673</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_RESPONSE</Attribute>
+					<Attribute name="name">Chained Response</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Response from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-10-04T21:29:53+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">773</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.CHAINED_SUCCESSION</Attribute>
+					<Attribute name="name">Chained Succession</Attribute>
+					<Attribute name="source_node_id">461</Attribute>
+					<Attribute name="source_node_name">D</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">358</Attribute>
+					<Attribute name="target_node_name">A</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Chained Succession from Activity &apos;D&apos; to Activity &apos;A&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-10-04T21:29:57+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">494</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.PRECEDENCE</Attribute>
+					<Attribute name="name">Precedence</Attribute>
+					<Attribute name="source_node_id">360</Attribute>
+					<Attribute name="source_node_name">C</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">462</Attribute>
+					<Attribute name="target_node_name">J</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Precedence from Activity &apos;C&apos; to Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>DELETE_EDGE</EventType>
+				<Timestamp>2010-10-04T21:30:04+0200</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="id">774</Attribute>
+					<Attribute name="descriptor">DECSERFLOW.SUCCESSION</Attribute>
+					<Attribute name="name">Succession</Attribute>
+					<Attribute name="source_node_id">360</Attribute>
+					<Attribute name="source_node_name">C</Attribute>
+					<Attribute name="source_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+					<Attribute name="target_node_id">462</Attribute>
+					<Attribute name="target_node_name">J</Attribute>
+					<Attribute name="target_node_descriptor">DECSERFLOW.ACTIVITY</Attribute>
+				</Data>
+				<WorkflowModelElement>Succession from Activity &apos;C&apos; to Activity &apos;J&apos;</WorkflowModelElement>
+				<EventType>CREATE_EDGE</EventType>
+				<Timestamp>2010-10-04T21:30:08+0200</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

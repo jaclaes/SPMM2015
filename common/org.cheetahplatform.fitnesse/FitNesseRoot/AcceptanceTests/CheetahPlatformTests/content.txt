@@ -1,0 +1,23 @@
+!1 Welcome to the Tests for the Cheetah Platform
+
+Here you find all tests regarding imperative workflows:
+[[Imperative Workflows][CheetahPlatformTests.ImperativeWorkflows]]
+
+Here you find all tests regarding declarative workflows:
+[[Declarative Workflows][CheetahPlatformTests.DeclarativeWorkflows]]
+
+Tests for the Test Driven Development Module:
+[[Test Driven Development][CheetahPlatformTests.TestDrivenDevelopment]]
+
+Tests for the BPMN Modeler:
+[[BPMN Modeler][CheetahPlatformTests.BpmnModelerTests]]
+
+
+
+!3 Test Environment Setup
+!define IMPERATIVE_CREATION_FIXTURE {!-org.cheetahplatform.test.fitnesse.ImperativeWorkflowCreationFixture-!}
+!define IMPERATIVE_EXECUTION_FIXTURE {!-org.cheetahplatform.test.fitnesse.ImperativeWorkflowExecutionFixture-!}
+!define IMPERATIVE_SESE_FIXTURE {!-org.cheetahplatform.test.fitnesse.SingleEntrySingleExitFixture-!}
+!define BPMN_COMMAND_FIXTURE {!-org.cheetahplatform.test.fitnesse.BPMNCommandFixture-!}
+
+!path ../org.cheetahplatform.core/bin

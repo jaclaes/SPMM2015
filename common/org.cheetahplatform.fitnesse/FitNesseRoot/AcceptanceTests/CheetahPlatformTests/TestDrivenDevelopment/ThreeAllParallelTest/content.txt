@@ -1,0 +1,47 @@
+!1 Three Parallel Activities - All Parallel
+
+!img-l http://files/images/parallel_6.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                  |
+|start        |${TDD_FIXTURE}    |
+|addActivity  |A    |8:00 |12:00||
+|addActivity  |B    |8:30 |10:30||
+|addActivity  |C    |10:00|13:00||
+|layout       |                  |
+|maxParallel  |3                 |
+|parallelCount|7:59 |0           |
+|parallelCount|8:00 |1           |
+|parallelCount|8:29 |1           |
+|parallelCount|8:30 |2           |
+|parallelCount|9:59 |2           |
+|parallelCount|10:00|3           |
+|parallelCount|10:29|3           |
+|parallelCount|10:30|2           |
+|parallelCount|11:59|2           |
+|parallelCount|12:00|1           |
+|parallelCount|12:59|1           |
+|parallelCount|13:00|0           |
+|x            |A    |0           |
+|y            |A    |1h          |
+|width        |A    |1           |
+|height       |A    |4h          |
+|x            |B    |1           |
+|y            |B    |1h30        |
+|width        |B    |1           |
+|height       |B    |2h          |
+|x            |C    |2           |
+|y            |C    |3h          |
+|width        |C    |1           |
+|height       |C    |3h          |

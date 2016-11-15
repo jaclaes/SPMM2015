@@ -1,0 +1,16 @@
+!1 BPMN Notation Modeler Tests
+
+!3 Testing of the BPMN Commands
+[[Create Node Command][BpmnModelerTests.CreateNodeCommand]]
+[[Create Edge Command][BpmnModelerTests.CreateEdgeCommand]]
+[[Delete Node Command][BpmnModelerTests.DeleteNodeCommand]]
+[[Delete Edge Command][BpmnModelerTests.DeleteEdgeCommand]]
+[[Rename Node Command][BpmnModelerTests.RenameNodeCommand]]
+[[Move Node Command][BpmnModelerTests.MoveNodeCommand]]
+[[Reconnect Edge Command][BpmnModelerTests.ReconnectEdgeCommand]]
+
+!3 Complex Scenarios
+[[Complex Scenario 1][BpmnModelerTests.ComplexScenarioOne]]
+
+!3 Read log file
+[[Replay from Log File][BpmnModelerTests.ReplayFromLog]]

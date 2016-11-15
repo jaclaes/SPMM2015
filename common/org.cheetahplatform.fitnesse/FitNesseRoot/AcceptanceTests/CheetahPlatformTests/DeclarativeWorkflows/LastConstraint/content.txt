@@ -1,0 +1,35 @@
+!1 Last Constraint
+
+The specified activity must be the last activity executed.
+
+|${DECLARATIVE_CREATION_FIXTURE}                     |
+|start               |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity      |A               |              |
+|createActivity      |B               |              |
+|createActivity      |C               |              |
+|createLastConstraint|C               |              |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|complete          |A               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|C                               |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|C                               |
+|canTerminate      |true                            |
+

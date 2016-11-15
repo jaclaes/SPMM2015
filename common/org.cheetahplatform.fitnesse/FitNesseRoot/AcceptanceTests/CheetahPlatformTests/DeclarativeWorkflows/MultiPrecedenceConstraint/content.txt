@@ -1,0 +1,32 @@
+!1 Multi Prerequisite Constraint
+(e.g., A,B and C: either A or B must be executed before C can be executed)
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A                 |            |
+|createActivity                 |B                 |            |
+|createActivity                 |C                 |            |
+|createMultiPrecedenceConstraint|A,B,C             |            |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B                             |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|getExecutableTasks|A,B                             |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+
+
+
+

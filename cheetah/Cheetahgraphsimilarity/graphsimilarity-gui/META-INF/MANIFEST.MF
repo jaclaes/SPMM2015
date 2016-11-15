@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: graphsimilarity-gui
+Bundle-SymbolicName: graphsimilarity-gui; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: graphsimilarity_gui.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: graphsimilarity.jar,
+ .,
+ org.cheetahplatform.modeler.jar,
+ mysql-connector-java-5.1.13-bin.jar

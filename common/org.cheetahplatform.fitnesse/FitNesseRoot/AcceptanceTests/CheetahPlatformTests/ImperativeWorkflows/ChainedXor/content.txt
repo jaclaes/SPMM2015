@@ -1,0 +1,55 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Chained Xor
+
+!img-l http://files/images/Chained_Xor.png
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|split1      |                 |
+|createXorSplit|split2      |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createXorJoin |join1       |                 |
+|createXorJoin |join2       |                 |
+|link          |Start       |split1     |     |
+|link          |split1      |split2     |     |
+|link          |split2      |A          |     |
+|link          |A           |join2      |     |
+|link          |join2       |B          |     |
+|link          |B           |join1      |     |
+|link          |join1       |End        |     |
+|link          |split1      |join1      |     |
+|link          |split2      |join2      |     |
+
+
+!3 All Actions should be activated after instantiating the workflow
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start         |Completed       |
+|checkState|split1        |Activated       |
+|checkState|split2        |Activated       |
+|checkState|A             |Activated       |
+|checkState|B             |Activated       |
+|checkState|End           |Activated       |
+|launch    |B             |                |
+|checkState|A             |Skipped         |
+|checkState|B             |Launched        |
+|checkState|End           |Activated       |
+|checkState|split1        |Launched        |
+|checkState|split2        |Launched        |
+|cancel    |B             |                |
+|checkState|A             |Activated       |
+|checkState|B             |Activated       |
+|checkState|split1        |Activated       |
+|checkState|split2        |Activated       |
+|checkState|End           |Activated       |
+
+

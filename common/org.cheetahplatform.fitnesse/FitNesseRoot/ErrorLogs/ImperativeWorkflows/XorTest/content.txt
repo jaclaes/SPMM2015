@@ -1,0 +1,10 @@
+!3 !-fit-!
+|'''Date: '''|!-8:12:25 AM (MESZ) on Dienstag, April 14, 2009-!|
+|'''Test Page: '''|.ImperativeWorkflows.XorTest|
+|'''Command: '''|!-java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp classes;fitnesse.jar;../org.cheetahplatform.test/bin;../org.cheetahplatform.service/bin;../org.cheetahplatform.core/bin;customLibs/org.eclipse.equinox.common_3.4.0.v20080421-2006.jar;customLibs/org.eclipse.core.runtime_3.4.0.v20080512.jar;customLibs/org.eclipse.osgi_3.4.0.v20080605-1900.jar fit.FitServer xp-template 8080 51-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-83.05 seconds-!|
+----'''Standard Output:'''
+{{{Listening for transport dt_socket at address: 1044
+Warning: OSGI infrastructure is not running - providing default services.
+}}}

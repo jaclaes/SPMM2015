@@ -1,0 +1,40 @@
+!1 Succession Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                           |
+|start                     |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity            |A         |                    |
+|createActivity            |B         |                    |
+|createActivity            |C         |                    |
+|createSuccessionConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+|launch            |A               |               |
+|getExecutableTasks|A,C                             |
+|complete          |A               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C                           |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |false                           |
+|getExecutableTasks|A,B,C                           |
+|launch            |B               |               |
+|canTerminate      |false                           |
+|complete          |B               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |

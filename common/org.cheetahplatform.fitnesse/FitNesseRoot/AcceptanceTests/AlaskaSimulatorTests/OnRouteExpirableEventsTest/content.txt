@@ -1,0 +1,74 @@
+!2 A simple test which creates a few routes and attaches actions to them
+
+!-!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}-!
+
+Create a game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameConfigTest-!|
+|name                   |bookingDuration|journeyDuration|dayDuration|sleepPenaltyMode          |create?|
+|My first configuration |21             |3              |720        |BUSINESS_VALUE_CONSTRAINT |true   |
+
+
+---- Create locations - the first one is the starting location
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateLocationTest-!|
+|name      |create?|
+|Brixlegg  |true       |
+|Kirchbichl|true       |
+|Innsbruck |true       |
+
+
+---- Create routes - min Duration equals max Duration to make duration check easier ;)
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateRouteConfigTest-!|
+|name|businessValue|cost|certainty|availability|minDuration|maxDuration|locationNameA|locationNameB|bookingDeadline|create?|
+|Bundesstraße |1|20|1.0|1.0|60|60|Brixlegg|Kirchbichl|-1|true|
+|Autobahn|     5|50|1.0|1.0|30|30|Kirchbichl|Brixlegg|3|true|
+|Radweg  |    10| 5|1.0|1.0|180|180|Brixlegg|Innsbruck|-1|true|
+
+
+
+
+---- Link actions - actions must be linked to their locations unless they are used in events. Please note that routes must be added to both endpoints of the route.
+
+!|${ALASKA_CORE_PACKAGE}.!-LinkActionsConfigTest-!|
+|actionName     |locationName|linkAction?|countActions?|
+|Bundesstraße   |Brixlegg    ||1|
+|Autobahn       |Kirchbichl  ||1|
+|Radweg         |Brixlegg    ||2|
+|Bundesstraße   |Kirchbichl  ||2|
+|Autobahn       |Brixlegg    ||3|
+|Radweg         |Innsbruck   ||1|
+
+
+---- Create events attached to the routes defined before. These events are triggered when a route is executed for the first time. After the given expiration time the changes of the event are undone.
+
+|${ALASKA_CORE_PACKAGE}.!-ChangeTemporalActionEventsTest-!|
+|name         |actionName  |eventSource |probability|newCost|newBusinessValue|newCertainty|newAvailability|newDuration|expirationTime| create?||
+|Hill         |Radweg      |Radweg      |1.0        |5      |10              |1.0         |1.0            |250        |250           |true    |huge hill, takes a little more time|
+|See_Something|Autobahn    |Autobahn    |1.0        |50     |1000            |1.0         |1.0            |30         |30            |true    |See something amazing on the highway - whatever it is ;) - Inc. BV|
+|Radar        |Bundesstraße|Bundesstraße|1.0        |100    |1               |1.0         |1.0            |60         |60            |true    |Radar - don't go too fast! - Inc. Costs|
+
+---- Create a game from the previous created game configuration
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|playerName  |create?|getStartLocation?|
+|cooles Spiel|true       |Brixlegg         |
+
+
+---- Start the game
+
+!|${ALASKA_CORE_PACKAGE}.!-CreateGameTest-!|
+|startGame?|
+|true|
+
+---- Game-Phase - "commandToPerform" must be one of Cancel, Book, Execute or Schedule.
+
+!|${ALASKA_CORE_PACKAGE}.!-ExecuteActionTest-!|
+|commandToPerform|actionName   |startTime|executeAction?|checkExpenses?|getDuration?|getMinutesOfDay?|getDay?|getBusinessValue?|getLocation?|allowsCompletion?||
+|Execute         |Radweg       |0,0      |true          |5             |250         |250              |0     |10               |Innsbruck   |true             |huge hill|
+|Execute         |Radweg       |0,250    |true          |10            |180         |430              |0     |10               |Brixlegg    |true             |way easier in this direction|
+|Execute         |Autobahn     |0,430    |true          |60            |30          |460              |0     |1000             |Kirchbichl  |true             |Saw something amazing on the highway :) Increased business value!|
+|Execute         |Bundesstraße |0,460    |true          |160           |60          |520              |0     |1                |Brixlegg    |true             |Radar :( - increased costs!|
+|Execute         |Autobahn     |0,520    |true          |210           |30          |550              |0     |5                |Kirchbichl  |true             |nothing amazing :(|
+|Execute         |Bundesstraße |0,550    |true          |230           |60          |610              |0     |1                |Brixlegg    |true             |no Radar :)|

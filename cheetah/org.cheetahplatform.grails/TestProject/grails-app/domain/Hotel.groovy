@@ -1,0 +1,4 @@
+class Hotel {
+	String HotelName
+}
+

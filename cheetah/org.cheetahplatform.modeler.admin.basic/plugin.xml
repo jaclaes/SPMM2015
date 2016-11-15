@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="cheetah_admin_basic"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.cheetahplatform.modeler.application"
+            name="LiProMo">
+         <property
+               name="appName"
+               value="LiProMo">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.cheetahplatform.configuration">
+      <configuration
+            priority="1">
+         <configurator
+               class="org.cheetahplatform.modeler.admin.basic.AdminConfigurator">
+         </configurator>
+         <databaseAccess
+               adminPassword="j434t6wsd"
+               adminUserName="m.westergaard"
+               password="j434t6wsd"
+               url="jdbc:mysql://138.232.65.123:13306/michael_westergaard"
+               user="m.westergaard">
+         </databaseAccess>
+      </configuration>
+   </extension>
+   <extension
+         point="org.cheetahplatform.experiment">
+      <experiment
+            class="org.cheetahplatform.modeler.admin.basic.SingleModelingTaskConfiguration">
+      </experiment>
+   </extension>
+
+</plugin>

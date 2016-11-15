@@ -1,0 +1,49 @@
+%!define COMMAND_PATTERN {java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044 -cp %p %m}
+
+!1 Simple And
+
+!img-l http://files/images/And.png
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}      |
+|start|${IMPERATIVE_CREATION_FIXTURE}|
+|createAndSplit|Andsplit   |         |
+|createActivity|A          |         |
+|createActivity|B          |         |
+|createAndJoin|Andjoin    |          |
+|link   |Start      |Andsplit|       |
+|link   |Andsplit   |A      |        |
+|link   |Andsplit   |B      |        |
+|link   |A          |Andjoin|        |
+|link   |B          |Andjoin|        |
+|link   |Andjoin    |End    |        |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}      |
+|start|${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState      |Start   |Completed  |
+|checkState      |Andsplit|Activated  |
+|checkState      |A       |Activated  |
+|checkState      |B       |Activated  |
+|launch          |A       |           |
+|checkState      |Andsplit|Launched   |
+|checkState      |A       |Launched   |
+|checkState      |B       |Activated  |
+|complete        |A       |           |
+|checkState      |Andsplit|Completed  |
+|checkState      |A       |Completed  |
+|checkState      |B       |Activated  |
+|launch          |B       |           |
+|checkState      |Andsplit|Completed  |
+|checkState      |A       |Completed  |
+|checkState      |B       |Launched   |
+|complete        |B       |           |
+|checkState      |Andsplit|Completed  |
+|checkState      |A       |Completed  |
+|checkState      |B       |Completed  |
+|checkState      |Andjoin |Completed  |
+|checkState      |End     |Completed  |
+

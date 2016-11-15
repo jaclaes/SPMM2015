@@ -1,0 +1,426 @@
+Prefix: : <http://www.w3.org/2002/07/owl#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.semanticweb.org/nalkhald/ontologies/2013/9/UFO_eOntology>
+
+Import: <http://www.semanticweb.org/nalkhald/ontologies/UFO>
+Import: <http://users.isoco.net/~slosada/swws/bank.owl>
+
+ObjectProperty: <http://www.semanticweb.org/nalkhald/ontologies/UFO#isMediatedBy>
+
+    
+ObjectProperty: <http://www.semanticweb.org/nalkhald/ontologies/UFO#mediates>
+
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#endingDate>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#term>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#startingDate>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#buyCostProperty>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#delayInterestRate>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#saleCostProperty>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#interestRateValue>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#revisionTermNext>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#initalQuota>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#interesDelay>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#login>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#homeInsurance>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#name>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#interestNextRevision>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#lifeInsurance>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#APR>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#expirationDate>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#periodicityCuota>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#termRateFixed>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#signalDateContract>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#capital>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#initialPeriod>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#mortgageTaxation>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#quotaAfterRevision>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#revisionTerm>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+DataProperty: <http://users.isoco.net/~slosada/swws/bank.owl#handlingCapital>
+
+    Domain: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://www.semanticweb.org/nalkhald/ontologies/UFO#Role_Type>
+
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Corporative>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#ProductRateApplicationMixed>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Collection>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Quota>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#ProductRateApplication>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#CurrentMortageLoan>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#InvestmentAccount>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#User>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Loan>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Customer>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>,
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#isMediatedBy> some <http://www.semanticweb.org/nalkhald/ontologies/2013/9/UFO_eOntology#LoanApplication>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Department>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#ProductRateApplicationVariable>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Service>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>
+    
+    
+Class: <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Employee>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Role_Type>
+    
+    
+Class: <http://www.semanticweb.org/nalkhald/ontologies/2013/9/UFO_eOntology#LoanApplication>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#mediates> some <http://users.isoco.net/~slosada/swws/bank.owl#Customer>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Currency>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Person>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#ServiceContractedByCustomerInChannel>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Channel>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#SOHO>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#SME>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Company>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Individuals>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Asset>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#InvestmentFund>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#SavingAccount>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#FutureMortgageLoan>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Product>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#AddedValue>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#ProductRateApplicationFixed>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+    
+    
+Class: <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#vBanking>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#MortgageLoan>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Staff>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Role_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Liability>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://www.semanticweb.org/nalkhald/ontologies/UFO#Mixin_Type>
+
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Administrative>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Role_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Invoice>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Payment>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Relator_Universal>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Commercial>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Role_Type>
+    
+    
+Class: <http://users.isoco.net/~slosada/swws/bank.owl#Branch>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/nalkhald/ontologies/UFO#Base_Type>
+    
+    
+Class: <http://www.semanticweb.org/nalkhald/ontologies/UFO#Quality_Universal>
+
+    

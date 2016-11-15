@@ -1,0 +1,48 @@
+!1 Simple Sequence
+
+ !img-l http://files/images/Sequence.png
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createActivity|C           |                 |
+|link          |Start       |A         |      |
+|link          |A           |B         |      |
+|link          |B           |C         |      |
+|link          |C           |End       |      |
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start        |Completed        |
+|checkState|A            |Activated        |
+|launch    |A            |                 |
+|checkState|Start        |Completed        |
+|checkState|A            |Launched         |
+|complete  |A            |                 |
+|checkState|Start        |Completed        |
+|checkState|A            |Completed        |
+|checkState|B            |Activated        |
+|launch    |B            |                 |
+|checkState|Start        |Completed        |
+|checkState|A            |Completed        |
+|checkState|B            |Launched         |
+|complete  |B            |                 |
+|checkState|Start        |Completed        |
+|checkState|A            |Completed        |
+|checkState|B            |Completed        |
+|checkState|C            |Activated        |
+|launch    |C            |                 |
+|checkState|Start        |Completed        |
+|checkState|A            |Completed        |
+|checkState|B            |Completed        |
+|checkState|C            |Launched         |
+|complete  |C            |                 |
+|checkState|Start        |Completed        |
+|checkState|A            |Completed        |
+|checkState|B            |Completed        |
+|checkState|C            |Completed        |
+|checkState|End          |Completed        |

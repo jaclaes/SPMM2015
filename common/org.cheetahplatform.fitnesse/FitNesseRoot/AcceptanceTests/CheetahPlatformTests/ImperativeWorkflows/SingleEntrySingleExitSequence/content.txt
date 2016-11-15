@@ -1,0 +1,31 @@
+!1 Simple Sequence
+
+!img-l http://files/images/Sequence.png
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                |
+|start          |${IMPERATIVE_CREATION_FIXTURE}|
+|createActivity |A      |                      |
+|createActivity |B      |                      |
+|createActivity |C      |                      |
+|link           |Start  |A    |                |
+|link           |A      |B    |                |
+|link           |B      |C    |                |
+|link           |C      |End  |                |
+
+
+|${IMPERATIVE_SESE_FIXTURE}                           |
+|start    |${IMPERATIVE_SESE_FIXTURE}                 |
+|children|component  |1                               |
+|startNode|component  |Start                          |
+|endNode|component  |End                              |
+|store  |component[0]|polygon                     |   |
+|children|polygon    |3                               |
+|type   |polygon    |Polygon                          |
+|type   |polygon[0] |!-SingleEntrySingleExitNode-!    |
+|type   |polygon[1] |!-SingleEntrySingleExitNode-!    |
+|type   |polygon[2] |!-SingleEntrySingleExitNode-!    |
+|name   |polygon[0] |A                                |
+|name   |polygon[1] |B                                |
+|name   |polygon[2] |C                                |

@@ -1,0 +1,19 @@
+!1 Create Node Command
+
+|${BPMN_COMMAND_FIXTURE}                 |
+|start           |${BPMN_COMMAND_FIXTURE}|
+|createActivity  |A   |1   |100,50   |   |
+|containsElement |1   |true                  |
+|checkName       |1   |A                 |
+|checkCoordinates|1   |100,50            |
+|createActivity  |B   |2   |10,60    |   |
+|containsElement |2   |true                  |
+|checkName       |2   |B                 |
+|checkCoordinates|2   |10,60             |
+|createActivity  |C   |3   |200,50   |   |
+|containsElement |3   |true                  |
+|checkName       |3   |C                 |
+|checkCoordinates|3   |200,50            |
+
+
+

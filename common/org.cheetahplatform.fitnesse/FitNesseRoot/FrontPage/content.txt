@@ -1,0 +1,11 @@
+!1 Welcome to !-FitNesse-!!
+!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
+
+This fitnesse installation contains tests of the '''Alaska Simulator''', '''Cheetah Platform''' as well as '''common components'''.
+
+A suite containing all Acceptance Tests of the different components.
+[[Acceptance Tests][AcceptanceTests]]
+
+Useful stuff regarding writing fitnesse tests
+[[Useful Stuff][UseFulStuff]]
+

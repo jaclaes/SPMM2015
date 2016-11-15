@@ -1,0 +1,47 @@
+!1 Late Modeling Box
+!img-l http://files/images/LateModelingBox.png
+
+
+
+
+
+
+
+
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}                             |
+|start                |${IMPERATIVE_CREATION_FIXTURE}       |
+|createActivity       |A    |                               |
+|createActivity       |B    |                               |
+|createLateModelingBox|Box  |                               |
+|link                 |Start|A             |                |
+|link                 |A    |Box           |                |
+|link                 |Box  |B             |                |
+|link                 |B    |End           |                |
+|addToLateModelingBox |Box  |Boxa,Boxb,Boxc|                |
+
+
+|${IMPERATIVE_SESE_FIXTURE}                                      |
+|start   |${IMPERATIVE_SESE_FIXTURE}                             |
+|children|component    |1                                        |
+|type    |component    |!-ProcessFragment-!                      |
+|store   |component[0] |polygon                                 ||
+|children|polygon      |3                                        |
+|store   |polygon[0]   |a                                       ||
+|type    |a            |!-SingleEntrySingleExitNode-!            |
+|store   |polygon[1]   |box1                                    ||
+|type    |box1         |!-SingleEntrySingleExitLateModelingBox-! |
+|children|box1         |1                                        |
+|store   |box1[0]      |boxPolygon                              ||
+|children|boxPolygon   |3                                        |
+|type    |boxPolygon   |!-Polygon-!                              |
+|name    |boxPolygon[0]|Boxa                                     |
+|name    |boxPolygon[1]|Boxb                                     |
+|name    |boxPolygon[2]|Boxc                                     |
+|type    |boxPolygon[0]|!-SingleEntrySingleExitNode-!            |
+|type    |boxPolygon[1]|!-SingleEntrySingleExitNode-!            |
+|type    |boxPolygon[2]|!-SingleEntrySingleExitNode-!            |
+|name    |polygon[2]   |B                                        |
+|type    |polygon[2]   |!-SingleEntrySingleExitNode-!            |

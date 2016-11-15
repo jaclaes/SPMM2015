@@ -1,0 +1,83 @@
+!3 !c Tests the usage of "Move to Surrounding Box"
+
+
+Start game restoration
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|start|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|enter|load|!-SurroundingBox.xml-!|
+|check|countCommands|5|
+|check|businessValue|0|
+|check|expectedBusinessValue|0|
+|check|expenses|0|
+|check|expectedExpenses|0|
+|check|totalActions|0|
+
+Add 4 Hour Scenic Rafting
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3|
+|check|expenses|0|
+|check|expectedExpenses|119|
+|check|totalActions|1|
+|check|actions|0|1|
+|check|structure|0|Box 135:375[4 Hour Scenic Rafting 135]|
+|check|actionState|4 Hour Scenic Rafting,0,135|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|2|
+
+Add Flightseeing
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3|
+|check|expenses|0|
+|check|expectedExpenses|414|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 135:450[Box 135:375[4 Hour Scenic Rafting 135], Box 330:450[Flightseeing 330]]|
+|check|actionState|Flightseeing,0,330|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|2|
+
+Move Flightseeing to the surrounding box
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3|
+|check|expenses|0|
+|check|expectedExpenses|414|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 135:375[4 Hour Scenic Rafting 135], Box 330:450[Flightseeing 330]|
+|check|actionState|Flightseeing,0,330|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|2|
+
+Change the end time of box 1
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3|
+|check|expenses|0|
+|check|expectedExpenses|414|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 135:405[4 Hour Scenic Rafting 135], Box 330:450[Flightseeing 330]|
+|check|actionState|Flightseeing,0,330|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|2|
+
+Change the end time of box 2
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarRestoreFixture-!|
+|press|executeCommand|
+|check|businessValue|0|
+|check|expectedBusinessValue|3|
+|check|expenses|0|
+|check|expectedExpenses|414|
+|check|totalActions|2|
+|check|actions|0|2|
+|check|structure|0|Box 135:405[4 Hour Scenic Rafting 135], Box 330:480[Flightseeing 330]|
+|check|actionState|Flightseeing,0,330|PLANNED|
+|check|gameState|UPFRONT_PLANNING|
+|check|failures|2|

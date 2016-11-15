@@ -1,0 +1,156 @@
+!1 Nested Xor
+
+!img-l http://files/images/Nested_Xor.png
+
+
+
+|${IMPERATIVE_CREATION_FIXTURE}               |
+|start         |${IMPERATIVE_CREATION_FIXTURE}|
+|createXorSplit|split1      |                 |
+|createXorSplit|split2      |                 |
+|createXorSplit|split3      |                 |
+|createActivity|A           |                 |
+|createActivity|B           |                 |
+|createActivity|C           |                 |
+|createActivity|D           |                 |
+|createXorJoin |join1       |                 |
+|createXorJoin |join2       |                 |
+|createXorJoin |join3       |                 |
+|link          |Start       |split1     |     |
+|link          |split1      |A          |     |
+|link          |split1      |split2     |     |
+|link          |split2      |B          |     |
+|link          |split2      |split3     |     |
+|link          |split3      |C          |     |
+|link          |split3      |D          |     |
+|link          |C           |join3      |     |
+|link          |D           |join3      |     |
+|link          |join3       |join2      |     |
+|link          |B           |join2      |     |
+|link          |join2       |join1      |     |
+|link          |A           |join1      |     |
+|link          |join1       |End        |     |
+
+
+!3 All Actions should be activated after instantiating the workflow
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|checkState|Start         |Completed       |
+|checkState|split1        |Activated       |
+|checkState|A             |Activated       |
+|checkState|B             |Activated       |
+|checkState|C             |Activated       |
+|checkState|D             |Activated       |
+
+!3 Take the upper branch by executing action A
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |A             |                |
+|checkState|A             |Launched        |
+|checkState|split1        |Launched        |
+|checkState|split2        |Skipped         |
+|checkState|split3        |Skipped         |
+|checkState|B             |Skipped         |
+|checkState|C             |Skipped         |
+|checkState|D             |Skipped         |
+|complete  |A             |                |
+|checkState|A             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Skipped         |
+|checkState|split3        |Skipped         |
+|checkState|B             |Skipped         |
+|checkState|C             |Skipped         |
+|checkState|D             |Skipped         |
+|checkState|join1         |Completed       |
+|checkState|join2         |Skipped         |
+|checkState|join3         |Skipped         |
+|checkState|End           |Completed       |
+
+
+
+!3 Take a lower branch by executing action B
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |B             |                |
+|checkState|B             |Launched        |
+|checkState|split1        |Launched        |
+|checkState|split2        |Launched        |
+|checkState|split3        |Skipped         |
+|checkState|A             |Skipped         |
+|checkState|C             |Skipped         |
+|checkState|D             |Skipped         |
+|complete  |B             |                |
+|checkState|B             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|split3        |Skipped         |
+|checkState|A             |Skipped         |
+|checkState|C             |Skipped         |
+|checkState|D             |Skipped         |
+|checkState|join1         |Completed       |
+|checkState|join2         |Completed       |
+|checkState|join3         |Skipped         |
+|checkState|End           |Completed       |
+
+
+
+!3 Take a lower branch by executing action C
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |C             |                |
+|checkState|C             |Launched        |
+|checkState|split1        |Launched        |
+|checkState|split2        |Launched        |
+|checkState|split3        |Launched        |
+|checkState|A             |Skipped         |
+|checkState|B             |Skipped         |
+|checkState|D             |Skipped         |
+|complete  |C             |                |
+|checkState|C             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|split3        |Completed       |
+|checkState|A             |Skipped         |
+|checkState|B             |Skipped         |
+|checkState|D             |Skipped         |
+|checkState|join1         |Completed       |
+|checkState|join2         |Completed       |
+|checkState|join3         |Completed       |
+|checkState|End           |Completed       |
+
+
+
+
+!3 Take the lowest branch by executing action D
+
+
+|${IMPERATIVE_EXECUTION_FIXTURE}           |
+|start     |${IMPERATIVE_EXECUTION_FIXTURE}|
+|launch    |D             |                |
+|checkState|D             |Launched        |
+|checkState|split1        |Launched        |
+|checkState|split2        |Launched        |
+|checkState|split3        |Launched        |
+|checkState|A             |Skipped         |
+|checkState|B             |Skipped         |
+|checkState|C             |Skipped         |
+|complete  |D             |                |
+|checkState|D             |Completed       |
+|checkState|split1        |Completed       |
+|checkState|split2        |Completed       |
+|checkState|split3        |Completed       |
+|checkState|A             |Skipped         |
+|checkState|B             |Skipped         |
+|checkState|C             |Skipped         |
+|checkState|join1         |Completed       |
+|checkState|join2         |Completed       |
+|checkState|join3         |Completed       |
+|checkState|End           |Completed       |
+

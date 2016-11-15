@@ -1,0 +1,52 @@
+
+Instructions for the CAiSE Experiment
+*************************************
+
+Preparation Phase:
+------------------
+
+- Students need to have Java 6 installed on their laptops
+   
+  The following link can be used to test whether Java is installed in the correct version
+  http://www.java.com/de/download/installed.jsp
+
+- Windows OS (the software is only running on windows pcs)
+
+- Internet Access during the experiment!
+
+- Make copies of the task descriptions for each student
+
+- Download the modeler from http://qe-informatik.uibk.ac.at/~jakob.pinggera/CEPChangePatternUser.zip and go through the entire experiment by yourself in order to test the procedure
+
+The Experiment:
+---------------
+
+- Let the students install the modeler:
+  Download modeler from http://qe-informatik.uibk.ac.at/~jakob.pinggera/CEPChangePatternUser.zip; Un-zip the file
+
+- Provide the students with the task descriptions of the modeling task (first three pages)
+
+- Students start the modeler by clicking "cheetah_modeler.exe"
+
+- Students are asked to enter the 4 digit code which they can find in the footnote of the task descriptions
+
+- Students answer demographic questions
+
+- Students participate in tutorial
+
+- Students perform modeling task; At the beginning of the modeling task students are presented with a 4 digit modeling id which they should write on the sheet with the modeling task description (box on the top right)
+
+- When students have finished the modeling task they can click "finish modeling" to move to the next step of the experiment
+
+- Collect the sheets with the task description and provide the students with the change task description (4th page). Change task descriptions will be the same for all students
+
+- Students perform change task; At the beginning of the change task students are presented with a 4 digit modeling id which they should write on the sheet with the change task description (box on the top right)
+
+- When students have finished the change task they can click "finish modeling" to move to the next step of the experiment
+
+- Collect the sheets with the change task description
+
+- Students have to fill out the questionnaire on cognitive load
+
+
+

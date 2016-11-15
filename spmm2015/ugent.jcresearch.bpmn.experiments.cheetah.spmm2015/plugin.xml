@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.cheetahplatform.configuration">
+          <configuration priority="1">  
+			<xmlLogHandler
+         		to_zip="true">
+	       </xmlLogHandler>
+   <configurator
+         class="ugent.jcresearch.bpmn.experiments.cheetah.spmm2015.SPMConfigurator">
+   </configurator>
+       </configuration>  
+   </extension>
+</plugin>

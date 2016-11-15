@@ -1,0 +1,398 @@
+<WorkflowLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://is.tm.tue.nl/research/processmining/WorkflowLog.xsd">
+	<Process id="California Experiment B" type="Agile">
+		<ProcessInstance id="dude_stamp1229076075046">
+				<Data>
+				<Attribute name="GameConfigName">California Experiment B</Attribute>
+					<Attribute name="Player">dude</Attribute>
+					<Attribute name="RealTime">1229076075078</Attribute>
+				</Data>
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="org.alaskasimulator.ui.IActionConfigFilterService#0">&lt;object-array&gt;
+  &lt;string&gt;actions&lt;/string&gt;
+  &lt;set/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.ui.IActionConfigFilterService#1">&lt;object-array&gt;
+  &lt;string&gt;rules&lt;/string&gt;
+  &lt;list/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#0">&lt;object-array&gt;
+  &lt;string&gt;San Francisco&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.3712335225433685&lt;/double&gt;
+    &lt;double&gt;0.12873513088712046&lt;/double&gt;
+    &lt;double&gt;0.35757973031873885&lt;/double&gt;
+    &lt;double&gt;0.27489046643791387&lt;/double&gt;
+  &lt;/list&gt;
+  &lt;list&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;1&lt;/forecastDay&gt;
+      &lt;weather&gt;0.15940248664282727&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.2635432656620482&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;1&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.38869674212691546&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#1">&lt;object-array&gt;
+  &lt;string&gt;Sonoma Valley&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.48407963903815954&lt;/double&gt;
+    &lt;double&gt;0.7044128286202361&lt;/double&gt;
+    &lt;double&gt;0.6761629437018171&lt;/double&gt;
+    &lt;double&gt;0.9024734641236531&lt;/double&gt;
+  &lt;/list&gt;
+  &lt;list&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;1&lt;/forecastDay&gt;
+      &lt;weather&gt;0.7489544511171782&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.6067096646593021&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;1&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.7171905694661452&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#2">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.4131947424093307&lt;/double&gt;
+    &lt;double&gt;0.6278867622689082&lt;/double&gt;
+    &lt;double&gt;0.8177346818340366&lt;/double&gt;
+    &lt;double&gt;0.7723016329820658&lt;/double&gt;
+  &lt;/list&gt;
+  &lt;list&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;1&lt;/forecastDay&gt;
+      &lt;weather&gt;0.6509924991837943&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.7319330887844229&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;1&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.7744466827730866&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IWeatherService#3">&lt;object-array&gt;
+  &lt;string&gt;Pinnacle National Forest&lt;/string&gt;
+  &lt;list&gt;
+    &lt;double&gt;0.2994113099751885&lt;/double&gt;
+    &lt;double&gt;0.5307648915041466&lt;/double&gt;
+    &lt;double&gt;0.7133329868338509&lt;/double&gt;
+    &lt;double&gt;0.7161889934018755&lt;/double&gt;
+  &lt;/list&gt;
+  &lt;list&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;1&lt;/forecastDay&gt;
+      &lt;weather&gt;0.5575805899119546&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;0&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.6587999190481397&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+    &lt;org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+      &lt;queryDay&gt;1&lt;/queryDay&gt;
+      &lt;forecastDay&gt;2&lt;/forecastDay&gt;
+      &lt;weather&gt;0.7293649485026048&lt;/weather&gt;
+    &lt;/org.alaskasimulator.core.runtime.service.WeatherService_-WeatherForecast&gt;
+  &lt;/list&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="RealTime">1229076075093</Attribute>
+				</Data>
+				<WorkflowModelElement>California Experiment B</WorkflowModelElement>
+				<EventType>START_PLANNING</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="ID">71016119377187341</Attribute>
+					<Attribute name="Time">[0d,300min]</Attribute>
+					<Attribute name="RealTime">1229076088109</Attribute>
+				</Data>
+				<WorkflowModelElement>San Francisco &lt;-&gt; Napa Valley</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="ID">9178657948056777083</Attribute>
+					<Attribute name="Time">[0d,360min]</Attribute>
+					<Attribute name="RealTime">1229076092921</Attribute>
+				</Data>
+				<WorkflowModelElement>Private Napa Valley Winery Tour</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="ID">-4180061771165971528</Attribute>
+					<Attribute name="Time">[0d,660min]</Attribute>
+					<Attribute name="RealTime">1229076140406</Attribute>
+				</Data>
+				<WorkflowModelElement>Napa Valley &lt;-&gt; Sonoma Valley</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="ID">-6799599099882003165</Attribute>
+					<Attribute name="Time">[0d,721min]</Attribute>
+					<Attribute name="RealTime">1229076146953</Attribute>
+				</Data>
+				<WorkflowModelElement>Sonoma Hotel</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BOX_ID">&lt;list/&gt;</Attribute>
+					<Attribute name="ID">642659494308790532</Attribute>
+					<Attribute name="Time">[1d,0min]</Attribute>
+					<Attribute name="RealTime">1229076152109</Attribute>
+				</Data>
+				<WorkflowModelElement>Napa Valley &lt;-&gt; Sonoma Valley</WorkflowModelElement>
+				<EventType>ACTION_ADD</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="ID">9178657948056777083</Attribute>
+					<Attribute name="Time">[0d,360min]</Attribute>
+					<Attribute name="RealTime">1229076154609</Attribute>
+				</Data>
+				<WorkflowModelElement>Private Napa Valley Winery Tour</WorkflowModelElement>
+				<EventType>ACTION_BOOK</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="ID">-6799599099882003165</Attribute>
+					<Attribute name="Time">[0d,721min]</Attribute>
+					<Attribute name="RealTime">1229076154750</Attribute>
+				</Data>
+				<WorkflowModelElement>Sonoma Hotel</WorkflowModelElement>
+				<EventType>ACTION_BOOK</EventType>
+				<Timestamp>[UPFRONT_PHASE]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<WorkflowModelElement>California Experiment B</WorkflowModelElement>
+				<EventType>START_JOURNEY</EventType>
+				<Timestamp>[0d,0min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Event#1">Accident</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#0">&lt;object-array&gt;
+  &lt;string&gt;San Francisco &amp;lt;-&amp;gt; Napa Valley&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#1">&lt;object-array&gt;
+  &lt;string&gt;San Francisco &amp;lt;-&amp;gt; Napa Valley&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#2">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#3">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#0">&lt;object-array&gt;
+  &lt;string&gt;San Francisco &amp;lt;-&amp;gt; Napa Valley&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;300&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;100&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#0">&lt;object-array&gt;
+  &lt;string&gt;San Francisco &amp;lt;-&amp;gt; Napa Valley&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#1">&lt;object-array&gt;
+  &lt;string&gt;San Francisco &amp;lt;-&amp;gt; Napa Valley&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;double&gt;0.5385474690997278&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="RealTime">1229076158093</Attribute>
+				</Data>
+				<WorkflowModelElement>California Experiment B</WorkflowModelElement>
+				<EventType>EVENT_OCCURED</EventType>
+				<Timestamp>[0d,400min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Duration">100</Attribute>
+					<Attribute name="Reliability">0.42264973081037427</Attribute>
+					<Attribute name="BusinessValue">5.385474690997278</Attribute>
+					<Attribute name="ID">71016119377187341</Attribute>
+					<Attribute name="Time">[0d,300min]</Attribute>
+					<Attribute name="RealTime">1229076160046</Attribute>
+				</Data>
+				<WorkflowModelElement>San Francisco &lt;-&gt; Napa Valley</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[0d,400min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="BookingMoneyLost">200.0</Attribute>
+					<Attribute name="ID">9178657948056777083</Attribute>
+					<Attribute name="Time">[0d,360min]</Attribute>
+					<Attribute name="RealTime">1229076163781</Attribute>
+				</Data>
+				<WorkflowModelElement>Private Napa Valley Winery Tour</WorkflowModelElement>
+				<EventType>PLANITEM_REMOVE</EventType>
+				<Timestamp>[0d,400min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Duration">29</Attribute>
+					<Attribute name="Reliability">0.42264973081037427</Attribute>
+					<Attribute name="BusinessValue">6.77138022144956</Attribute>
+					<Attribute name="ID">-4180061771165971528</Attribute>
+					<Attribute name="Time">[0d,660min]</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#4">&lt;object-array&gt;
+  &lt;string&gt;Private Napa Valley Winery Tour&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#5">&lt;object-array&gt;
+  &lt;string&gt;Private Napa Valley Winery Tour&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;boolean&gt;false&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#1">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;660&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;29&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#2">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#3">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;double&gt;0.677138022144956&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="RealTime">1229076166234</Attribute>
+				</Data>
+				<WorkflowModelElement>Napa Valley &lt;-&gt; Sonoma Valley</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[0d,689min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Event#1">Road Closure</Attribute>
+					<Attribute name="RealTime">1229076166359</Attribute>
+				</Data>
+				<WorkflowModelElement>California Experiment B</WorkflowModelElement>
+				<EventType>EVENT_OCCURED</EventType>
+				<Timestamp>[0d,689min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Duration">0</Attribute>
+					<Attribute name="Reliability">0.42264973081037427</Attribute>
+					<Attribute name="BusinessValue">0.0</Attribute>
+					<Attribute name="ID">-6799599099882003165</Attribute>
+					<Attribute name="Time">[0d,721min]</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#2">&lt;object-array&gt;
+  &lt;string&gt;Sonoma Hotel&lt;/string&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;721&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;0&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#4">&lt;object-array&gt;
+  &lt;string&gt;Sonoma Hotel&lt;/string&gt;
+  &lt;map/&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#5">&lt;object-array&gt;
+  &lt;string&gt;Sonoma Hotel&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;double&gt;0.4961479260479307&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IAvailabilityService#6">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;boolean&gt;true&lt;/boolean&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="RealTime">1229076169609</Attribute>
+				</Data>
+				<WorkflowModelElement>Sonoma Hotel</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,0min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="Duration">28</Attribute>
+					<Attribute name="Reliability">0.42264973081037427</Attribute>
+					<Attribute name="BusinessValue">8.098297012700229</Attribute>
+					<Attribute name="ID">642659494308790532</Attribute>
+					<Attribute name="Time">[1d,0min]</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.IDurationService#3">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;org.alaskasimulator.core.runtime.Duration&gt;
+    &lt;minutes&gt;28&lt;/minutes&gt;
+  &lt;/org.alaskasimulator.core.runtime.Duration&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="org.alaskasimulator.core.runtime.service.ICertaintyService#6">&lt;object-array&gt;
+  &lt;string&gt;Napa Valley &amp;lt;-&amp;gt; Sonoma Valley&lt;/string&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;double&gt;0.809829701270023&lt;/double&gt;
+&lt;/object-array&gt;</Attribute>
+					<Attribute name="RealTime">1229076171328</Attribute>
+				</Data>
+				<WorkflowModelElement>Napa Valley &lt;-&gt; Sonoma Valley</WorkflowModelElement>
+				<EventType>ACTION_EXECUTE</EventType>
+				<Timestamp>[1d,28min]</Timestamp>
+			</AuditTrailEntry> 
+			<AuditTrailEntry>
+				<Data>
+					<Attribute name="TotalBusinessValue">20.255151925147068</Attribute>
+					<Attribute name="TotalExpenses">340.0</Attribute>
+					<Attribute name="RealTime">1229076174484</Attribute>
+				</Data>
+				<WorkflowModelElement>California Experiment B</WorkflowModelElement>
+				<EventType>FINISH_JOURNEY_UNSUCCESSFULLY</EventType>
+				<Timestamp>[1d,28min]</Timestamp>
+			</AuditTrailEntry> 
+		</ProcessInstance>
+	</Process>
+</WorkflowLog>

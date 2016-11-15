@@ -1,0 +1,28 @@
+!1 Simple Layout - Single Activity
+
+!img-l http://files/images/single_activity.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+|${TDD_FIXTURE}                 |
+|start        |${TDD_FIXTURE}   |
+|addActivity  |A    |8:00|12:00||
+|layout       |                 |
+|maxParallel|1|
+|parallelCount|7:59 |0         |
+|parallelCount|8:00 |1          |
+|parallelCount|11:59|1          |
+|parallelCount|12:00|0         |
+|x            |A    |0          |
+|y            |A    |1h         |
+|width        |A    |1          |
+|height       |A    |4h         |

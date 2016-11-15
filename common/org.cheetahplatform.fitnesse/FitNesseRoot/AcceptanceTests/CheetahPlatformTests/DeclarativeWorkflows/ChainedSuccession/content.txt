@@ -1,0 +1,27 @@
+!1 Chained Succession Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                                  |
+|start                            |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                   |A         |                    |
+|createActivity                   |B         |                    |
+|createActivity                   |C         |                    |
+|createChainedSuccessionConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,C                             |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|complete          |A               |               |
+|getExecutableTasks|B                               |
+|canTerminate      |false                           |
+|launch            |B               |               |
+|complete          |B               |               |
+|getExecutableTasks|A,C                             |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|getExecutableTasks|A,C                             |
+|canTerminate      |true                            |
+

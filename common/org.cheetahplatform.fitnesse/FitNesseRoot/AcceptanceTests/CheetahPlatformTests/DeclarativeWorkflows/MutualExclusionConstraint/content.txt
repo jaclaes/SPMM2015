@@ -1,0 +1,44 @@
+!1 Mutual Exclusion Constraint
+
+|${DECLARATIVE_CREATION_FIXTURE}                                |
+|start                          |${DECLARATIVE_CREATION_FIXTURE}|
+|createActivity                 |A         |                    |
+|createActivity                 |B         |                    |
+|createActivity                 |C         |                    |
+|createMutualExclusionConstraint|A         |B         |         |
+
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,B,C                           |
+|launch            |A               |               |
+|getExecutableTasks|A,C                           |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+|launch            |C               |               |
+|complete          |C               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+|launch            |A               |               |
+|complete          |A               |               |
+|canTerminate      |true                            |
+|getExecutableTasks|A,C                             |
+
+
+Test whether the cancelation of activities influences the behavior of the constraint
+
+|${DECLARATIVE_EXECUTION_FIXTURE}                   |
+|start             |${DECLARATIVE_EXECUTION_FIXTURE}|
+|getExecutableTasks|A,B,C                           |
+|canTerminate      |true                            |
+|launch            |A               |               |
+|getExecutableTasks|A,C                             |
+|cancel            |A               |               |
+|getExecutableTasks|A,B,C                           |
+

@@ -1,0 +1,27 @@
+!c !3 Test the validation of journeys
+
+|${ALASKA_UI_PACKAGE}.!-AgileCalendarFixture-!|
+|start|${ALASKA_UI_PACKAGE}.!-AgileCalendarFixture-!|
+|enter|useJourney|Simple Journey to Alaska|
+|press|startJourney|
+|enter|schedule|Highway,0,255|
+|check|structure|0|Box 255:295[Highway 255]|
+|check|failures|2|
+|enter|schedule|4 Hour Scenic Rafting,0,225|
+|check|structure|0|Box 225:465[4 Hour Scenic Rafting 225], Box 255:295[Highway 255]|
+|check|failures|3|
+|enter|schedule|Hotel in Juneau,0,750|
+|check|structure|0|Box 225:465[4 Hour Scenic Rafting 225], Box 255:295[Highway 255], Hotel in Juneau 750|
+|check|failures|3|
+|enter|schedule|Anchorage Motel,0,750|
+|check|structure|0|Box 225:465[4 Hour Scenic Rafting 225], Box 255:295[Highway 255], Hotel in Juneau 750, Anchorage Motel 750|
+|check|failures|3|
+|enter|schedule|Highway,1,240|
+|check|structure|1|Box 240:280[Highway 240]|
+|check|failures|3|
+|enter|schedule|Short Hike,1,240|
+|check|structure|1|Box 240:280[Highway 240], Box 240:285[Short Hike 240]|
+|check|failures|2|
+|enter|schedule|Visitor Centre,1,60,0|
+|check|structure|1|Box 60:280[Visitor Centre 60, Highway 240], Box 240:285[Short Hike 240]|
+|check|failures|1|

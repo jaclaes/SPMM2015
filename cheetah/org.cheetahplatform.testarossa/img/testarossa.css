@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+H1 {
+	color: black;
+	font-family: Arial;
+	font-size: 30
+}
+
+H2 {
+	color: black;
+	font-family: Calibri;
+	font-size: 18
+}
+
+BODY {
+	color: black;
+	font-family: Calibri;
+	font-size: 14
+}
